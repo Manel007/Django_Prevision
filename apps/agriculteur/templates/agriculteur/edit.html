@@ -1,0 +1,59 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Éditer un Agriculteur {% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">Mettre à Jour</h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Nom</label>
+                                    <input type="text" name="nom" class="form-control" placeholder="Nom de l'Agriculteur" value="{{ agriculteur.nom }}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Prénom</label>
+                                    <input type="text" name="prenom" class="form-control" placeholder="Prénom de l'Agriculteur" value="{{ agriculteur.prenom }}" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Contact</label>
+                                    <input type="text" name="contact" class="form-control" placeholder="Téléphone" value="{{ agriculteur.contact }}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Région</label>
+                                    <input type="text" name="region" class="form-control" placeholder="Région" value="{{ agriculteur.region }}" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9 pr-md-1">
+                                <div class="form-group">
+                                    <label>Adresse</label>
+                                    <input type="text" name="adresse" class="form-control" placeholder="Donner votre adresse" value="{{ agriculteur.adresse }}" required>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-fill btn-primary">Mettre à Jour</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

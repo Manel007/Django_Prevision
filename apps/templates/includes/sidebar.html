@@ -19,6 +19,18 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
+                <li class="{% if 'tables' in segment %} active {% endif %}">
+                    <a href="{% url 'list_agriculteurs' %}">
+                        <i class="tim-icons icon-paper"></i>
+                        <p>Table Agriculteur</p>
+                    </a>
+                </li>
+                <li class="{% if 'tables' in segment %} active {% endif %}">
+                    <a href="{% url 'create_agriculteurs' %}">
+                        <i class="tim-icons icon-pencil"></i>
+                        <p>Ajouter Agriculteur</p>
+                    </a>
+                </li>
                 <li class="{% if 'icons' in segment %} active {% endif %}">
                     <a href="/icons.html">
                         <i class="tim-icons icon-atom"></i>

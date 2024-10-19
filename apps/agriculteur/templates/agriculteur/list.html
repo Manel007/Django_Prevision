@@ -1,0 +1,69 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="card-header">
+            <h4 class="card-title"> TABLE d'AGRICULTEURS </h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              {% if agriculteurs %}
+              <table class="table tablesorter " id="">
+                <thead class=" text-primary">
+                  <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Contact</th>
+                    <th>Adresse</th>
+                    <th>Région</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for agriculteur in agriculteurs %}
+                  <tr>
+                    <td>{{ agriculteur.nom }}</td>
+                    <td>{{ agriculteur.prenom }}</td>
+                    <td>{{ agriculteur.contact }}</td>
+                    <td>{{ agriculteur.adresse }}</td>
+                    <td>{{ agriculteur.region }}</td>
+                    <td>
+                      <!-- Formulaire de suppression avec icône -->
+                      <form action="{% url 'delete_agriculteur' agriculteur.id %}" method="POST" style="display:inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-sm" title="Supprimer">
+                          <i class="tim-icons icon-simple-remove"></i> 
+                        </button>
+                      </form>
+                      <a href="{% url 'edit_agriculteur' agriculteur.id %}" class="btn btn-info btn-sm" title="Modifier">                         
+                         <i class="tim-icons icon-refresh-02" title=></i> 
+                      </a>
+
+                    </td> 
+                  </tr>     
+                  {% endfor %} 
+                </tbody>
+              </table>
+              {% else %}
+              <p > Aucun agriculteur trouvé </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
