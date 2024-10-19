@@ -4,15 +4,33 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 import re 
 from django.contrib import messages
+from django.db.models import Q
+from django.core.paginator import Paginator
+
 
 
 # Create your views here.
 
 def list_agriculteurs(request):
+    query = request.GET.get('search', '')  # Récupérer la chaîne de recherche
     agriculteurs = Agriculteur.objects.all()  # Récupérer tous les agriculteurs
+
+    # Si une recherche est effectuée, filtrer les agriculteurs
+    if query:
+        agriculteurs = agriculteurs.filter(
+            Q(nom__icontains=query) | Q(prenom__icontains=query) | Q(contact__icontains=query)
+        )
+    
+    # Ajouter la pagination ici
+    paginator = Paginator(agriculteurs, 5)  # Limite à 5 agriculteurs par page
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
     return render(request, 'agriculteur/list.html', {
-        'agriculteurs': agriculteurs,
+        'page_obj': page_obj,  # Passe l'objet de pagination à votre template
+        'search_query': query,  # Passe la chaîne de recherche au template
     })
+
 
 
 def create_agriculteurs(request):
@@ -84,6 +102,7 @@ def delete_agriculteur(request, agriculteur_id):
 
     if request.method == 'POST':
         agriculteur.delete()
+        messages.success(request, "Agriculteur supprimé avec succès.")
         return redirect('list_agriculteurs')
 
     return render(request, 'agriculteur/list.html')
