@@ -1,0 +1,12 @@
+<!-- culture_confirm_delete.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Confirm Delete</h1>
+<p>Are you sure you want to delete "{{ culture.nom }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm</button>
+    <a href="{% url 'your_redirect_url_name' %}">Cancel</a>
+</form>
+{% endblock %}
