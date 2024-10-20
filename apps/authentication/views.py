@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, login
 from .forms import LoginForm, SignUpForm
 from .models import Culture  # Adjust import according to your model's location
 from django.http import JsonResponse
-
+from .forms import CultureForm  # Assuming you have a form for Culture
 def login_view(request):
     form = LoginForm(request.POST or None)
     msg = None
@@ -76,9 +76,9 @@ def culture_create(request):
             msg = "Please fill in all fields."  # Error message for incomplete form
         
     return render(request, 'home/culture_form.html')  # Render the form
+def culture_update(request, culture_id):  # Use 'culture_id' here
+    culture = get_object_or_404(Culture, id=culture_id)
 
-def culture_update(request, id):
-    culture = get_object_or_404(Culture, id=id)
     if request.method == 'POST':
         culture.nom = request.POST.get('nom')
         culture.type_culture = request.POST.get('type_culture')
@@ -86,9 +86,10 @@ def culture_update(request, id):
         culture.superficie_requise = request.POST.get('superficie_requise')
         culture.conditions_optimales = request.POST.get('conditions_optimales')
         culture.save()
-        return redirect('culture_list')  # Redirect to the list view after updating
-    
+        return redirect('culture_list')
+
     return render(request, 'home/culture_form.html', {'culture': culture})
+
 
 def culture_delete(request, culture_id):
     culture = get_object_or_404(Culture, id=culture_id)

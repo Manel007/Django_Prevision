@@ -28,16 +28,23 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {% for culture in cultures %}
+                                {% if cultures %}
+                                    {% for culture in cultures %}
+                                        <tr>
+                                            <td>{{ culture.nom }}</td>
+                                            <td>{{ culture.type_culture }}</td>
+                                            <td class="text-center">
+                                                <a href="{% url 'culture_update' culture.id %}" class="btn btn-warning">Edit</a>
+                                                <a href="javascript:void(0);" class="btn btn-danger" 
+                                                   onclick="confirmDelete('{{ culture.nom|escapejs }}', '{% url 'culture_delete' culture.id %}')">Delete</a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                {% else %}
                                     <tr>
-                                        <td>{{ culture.nom }}</td>
-                                        <td>{{ culture.type_culture }}</td>
-                                        <td class="text-center">
-                                            <a href="{% url 'culture_update' culture.id %}" class="btn btn-warning">Edit</a>
-                                            <a href="javascript:void(0);" onclick="confirmDelete('{{ culture.nom }}', '{% url 'culture_delete' culture.id %}')">Delete</a>
-                                        </td>
+                                        <td colspan="3" class="text-center">No cultures available.</td>
                                     </tr>
-                                {% endfor %}
+                                {% endif %}
                             </tbody>
                         </table>
                     </div>
@@ -73,6 +80,7 @@ function searchCultures() {
         }       
     }
 }
+
 function confirmDelete(cultureName, deleteUrl) {
     console.log("Culture to delete:", cultureName);
     console.log("Delete URL:", deleteUrl);
@@ -112,7 +120,5 @@ function confirmDelete(cultureName, deleteUrl) {
         }
     });
 }
-
-
 </script>
 {% endblock javascripts %}

@@ -35,13 +35,14 @@ CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'apps.authentication', 
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-        'rest_framework',
+    'rest_framework',
 
-        'apps.authentication',  # Add this line if it's not there
+     # Ensure this is the correct app name and path
 
     'apps.home'  # Enable the inner home (home)
 ]
