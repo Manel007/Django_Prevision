@@ -67,3 +67,6 @@ class CultureForm(forms.ModelForm):
     class Meta:
         model = Culture
         fields = ['nom', 'type_culture', 'duree_croissance', 'superficie_requise', 'conditions_optimales']
+
+class TemperaturePredictionForm(forms.Form):
+    year = forms.IntegerField(label='Year', min_value=1800, max_value=2100)

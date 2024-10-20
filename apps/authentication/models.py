@@ -14,3 +14,34 @@ class Culture(models.Model):
 
     def __str__(self):
         return self.nom
+class PesticideUse(models.Model):
+    area = models.CharField(max_length=255)
+    year = models.IntegerField()
+    unit = models.CharField(max_length=255)
+    value = models.FloatField()
+
+    def __str__(self):
+        return f"{self.area} - {self.year} - {self.value}"
+
+class RainfallData(models.Model):
+    area = models.CharField(max_length=255)
+    year = models.IntegerField()
+    average_rainfall = models.FloatField()
+
+    def __str__(self):
+        return f"{self.area} - {self.year} - {self.average_rainfall}"
+
+class YieldData(models.Model):
+    area = models.CharField(max_length=255)
+    item = models.CharField(max_length=255)
+    year = models.IntegerField()
+    yield_hg_per_ha = models.FloatField()
+    average_rainfall = models.FloatField()
+    pesticides_used = models.FloatField()
+    avg_temp = models.FloatField()
+
+    def __str__(self):
+        return f"{self.area} - {self.item} - {self.year} - {self.yield_hg_per_ha}"
+
+
+

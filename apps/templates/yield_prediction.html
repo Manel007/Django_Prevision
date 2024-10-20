@@ -1,0 +1,28 @@
+<!-- your_template.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yield Prediction</title>
+</head>
+<body>
+    <h1>Predict Crop Yield</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="average_rainfall">Average Rainfall (mm/year):</label>
+        <input type="text" id="average_rainfall" name="average_rainfall" required>
+        
+        <label for="pesticides_used">Pesticides Used (tonnes):</label>
+        <input type="text" id="pesticides_used" name="pesticides_used" required>
+        
+        <label for="avg_temp">Average Temperature (°C):</label>
+        <input type="text" id="avg_temp" name="avg_temp" required>
+        
+        <button type="submit">Predict Yield</button>
+    </form>
+
+    {% if predicted_yield %}
+        <h3>Predicted Yield: {{ predicted_yield }}</h3>
+    {% endif %}
+</body>
+</html>
