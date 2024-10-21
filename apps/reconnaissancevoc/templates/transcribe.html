@@ -1,0 +1,5 @@
+<form action="{% url 'transcribe' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="audio" accept="audio/*" required>
+    <button type="submit">Transcrire</button>
+</form>

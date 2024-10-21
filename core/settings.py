@@ -5,6 +5,11 @@ Copyright (c) 2019 - present AppSeed.us
 
 import os, environ
 
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
+
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, True)
@@ -41,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.home' , # Enable the inner home (home)
     'apps.agriculteur',
+    'apps.images',
+    'apps.reconnaissancevoc'
 ]
 
 MIDDLEWARE = [

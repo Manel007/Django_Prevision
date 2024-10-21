@@ -8,7 +8,9 @@ from django.urls import path, include  # add this
 
 urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
-    path("agriculteurs/", include('apps.agriculteur.urls')),  # Les routes de l'application agriculteur
+    path("agriculteurs/", include('apps.agriculteur.urls')),  
+    path("generateimage/", include('apps.images.urls')),  
+    path("rocVocal/", include('apps.reconnaissancevoc.urls')), 
     path("", include("apps.authentication.urls")), # Auth routes - login / register
 
     # ADD NEW Routes HERE
