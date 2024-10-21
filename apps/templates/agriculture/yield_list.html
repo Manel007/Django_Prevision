@@ -18,7 +18,9 @@
           <div class="card-header">
             <h4 class="card-title"> Liste des Rendements</h4>
             <a href="{% url 'yield_create' %}" class="btn btn-primary">Ajouter un Nouveau Rendement</a>
-          </div>
+            <a href="{% url 'yield_prediction' %}" class="btn btn-secondary">Voir les Prévisions</a>  <!-- Nouveau bouton -->
+        </div>
+        
           <div class="card-body">
             <div class="search-container">
               <input type="text" id="searchInput" class="form-control" placeholder="Rechercher par nom, quantité ou date..." onkeyup="searchFunction()">
