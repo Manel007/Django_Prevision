@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Prévisions de Rendement {% endblock %}
+
+{% block content %}
+  <div class="content">
+    <h4>Pourcentage d'entraînement : {{ train_percentage }}%</h4>
+    <h4>Pourcentage de test : {{ test_percentage }}%</h4>
+
+    <h5>Prédictions :</h5>
+    <ul>
+      {% for prediction, assessment in predictions_with_assessments %}
+        <li>{{ prediction }} - {{ assessment }}</li>
+      {% empty %}
+        <li>Aucune prédiction disponible.</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}

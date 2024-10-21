@@ -12,6 +12,7 @@ urlpatterns = [
     path("generateimage/", include('apps.images.urls')),  
     path("rocVocal/", include('apps.reconnaissancevoc.urls')), 
     path("", include("apps.authentication.urls")), # Auth routes - login / register
+    path("", include('apps.agriculture_project.agriculture_project.urls')),
 
     # ADD NEW Routes HERE
 

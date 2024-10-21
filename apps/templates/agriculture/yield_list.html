@@ -1,0 +1,94 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Liste des Rendements {% endblock %}
+
+{% block stylesheets %}
+  <style>
+    .search-container {
+      margin-bottom: 15px;
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title"> Liste des Rendements</h4>
+            <a href="{% url 'yield_create' %}" class="btn btn-primary">Ajouter un Nouveau Rendement</a>
+            <a href="{% url 'yield_prediction' %}" class="btn btn-secondary">Voir les Prévisions</a>  <!-- Nouveau bouton -->
+        </div>
+        
+          <div class="card-body">
+            <div class="search-container">
+              <input type="text" id="searchInput" class="form-control" placeholder="Rechercher par nom, quantité ou date..." onkeyup="searchFunction()">
+            </div>
+            <div class="table-responsive">
+              <table class="table tablesorter" id="yieldTable">
+                <thead class="text-primary">
+                  <tr>
+                    <th>Nom</th>
+                    <th>Quantité</th>
+                    <th>Date de Récolte</th>
+                    <th class="text-center">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for yield in yields %}
+                    <tr>
+                      <td>{{ yield.area }}</td>
+                      <td>{{ yield.item }}</td>
+                      <td>{{ yield.year }}</td>
+                      <td class="text-center">
+                        <a href="{% url 'yield_detail' yield.pk %}" class="btn btn-info btn-sm">Détails</a>
+                        <a href="{% url 'yield_update' yield.pk %}" class="btn btn-warning btn-sm">Modifier</a>
+                        <a href="{% url 'yield_delete' yield.pk %}" class="btn btn-danger btn-sm">Supprimer</a>
+                      </td>
+                    </tr>
+                  {% empty %}
+                    <tr>
+                      <td colspan="4" class="text-center">Aucun rendement trouvé.</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  <script>
+    function searchFunction() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const table = document.getElementById('yieldTable');
+      const tr = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < tr.length; i++) { // Start from 1 to skip the header
+        const tdArea = tr[i].getElementsByTagName('td')[0]; // Name
+        const tdItem = tr[i].getElementsByTagName('td')[1]; // Quantity
+        const tdYear = tr[i].getElementsByTagName('td')[2]; // Harvest Date
+
+        if (tdArea || tdItem || tdYear) {
+          const txtValueArea = tdArea.textContent || tdArea.innerText;
+          const txtValueItem = tdItem.textContent || tdItem.innerText;
+          const txtValueYear = tdYear.textContent || tdYear.innerText;
+
+          if (txtValueArea.toLowerCase().indexOf(filter) > -1 || 
+              txtValueItem.toLowerCase().indexOf(filter) > -1 || 
+              txtValueYear.toLowerCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+  </script>
+{% endblock javascripts %}
