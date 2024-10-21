@@ -12379,7 +12379,7 @@ code {
 .input-group.no-border .form-control,
 .input-group.no-border .form-control + .input-group-prepend .input-group-text,
 .input-group.no-border .form-control + .input-group-append .input-group-text {
-  background-color: #242c45;
+  background-color: #006400;
   border: medium none; }
   .form-group.no-border .form-control:focus, .form-group.no-border .form-control:active, .form-group.no-border .form-control:active,
   .form-group.no-border .form-control + .input-group-prepend .input-group-text:focus,
@@ -12475,7 +12475,7 @@ code {
 
 .input-group-focus.no-border .input-group-prepend .input-group-text,
 .input-group-focus.no-border .input-group-append .input-group-text {
-  background-color: #252e49; }
+  background-color: #006400; }
 
 .input-group,
 .form-group {

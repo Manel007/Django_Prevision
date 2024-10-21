@@ -1,0 +1,58 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+  Confirmation de Suppression
+{% endblock %}
+
+{% block stylesheets %}
+  <style>
+    .confirm-delete-card {
+      max-width: 600px;
+      margin: 20px auto;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .confirm-delete-card .card-header {
+      background-color: #dc3545; /* Bootstrap danger color */
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .confirm-delete-card .card-body {
+      padding: 30px;
+      text-align: center;
+    }
+    .btn {
+      margin: 5px;
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card confirm-delete-card">
+          <div class="card-header">
+            <h4>Confirmation de Suppression</h4>
+          </div>
+          <div class="card-body">
+            <h5>Êtes-vous sûr de vouloir supprimer "{{ yield }}" ?</h5>
+            <form method="post" style="margin-top: 20px;">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Supprimer</button>
+              <a href="{% url 'yield_list' %}" class="btn btn-secondary">Annuler</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  <!-- Ajouter vos scripts JS spécifiques ici -->
+{% endblock javascripts %}

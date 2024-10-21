@@ -1,0 +1,130 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+  {% if form.instance.pk %} Modifier {% else %} Ajouter {% endif %} un Rendement
+{% endblock %}
+
+{% block stylesheets %}
+  <style>
+    .form-card {
+      max-width: 600px;
+      margin: 20px auto;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .form-card .card-header {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .form-card .card-body {
+      padding: 30px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      font-weight: bold;
+      color: #c265a3;
+      margin-bottom: 5px;
+    }
+    .form-control {
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      padding: 10px;
+      transition: border-color 0.2s ease;
+    }
+    .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .btn {
+      margin: 5px;
+    }
+    .text-center {
+      margin-top: 20px;
+    }
+    /* Style pour les messages d'erreur */
+    .error-message {
+      color: red; /* Couleur rouge pour les messages d'erreur */
+      font-size: 0.875rem; /* Taille de police plus petite pour les erreurs */
+      margin-top: 5px; /* Un peu d'espace au-dessus des messages d'erreur */
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card form-card">
+          <div class="card-header">
+            <h4 class="card-title">
+              {% if form.instance.pk %} Modifier {% else %} Ajouter {% endif %} un Rendement
+            </h4>
+          </div>
+          <div class="card-body">
+            <form method="post" onsubmit="return validateForm()">
+              {% csrf_token %}
+              {% for field in form %}
+                <div class="form-group">
+                  <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                  <input type="{{ field.field.widget.input_type }}" name="{{ field.name }}" id="{{ field.id_for_label }}" class="form-control" value="{{ field.value|default:'' }}">
+                  {% if field.help_text %}
+                    <small class="form-text text-muted">{{ field.help_text }}</small>
+                  {% endif %}
+                  {% for error in field.errors %}
+                    <div class="error-message">{{ error }}</div> <!-- Utiliser une classe spécifique pour les messages d'erreur -->
+                  {% endfor %}
+                </div>
+              {% endfor %}
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  Enregistrer
+                </button>
+                <a href="{% url 'yield_list' %}" class="btn btn-secondary">Annuler</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  <script>
+    function validateForm() {
+      const form = document.forms[0]; // Get the first form
+      let isValid = true; // Flag to track if the form is valid
+
+      // Validate each field in the form
+      for (let field of form) {
+        if (field.type !== "submit" && field.type !== "button") {
+          // Check if the field is required and empty
+          if (field.required && !field.value.trim()) {
+            alert(`${field.labels[0].innerText} est requis.`);
+            field.focus(); // Set focus to the empty field
+            isValid = false; // Set valid flag to false
+            break; // Exit loop on first invalid field
+          }
+
+          // Additional custom validations can be added here
+          // Example: Validate number input
+          if (field.name === 'quantity' && isNaN(field.value)) {
+            alert(`Veuillez entrer un nombre valide pour ${field.labels[0].innerText}.`);
+            field.focus();
+            isValid = false;
+            break;
+          }
+        }
+      }
+
+      return isValid; // Return the validation result
+    }
+  </script>
+{% endblock javascripts %}

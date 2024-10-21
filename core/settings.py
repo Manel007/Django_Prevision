@@ -35,7 +35,10 @@ CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+
     'apps.authentication', 
+    'apps.agriculture_project.agriculture_project',  # Assurez-vous que votre app est ici
+
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',

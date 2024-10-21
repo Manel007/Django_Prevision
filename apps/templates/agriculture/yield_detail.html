@@ -1,0 +1,62 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Détails du Rendement {% endblock %}
+
+{% block stylesheets %}
+  <!-- Ajouter vos fichiers CSS spécifiques ici -->
+  <style>
+    .details-card {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .details-card .card-header {
+      background-color: #f8f9fa;
+      color: #333;
+      font-weight: bold;
+      text-align: center;
+    }
+    .details-card .card-body p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .details-card .card-footer {
+      text-align: center;
+    }
+    .details-card .btn {
+      margin: 5px;
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card details-card">
+          <div class="card-header">
+            <h4 class="card-title">Détails de {{ yield }}</h4>
+          </div>
+          <div class="card-body">
+            <p><strong>Zone :</strong> {{ yield.area }}</p>
+            <p><strong>Culture :</strong> {{ yield.item }}</p>
+            <p><strong>Année :</strong> {{ yield.year }}</p>
+            <p><strong>Rendement (hg/ha) :</strong> {{ yield.hg_per_ha_yield }}</p>
+            <p><strong>Précipitations Moyennes (mm) :</strong> {{ yield.average_rain_fall_mm_per_year }}</p>
+            <p><strong>Pesticides Utilisés (tonnes) :</strong> {{ yield.pesticides_tonnes }}</p>
+            <p><strong>Température Moyenne :</strong> {{ yield.avg_temp }}</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'yield_update' yield.pk %}" class="btn btn-warning">Modifier</a>
+            <a href="{% url 'yield_delete' yield.pk %}" class="btn btn-danger">Supprimer</a>
+            <a href="{% url 'yield_list' %}" class="btn btn-secondary">Retour à la Liste</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  <!-- Ajouter vos scripts JS spécifiques ici -->
+{% endblock javascripts %}

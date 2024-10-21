@@ -6,7 +6,6 @@ Copyright (c) 2019 - present AppSeed.us
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import Culture
 
 
 class LoginForm(forms.Form):
@@ -62,11 +61,4 @@ class SignUpForm(UserCreationForm):
 
 
 
-        
-class CultureForm(forms.ModelForm):
-    class Meta:
-        model = Culture
-        fields = ['nom', 'type_culture', 'duree_croissance', 'superficie_requise', 'conditions_optimales']
-
-class TemperaturePredictionForm(forms.Form):
-    year = forms.IntegerField(label='Year', min_value=1800, max_value=2100)
+ 
