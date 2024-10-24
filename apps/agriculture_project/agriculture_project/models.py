@@ -11,3 +11,11 @@ class CropYield(models.Model):
 
     def __str__(self):
         return f"{self.item} yield in {self.year} for {self.area}"
+    
+class Temperature(models.Model):
+    year = models.IntegerField()
+    country = models.CharField(max_length=100)
+    avg_temp = models.FloatField()
+
+    def __str__(self):
+        return f"Average temperature in {self.country} for {self.year}: {self.avg_temp}°C"
