@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Cultures</title>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            padding: 5px 10px;
+            margin-right: 5px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liste des Cultures</h1>
+    <a href="{% url 'create_culture' %}" class="btn">Ajouter une Culture</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Date de Plantation</th>
+                <th>Type de Sol</th>
+                <th>Zone Climatique</th>
+                <th>Irrigation</th>
+                <th>Rendement attendu</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for culture in cultures %}
+            <tr>
+                <td>{{ culture.nom }}</td>
+                <td>{{ culture.description }}</td>
+                <td>{{ culture.cycle_croissance_jours }}</td>
+                <td>{{ culture.type_sol_prefere }}</td>
+                <td>{{ culture.zone_culture_recommandee }}</td>
+                <td>{{ culture.irrigation }}</td>
+                <td>{{ culture.rendement_attendu }}</td>
+                <td>
+                    <a href="{% url 'update_culture' culture.id %}" class="btn">Modifier</a>
+                    <button class="btn btn-danger delete-btn" data-url="{% url 'delete_culture' culture.id %}">Supprimer</button>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="8">Aucune culture à afficher.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.delete-btn').on('click', function() {
+                var url = $(this).data('url');
+
+                $.ajax({
+                    url: url,
+                    method: 'POST',
+                    data: {
+                        csrfmiddlewaretoken: '{{ csrf_token }}',
+                    },
+                    success: function(response) {
+                        // Redirection vers la liste des cultures après la suppression
+                        window.location.reload();
+                    },
+                    error: function(xhr, errmsg, err) {
+                        // Gérer les erreurs ici
+                        console.log(err);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
