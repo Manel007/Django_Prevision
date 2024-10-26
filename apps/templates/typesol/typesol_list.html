@@ -14,7 +14,7 @@
                        
                         <div class="row mb-3 align-items-center">
                             <!-- Add Button on the Left -->
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <a href="{% url 'typesol_form' %}" class="btn btn-success">+ Add</a>
                             </div>
                             
@@ -23,7 +23,7 @@
                                 <form method="GET" action="{% url 'typesol_list' %}" class="d-flex">
                                     <input type="text" name="search" class="form-control me-10" placeholder="Search Type Soil by name" 
                                     value="{{ request.GET.search }}"
-                                    style="width: 200px;"
+                                    style="width: 250px;"
                                     >
                                     
                                 </form>
@@ -94,7 +94,7 @@
                             </tbody>
                         </table>
 
-                     
+                       <!-- Pagination Controls -->
 <!-- Pagination Controls -->
 <div class="pagination mt-3 d-flex justify-content-center">
     <ul class="pagination">
