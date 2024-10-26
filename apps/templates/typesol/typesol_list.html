@@ -1,0 +1,85 @@
+{% extends "layouts/base.html" %}
+{% load custom_filters %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Soil Types List</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <a href="{% url 'typesol_form' %}" class="btn btn-success mb-3">+Add</a>
+                        <table class="table tablesorter">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Soil Type Name</th>
+                                    <th>Texture</th>
+                                    <th>Depth</th>
+                                    <th>pH</th>
+                                    <th>Water Retention Capacity</th>
+                                    <th>Available Nutrients</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for type_sol in types_sol %}
+                                    <tr>
+                                        <td>{{ type_sol.nomTypeSol }}</td>
+                                        <td>{{ type_sol.texture }}</td>
+                                        <td>{{ type_sol.profondeur }}</td>
+                                        <td>{{ type_sol.pH }}</td>
+                                        <td>{{ type_sol.capacite_retenue_eau }}</td>
+                                        <td>{{ type_sol.nutriments_disponibles }}</td>
+                                        <td>
+                                            <a href="{% url 'type_sol_update' type_sol.id %}" class="btn btn-secondary btn-sm">
+                                                <i class="fas fa-edit"></i> 
+                                            </a>
+                                            
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ type_sol.id }}">
+                                                <i class="fas fa-trash-alt"></i> 
+                                            </button>
+                                            
+                                        </td>
+                                    </tr>
+
+                                    <!-- Delete Confirmation Modal -->
+                                    <div class="modal fade" id="deleteModal{{ type_sol.id }}" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete this soil type?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                    <form action="{% url 'type_sol_delete' type_sol.id %}" method="post" style="display:inline;">
+                                                        {% csrf_token %}
+                                                        <button type="submit" class="btn btn-danger">Confirm Delete</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% empty %}
+                                    <tr>
+                                        <td colspan="7" class="text-center">No soil types available.</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

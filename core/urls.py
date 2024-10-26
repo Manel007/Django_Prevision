@@ -21,7 +21,12 @@ urlpatterns = [
 path('zones/', views.ZoneList, name='zone_list'),  # Liste des zones
 path('zones/create', views.ZoneCreate, name='zone_form'),  # créer une nouvelle zone géo
 path('zones/update/<int:pk>/', views.ZoneUpdate, name='zone_update'),  # créer une nouvelle zone géo
- path('zones/delete/<int:pk>/', views.ZoneDelete, name='zone_delete'),
+path('zones/delete/<int:pk>/', views.ZoneDelete, name='zone_delete'),
+
+path('typesol/', views.TypeSolList ,name='typesol_list'),
+path('typesol/create/', views.TypeSolCreate, name='typesol_form'),
+path('typesol/update/<int:pk>/', views.TypeSolUpdate, name='type_sol_update'),
+path('typesol/delete/<int:pk>/', views.TypeSolDelete, name='type_sol_delete'),
 
 # Leave `Home.Urls` as last the last line
     path("", include("apps.home.urls")),
