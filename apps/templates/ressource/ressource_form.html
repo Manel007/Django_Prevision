@@ -1,98 +1,115 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Ressources</title>
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .btn {
-            padding: 5px 10px;
-            margin-right: 5px;
-            text-decoration: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 3px;
-        }
-        .btn-danger {
-            background-color: #dc3545;
-        }
-    </style>
-</head>
-<body>
-    <h1>Liste des Ressources</h1>
-    <a href="{% url 'ressource_create' %}" class="btn">Ajouter une Ressource</a>
-    <table>
-        <thead>
-            <tr>
-                <th>Type de Ressource</th>
-                <th>Quantité</th>
-                <th>Unité de Mesure</th>
-                <th>Zone d'Application</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for ressource in ressources %}
-            <tr>
-                <td>{{ ressource.get_type_ressource_display }}</td>
-                <td>{{ ressource.quantite }}</td>
-                <td>{{ ressource.unite_mesure }}</td>
-                <td>{{ ressource.zone }}</td>
-                <td>
-                    <a href="{% url 'ressource_update' ressource.id %}" class="btn">Modifier</a>
-                    <button class="btn btn-danger delete-btn" data-url="{% url 'ressource_delete' ressource.id %}">
-                        Supprimer
-                    </button>
-                </td>
-            </tr>
-            {% empty %}
-            <tr>
-                <td colspan="5">Aucune ressource à afficher.</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+{% extends "layouts/base.html" %}
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.delete-btn').on('click', function() {
-                var url = $(this).data('url');
-                if (confirm("Êtes-vous sûr de vouloir supprimer cette ressource ?")) {
-                    $.ajax({
-                        url: url,
-                        method: 'POST',
-                        data: {
-                            csrfmiddlewaretoken: '{{ csrf_token }}',
-                        },
-                        success: function(response) {
-                            // Recharger la page après suppression
-                            window.location.reload();
-                        },
-                        error: function(xhr, errmsg, err) {
-                            console.log("Erreur :", errmsg);
-                        }
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+{% block content %}
+<h1>{% if form.instance.pk %}Modifier{% else %}Ajouter{% endif %} une Ressource</h1>
+
+<style>
+    /* Styles pour aligner la sidebar et le contenu principal */
+    .container {
+        display: flex;
+        margin: 20px;
+    }
+
+   
+
+    .content {
+        flex: 1;  /* Prend le reste de l'espace disponible */
+        margin-left: 270px;  /* Ajouter un espace pour éviter le chevauchement */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styles des champs de formulaire */
+    form div {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        margin-right: 5px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+</style>
+
+<div class="container">
+    <!-- Sidebar (facultative, si vous en avez besoin) -->
+ 
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <form method="POST" action="">
+            {% csrf_token %}
+
+            <!-- Champ Type de Ressource -->
+            <div>
+                <label for="id_type_ressource">Type de Ressource :</label>
+                <select id="id_type_ressource" name="type_ressource" required>
+                    <option value="">-- Sélectionner --</option>
+                    {% for value, name in form.fields.type_ressource.choices %}
+                    <option value="{{ value }}" {% if form.instance.type_ressource == value %}selected{% endif %}>
+                        {{ name }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Champ Quantité -->
+            <div>
+                <label for="id_quantite">Quantité :</label>
+                <input type="number" step="0.01" id="id_quantite" name="quantite" 
+                       value="{{ form.instance.quantite }}" required>
+            </div>
+
+            <!-- Champ Unité de Mesure -->
+           <!-- Champ Unité de Mesure -->
+<div>
+    <label for="id_unite_mesure">Unité de Mesure :</label>
+    <select id="id_unite_mesure" name="unite_mesure" required>
+        <option value="">-- Sélectionner --</option>
+        <option value="kg" {% if form.instance.unite_mesure == 'kg' %}selected{% endif %}>Kilogramme (kg)</option>
+        <option value="g" {% if form.instance.unite_mesure == 'g' %}selected{% endif %}>Gramme (g)</option>
+        <option value="l" {% if form.instance.unite_mesure == 'l' %}selected{% endif %}>Litre (l)</option>
+        <option value="m" {% if form.instance.unite_mesure == 'm' %}selected{% endif %}>Mètre (m)</option>
+        <option value="cm" {% if form.instance.unite_mesure == 'cm' %}selected{% endif %}>Centimètre (cm)</option>
+        <option value="ml" {% if form.instance.unite_mesure == 'ml' %}selected{% endif %}>Millilitre (ml)</option>
+        <!-- Ajoutez d'autres unités selon vos besoins -->
+    </select>
+</div>
+
+
+            <!-- Champ Zone d'Application -->
+            <div>
+                <label for="id_zone">Zone d'Application :</label>
+                <input type="text" id="id_zone" name="zone" 
+                       value="{{ form.instance.zone }}" required>
+            </div>
+
+            <!-- Boutons de soumission -->
+            <button type="submit" class="btn">Enregistrer</button>
+            <a href="{% url 'ressource_list' %}" class="btn btn-danger">Annuler</a>
+        </form>
+    </div>
+</div>
+{% endblock content %}

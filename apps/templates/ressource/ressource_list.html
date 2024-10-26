@@ -1,48 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire Ressource</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 50px;
-        }
-        h1 {
-            text-align: center;
-            color: #4CAF50;
-        }
-        form {
-            background-color: white;
-            max-width: 500px;
-            margin: auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
-    <h1>Ajouter / Modifier Ressource</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Enregistrer</button>
-    </form>
-</body>
-</html>
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<h1>Liste des Ressources</h1>
+
+<style>
+    body {
+        margin-left: 250px; /* Ajustez cette valeur en fonction de la largeur de votre sidebar */
+        padding: 20px;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        margin-right: 5px;
+        text-decoration: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+    .no-resources {
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+    }
+</style>
+
+<a href="{% url 'ressource_create' %}" class="btn">Ajouter une Ressource</a>
+
+<!-- Formulaire de recherche -->
+<!-- Formulaire de recherche -->
+<form method="GET" action="{% url 'ressource_search' %}">
+    <select name="attribute">
+        <option value="type_ressource">Type de Ressource</option>
+        <option value="zone">Zone d'Application</option>
+        <option value="unite_mesure">Unité de Mesure</option>
+    </select>
+    <input type="text" name="q" placeholder="Rechercher..." value="{{ query }}">
+    <button type="submit" class="btn">Chercher</button>
+</form>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Type de Ressource</th>
+            <th>Quantité</th>
+            <th>Unité de Mesure</th>
+            <th>Zone d'Application</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ressource in ressources %}
+        <tr>
+            <td>{{ ressource.get_type_ressource_display }}</td>
+            <td>{{ ressource.quantite }}</td>
+            <td>{{ ressource.unite_mesure }}</td>
+            <td>{{ ressource.zone }}</td>
+            <td>
+                <a href="{% url 'ressource_update' ressource.id %}" class="btn">Modifier</a>
+                <button class="btn btn-danger delete-btn" data-url="{% url 'ressource_delete' ressource.id %}">
+                    Supprimer
+                </button>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5" class="no-resources">Aucune ressource à afficher.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.delete-btn').on('click', function() {
+            var url = $(this).data('url');
+            if (confirm("Êtes-vous sûr de vouloir supprimer cette ressource ?")) {
+                $.ajax({
+                    url: url,
+                    method: 'POST',
+                    data: {
+                        csrfmiddlewaretoken: '{{ csrf_token }}',
+                    },
+                    success: function(response) {
+                        // Recharger la page après suppression
+                        window.location.reload();
+                    },
+                    error: function(xhr, errmsg, err) {
+                        console.log("Erreur :", errmsg);
+                    }
+                });
+            }
+        });
+    });
+</script>
+{% endblock %}
+{% endblock content %}

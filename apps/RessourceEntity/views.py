@@ -6,7 +6,7 @@ from django.db.models import Q
 # Liste des ressources
 def ressource_list(request):
     ressources = Ressource.objects.all()
-    return render(request, 'ressource/liste_ressources.html', {'ressources': ressources})
+    return render(request, 'ressource/ressource_list.html', {'ressources': ressources})
 
 # Détail d'une ressource
 def ressource_detail(request, pk):
@@ -47,9 +47,19 @@ def ressource_delete(request, pk):
 # Recherche de ressource par attribut
 def ressource_search(request):
     query = request.GET.get('q', '')
-    results = Ressource.objects.filter(
-        Q(type_ressource__icontains=query) |
-        Q(zone__icontains=query) |
-        Q(unite_mesure__icontains=query)
-    )
-    return render(request, 'ressource/liste_ressources.html', {'ressources': results, 'query': query})
+    attribute = request.GET.get('attribute', '')
+
+    # Dictionnaire pour mapper les attributs à leurs noms dans le modèle
+    attribute_map = {
+        'type_ressource': 'type_ressource__icontains',
+        'zone': 'zone__icontains',
+        'unite_mesure': 'unite_mesure__icontains',
+    }
+
+    if attribute in attribute_map:
+        filter_condition = {attribute_map[attribute]: query}
+        results = Ressource.objects.filter(**filter_condition)
+    else:
+        results = Ressource.objects.all()  # Si aucun attribut valide n'est sélectionné
+
+    return render(request, 'ressource/ressource_list.html', {'ressources': results, 'query': query})

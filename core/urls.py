@@ -15,7 +15,7 @@ urlpatterns = [
     # Leave `Home.Urls` as last the last line
  
 
-  path('', views.ressource_list, name='ressource_list'),
+  path('ressource_list/', views.ressource_list, name='ressource_list'),
     path('ressource/<int:pk>/', views.ressource_detail, name='ressource_detail'),
     path('ressource/new/', views.ressource_create, name='ressource_create'),
     path('ressource/<int:pk>/edit/', views.ressource_update, name='ressource_update'),
