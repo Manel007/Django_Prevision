@@ -1,4 +1,5 @@
 from django.shortcuts import get_object_or_404, redirect, render
+from apps import Culture
 from apps.Culture.forms import CultureAgricoleForm
 # Create your views here.
 from .models import CultureAgricole
@@ -19,14 +20,16 @@ def create_culture(request):
 
 def update_culture(request, pk):
     culture = get_object_or_404(CultureAgricole, pk=pk)
+    form = CultureAgricoleForm(instance=culture)
+    
     if request.method == 'POST':
         form = CultureAgricoleForm(request.POST, instance=culture)
         if form.is_valid():
             form.save()
-            return redirect('liste_cultures')  # Rediriger vers la vue qui affiche la liste des cultures
-    else:
-        form = CultureAgricoleForm(instance=culture)
-    return render(request, 'Culture/culture_form.html', {'form': form})
+            return redirect('liste_cultures')  
+
+    context = {'form': form, 'culture': culture}
+    return render(request, 'Culture/culture_update.html', context)
 
 def delete_culture(request, pk):
     culture = get_object_or_404(CultureAgricole, pk=pk)
@@ -34,4 +37,4 @@ def delete_culture(request, pk):
     if request.method == 'POST':
         culture.delete()
 
-    return redirect('liste_cultures')  # Si la méthode n'est pas POST, rediriger directement vers la liste des cultures
+    return redirect('liste_cultures')  

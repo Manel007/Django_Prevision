@@ -4,8 +4,9 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from django.contrib import admin
-from django.urls import path, include  # add this
+from django.urls import path, include 
 from apps.Culture import views
+from apps.Technique import views as technique_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
@@ -16,6 +17,11 @@ urlpatterns = [
     path('createCulture/', views.create_culture, name='create_culture'),
     path('updateCulture/<int:pk>/', views.update_culture, name='update_culture'),
     path('deleteCulture/<int:pk>/', views.delete_culture, name='delete_culture'),
+   path('techniques/', technique_views.liste_techniques, name='liste_techniques'),
+    path('createTechnique/', technique_views.create_technique, name='create_technique'),
+    path('updateTechnique/<int:pk>/', technique_views.update_technique, name='update_technique'),
+    path('deleteTechnique/<int:pk>/', technique_views.delete_technique, name='delete_technique'),
+
     # Leave `Home.Urls` as last the last line
     path("", include("apps.home.urls"))
 ]

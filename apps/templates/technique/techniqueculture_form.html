@@ -1,0 +1,75 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Créer Technique de Culture {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock %}
+
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">Créer Technique de Culture</h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="{% url 'create_technique' %}">
+                        {% csrf_token %}
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_nom_technique">Nom Technique</label>
+                                    <input type="text" class="form-control" id="id_nom_technique" name="nom_technique" placeholder="Nom de la technique de culture">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_description">Description</label>
+                                    <textarea class="form-control" id="id_description" name="description" placeholder="Description de la technique"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_date_application">Date d'Application</label>
+                                    <input type="date" class="form-control" id="id_date_application" name="date_application">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_impact_rendement">Impact sur le Rendement</label>
+                                    <input type="number" step="0.01" class="form-control" id="id_impact_rendement" name="impact_rendement" placeholder="Impact sur le rendement">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="id_cultures_associees">Cultures Associées</label>
+                                    <select multiple class="form-control" id="id_cultures_associees" name="cultures_associees">
+                                        {% for culture in cultures %}
+                                            <option value="{{ culture.id }}">{{ culture.nom }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-fill btn-primary">Enregistrer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock %}

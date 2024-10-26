@@ -1,78 +1,81 @@
-{% load static %}
+{% extends "layouts/base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Cultures</title>
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .btn {
-            padding: 5px 10px;
-            margin-right: 5px;
-            text-decoration: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 3px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Liste des Cultures</h1>
-    <a href="{% url 'create_culture' %}" class="btn">Ajouter une Culture</a>
-    <table>
-        <thead>
-            <tr>
-                <th>Nom</th>
-                <th>Description</th>
-                <th>Date de Plantation</th>
-                <th>Type de Sol</th>
-                <th>Zone Climatique</th>
-                <th>Irrigation</th>
-                <th>Rendement attendu</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for culture in cultures %}
-            <tr>
-                <td>{{ culture.nom }}</td>
-                <td>{{ culture.description }}</td>
-                <td>{{ culture.cycle_croissance_jours }}</td>
-                <td>{{ culture.type_sol_prefere }}</td>
-                <td>{{ culture.zone_culture_recommandee }}</td>
-                <td>{{ culture.irrigation }}</td>
-                <td>{{ culture.rendement_attendu }}</td>
-                <td>
-                    <a href="{% url 'update_culture' culture.id %}" class="btn">Modifier</a>
-                    <button class="btn btn-danger delete-btn" data-url="{% url 'delete_culture' culture.id %}">Supprimer</button>
-                </td>
-            </tr>
-            {% empty %}
-            <tr>
-                <td colspan="8">Aucune culture à afficher.</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+{% block title %} Tables {% endblock %} 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="content">
+    <div class="row">
+        <a href="{% url 'create_culture' %}" class="btn mt-3">Ajouter une Culture</a>
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="card-header">
+            <h4 class="card-title"> Cultures Agricoles </h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table tablesorter " id="">
+                <thead class=" text-primary">
+                  <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Date de Plantation</th>
+                        <th>Type de Sol</th>
+                        <th>Zone Climatique</th>
+                        <th>Irrigation</th>
+                        <th>Rendement attendu</th>
+                        <th>Actions</th>
+
+                </thead>
+                <tbody>
+                    {% for culture in cultures %}
+                    <tr>
+                        <td>{{ culture.nom }}</td>
+                        <td>{{ culture.description }}</td>
+                        <td>{{ culture.cycle_croissance_jours }}</td>
+                        <td>{{ culture.type_sol_prefere }}</td>
+                        <td>{{ culture.zone_culture_recommandee }}</td>
+                        <td>{{ culture.irrigation }}</td>
+                        <td>{{ culture.rendement_attendu }}</td>
+                        <td>
+                           
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<a href="{% url 'update_culture' culture.id %}" class="btn btn-info">
+    <i class="fas fa-pencil-alt"></i> 
+</a>
+
+<button class="btn btn-danger delete-btn" data-url="{% url 'delete_culture' culture.id %}">
+<i class="fas fa-trash-alt"></i> 
+</button>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="8" class="text-center">Aucune culture agricole à afficher.</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
             $('.delete-btn').on('click', function() {
@@ -96,5 +99,4 @@
             });
         });
     </script>
-</body>
-</html>
+{% endblock javascripts %}
