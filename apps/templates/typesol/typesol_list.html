@@ -11,7 +11,26 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <a href="{% url 'typesol_form' %}" class="btn btn-success mb-3">+Add</a>
+                       
+                        <div class="row mb-3 align-items-center">
+                            <!-- Add Button on the Left -->
+                            <div class="col-md-3">
+                                <a href="{% url 'typesol_form' %}" class="btn btn-success">+ Add</a>
+                            </div>
+                            
+                            <!-- Search Form on the Right -->
+                            <div class="col-md-8 d-flex justify-content-end">
+                                <form method="GET" action="{% url 'typesol_list' %}" class="d-flex">
+                                    <input type="text" name="search" class="form-control me-10" placeholder="Search Type Soil by name" 
+                                    value="{{ request.GET.search }}"
+                                    style="width: 200px;"
+                                    >
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        
+
                         <table class="table tablesorter">
                             <thead class="text-primary">
                                 <tr>
@@ -41,7 +60,6 @@
                                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ type_sol.id }}">
                                                 <i class="fas fa-trash-alt"></i> 
                                             </button>
-                                            
                                         </td>
                                     </tr>
 
@@ -75,11 +93,46 @@
                                 {% endfor %}
                             </tbody>
                         </table>
+
+                     
+<!-- Pagination Controls -->
+<div class="pagination mt-3 d-flex justify-content-center">
+    <ul class="pagination">
+        {% if types_sol.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ types_sol.previous_page_number }}&search={{ search_query }}" aria-label="Previous">
+                    &laquo;
+                </a>
+            </li>
+        {% endif %}
+
+        {% for num in types_sol.paginator.page_range %}
+            {% if types_sol.number == num %}
+                <li class="page-item active">
+                    <span class="page-link">{{ num }}</span>
+                </li>
+            {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ num }}&search={{ search_query }}">{{ num }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
+        {% if types_sol.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ types_sol.next_page_number }}&search={{ search_query }}" aria-label="Next">
+                    &raquo;
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock content %}

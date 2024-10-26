@@ -7,7 +7,7 @@ class ZoneGeographiqueForm(forms.ModelForm):
         queryset=TypeDeSol.objects.all(),
         widget=forms.Select(attrs={'class': 'form-control'}),
         empty_label="Select Sol Type",
-        label='Geographic Zone Sol Type'
+        label='Geographic Zone Soil Type'
     )
 
     class Meta:
@@ -21,7 +21,7 @@ class ZoneGeographiqueForm(forms.ModelForm):
             'annee': 'Reference Year for Meteorological Conditions',
             'temperatureMoyenne': 'Average Temperature (°C)',
             'pluviometrie': 'Total Precipitation (mm)',
-            'type_de_sol':'Zone Sol Type'
+            'type_de_sol':'Zone Soil Type'
         }
         widgets = {
             'nomZone': forms.TextInput(attrs={'class': 'form-control'}),
@@ -33,8 +33,7 @@ class ZoneGeographiqueForm(forms.ModelForm):
             'description': forms.Textarea(attrs={'class': 'form-control'}),
         }
 
-    # Custom validation methods remain the same
-      # Add custom validation methods for latitude, longitude, etc.
+   
     def clean_latitude(self):
         latitude = self.cleaned_data.get('latitude')
         if latitude < -90 or latitude > 90:
@@ -47,25 +46,25 @@ class ZoneGeographiqueForm(forms.ModelForm):
         return longitude
     def clean_annee(self):
         annee = self.cleaned_data.get('annee')
-        if annee < 1900 or annee > 2024:  # Example range
+        if annee < 1900 or annee > 2024:
             raise forms.ValidationError("Year must be between 1900 and 2024.")
         return annee
     def clean_nomZone(self):
         nomZone = self.cleaned_data.get('nomZone')
         if not nomZone:
             raise forms.ValidationError("Zone name is required.")
-        if len(nomZone) >20:  # Assuming max_length is 20
+        if len(nomZone) >20:  
             raise forms.ValidationError("Zone name cannot exceed 20 characters.")
         return nomZone
     def clean_temperatureMoyenne(self):
         temperatureMoyenne = self.cleaned_data.get('temperatureMoyenne')
-        if temperatureMoyenne < -100 or temperatureMoyenne > 100:  # Reasonable range for temperatures
+        if temperatureMoyenne < -100 or temperatureMoyenne > 100: 
             raise forms.ValidationError("Average temperature must be between -100°C and 100°C.")
         return temperatureMoyenne
 
     def clean_pluviometrie(self):
         pluviometrie = self.cleaned_data.get('pluviometrie')
-        if pluviometrie < 0:  # Precipitation cannot be negative
+        if pluviometrie < 0:  
             raise forms.ValidationError("Total precipitation must be 0 or more.")
         return pluviometrie
 
