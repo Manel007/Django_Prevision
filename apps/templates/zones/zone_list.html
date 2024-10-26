@@ -35,8 +35,7 @@
                                 <tr>
                                     <th>Zone Name</th>
                                     <th>Description</th>
-                                    <th>Latitude</th>
-                                    <th>Longitude</th>
+                               
                                     <th>Average Temperature (°C)</th>
                                     <th>Precipitation (mm)</th>
                                     <th>Weather Condition Year</th>
@@ -49,8 +48,7 @@
                                     <tr>
                                         <td>{{ zone.nomZone }}</td>
                                         <td>{{ zone.description|slice:":20" }}{% if zone.description|length > 20 %}...{% endif %}</td>
-                                        <td>{{ zone.latitude }}</td>
-                                        <td>{{ zone.longitude }}</td>
+                                        
                                         <td>{{ zone.temperatureMoyenne }}</td>
                                         <td>{{ zone.pluviometrie }}</td>
                                         
@@ -60,6 +58,10 @@
                                             <a href="{% url 'zone_update' zone.id %}" class="btn btn-secondary btn-sm">
                                                 <i class="fas fa-edit"></i> 
                                             </a>
+                                           
+                                             <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#viewDetailsModal{{ zone.id }}">
+                                                <i class="fas fa-eye"></i> 
+                                            </button>
                                             
                                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ zone.id }}">
                                                 <i class="fas fa-trash-alt"></i> 
@@ -67,7 +69,33 @@
                                             
                                         </td>
                                     </tr>
-
+ <!-- View Details Modal -->
+ <div class="modal fade" id="viewDetailsModal{{ zone.id }}" tabindex="-1" aria-labelledby="viewDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewDetailsModalLabel{{ zone.id }}">Geographic Zone Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Zone Name:</strong> {{ zone.nomZone }}</p>
+                <p><strong>Description:</strong> {{ zone.description }}</p>
+                <p><strong>Latitude:</strong> {{ zone.latitude }}</p>
+                <p><strong>Longitude:</strong> {{ zone.longitude }}</p>
+                <p><strong>Average Temperature (°C):</strong> {{ zone.temperatureMoyenne }}</p>
+                <p><strong>Precipitation (mm):</strong> {{ zone.pluviometrie }}</p>
+                <p><strong>Weather Condition Year:</strong> {{ zone.annee }}</p>
+                <p><strong>Soil Type:</strong> {{ zone.type_de_sol }}</p>
+            </div>
+            <div class="modal-footer">
+               
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
                                     <!-- Delete Confirmation Modal -->
                                     <div class="modal fade" id="deleteModal{{ zone.id }}" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
@@ -138,5 +166,6 @@
         </div>
     </div>
 </div>
+
 
 {% endblock content %}
