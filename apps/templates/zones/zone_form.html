@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Zone</title>
+</head>
+<body>
+    <h1>Create a New Zone</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Affiche le formulaire -->
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'zone_list' %}">Back to Zones List</a>  <!-- Lien vers la liste des zones -->
+</body>
+</html>

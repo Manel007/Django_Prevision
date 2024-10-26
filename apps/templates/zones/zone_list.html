@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Zones Géographiques</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Lien vers Bootstrap -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Liste des Zones Géographiques</h1>
+        <a href="{% url 'zone_form' %}" class="btn btn-primary mb-3">Créer une Nouvelle Zone</a> <!-- Lien vers la création -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nom de la Zone</th>
+                    <th>Description</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Année de la condition météorologique</th>
+                    <th>Température Moyenne (°C)</th>
+                    <th>Pluviométrie (mm)</th>
+                    <th>Actions</th> <!-- Nouvelle colonne pour les actions -->
+                </tr>
+            </thead>
+            <tbody>
+                {% for zone in zones %}
+                    <tr>
+                        <td>{{ zone.nomZone }}</td>
+                        <td>{{ zone.description }}</td>
+                        <td>{{ zone.latitude }}</td>
+                        <td>{{ zone.longitude }}</td>
+                        <td>{{ zone.annee }}</td>
+                        <td>{{ zone.temperatureMoyenne }}</td>
+                        <td>{{ zone.pluviometrie }}</td>
+                        <td>
+                            <a href="{% url 'zone_update' zone.id %}" class="btn btn-warning btn-sm">Modifier</a> <!-- Lien vers la modification -->
+                            <form action="{% url 'zone_delete' zone.id %}" method="post" style="display:inline;"> <!-- Formulaire pour supprimer -->
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette zone?');">Supprimer</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="8" class="text-center">Aucune zone disponible.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
