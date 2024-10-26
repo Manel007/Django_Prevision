@@ -4,13 +4,13 @@ from .models import ZoneGeographique
 class ZoneGeographiqueForm(forms.ModelForm):
     class Meta:
         model = ZoneGeographique
-        fields = ['nomZone', 'description', 'latitude', 'longitude', 'annee', 'temperatureMoyenne', 'pluviometrie']
+        fields = ['nomZone', 'latitude', 'longitude', 'annee', 'temperatureMoyenne', 'pluviometrie', 'description']
         labels = {
-            'nomZone': 'Nom de la Zone géographique',
-            'description': 'Description (optionnelle)',
+            'nomZone': 'Name of the Geographic Zone',
+            'description': 'Description (optional)',
             'latitude': 'Latitude (°)',
             'longitude': 'Longitude (°)',
-            'annee': 'Année de référence des conditions météorologiques',
-            'temperatureMoyenne': 'Température Moyenne (°C)',
-            'pluviometrie': 'Pluviométrie Totale (mm)',
+            'annee': 'Reference Year for Meteorological Conditions',
+            'temperatureMoyenne': 'Average Temperature (°C)',
+            'pluviometrie': 'Total Precipitation (mm)',
         }

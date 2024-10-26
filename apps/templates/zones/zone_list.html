@@ -1,57 +1,87 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Zones Géographiques</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Lien vers Bootstrap -->
-</head>
-<body>
-    <div class="container mt-5">
-        <h1>Liste des Zones Géographiques</h1>
-        <a href="{% url 'zone_form' %}" class="btn btn-primary mb-3">Créer une Nouvelle Zone</a> <!-- Lien vers la création -->
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Nom de la Zone</th>
-                    <th>Description</th>
-                    <th>Latitude</th>
-                    <th>Longitude</th>
-                    <th>Année de la condition météorologique</th>
-                    <th>Température Moyenne (°C)</th>
-                    <th>Pluviométrie (mm)</th>
-                    <th>Actions</th> <!-- Nouvelle colonne pour les actions -->
-                </tr>
-            </thead>
-            <tbody>
-                {% for zone in zones %}
-                    <tr>
-                        <td>{{ zone.nomZone }}</td>
-                        <td>{{ zone.description }}</td>
-                        <td>{{ zone.latitude }}</td>
-                        <td>{{ zone.longitude }}</td>
-                        <td>{{ zone.annee }}</td>
-                        <td>{{ zone.temperatureMoyenne }}</td>
-                        <td>{{ zone.pluviometrie }}</td>
-                        <td>
-                            <a href="{% url 'zone_update' zone.id %}" class="btn btn-warning btn-sm">Modifier</a> <!-- Lien vers la modification -->
-                            <form action="{% url 'zone_delete' zone.id %}" method="post" style="display:inline;"> <!-- Formulaire pour supprimer -->
-                                {% csrf_token %}
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette zone?');">Supprimer</button>
-                            </form>
-                        </td>
-                    </tr>
-                {% empty %}
-                    <tr>
-                        <td colspan="8" class="text-center">Aucune zone disponible.</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+{% extends "layouts/base.html" %}
+{% load custom_filters %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Geographic zones list</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <a href="{% url 'zone_form' %}" class="btn btn-success mb-3">+Add</a>
+                        <table class="table tablesorter">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Zone Name</th>
+                                    <th>Description</th>
+                                    <th>Latitude</th>
+                                    <th>Longitude</th>
+                                    <th>Average Temperature (°C)</th>
+                                    <th>Precipitation (mm)</th>
+                                    <th>Weather Condition Year</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for zone in zones %}
+                                    <tr>
+                                        <td>{{ zone.nomZone }}</td>
+                                        <td>{{ zone.description|slice:":20" }}{% if zone.description|length > 20 %}...{% endif %}</td>
+                                        <td>{{ zone.latitude }}</td>
+                                        <td>{{ zone.longitude }}</td>
+                                        <td>{{ zone.temperatureMoyenne }}</td>
+                                        <td>{{ zone.pluviometrie }}</td>
+                                        <td>{{ zone.annee }}</td>
+                                        <td>
+                                            <a href="{% url 'zone_update' zone.id %}" class="btn btn-secondary btn-sm">
+                                                <i class="fas fa-edit"></i> 
+                                            </a>
+                                            
+                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal{{ zone.id }}">
+                                                <i class="fas fa-trash-alt"></i> 
+                                            </button>
+                                            
+                                        </td>
+                                    </tr>
+
+                                    <!-- Delete Confirmation Modal -->
+                                    <div class="modal fade" id="deleteModal{{ zone.id }}" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete this geographic zone?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                    <form action="{% url 'zone_delete' zone.id %}" method="post" style="display:inline;">
+                                                        {% csrf_token %}
+                                                        <button type="submit" class="btn btn-danger">Confirm Delete</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% empty %}
+                                    <tr>
+                                        <td colspan="8" class="text-center">No geographic zones available.</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+</div>
+
+{% endblock content %}
