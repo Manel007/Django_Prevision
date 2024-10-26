@@ -30,7 +30,8 @@ ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets')
 ALLOWED_HOSTS        = ['localhost', 'localhost:85', '127.0.0.1',               env('SERVER', default='127.0.0.1') ]
 CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + env('SERVER', default='127.0.0.1') ]
 
-# Application definition
+
+ #   Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -39,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.home'  # Enable the inner home (home)
+    'apps.home' , # Enable the inner home (home)
+ 'apps.RessourceEntity',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Ressources</title>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            padding: 5px 10px;
+            margin-right: 5px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 3px;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liste des Ressources</h1>
+    <a href="{% url 'ressource_create' %}" class="btn">Ajouter une Ressource</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Type de Ressource</th>
+                <th>Quantité</th>
+                <th>Unité de Mesure</th>
+                <th>Zone d'Application</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ressource in ressources %}
+            <tr>
+                <td>{{ ressource.get_type_ressource_display }}</td>
+                <td>{{ ressource.quantite }}</td>
+                <td>{{ ressource.unite_mesure }}</td>
+                <td>{{ ressource.zone }}</td>
+                <td>
+                    <a href="{% url 'ressource_update' ressource.id %}" class="btn">Modifier</a>
+                    <button class="btn btn-danger delete-btn" data-url="{% url 'ressource_delete' ressource.id %}">
+                        Supprimer
+                    </button>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="5">Aucune ressource à afficher.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.delete-btn').on('click', function() {
+                var url = $(this).data('url');
+                if (confirm("Êtes-vous sûr de vouloir supprimer cette ressource ?")) {
+                    $.ajax({
+                        url: url,
+                        method: 'POST',
+                        data: {
+                            csrfmiddlewaretoken: '{{ csrf_token }}',
+                        },
+                        success: function(response) {
+                            // Recharger la page après suppression
+                            window.location.reload();
+                        },
+                        error: function(xhr, errmsg, err) {
+                            console.log("Erreur :", errmsg);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
