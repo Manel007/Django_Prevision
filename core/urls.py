@@ -13,9 +13,9 @@ urlpatterns = [
     
     # ADD NEW Routes HERE
     path('cultures/', views.liste_cultures, name='liste_cultures'),
-    path('create/', views.create_culture, name='create_culture'),
-    path('update/<int:pk>/', views.update_culture, name='update_culture'),
-    path('delete/<int:pk>/', views.delete_culture, name='delete_culture'),
+    path('createCulture/', views.create_culture, name='create_culture'),
+    path('updateCulture/<int:pk>/', views.update_culture, name='update_culture'),
+    path('deleteCulture/<int:pk>/', views.delete_culture, name='delete_culture'),
     # Leave `Home.Urls` as last the last line
     path("", include("apps.home.urls"))
 ]
