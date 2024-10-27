@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
      'apps.zonegéosamarapp',
-    'apps.home' ,'django_extensions' # Enable the inner home (home)
+    'apps.home' ,'django_extensions', 
+     # Enable the inner home (home)
    
 ]
 

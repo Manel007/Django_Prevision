@@ -144,3 +144,5 @@ class TypeDeSolForm(forms.ModelForm):
         if pH < 0 or pH > 14: 
             raise forms.ValidationError("Le pH doit être compris entre 0 et 14.")
         return pH
+
+     

@@ -1,0 +1,52 @@
+<!-- templates/typesol/add_type_de_sol.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soil Type Anomaly Detection Tool</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Soil Type Anomaly Detection Tool</h1>
+        <p class="text-center">This tool allows you to detect anomalies in soil type datasets. By analyzing various soil parameters, you can identify unusual patterns and gain insights into soil health and composition. Simply fill out the form below and click "Check Anomaly" to start the process.</p>
+
+        <div class="card">
+           
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.as_p }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Check Anomaly</button>
+                </form>
+            </div>
+        </div>
+
+        {% if result %}
+        <div class="mt-4">
+            <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading">Detection Result</h4>
+                <p><strong>Analysis Completed:</strong> The anomaly detection process has finished analyzing your submitted soil data.</p>
+                
+                <p><strong>Result Summary:</strong></p>
+                <p>{{ result }}</p>
+
+                <hr>
+                <p class="mb-0">Based on the detected anomalies, consider the following actions:</p>
+                <ul>
+                    <li>Review the soil parameters associated with the anomalies.</li>
+                    <li>Consult with agricultural experts if necessary.</li>
+                    <li>Take corrective measures to enhance soil quality and health.</li>
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -28,6 +28,13 @@ path('typesol/create/', views.TypeSolCreate, name='typesol_form'),
 path('typesol/update/<int:pk>/', views.TypeSolUpdate, name='type_sol_update'),
 path('typesol/delete/<int:pk>/', views.TypeSolDelete, name='type_sol_delete'),
 
+
+
+
+path('dataset-anomalies/', views.dataset_anomalies_view, name='dataset_anomalies'),
+
+path('predict-soil/', views.predict_soil, name='predict_soil'),
+path('soil-prediction-form/', views.soil_prediction_form, name='soil_prediction_form'),  # Ensure this path exists
 # Leave `Home.Urls` as last the last line
     path("", include("apps.home.urls")),
     
