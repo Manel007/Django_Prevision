@@ -22,6 +22,11 @@ urlpatterns = [
     path('ressource/<int:pk>/delete/', views.ressource_delete, name='ressource_delete'),
     path('search/', views.ressource_search, name='ressource_search'),
 
-
+    path('fournisseurs/', views.fournisseur_list, name='fournisseur_list'),
+    path('fournisseurs/<int:pk>/', views.fournisseur_detail, name='fournisseur_detail'),
+    path('fournisseurs/new/', views.fournisseur_create, name='fournisseur_create'),
+    path('fournisseurs/<int:pk>/edit/', views.fournisseur_update, name='fournisseur_update'),
+    path('fournisseurs/<int:pk>/delete/', views.fournisseur_delete, name='fournisseur_delete'),
+ 
   path("", include("apps.home.urls"))
 ]

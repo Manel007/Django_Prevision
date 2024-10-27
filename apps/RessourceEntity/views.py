@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Ressource
-from .forms import RessourceForm
+from .models import Ressource ,Fournisseur
+from .forms import RessourceForm ,FournisseurForm 
 from django.db.models import Q
+
+import pandas as pd
+
 
 # Liste des ressources
 def ressource_list(request):
@@ -63,3 +66,55 @@ def ressource_search(request):
         results = Ressource.objects.all()  # Si aucun attribut valide n'est sélectionné
 
     return render(request, 'ressource/ressource_list.html', {'ressources': results, 'query': query})
+
+
+
+
+
+
+
+
+# Liste des fournisseurs
+def fournisseur_list(request):
+    fournisseurs = Fournisseur.objects.all()
+    return render(request, 'fournisseur/fournisseur_list.html', {'fournisseurs': fournisseurs})
+
+# Détail d'un fournisseur
+def fournisseur_detail(request, pk):
+    fournisseur = get_object_or_404(Fournisseur, pk=pk)
+    return render(request, 'fournisseur/detail_fournisseur.html', {'fournisseur': fournisseur})
+
+
+
+# Création d'un nouveau fournisseur
+def fournisseur_create(request):
+    if request.method == "POST":
+        form = FournisseurForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('fournisseur_list')  # Redirige vers la liste des fournisseurs
+    else:
+        form = FournisseurForm()
+
+    return render(request, 'Fournisseur/fournisseur_form.html', {'form': form})
+
+# Modification d'un fournisseur
+def fournisseur_update(request, pk):
+    fournisseur = get_object_or_404(Fournisseur, pk=pk)
+    if request.method == "POST":
+        form = FournisseurForm(request.POST, instance=fournisseur)
+        if form.is_valid():
+            form.save()
+            return redirect('fournisseur_list')  # Redirige vers la liste
+    else:
+        form = FournisseurForm(instance=fournisseur)
+    return render(request, 'Fournisseur/fournisseur_form.html', {'form': form})
+
+# Suppression d'un fournisseur
+def fournisseur_delete(request, pk):
+    fournisseur = get_object_or_404(Fournisseur, pk=pk)
+    if request.method == "POST":
+        fournisseur.delete()
+        return redirect('fournisseur_list')  # Redirige vers la liste après suppression
+    return render(request, 'Fournisseur/fournisseur_confirm_delete.html', {'fournisseur': fournisseur})
+

@@ -1,104 +1,72 @@
 {% extends "layouts/base.html" %}
 
+{% block title %}Liste des Ressources{% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
 {% block content %}
-<h1>Liste des Ressources</h1>
 
-<style>
-    body {
-        margin-left: 250px; /* Ajustez cette valeur en fonction de la largeur de votre sidebar */
-        padding: 20px;
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-    }
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Liste des Ressources</h4>
+                </div>
+                <div class="card-body">
+                    <a href="{% url 'ressource_create' %}" class="btn btn-primary">Ajouter une Ressource</a>
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
+                    <!-- Formulaire de recherche -->
+                    <form method="GET" action="{% url 'ressource_search' %}" class="form-inline mt-3">
+                        <select name="attribute" class="form-control mr-2">
+                            <option value="type_ressource">Type de Ressource</option>
+                            <option value="zone">Zone d'Application</option>
+                            <option value="unite_mesure">Unité de Mesure</option>
+                        </select>
+                        <input type="text" name="q" placeholder="Rechercher..." value="{{ query }}" class="form-control mr-2">
+                        <button type="submit" class="btn btn-primary">Chercher</button>
+                    </form>
 
-    th, td {
-        border: 1px solid #ddd;
-        padding: 10px;
-        text-align: left;
-    }
-
-    th {
-        background-color: #007bff;
-        color: white;
-    }
-
-    .btn {
-        padding: 5px 10px;
-        margin-right: 5px;
-        text-decoration: none;
-        background-color: #007bff;
-        color: #fff;
-        border-radius: 3px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .btn-danger {
-        background-color: #dc3545;
-    }
-
-    .no-resources {
-        text-align: center;
-        padding: 20px;
-        font-weight: bold;
-    }
-</style>
-
-<a href="{% url 'ressource_create' %}" class="btn">Ajouter une Ressource</a>
-
-<!-- Formulaire de recherche -->
-<!-- Formulaire de recherche -->
-<form method="GET" action="{% url 'ressource_search' %}">
-    <select name="attribute">
-        <option value="type_ressource">Type de Ressource</option>
-        <option value="zone">Zone d'Application</option>
-        <option value="unite_mesure">Unité de Mesure</option>
-    </select>
-    <input type="text" name="q" placeholder="Rechercher..." value="{{ query }}">
-    <button type="submit" class="btn">Chercher</button>
-</form>
-
-
-<table>
-    <thead>
-        <tr>
-            <th>Type de Ressource</th>
-            <th>Quantité</th>
-            <th>Unité de Mesure</th>
-            <th>Zone d'Application</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for ressource in ressources %}
-        <tr>
-            <td>{{ ressource.get_type_ressource_display }}</td>
-            <td>{{ ressource.quantite }}</td>
-            <td>{{ ressource.unite_mesure }}</td>
-            <td>{{ ressource.zone }}</td>
-            <td>
-                <a href="{% url 'ressource_update' ressource.id %}" class="btn">Modifier</a>
-                <button class="btn btn-danger delete-btn" data-url="{% url 'ressource_delete' ressource.id %}">
-                    Supprimer
-                </button>
-            </td>
-        </tr>
-        {% empty %}
-        <tr>
-            <td colspan="5" class="no-resources">Aucune ressource à afficher.</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+                    <div class="table-responsive mt-4">
+                        <table class="table tablesorter">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Nom de la Ressource</th> <!-- Nouvelle colonne -->
+                                    <th>Type de Ressource</th>
+                                    <th>Quantité</th>
+                                    <th>Unité de Mesure</th>
+                                    <th>Zone d'Application</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for ressource in ressources %}
+                                <tr>
+                                    <td>{{ ressource.nom_ressource }}</td> <!-- Afficher le nom de la ressource -->
+                                    <td>{{ ressource.get_type_ressource_display }}</td>
+                                    <td>{{ ressource.quantite }}</td>
+                                    <td>{{ ressource.unite_mesure }}</td>
+                                    <td>{{ ressource.zone }}</td>
+                                    <td>
+                                        <a href="{% url 'ressource_update' ressource.id %}" class="btn btn-warning">Modifier</a>
+                                        <button class="btn btn-danger delete-btn" data-url="{% url 'ressource_delete' ressource.id %}">
+                                            Supprimer
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="6" class="text-center">Aucune ressource à afficher.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% block javascripts %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

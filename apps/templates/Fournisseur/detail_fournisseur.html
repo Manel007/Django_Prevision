@@ -1,0 +1,63 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Détails du Fournisseur {% endblock %}
+
+<!-- Specific Page CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Détails du Fournisseur : {{ fournisseur.nom }}</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Nom du Fournisseur :</label>
+                                <p>{{ fournisseur.nom }}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Type de Fournisseur :</label>
+                                <p>{{ fournisseur.get_type_fournisseur_display }}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Adresse :</label>
+                                <p>{{ fournisseur.adresse }}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Numéro de Téléphone :</label>
+                                <p>{{ fournisseur.numero_telephone }}</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <a href="{% url 'fournisseur_update' fournisseur.id %}" class="btn btn-warning">Modifier</a>
+                            <a href="{% url 'fournisseur_list' %}" class="btn btn-danger">Retour à la Liste</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE -->
+{% block javascripts %}{% endblock javascripts %}
