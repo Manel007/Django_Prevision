@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nom_technique', models.CharField(max_length=100)),
                 ('description', models.TextField()),
-                ('date_application', models.DateField()),
+                ('date_application', models.TextField()),
                 ('impact_rendement', models.FloatField()),
                 ('cultures_associees', models.ManyToManyField(to='Culture.cultureagricole')),
             ],

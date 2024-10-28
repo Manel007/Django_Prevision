@@ -13,7 +13,7 @@
       <div class="col-md-12">
         <div class="card ">
           <div class="card-header">
-            <h4 class="card-title"> Cultures Agricoles </h4>
+            <h2 class="card-title"> Cultures Agricoles </h2>
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -44,10 +44,10 @@
                            
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<a href="{% url 'update_culture' culture.id %}" class="btn btn-info">
-    <i class="fas fa-pencil-alt"></i> 
+<a href="{% url 'update_culture' culture.id %}" class="btn btn-dark">
+  <i class="tim-icons icon-pencil"></i>
 </a>
-<button class="btn btn-danger delete-btn" data-url="{% url 'delete_culture' culture.id %}">
+<button class="btn btn-dark delete-btn" data-url="{% url 'delete_culture' culture.id %}">
 <i class="fas fa-trash-alt"></i> 
 </button>
                         </td>
@@ -59,28 +59,6 @@
                     {% endfor %}
                 </tbody>
               </table>
-              <form method="post">
-                {% csrf_token %}
-                <label for="type_sol">Type de Sol :</label>
-                <input type="text" name="type_sol" id="type_sol"><br>
-              
-                <label for="irrigation">Irrigation :</label>
-                <input type="text" name="irrigation" id="irrigation"><br>
-              
-                <label for="zone_climatique">Zone Climatique :</label>
-                <input type="text" name="zone_climatique" id="zone_climatique"><br>
-              
-                <button type="submit">Obtenir les recommandations</button>
-              </form>
-              
-              {% if recommendations %}
-                <h2>Recommandations de techniques pour la culture "{{ culture_features }}" :</h2>
-                <ul>
-                    {% for recommendation in recommendations %}
-                        <li>{{ recommendation }}</li>
-                    {% endfor %}
-                </ul>
-              {% endif %}
             </div>
           </div>
         </div>

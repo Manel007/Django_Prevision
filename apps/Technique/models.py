@@ -6,7 +6,7 @@ class TechniqueCulture(models.Model):
     nom_technique = models.CharField(max_length=100)
     description = models.TextField()
     cultures_associees = models.ManyToManyField(CultureAgricole)  
-    date_application = models.TextField()
+    date_application = models.TextField(null=True)  
     impact_rendement = models.FloatField()
 
     def __str__(self):
