@@ -1,0 +1,9 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Faire une recommandation</button>
+</form>
+
+{% if recommendation %}
+    <h2>Technique recommandée : {{ recommendation }}</h2>
+{% endif %}

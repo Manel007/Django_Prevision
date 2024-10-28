@@ -7,6 +7,8 @@ from django.contrib import admin
 from django.urls import path, include 
 from apps.Culture import views
 from apps.Technique import views as technique_views
+from apps.RecommendationTech import views as recommend_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
@@ -21,7 +23,7 @@ urlpatterns = [
     path('createTechnique/', technique_views.create_technique, name='create_technique'),
     path('updateTechnique/<int:pk>/', technique_views.update_technique, name='update_technique'),
     path('deleteTechnique/<int:pk>/', technique_views.delete_technique, name='delete_technique'),
-
+    path('recommander/', recommend_views.recommend_view, name='recommend_view'),
     # Leave `Home.Urls` as last the last line
     path("", include("apps.home.urls"))
 ]

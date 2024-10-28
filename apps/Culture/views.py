@@ -1,8 +1,14 @@
 from django.shortcuts import get_object_or_404, redirect, render
-from apps import Culture
 from apps.Culture.forms import CultureAgricoleForm
+from apps.Technique.models import TechniqueCulture
 # Create your views here.
 from .models import CultureAgricole
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import LabelEncoder
+from apps.Culture import models
+from django.db.models import Q
+from sklearn.neighbors import KNeighborsClassifier
+
 
 def liste_cultures(request):
     cultures = CultureAgricole.objects.all()
@@ -38,3 +44,6 @@ def delete_culture(request, pk):
         culture.delete()
 
     return redirect('liste_cultures')  
+
+
+

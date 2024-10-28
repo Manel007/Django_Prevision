@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'apps.home' , # Enable the inner home (home)
     'apps.Culture',
     'apps.Technique',
+    'apps.RecommendationTech',
 ]
 
 MIDDLEWARE = [

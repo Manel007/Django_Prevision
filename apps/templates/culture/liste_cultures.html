@@ -2,13 +2,14 @@
 
 {% block title %} Tables {% endblock %} 
 
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}{% endblock %}
 
 {% block content %}
 
   <div class="content">
     <div class="row">
         <a href="{% url 'create_culture' %}" class="btn mt-3">Ajouter une Culture</a>
+        <a href="{% url 'recommend_view' %}" class="btn btn-primary mt-3">Faire une recommandation</a>
       <div class="col-md-12">
         <div class="card ">
           <div class="card-header">
@@ -17,7 +18,7 @@
           <div class="card-body">
             <div class="table-responsive">
               <table class="table tablesorter " id="">
-                <thead class=" text-primary">
+                <thead class="text-primary">
                   <tr>
                         <th>Nom</th>
                         <th>Description</th>
@@ -27,7 +28,7 @@
                         <th>Irrigation</th>
                         <th>Rendement attendu</th>
                         <th>Actions</th>
-
+                  </tr>
                 </thead>
                 <tbody>
                     {% for culture in cultures %}
@@ -46,7 +47,6 @@
 <a href="{% url 'update_culture' culture.id %}" class="btn btn-info">
     <i class="fas fa-pencil-alt"></i> 
 </a>
-
 <button class="btn btn-danger delete-btn" data-url="{% url 'delete_culture' culture.id %}">
 <i class="fas fa-trash-alt"></i> 
 </button>
@@ -57,14 +57,31 @@
                         <td colspan="8" class="text-center">Aucune culture agricole à afficher.</td>
                     </tr>
                     {% endfor %}
-
                 </tbody>
               </table>
+              <form method="post">
+                {% csrf_token %}
+                <label for="type_sol">Type de Sol :</label>
+                <input type="text" name="type_sol" id="type_sol"><br>
+              
+                <label for="irrigation">Irrigation :</label>
+                <input type="text" name="irrigation" id="irrigation"><br>
+              
+                <label for="zone_climatique">Zone Climatique :</label>
+                <input type="text" name="zone_climatique" id="zone_climatique"><br>
+              
+                <button type="submit">Obtenir les recommandations</button>
+              </form>
+              
+              {% if recommendations %}
+                <h2>Recommandations de techniques pour la culture "{{ culture_features }}" :</h2>
+                <ul>
+                    {% for recommendation in recommendations %}
+                        <li>{{ recommendation }}</li>
+                    {% endfor %}
+                </ul>
+              {% endif %}
             </div>
-          </div>
-        </div>
-      </div>
-       
           </div>
         </div>
       </div>
@@ -99,4 +116,4 @@
             });
         });
     </script>
-{% endblock javascripts %}
+{% endblock %}
