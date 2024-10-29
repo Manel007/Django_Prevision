@@ -1,9 +1,82 @@
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Faire une recommandation</button>
-</form>
+{% extends "layouts/base.html" %}
 
-{% if recommendation %}
-    <h2>La Technique recommandée pour cette culture agricole : {{ recommendation }}</h2>
-{% endif %}
+{% block title %}Recommandation de Technique de Culture{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card form-container">
+                <div class="card-header">
+                    <h2 class="title">Crop Technique Recommendation</h2>
+                </div>
+                <div class="card-body">
+                    <p>Use this interface to obtain a technique recommendation for a given crop. Choose an existing crop or enter custom data.</p>
+                    <form method="POST" action="{% url 'recommend_view' %}" class="mt-5">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label>Choose the Recommendation Option :</label><br>
+                            {{ form.choix_culture }}
+                        </div>
+
+                        <div id="existing-culture" style="display:none;">
+                            <div class="form-group">
+                                <label for="culture_existante" >Existing Agricultural Crop :</label>
+                                {{ form.culture_existante }}
+                            </div>
+                        </div>
+
+                        <div id="custom-inputs" style="display:none;">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="cycle_croissance_jours">Growth Cycle (days) :</label>
+                                    <input type="number" class="form-control" name="cycle_croissance_jours" placeholder="Duration of growth cycle in days">
+                                </div>
+                                <div class="form-group">
+                                    <label for="type_sol_prefere">Preferred Soil Type :</label>
+                                    <input type="text" class="form-control" name="type_sol_prefere" placeholder="Example: Clayey, loamy...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zone_culture_recommandee">Recommended Climatic Zone
+                                        :</label>
+                                    <input type="text" class="form-control" name="zone_culture_recommandee" placeholder="Example: North, South...">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-recommend"> Recommend a Crop Technique</button>
+                    </form>
+                </div>
+            </div>
+
+            {% if technique_details %}
+                <div class="card p-5">
+                    <h4> Recommended Technique : <span class="highlight">{{ technique_details.nom_technique }}</span></h4>
+                    <p><strong> Impact on Yield :</strong> {{ technique_details.impact_rendement }}</p>
+                    <p><strong>Application Date :</strong> {{ technique_details.date_application }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+    // JavaScript pour afficher/masquer les champs en fonction du choix
+    document.addEventListener("DOMContentLoaded", function() {
+        const choixCulture = document.querySelectorAll("input[name='choix_culture']");
+        const existingCulture = document.getElementById("existing-culture");
+        const customInputs = document.getElementById("custom-inputs");
+
+        choixCulture.forEach(input => {
+            input.addEventListener("change", function() {
+                if (this.value === 'existing') {
+                    existingCulture.style.display = 'block';
+                    customInputs.style.display = 'none';
+                } else {
+                    existingCulture.style.display = 'none';
+                    customInputs.style.display = 'block';
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

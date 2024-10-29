@@ -6,92 +6,91 @@
 
 {% block content %}
 
-  <div class="content">
+<div class="content">
     <div class="row">
-        <a href="{% url 'create_culture' %}" class="btn mt-3">Ajouter une Culture</a>
-        <a href="{% url 'recommend_view' %}" class="btn btn-primary mt-3">Faire une recommandation</a>
-      <div class="col-md-12">
-        <div class="card ">
-          <div class="card-header">
-            <h2 class="card-title"> Cultures Agricoles </h2>
-          </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table tablesorter " id="">
-                <thead class="text-primary">
-                  <tr>
-                        <th>Nom</th>
-                        <th>Description</th>
-                        <th>Date de Plantation</th>
-                        <th>Type de Sol</th>
-                        <th>Zone Climatique</th>
-                        <th>Irrigation</th>
-                        <th>Rendement attendu</th>
-                        <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    {% for culture in cultures %}
-                    <tr>
-                        <td>{{ culture.nom }}</td>
-                        <td>{{ culture.description }}</td>
-                        <td>{{ culture.cycle_croissance_jours }}</td>
-                        <td>{{ culture.type_sol_prefere }}</td>
-                        <td>{{ culture.zone_culture_recommandee }}</td>
-                        <td>{{ culture.irrigation }}</td>
-                        <td>{{ culture.rendement_attendu }}</td>
-                        <td>
-                           
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <a href="{% url 'create_culture' %}" class="btn mt-3">Add a Crop</a>
+        <a href="{% url 'recommend_view' %}" class="btn btn-primary mt-3">Make a Recommendation</a>
+        <div class="col-md-12">
+            <div class="card ">
+                <div class="card-header">
+                    <h2 class="card-title"> Agricultural Crops </h2>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table tablesorter" id="">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Planting Date</th>
+                                    <th>Soil Type</th>
+                                    <th>Climate Zone</th>
+                                    <th>Irrigation</th>
+                                    <th>Expected Yield</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for culture in cultures %}
+                                <tr>
+                                    <td>{{ culture.nom }}</td>
+                                    <td>{{ culture.description }}</td>
+                                    <td>{{ culture.cycle_croissance_jours }}</td>
+                                    <td>{{ culture.type_sol_prefere }}</td>
+                                    <td>{{ culture.zone_culture_recommandee }}</td>
+                                    <td>{{ culture.irrigation }}</td>
+                                    <td>{{ culture.rendement_attendu }}</td>
+                                    <td>
+                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<a href="{% url 'update_culture' culture.id %}" class="btn btn-dark">
-  <i class="tim-icons icon-pencil"></i>
-</a>
-<button class="btn btn-dark delete-btn" data-url="{% url 'delete_culture' culture.id %}">
-<i class="fas fa-trash-alt"></i> 
-</button>
-                        </td>
-                    </tr>
-                    {% empty %}
-                    <tr>
-                        <td colspan="8" class="text-center">Aucune culture agricole à afficher.</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-              </table>
+                                        <a href="{% url 'update_culture' culture.id %}" class="btn btn-dark">
+                                            <i class="tim-icons icon-pencil"></i>
+                                        </a>
+                                        <button class="btn btn-dark delete-btn" data-url="{% url 'delete_culture' culture.id %}">
+                                            <i class="fas fa-trash-alt"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="8" class="text-center">No agricultural crops to display.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.delete-btn').on('click', function() {
-                var url = $(this).data('url');
+<script>
+    $(document).ready(function() {
+        $('.delete-btn').on('click', function() {
+            var url = $(this).data('url');
 
-                $.ajax({
-                    url: url,
-                    method: 'POST',
-                    data: {
-                        csrfmiddlewaretoken: '{{ csrf_token }}',
-                    },
-                    success: function(response) {
-                        // Redirection vers la liste des cultures après la suppression
-                        window.location.reload();
-                    },
-                    error: function(xhr, errmsg, err) {
-                        // Gérer les erreurs ici
-                        console.log(err);
-                    }
-                });
+            $.ajax({
+                url: url,
+                method: 'POST',
+                data: {
+                    csrfmiddlewaretoken: '{{ csrf_token }}',
+                },
+                success: function(response) {
+                    // Redirect to the crops list after deletion
+                    window.location.reload();
+                },
+                error: function(xhr, errmsg, err) {
+                    // Handle errors here
+                    console.log(err);
+                }
             });
         });
-    </script>
+    });
+</script>
 {% endblock %}

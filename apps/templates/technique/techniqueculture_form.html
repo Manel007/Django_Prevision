@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} Créer Technique de Culture {% endblock %}
+{% block title %} Create Crop Technique {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock %}
@@ -12,7 +12,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="title">Créer Technique de Culture</h5>
+                    <h5 class="title">Create Crop Technique</h5>
                 </div>
                 <div class="card-body">
                     <form method="POST" action="{% url 'create_technique' %}">
@@ -21,22 +21,22 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="id_nom_technique">Nom Technique</label>
-                                    <input type="text" class="form-control" id="id_nom_technique" name="nom_technique" placeholder="Nom de la technique de culture">
+                                    <label for="id_nom_technique">Technique Name</label>
+                                    <input type="text" class="form-control" id="id_nom_technique" name="nom_technique" placeholder="Name of the crop technique">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="id_description">Description</label>
-                                    <textarea class="form-control" id="id_description" name="description" placeholder="Description de la technique"></textarea>
+                                    <textarea class="form-control" id="id_description" name="description" placeholder="Description of the technique"></textarea>
                                 </div>
                             </div>
                         </div>
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="id_impact_rendement">Impact sur le Rendement</label>
-                                    <input type="number" step="0.01" class="form-control" id="id_impact_rendement" name="impact_rendement" placeholder="Impact sur le rendement">
+                                    <label for="id_impact_rendement">Impact on Yield</label>
+                                    <input type="number" step="0.01" class="form-control" id="id_impact_rendement" name="impact_rendement" placeholder="Impact on yield">
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="id_cultures_associees">Cultures Associées</label>
+                                    <label for="id_cultures_associees">Associated Crops</label>
                                     <select multiple class="form-control" id="id_cultures_associees" name="cultures_associees">
                                         {% for culture in cultures %}
                                             <option value="{{ culture.id }}">{{ culture.nom }}</option>
@@ -68,7 +68,7 @@
                         </div>
                     {% endif %}
                     
-                        <button type="submit" class="btn btn-fill btn-primary">Enregistrer</button>
+                        <button type="submit" class="btn btn-fill btn-primary">Save</button>
                     </form>
                 </div>
             </div>
