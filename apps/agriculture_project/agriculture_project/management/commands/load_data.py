@@ -7,7 +7,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         # Load yield data
-        yield_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/yield_df.csv')
+        yield_data = pd.read_csv('C:\Users\ASUS\Desktop\django\Django_Prevision\yield_df.csv')
 
         # Clean column names
         yield_data.columns = yield_data.columns.str.strip()  # Remove leading/trailing whitespace

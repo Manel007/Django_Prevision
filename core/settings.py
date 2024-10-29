@@ -44,35 +44,26 @@ CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-
-    'apps.authentication', 
-    'apps.agriculture_project.agriculture_project',  # Assurez-vous que votre app est ici
-
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
-    'rest_framework',
-    'apps.front',
+    'apps.authentication', 
+    'apps.agriculture_project.agriculture_project',  
     'crispy_forms',
 
-    'apps.home' , # Enable the inner home (home)
+    'apps.front',
+    'apps.home',
     'apps.agriculteur',
     'apps.images',
     'apps.reconnaissancevoc',
     'apps.pesticide',
-    'apps.front',
     'apps.programme',
-    'rest_framework',
-     # !:ujshq;,  
-     # Ensure this is the correct app name and path
 
-
-    'apps.home'  # Enable the inner home (home)
-
+    'rest_framework',  # Assurez-vous qu'il n'apparaît qu'une seule fois
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
