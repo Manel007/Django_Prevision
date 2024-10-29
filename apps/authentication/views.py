@@ -1,21 +1,22 @@
-# -*- encoding: utf-8 -*-
-"""
-Copyright (c) 2019 - present AppSeed.us
-"""
+# apps/authentication/views.py
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
 
-# Create your views here.
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import PolynomialFeatures
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, SignUpForm
-
-
+from django.http import JsonResponse
 def login_view(request):
     form = LoginForm(request.POST or None)
-
     msg = None
 
     if request.method == "POST":
-
         if form.is_valid():
             username = form.cleaned_data.get("username")
             password = form.cleaned_data.get("password")
@@ -29,7 +30,6 @@ def login_view(request):
             msg = 'Error validating the form'
 
     return render(request, "accounts/login.html", {"form": form, "msg": msg})
-
 
 def register_user(request):
     msg = None
@@ -46,8 +46,8 @@ def register_user(request):
             msg = 'User created successfully.'
             success = True
 
+            # Uncomment the following line if you want to redirect to the login page after registration
             # return redirect("/login/")
-
         else:
             msg = 'Form is not valid'
     else:

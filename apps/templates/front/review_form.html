@@ -1,0 +1,142 @@
+
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/bootstrap.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/contact_me.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/main.js"></script>
+
+<link rel="shortcut icon" href="{{ FRONT_ROOT }}/img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="{{ FRONT_ROOT }}/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ FRONT_ROOT }}/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ FRONT_ROOT }}/img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="{{ FRONT_ROOT }}/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="{{ FRONT_ROOT }}/css/style.css">
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a> </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+          <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
+          <li><a href="#team" class="page-scroll">Review</a></li>
+          <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+  </nav>
+<div id="restaurant-menu">
+    <div class="section-title text-center center">
+      <div class="overlay">
+        <h2>Yield Forecasting</h2>
+        <hr>
+        <p>By combining historical data with real-time insights, AI can accurately predict crop yields</p>
+      </div>
+    </div>
+    </div>{% block content %}
+    <div id="contact" class="text-center">
+        <div class="container menu-section-title">
+            <div>
+                <h2>{% if form.instance.pk %}Edit Review{% else %}New Review{% endif %}</h2>
+                <hr>
+            </div>
+    
+            {% if form.errors %}
+            <div class="alert alert-danger text-center">
+                <ul class="mb-0">
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <li><strong>{{ field.label }}:</strong> {{ error }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+    
+            <div class="card">
+                <div class="col-md-10 col-md-offset-1">
+                    <form method="post" action="{% if form.instance.pk %}{% url 'review_update' form.instance.pk %}{% else %}{% url 'create_review' crop_yield.id %}{% endif %}" novalidate>
+                        {% csrf_token %}
+    
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    {{ form.rating.label_tag }}
+                                    {{ form.rating }}
+                                    {% for error in form.rating.errors %}
+                                        <div class="text-danger">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    {{ form.title.label_tag }}
+                                    {{ form.title }}
+                                    {% for error in form.title.errors %}
+                                        <div class="text-danger">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                    {{ form.comment.label_tag }}
+                                    {{ form.comment }}
+                                    {% for error in form.comment.errors %}
+                                        <div class="text-danger">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="form-group">
+                                    {{ form.status.label_tag }}
+                                    {{ form.status }}
+                                    {% for error in form.status.errors %}
+                                        <div class="text-danger">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="d-flex justify-content-center mt-4">
+                            <button type="button" class="btn btn-custom btn-lg" onclick="submitForm()">Submit</button>
+                            <a href="{% url 'review_list' crop_yield.id %}" class="btn btn-secondary btn-lg ms-2">Cancel</a>
+                        </div>
+    
+                        <script>
+                            function submitForm() {
+                                document.querySelector('form').submit();
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% endblock content %}
+    {% include 'front/footer.html' %}
+    

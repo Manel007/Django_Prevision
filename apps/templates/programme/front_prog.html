@@ -1,0 +1,64 @@
+{% extends "front/baseF2.html" %}
+
+{% block content %}
+
+<!-- Portfolio Section -->
+<style>
+    .portfolio-item {
+        position: relative;
+        overflow: hidden; /* Pour cacher tout débordement */
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centre verticalement */
+        align-items: center; /* Centre horizontalement */
+        opacity: 0; /* Initialement caché */
+        transition: opacity 0.3s; /* Animation pour la transition */
+    }
+
+    .hover-bg:hover .overlay-text {
+        opacity: 1; /* Montre le texte au survol */
+    }
+</style>
+
+<div class="container">
+   
+     <div class="row">
+        <div class="portfolio-items">
+            {% for programme in programmes %}
+            <div class="col-sm-6 col-md-4 col-lg-4 breakfast">
+                <div class="portfolio-item">
+                    <div class="hover-bg"> 
+                        <!-- Lien vers l'image grande avec les détails superposés sur l'image petite -->
+                        <!-- <a href="{{ FRONT_ROOT }}/img/portfolio/programme-large.jpg" title="{{ programme.nom }}" data-lightbox-gallery="gallery1"> -->
+                            <img src="{{ FRONT_ROOT }}/img/portfolio/programme-large.jpg" class="img-responsive" alt="{{ programme.nom }}">
+
+                            <img src="{{ FRONT_ROOT }}/img/menu-bg.jpg" class="img-responsive" alt="{{ programme.nom }}">
+                            
+                            <!-- Informations superposées sur l'image -->
+                            <div class="overlay-text">
+                                <h4>{{ programme.nom }}</h4>
+                                <p><strong>Description:</strong> {{ programme.description }}</p>
+                                <p><strong>Fréquence d'Application:</strong> {{ programme.frequence_application }}</p>
+                                <p><strong>Pesticide Concerné:</strong> {{ programme.pesticide.area }}</p>
+                                <p><strong>Année:</strong> {{ programme.pesticide.year }}</p>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

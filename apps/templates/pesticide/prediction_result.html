@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+<h2>Résultat de la Prédiction pour {{ pesticide.item }}</h2>
+<p>Valeur prédite : {{ prediction }}</p>
+<p>Erreur quadratique moyenne : {{ mse }}</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
+

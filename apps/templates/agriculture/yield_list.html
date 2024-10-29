@@ -1,0 +1,145 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} List of Yields {% endblock %}
+
+{% block stylesheets %}
+  <style>
+    .search-container {
+        margin-bottom: 15px;
+    }
+    .title-large {
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(3, 3, 44);
+    }
+    .custom-button {
+        display: inline-block;  
+        padding: 10px 20px;  
+        background-color: #075018;  
+        color: white;  
+        text-align: center;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        text-decoration: none;  
+    }
+    .custom-button:hover {
+        background-color: #1a772e;  
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title title-large">List of Yields</h4>
+            <a href="{% url 'yield_create' %}" class="custom-button">Add a Yield</a>
+            <a href="{% url 'yieldd_classification' %}" class="custom-button">Yield Classification Per Year
+            </a>
+
+          </div>
+
+          <div class="card-body">
+            <div class="search-container">
+              <form method="GET" action="{% url 'yield_list' %}" onsubmit="return false;">
+                <input type="text" id="searchInput" name="search" class="form-control col-md-3 pr-md-1" placeholder="Search by name, quantity, or date..." value="{{ search_query }}" oninput="searchFunction()">
+              </form>
+            </div>
+            <div class="table-responsive">
+              <table class="table tablesorter" id="yieldTable">
+                <thead class="text-primary">
+                  <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Harvest Date</th>
+                    <th class="text-center">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for yield in page_obj %}
+                      <tr>
+                          <td>{{ yield.area }}</td>
+                          <td>{{ yield.item }}</td>
+                          <td>{{ yield.year }}</td>
+                          <td class="text-center">
+
+                              <a href="{% url 'yield_detail' yield.pk %}" title="Details">
+                                  <i class="fas fa-info-circle" style="color: #0d6614; font-size: 20px;"></i>
+                              </a>
+                              <a href="{% url 'yield_update' yield.pk %}" title="Edit">
+                                  <i class="fas fa-edit" style="color: #0b1050; font-size: 20px;"></i>
+                              </a>
+                              <form action="{% url 'yield_delete' yield.pk %}" method="POST" style="display:inline;">
+                                  {% csrf_token %}
+                                  <button type="submit" title="Delete" style="background: none; border: none; color: #065317; cursor: pointer;">
+                                      <i class="fas fa-trash-alt" style="font-size: 20px;"></i>
+                                  </button>
+                              </form>
+                          </td>
+                      </tr>
+                  {% empty %}
+                      <tr>
+                          <td colspan="4" class="text-center">No yields found.</td>
+                      </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+
+              <!-- Pagination -->
+              <div>
+                  <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.</span>
+                  <div>
+                      {% if page_obj.has_previous %}
+                          <a href="?page=1&search={{ search_query }}">First</a>
+                          <a href="?page={{ page_obj.previous_page_number }}&search={{ search_query }}">Previous</a>
+                      {% endif %}
+
+                      <span>...</span>
+
+                      {% if page_obj.has_next %}
+                          <a href="?page={{ page_obj.next_page_number }}&search={{ search_query }}">Next</a>
+                          <a href="?page={{ page_obj.paginator.num_pages }}&search={{ search_query }}">Last</a>
+                      {% endif %}
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  <script>
+    function searchFunction() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const table = document.getElementById('yieldTable');
+      const tr = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < tr.length; i++) {
+        const tdArea = tr[i].getElementsByTagName('td')[0]; 
+        const tdItem = tr[i].getElementsByTagName('td')[1]; 
+        const tdYear = tr[i].getElementsByTagName('td')[2]; 
+
+        if (tdArea || tdItem || tdYear) {
+          const txtValueArea = tdArea.textContent || tdArea.innerText;
+          const txtValueItem = tdItem.textContent || tdItem.innerText;
+          const txtValueYear = tdYear.textContent || tdYear.innerText;
+
+          if (txtValueArea.toLowerCase().indexOf(filter) > -1 || 
+              txtValueItem.toLowerCase().indexOf(filter) > -1 || 
+              txtValueYear.toLowerCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+  </script>
+{% endblock javascripts %}
