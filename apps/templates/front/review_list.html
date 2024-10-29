@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ FRONT_ROOT }}/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ FRONT_ROOT }}/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ FRONT_ROOT }}/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ FRONT_ROOT }}/img/apple-touch-icon-114x114.png">
+    
+    <!-- Bootstrap and FontAwesome -->
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/contact_me.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/main.js"></script>
+
+
+    {% block stylesheets %}
+    <style>
+        .custom-form {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+.custom-margin {
+        margin-bottom: 50px; /* Adjust the value as needed */
+    }
+
+        .title-large {
+            font-size: 26px;
+            font-weight: bold;
+            color: rgb(3, 3, 44);
+        }
+
+        .custom-button {
+    display: inline-flex;
+    align-items: center; /* Center icon and text vertically */
+    padding: 10px 15px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.custom-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.icon {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+        .card {
+            margin-top: 20px;
+            border: 1px solid #ddd; /* Light border */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .list-group-item {
+            display: flex;
+            justify-content: space-between; /* Space out content */
+            align-items: center; /* Center content vertically */
+        }
+
+        .float-end {
+            display: flex;
+            gap: 10px; /* Space between icons and buttons */
+        }
+
+        .icon {
+            font-size: 20px;
+            color: #0b1050; /* Icon color */
+        }
+
+        .icon:hover {
+            color: #28a745; /* Change color on hover */
+        }
+
+        /* Add green button styles for forms */
+        .form-control {
+            border: 1px solid #28a745; /* Green border for input fields */
+        }
+
+        .form-control:focus {
+            border-color: #218838; /* Darker green when focused */
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Green shadow on focus */
+        }
+
+        /* Green button for submit */
+        .btn-submit {
+            background-color: #28a745; /* Green */
+            color: white; /* White text */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 20px; /* Padding */
+            cursor: pointer; /* Pointer cursor */
+            transition: background-color 0.3s ease; /* Transition for hover effect */
+        }
+
+        .btn-submit:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+    </style>
+    {% endblock stylesheets %}
+</head>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+<body>
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about" class="page-scroll">About</a></li>
+                <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+                <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
+                <li><a href="#team" class="page-scroll">Review</a></li>
+                <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="portfolio">
+
+<div class="section-title text-center center">
+    <div class="overlay">
+      <h2>Review</h2>
+      <hr>
+      <p>Pesticides boost yields by protecting crops from pests, offering tailored recommendations for sustainable use.</p>
+    </div>
+  </div>
+  </div>
+{% block content %}
+<div class="container mt-4 custom-margin">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 mt-4">
+            <div class="menu-section mt-4">
+
+                <h2 class="menu-section-title">Reviews for {{ crop_yield }}</h2>
+                <hr>
+                <a href="{% url 'yield_summary' %}" class="custom-button"><i class=""></i> Back to Yield List</a>
+                <div class="menu-item">
+                    <ul class="list-group">
+                        {% for review in reviews %}
+                        <li class="list-group-item">
+                            <strong>{{ review.user.username }}:</strong>
+                            <span> Rating: {{ review.rating }} - Comment: {{ review.comment }} - Status: {{ review.status }} - Title: {{ review.title }}</span>
+                            <div class="float-end">
+                                <form action="{% url 'review_delete' review.pk %}" method="POST" style="display:inline;">
+                                    {% csrf_token %}
+                                    <button type="button" title="Delete" class="custom-button" onclick="this.closest('form').submit();">
+                                        <i class="fas fa-trash-alt"></i> Delete
+                                    </button>
+                                </form>
+                                
+                                <button class="custom-button">
+                                    <a href="{% url 'review_update' review.pk %}" style="color: white; text-decoration: none;">
+                                        <i class=""></i> Edit
+                                    </a>
+                                </button>
+                            </div>
+                        </li>
+                        {% empty %}
+                        <li class="list-group-item text-center">No reviews found.</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+
+</body>
+{% include 'front/footer.html' %}
+
+</html>

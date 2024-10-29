@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yield Classification</title>
+    <style>
+        body {
+            display: flex; /* Use flexbox layout */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            background-color: #f9f9f9; /* Optional: Light background color */
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 200px; /* Width of the sidebar */
+            background-color: #333; /* Sidebar background color */
+            color: white; /* Sidebar text color */
+            padding: 20px; /* Padding for the sidebar */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+        }
+
+        /* Main content styles */
+        .content {
+            flex-grow: 1; /* Take up remaining space */
+            display: flex; /* Use flexbox for content */
+            justify-content: flex-end; /* Align content to the right */
+            align-items: center; /* Center vertically */
+            padding-right: 50px; /* Space to the right for the image */
+        }
+
+        img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 90%; /* Limit height for better layout */
+        }
+    </style>
+</head>
+
+{% block content %}
+
+<div class="content">
+    <img src="data:image/png;base64,{{ graphic }}" alt="Yield Classification Plot">
+</div>
+
+    
+</html>
+{% endblock content %}

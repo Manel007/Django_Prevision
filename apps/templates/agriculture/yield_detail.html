@@ -1,20 +1,29 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} Détails du Rendement {% endblock %}
+{% block title %} Yield Details {% endblock %}
 
 {% block stylesheets %}
-  <!-- Ajouter vos fichiers CSS spécifiques ici -->
   <style>
+      .details-card .card-header {
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+    .details-card .card-title {
+      font-size: 24px; /* Larger size */
+      font-weight: bold; /* Bold text */
+      color: #627d86; /* Light blue */
+      margin: 0; /* Reduce margins */
+    }
     .details-card {
       max-width: 600px;
       margin: 0 auto;
       margin-top: 20px;
     }
-    .details-card .card-header {
-      background-color: #f8f9fa;
-      color: #333;
-      font-weight: bold;
-      text-align: center;
+    
+    .details-card .card-title {
+      font-size: 24px; /* Larger size */
+      font-weight: bold; /* Bold text */
+      margin: 0; /* Reduce margins */
     }
     .details-card .card-body p {
       margin: 10px 0;
@@ -23,33 +32,57 @@
     .details-card .card-footer {
       text-align: center;
     }
-    .details-card .btn {
-      margin: 5px;
+    /* Styles for icons */
+    .icon-button {
+      color: #fff !important;
+      padding: 10px;
+      border-radius: 50%;
+      margin: 0 10px;
+      font-size: 24px; /* Icon size */
+      transition: background-color 0.3s, transform 0.3s; /* Animation */
+    }
+    .icon-button:hover {
+      transform: scale(1.1); /* Slight increase on hover */
+    }
+    .btn-modifier {
+      background-color: #2e8b57; /* Dark green */
+    }
+    .btn-supprimer {
+      background-color: #228b22; /* ForestGreen */
+    }
+    .btn-retour {
+      background-color: #006400; /* DarkGreen */
     }
   </style>
 {% endblock stylesheets %}
 
 {% block content %}
   <div class="content">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card details-card">
+    <div class="row mt-5">
+      <div class="col-md-12 mt-10">
+        <div class="card details-card mt-10">
           <div class="card-header">
-            <h4 class="card-title">Détails de {{ yield }}</h4>
+            <strong class="card-title" style="font-weight: 900; color: #034c64;">Details of {{ yield }}</strong>
           </div>
           <div class="card-body">
-            <p><strong>Zone :</strong> {{ yield.area }}</p>
-            <p><strong>Culture :</strong> {{ yield.item }}</p>
-            <p><strong>Année :</strong> {{ yield.year }}</p>
-            <p><strong>Rendement (hg/ha) :</strong> {{ yield.hg_per_ha_yield }}</p>
-            <p><strong>Précipitations Moyennes (mm) :</strong> {{ yield.average_rain_fall_mm_per_year }}</p>
-            <p><strong>Pesticides Utilisés (tonnes) :</strong> {{ yield.pesticides_tonnes }}</p>
-            <p><strong>Température Moyenne :</strong> {{ yield.avg_temp }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Area:</strong> {{ yield.area }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Crop:</strong> {{ yield.item }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Year:</strong> {{ yield.year }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Yield (hg/ha):</strong> {{ yield.hg_per_ha_yield }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Average Rainfall (mm):</strong> {{ yield.average_rain_fall_mm_per_year }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Pesticides Used (tonnes):</strong> {{ yield.pesticides_tonnes }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Average Temperature:</strong> {{ yield.avg_temp }}</p>
           </div>
           <div class="card-footer">
-            <a href="{% url 'yield_update' yield.pk %}" class="btn btn-warning">Modifier</a>
-            <a href="{% url 'yield_delete' yield.pk %}" class="btn btn-danger">Supprimer</a>
-            <a href="{% url 'yield_list' %}" class="btn btn-secondary">Retour à la Liste</a>
+            <a href="{% url 'yield_update' yield.pk %}" class="icon-button btn-modifier">
+              <i class="fas fa-edit"></i>
+            </a>
+            <a href="{% url 'yield_delete' yield.pk %}" class="icon-button btn-supprimer">
+              <i class="fas fa-trash-alt"></i>
+            </a>
+            <a href="{% url 'yield_list' %}" class="icon-button btn-retour">
+              <i class="fas fa-arrow-left"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -58,5 +91,5 @@
 {% endblock content %}
 
 {% block javascripts %}
-  <!-- Ajouter vos scripts JS spécifiques ici -->
+  <!-- Add your specific JS scripts here -->
 {% endblock javascripts %}
