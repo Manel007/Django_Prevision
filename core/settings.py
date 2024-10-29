@@ -53,9 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
-    'rest_framework',
-    'apps.front',
     'crispy_forms',
 
     'apps.home' , # Enable the inner home (home)
@@ -63,14 +60,11 @@ INSTALLED_APPS = [
     'apps.images',
     'apps.reconnaissancevoc',
     'apps.pesticide',
-    'apps.front',
     'apps.programme',
     'rest_framework',
      # !:ujshq;,  
      # Ensure this is the correct app name and path
 
-
-    'apps.home'  # Enable the inner home (home)
 
 ]
 
