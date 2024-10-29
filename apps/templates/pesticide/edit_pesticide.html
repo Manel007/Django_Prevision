@@ -1,0 +1,96 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Éditer un Pesticide{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">Éditer un Pesticide</h5>
+                </div>
+                <div class="card-body">
+                    
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Domain</label>
+                                    <input type="text" name="domain" class="form-control" placeholder="Domain" required value="{{ form.domain.value|default:'' }}">
+                                    {% if form.domain.errors %}
+                                        <p class="text-danger">{{ form.domain.errors.0 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Area</label>
+                                    <input type="text" name="area" class="form-control" placeholder="Area" required value="{{ form.area.value|default:'' }}">
+                                    {% if form.area.errors %}
+                                        <p class="text-danger">{{ form.area.errors.0 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Element</label>
+                                    <input type="text" name="element" class="form-control" placeholder="Element" required value="{{ form.element.value|default:'' }}">
+                                    {% if form.element.errors %}
+                                        <p class="text-danger">{{ form.element.errors.0 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Item</label>
+                                    <input type="text" name="item" class="form-control" placeholder="Item" required value="{{ form.item.value|default:'' }}">
+                                    {% if form.item.errors %}
+                                        <p class="text-danger">{{ form.item.errors.0 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9 pr-md-1">
+                                <div class="form-group">
+                                    <label>Unit</label>
+                                    <input type="text" name="unit" class="form-control" placeholder="Unit" required value="{{ form.unit.value|default:'' }}">
+                                    {% if form.unit.errors %}
+                                        <p class="text-danger">{{ form.unit.errors.0 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Year</label>
+                                    <input type="number" name="year" class="form-control" placeholder="Year" required value="{{ form.year.value|default:'' }}">
+                                    {% if form.year.errors %}
+                                        <p class="text-danger">{{ form.year.errors.0 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Value</label>
+                                    <input type="number" name="value" class="form-control" placeholder="Value" required value="{{ form.value.value|default:'' }}">
+                                    {% if form.value.errors %}
+                                        <p class="text-danger">{{ form.value.errors.0 }}</p>
+                                    {% endif %}
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                        <button type="submit" class="btn btn-fill btn-primary">Sauvegarder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

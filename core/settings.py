@@ -30,6 +30,8 @@ DEBUG = env('DEBUG')
 
 # Assets Management
 ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets') 
+FRONT_ROOT = os.getenv('FRONT_ROOT', '/static/front') 
+
 
 # load production server from .env
 ALLOWED_HOSTS        = ['localhost', 'localhost:85', '127.0.0.1',               env('SERVER', default='127.0.0.1') ]
@@ -52,13 +54,14 @@ INSTALLED_APPS = [
     'apps.home' , # Enable the inner home (home)
     'apps.agriculteur',
     'apps.images',
-    'apps.reconnaissancevoc'
-
+    'apps.reconnaissancevoc',
+    'apps.pesticide',
+    'apps.front',
+    'apps.programme',
     'rest_framework',
-
+     # !:ujshq;,  
      # Ensure this is the correct app name and path
 
-    'apps.home'  # Enable the inner home (home)
 
 ]
 
@@ -90,6 +93,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'apps.context_processors.cfg_assets_root',
+                'apps.context_processors.cfg_front_root',
+
             ],
         },
     },

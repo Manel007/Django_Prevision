@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class CropYield(models.Model):
     area = models.CharField(max_length=100)
     item = models.CharField(max_length=100)

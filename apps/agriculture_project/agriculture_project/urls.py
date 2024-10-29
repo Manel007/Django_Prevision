@@ -3,6 +3,7 @@ from . import views
 from .views import yield_prediction_view
 
 
+
 urlpatterns = [
     path('list/', views.yield_list, name='yield_list'),
     path('yield/<int:pk>/', views.yield_detail, name='yield_detail'),

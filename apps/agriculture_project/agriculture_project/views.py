@@ -71,7 +71,7 @@ def yield_delete(request, pk):
 #Regr Linéaire 
 def yield_prediction_view(request):
     # Load and preprocess the data
-    yield_data = pd.read_csv('C:/Users/user/Desktop/black-dashboard-django-master/black-dashboard-django-master/yield_df.csv')
+    yield_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/yield_df.csv')
     yield_data.dropna(inplace=True)
 
     # Prepare data for the model

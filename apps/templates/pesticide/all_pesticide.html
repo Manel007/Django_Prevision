@@ -1,0 +1,149 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <form method="GET" action="{% url 'all_pesticide' %}">
+                <div class="row">
+                    <div class="col-md-7 pr-md-1">
+                        <div class="form-group">
+                            <input type="text" class="form-control me-5" name="search" placeholder="Rechercher..." value="{{ search_query|default:'' }}">
+                        </div>
+                    </div>
+                    <div class="col-md-5 px-md-1">
+                        <div class="form-group">
+                            <button class="btn btn-outline-secondary" type="submit">Rechercher</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="text-right mb-3">
+                <a href="{% url 'pesticide_create' %}" class="btn btn-primary">
+                    Ajouter un pesticide
+                </a>
+                <a href="{% url 'predict_all_pesticides' %}" class="btn btn-warning">
+                    Voir toutes les prédictions
+                </a>
+            </div>
+
+            <div class="card">
+                {% if messages %}
+                <div class="alert alert-success">
+                    {% for message in messages %}
+                    <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <div class="card-header">
+                    <h4 class="card-title"> TABLE DES PESTICIDES </h4>
+                </div>
+                
+                <div class="card-body">
+                    <form method="POST" action="{% url 'store_selected_pesticides' %}">
+                        {% csrf_token %}
+                        <div class="table-responsive">
+                            {% if page_obj %}
+                            <table class="table tablesorter">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th>Sélectionner</th>
+                                        <th>Domain</th>
+                                        <th>Area</th>
+                                        <th>Element</th>
+                                        <th>Item</th>
+                                        <th>Year</th>
+                                        <th>Unit</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for pesticide in page_obj %}
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selected_pesticides" value="{{ pesticide.id }}" onchange="toggleButton()">
+                                        </td>
+                                        <td>{{ pesticide.domain }}</td>
+                                        <td>{{ pesticide.area }}</td>
+                                        <td>{{ pesticide.element }}</td>
+                                        <td>{{ pesticide.item }}</td>
+                                        <td>{{ pesticide.year }}</td>
+                                        <td>{{ pesticide.unit }}</td>
+                                        <td>
+                                            <a href="{% url 'edit_pesticide' pesticide.id %}" class="btn btn-info btn-sm" title="Modifier">
+                                                <i class="tim-icons icon-refresh-02"></i>
+                                            </a>
+                                            <form action="{% url 'delete_pesticide' pesticide.id %}" method="POST" style="display:inline;">
+                                                {% csrf_token %}
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Supprimer">
+                                                    <i class="tim-icons icon-simple-remove"></i>
+                                                </button>
+                                            </form>
+                                            <a href="{% url 'pesticide_prediction_view' pesticide.id %}" class="btn btn-warning btn-sm" title="Prédire">
+                                                Prédire
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+
+                            <div class="pagination">
+                                <span class="step-links">
+                                    {% if page_obj.has_previous %}
+                                    <a href="?page=1&search={{ search_query }}" class="btn btn-secondary">
+                                        <i class="tim-icons icon-minimal-left"></i><i class="tim-icons icon-minimal-left"></i>
+                                    </a>
+                                    <a href="?page={{ page_obj.previous_page_number }}&search={{ search_query }}" class="btn btn-secondary">
+                                        <i class="tim-icons icon-minimal-left"></i>
+                                    </a>
+                                    {% endif %}
+                                    
+                                    <span class="current">
+                                        Page {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.
+                                    </span>
+                                    
+                                    {% if page_obj.has_next %}
+                                    <a href="?page={{ page_obj.next_page_number }}&search={{ search_query }}" class="btn btn-secondary">
+                                        <i class="tim-icons icon-minimal-right"></i>
+                                    </a>
+                                    <a href="?page={{ page_obj.paginator.num_pages }}&search={{ search_query }}" class="btn btn-secondary">
+                                        <i class="tim-icons icon-minimal-right"></i><i class="tim-icons icon-minimal-right"></i>
+                                    </a>
+                                    {% endif %}
+                                </span>
+                            </div>                        
+
+                            {% else %}
+                            <p>Aucun pesticide trouvé</p>
+                            {% endif %}
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="store-button" disabled>Ajouter au dataset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleButton() {
+        const checkboxes = document.querySelectorAll('input[name="selected_pesticides"]:checked');
+        const storeButton = document.getElementById('store-button');
+        storeButton.disabled = checkboxes.length === 0; // Active le bouton si au moins une case est cochée
+    }
+</script>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
+

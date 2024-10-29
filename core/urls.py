@@ -11,6 +11,9 @@ urlpatterns = [
     path("agriculteurs/", include('apps.agriculteur.urls')),  
     path("generateimage/", include('apps.images.urls')),  
     path("rocVocal/", include('apps.reconnaissancevoc.urls')), 
+    path("", include('apps.pesticide.urls')), 
+    path("programme_trait/", include('apps.programme.urls')),  
+    path("", include('apps.front.urls')),  
     path("", include("apps.authentication.urls")), # Auth routes - login / register
     path("", include('apps.agriculture_project.agriculture_project.urls')),
 
