@@ -8,9 +8,13 @@ from django.urls import path, include
 from apps.Culture import views
 from apps.Technique import views as technique_views
 from apps.RecommendationTech import views as recommend_views
+from django.urls import path, include  # add this
+from django.urls import path
+from apps.zonegéosamarapp import views as viewszone
 
 
 urlpatterns = [
+    
     path('admin/', admin.site.urls),          # Django admin route
     path("agriculteurs/", include('apps.agriculteur.urls')),  
     path("generateimage/", include('apps.images.urls')),  
@@ -32,7 +36,31 @@ urlpatterns = [
     path('updateTechnique<int:technique_id>/', technique_views.update_technique, name='update_technique'),
     path('deleteTechnique/<int:pk>/', technique_views.delete_technique, name='delete_technique'),
     path('recommander/', recommend_views.recommend_view, name='recommend_view'),
-    # Leave `Home.Urls` as last the last line
+   
+
+
+
+ 
+
+path('zones/', viewszone.ZoneList, name='zone_list'),  # Liste des zones
+path('zones/create', viewszone.ZoneCreate, name='zone_form'),  # créer une nouvelle zone géo
+path('zones/update/<int:pk>/', viewszone.ZoneUpdate, name='zone_update'),  # créer une nouvelle zone géo
+path('zones/delete/<int:pk>/', viewszone.ZoneDelete, name='zone_delete'),
+
+path('typesol/', viewszone.TypeSolList ,name='typesol_list'),
+path('typesol/create/', viewszone.TypeSolCreate, name='typesol_form'),
+path('typesol/update/<int:pk>/', viewszone.TypeSolUpdate, name='type_sol_update'),
+path('typesol/delete/<int:pk>/', viewszone.TypeSolDelete, name='type_sol_delete'),
+
+
+
+
+path('dataset-anomalies/', viewszone.dataset_anomalies_view, name='dataset_anomalies'),
+
+path('predict-soil/', viewszone.predict_soil, name='predict_soil'),
+path('soil-prediction-form/', viewszone.soil_prediction_form, name='soil_prediction_form'),  # Ensure this path exists
+# Leave `Home.Urls` as last the last line
     path("", include("apps.home.urls")),
+    
 
 ]

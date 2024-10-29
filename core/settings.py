@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'crispy_forms',
 
     'apps.front',
-    'apps.home',
+   
     'apps.agriculteur',
     'apps.images',
     'apps.reconnaissancevoc',
@@ -70,6 +70,11 @@ INSTALLED_APPS = [
     'apps.Culture',
     'apps.Technique',
     'apps.RecommendationTech',
+    'apps.zonegéosamarapp',
+    'apps.home' ,
+    'django_extensions'
+     # Enable the inner home (home)
+   
 ]
 
 
