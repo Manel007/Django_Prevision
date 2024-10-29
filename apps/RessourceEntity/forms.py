@@ -11,3 +11,8 @@ class FournisseurForm(forms.ModelForm):
     class Meta:
         model = Fournisseur
         fields = ['nom', 'type_fournisseur', 'adresse', 'numero_telephone', 'ressources_fournies']
+
+class PredictForm(forms.Form):
+    nom_ressource = forms.CharField(label='Nom de la ressource', max_length=100)
+    saison = forms.ChoiceField(choices=[('winter', 'Winter'), ('spring', 'Spring'), 
+                                        ('summer', 'Summer'), ('fall', 'Fall')])

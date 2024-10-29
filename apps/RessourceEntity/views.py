@@ -4,6 +4,48 @@ from .forms import RessourceForm ,FournisseurForm
 from django.db.models import Q
 
 import pandas as pd
+from .forms import PredictForm
+from sklearn.ensemble import RandomForestRegressor
+
+# Charger le modèle pré-entrainé et les données une seule fois
+data = pd.read_csv('apps/RessourceEntity/Ressourceee.csv')  # Adapter le chemin
+X = pd.get_dummies(data[['nom_ressource', 'Saison']], drop_first=True)
+y = data['quantite']
+
+# Entraîner le modèle une seule fois
+model = RandomForestRegressor(n_estimators=100, random_state=42)
+model.fit(X, y)
+
+def predict_view(request):
+    predicted_quantity = None  # Initialiser la variable
+
+    if request.method == 'POST':
+        form = PredictForm(request.POST)
+        if form.is_valid():
+            # Récupérer les données du formulaire
+            nom_ressource = form.cleaned_data['nom_ressource']
+            saison = form.cleaned_data['saison']
+
+            # Créer une nouvelle donnée pour la prédiction
+            new_data = pd.get_dummies(pd.DataFrame(
+                [[nom_ressource, saison]], columns=['nom_ressource', 'Saison']
+            ), drop_first=True)
+
+            # S'assurer que les colonnes correspondent à l'entraînement
+            new_data = new_data.reindex(columns=X.columns, fill_value=0)
+
+            # Faire la prédiction
+            predicted_quantity = model.predict(new_data)[0]
+
+    else:
+        form = PredictForm()
+
+    return render(request, 'PredictRessourceQuantity/predictressource.html', {
+        'form': form, 'predicted_quantity': predicted_quantity
+    })
+
+
+
 
 
 # Liste des ressources

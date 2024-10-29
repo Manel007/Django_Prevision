@@ -27,6 +27,7 @@ urlpatterns = [
     path('fournisseurs/new/', views.fournisseur_create, name='fournisseur_create'),
     path('fournisseurs/<int:pk>/edit/', views.fournisseur_update, name='fournisseur_update'),
     path('fournisseurs/<int:pk>/delete/', views.fournisseur_delete, name='fournisseur_delete'),
- 
+     path('predict/', views.predict_view, name='predict'),
+
   path("", include("apps.home.urls"))
 ]
