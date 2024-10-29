@@ -103,17 +103,27 @@ def TypeSolDelete(request, pk):
         return redirect('typesol_list')  
     return render(request, 'typesol/type_sol_confirm_delete.html', {'type_sol': type_sol})  
 
+from django.http import JsonResponse
+from django.shortcuts import render
 
-#partie AI
+from django.http import JsonResponse
+from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+
+# Partie AI
+@csrf_exempt
 def dataset_anomalies_view(request):
-    anomalies_data = detect_anomalies()  # Assuming this returns the anomalies and their count
-    anomalies = anomalies_data['anomalies']  # List of anomalies
-    anomaly_count = anomalies_data['count']  # Count of anomalies
+    if request.method == 'POST':
+        # Only process anomalies if request is POST (AJAX call on button press)
+        anomalies_data = detect_anomalies()  # Assuming this returns the anomalies and their count
+        return JsonResponse({
+            'anomalies': anomalies_data['anomalies'],
+            'count': anomalies_data['count']
+        })
+    
+    # Render the page without anomalies data initially
+    return render(request, 'typesol/dataset_anomalies.html')
 
-    return render(request, 'typesol/dataset_anomalies.html', {
-        'anomalies': anomalies,
-        'count': anomaly_count,
-    })
 
     
 
