@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'apps.pesticide',
     'apps.programme',
 
-    'rest_framework',  # Assurez-vous qu'il n'apparaît qu'une seule fois
+    'rest_framework',  
 ]
 
 

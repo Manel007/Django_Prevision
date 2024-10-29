@@ -2,7 +2,29 @@
 
 {% block title %}Tables{% endblock %} 
 
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+
+.classnew {
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px;
+        font-size: 16px; 
+        transition: background-color 0.3s, transform 0.3s, color 0.3s; 
+        cursor: pointer; 
+    }
+
+    .classnew:hover {
+        background-color: #45a049; 
+        color: black; 
+        transform: scale(1.05); 
+    }
+
+
+</style>
+{% endblock stylesheets %}
 
 {% block content %}
 <div class="content">
@@ -12,20 +34,20 @@
                 <div class="row">
                     <div class="col-md-7 pr-md-1">
                         <div class="form-group">
-                            <input type="text" class="form-control me-5" name="search" placeholder="Rechercher par nom ou pesticide" value="{{ search_query|default:'' }}">
+                            <input type="text" class="form-control me-5" name="search" placeholder="Search By Name or Pesticide" value="{{ search_query|default:'' }}">
                         </div>
                     </div>
                     <div class="col-md-5 px-md-1">
                         <div class="form-group">
-                            <button class="btn btn-outline-secondary" type="submit">Rechercher</button>
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
                         </div>
                     </div>
                 </div>
             </form>
 
             <div class="text-right mb-3">
-                <a href="{% url 'add_prog' %}" class="btn btn-primary">
-                    Ajouter un programme
+                <a href="{% url 'add_prog' %}" class="classnew">
+                      Add a Program        
                 </a>
                
             </div>
@@ -40,7 +62,7 @@
                 {% endif %}
                 
                 <div class="card-header">
-                    <h4 class="card-title">TABLE DE PROGRAMMES</h4>
+                    <h4 class="card-title">PROGRAMS</h4>
                 </div>
                 
                 <div class="card-body">
@@ -49,9 +71,9 @@
                         <table class="table tablesorter">
                             <thead class="text-primary">
                                 <tr>
-                                    <th>Nom</th>
+                                    <th>Name</th>
                                     <th>Description</th>
-                                    <th>Fréquence d'application</th>
+                                    <th>Application Frequency</th>
                                     <th>Pesticide</th>
                                     <th>Actions</th>
                                 </tr>
@@ -70,7 +92,7 @@
                                                 <i class="tim-icons icon-simple-remove"></i>
                                             </button>
                                             <a href="{% url 'edit_prog' programme.id %}" class="btn btn-info btn-sm" title="Modifier">
-                                                <i class="tim-icons icon-refresh-02"></i>
+                                                <i class="tim-icons icon-pencil"></i>
                                             </a>
                                             <a href="{% url 'details_prog' programme.id %}" class="btn btn-info btn-sm" title="Détailles">
                                                 <i class="tim-icons icon-light-3"></i>
@@ -110,7 +132,7 @@
                         </div>
 
                         {% else %}
-                        <p>Aucun programme trouvé</p>
+                        <p>No programs found</p>
                         {% endif %}
                     </div>
                 </div>

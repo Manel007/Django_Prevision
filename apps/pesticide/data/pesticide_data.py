@@ -6,13 +6,10 @@ class Command(BaseCommand):
     help = 'Load pesticide data from CSV file'
 
     def handle(self, *args, **kwargs):
-        # Charger les données des pesticides
         pesticide_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv')
 
-        # Nettoyer les noms de colonnes
-        pesticide_data.columns = pesticide_data.columns.str.strip()  # Supprimer les espaces
+        pesticide_data.columns = pesticide_data.columns.str.strip()  
 
-        # Vérifier les colonnes pour s'assurer qu'elles sont correctes
         print("DataFrame columns:", pesticide_data.columns)
 
         for _, row in pesticide_data.iterrows():
@@ -23,7 +20,7 @@ class Command(BaseCommand):
                 item=row['item'],
                 year=int(row['year']),
                 unit=row['unit'],
-                value=float(row['value'])  # Assurez-vous que cette colonne existe
+                value=float(row['value'])  
             )
 
         self.stdout.write(self.style.SUCCESS('Pesticide data loaded successfully.'))
