@@ -140,6 +140,8 @@ class ReviewForm(forms.ModelForm):
         comment = self.cleaned_data.get('comment')
         if comment and len(comment) < 10:
             raise forms.ValidationError('Your comment must be at least 10 characters long.')
+    
+    ##
         return comment
 
     class Meta:

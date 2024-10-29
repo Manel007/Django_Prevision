@@ -18,6 +18,7 @@ class Command(BaseCommand):
         for _, row in yield_data.iterrows():
             crop_yields.append(
                 CropYield(
+                 
                     area=row['Area'],
                     item=row['Item'],
                     year=int(row['Year']),
