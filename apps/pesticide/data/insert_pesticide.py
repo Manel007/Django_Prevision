@@ -14,7 +14,7 @@ class Command(BaseCommand):
 
         # Charger les données existantes dans le fichier CSV
         try:
-            pesticide_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv')
+            pesticide_data = pd.read_csv('C:/Users/rebhi/OneDrive/Bureau/Django_Prevision/pesticides.csv')
         except FileNotFoundError:
             pesticide_data = pd.DataFrame(columns=['Domain', 'Area', 'Element', 'Item', 'Year', 'Unit', 'Value'])
 
@@ -44,7 +44,7 @@ class Command(BaseCommand):
         # Vérifiez si le DataFrame est toujours vide avant d'enregistrer
         if not pesticide_data.empty:
             # Enregistrer le DataFrame mis à jour dans le fichier CSV
-            pesticide_data.to_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv', index=False)
+            pesticide_data.to_csv('C:/Users/rebhi/OneDrive/Bureau/Django_Prevision/pesticides.csv', index=False)
             self.stdout.write(self.style.SUCCESS('Selected pesticide data added to the CSV successfully.'))
         else:
             self.stdout.write(self.style.WARNING('Aucune donnée à ajouter au fichier CSV.'))

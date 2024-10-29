@@ -7,7 +7,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         # Charger les données des pesticides
-        pesticide_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv')
+        pesticide_data = pd.read_csv('C:/Users/rebhi/OneDrive/Bureau/Django_Prevision/pesticides.csv')
 
         # Nettoyer les noms de colonnes
         pesticide_data.columns = pesticide_data.columns.str.strip()  # Supprimer les espaces

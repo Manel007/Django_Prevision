@@ -101,7 +101,7 @@ def delete_pesticide(request, pk):
 def pesticide_prediction_view(request, pesticide_id=None, predict_all=False):
     # Charger et prétraiter les données
     try:
-        data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv')
+        data = pd.read_csv('C:/Users/rebhi/OneDrive/Bureau/Django_Prevision/pesticides.csv')
     except FileNotFoundError:
         return HttpResponse("Le fichier CSV des pesticides est introuvable.")
 
@@ -205,7 +205,7 @@ def store_selected_pesticides(request):
 
         # Charger les données existantes dans le fichier CSV
         try:
-            pesticide_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv')
+            pesticide_data = pd.read_csv('C:/Users/rebhi/OneDrive/Bureau/Django_Prevision/pesticides.csv')
         except FileNotFoundError:
             pesticide_data = pd.DataFrame(columns=['Domain', 'Area', 'Element', 'Item', 'Year', 'Unit', 'Value'])
 
@@ -229,7 +229,7 @@ def store_selected_pesticides(request):
                 messages.warning(request, f'Le pesticide avec l\'ID {pesticide_id} n\'existe pas.')
 
         # Enregistrer le DataFrame mis à jour dans le fichier CSV
-        pesticide_data.to_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv', index=False)
+        pesticide_data.to_csv('C:/Users/rebhi/OneDrive/Bureau/Django_Prevision/pesticides.csv', index=False)
         messages.success(request, 'Les données des pesticides sélectionnés ont été ajoutées au fichier CSV avec succès.')
         return redirect('all_pesticide')
 

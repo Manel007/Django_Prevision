@@ -1,0 +1,1001 @@
+nom,description,cycle_croissance_jours,rendement_attendu,zone_culture_recommandee,type_sol_prefere,irrigation
+Orge de printemps,Riche en vitamines,462,14,Nord,Sablonneux,659.07
+Piment vert,Haricot de petite taille riche en fibres.,834,3,Zone sèche,Argileux,471.53
+Safran,Céréale d'été riche en fibres.,478,17,Nord,Sablonneux,202.13
+Fèves,Fruit,426,13,Est,Argileux,568.34
+Soja,Graminée résistante à la sécheresse.,53,5,Est,Argileux,663.5
+Grenadier,Légume,742,4,Ouest,Argileux,719.85
+Papyrus,Riche en vitamines,46,17,Sud,Sablonneux,478.78
+Kiwi,Légume,248,14,Sud,Limoneux,559.91
+Laitue,Légumineuse riche en protéines.,911,2,Zone sèche,Argileux,433.76
+Artichaut,Légumineuse riche en protéines.,205,18,Sud,Sablonneux,75.42
+Ananas,Variété de maïs sucrée et tendre.,262,15,Ouest,Argileux,997.27
+Canne à sucre,Culture aquatique à grains essentiels.,24,18,Nord,Sablonneux,866.53
+Canneberge,Riche en vitamines,149,14,Ouest,Argileux,670.18
+Poirier,Culture aquatique à grains essentiels.,761,5,Ouest,Sablonneux,57.06
+Arbre à pain,Légume,979,6,Sud,Limoneux,715.08
+Champignon shiitake,Graminée résistante à la sécheresse.,864,6,Ouest,Argileux,360.96
+Litchi,,512,17,Zone sèche,Limoneux,297.8
+Baobab,Légumineuse riche en protéines.,804,7,Est,Limoneux,182.95
+Quinoa,Culture aquatique à grains essentiels.,482,6,Ouest,Argileux,352.6
+Rhubarbe,Graminée résistante à la sécheresse.,176,8,Sud,Limoneux,211.77
+Quinoa,Fruit,782,8,Ouest,Limoneux,155.5
+Camomille,Haricot de petite taille riche en fibres.,488,9,Zone sèche,Argileux,96.19
+Blé tendre,Lentille pour les clim,43,19,Nord,Limoneux,783.26
+Abricotier,Légume,690,15,Nord,Limoneux,496.54
+Nectarine,Graminée résistante à la sécheresse.,56,10,Zone sèche,Sablonneux,81.44
+Blé dur,Légumineuse riche en protéines.,288,6,Est,Sablonneux,540.21
+Poirier,Haricot de petite taille riche en fibres.,17,9,Nord,Argileux,147.26
+Blé tendre,Lentille pour les clim,954,16,Ouest,Argileux,361.38
+Basilic,Culture céréalière riche en amidon.,179,9,Zone sèche,Argileux,649.85
+Tournesol,Riche en vitamines,464,5,Sud,Sablonneux,735.19
+Seigle,Culture céréalière riche en amidon.,458,20,Nord,Limoneux,639.39
+Chou rouge,Légumineuse riche en protéines.,505,5,Nord,Argileux,670.55
+Arachide,Légume,569,20,Sud,Argileux,283.6
+Théier,Haricot de petite taille riche en fibres.,447,5,Nord,Argileux,464.17
+Coton,Haricot de petite taille riche en fibres.,850,19,Zone sèche,Sablonneux,81.8
+Ciboulette,Culture céréalière riche en amidon.,294,2,Est,Limoneux,307.43
+Céleri,Culture aquatique à grains essentiels.,879,14,Est,Sablonneux,119.78
+Manguier,Légumineuse riche en protéines.,485,9,Nord,Limoneux,629.87
+Noix de cajou,Fruit,550,16,Zone sèche,Argileux,248.16
+Poirier,,854,20,Est,Argileux,811.44
+Tomates,Variété de maïs sucrée et tendre.,98,9,Ouest,Argileux,60.31
+Cacao,Haricot de petite taille riche en fibres.,416,11,Zone sèche,Argileux,357.64
+Carottes,Culture aquatique à grains essentiels.,759,18,Zone sèche,Limoneux,805.02
+Romarin,Variété de maïs sucrée et tendre.,976,12,Nord,Sablonneux,858.88
+Noix de cajou,Légume,57,13,Ouest,Limoneux,284.93
+Thym,Riche en vitamines,942,11,Zone sèche,Argileux,42.96
+Pistachier,Haricot de petite taille riche en fibres.,905,10,Sud,Sablonneux,422.03
+Lentilles,Riche en vitamines,573,9,Nord,Limoneux,714.0
+Maïs sucré,Culture aquatique à grains essentiels.,307,18,Zone sèche,Argileux,1000.36
+Soja,Lentille pour les clim,645,20,Ouest,Sablonneux,637.0
+Orge de printemps,Légume,599,5,Est,Sablonneux,26.8
+Vigne à raisin,Fruit,462,9,Nord,Sablonneux,588.25
+Millet,Variété de maïs sucrée et tendre.,772,9,Zone sèche,Sablonneux,376.75
+Tomates,Variété de maïs sucrée et tendre.,44,11,Est,Argileux,416.95
+Concombre,,306,14,Zone sèche,Limoneux,404.13
+Menthe,Céréale d'été riche en fibres.,258,1,Est,Limoneux,894.29
+Mizuna,Graminée résistante à la sécheresse.,76,15,Est,Sablonneux,93.24
+Curcuma,Culture aquatique à grains essentiels.,902,12,Sud,Limoneux,557.58
+Poivron rouge,Lentille pour les clim,250,20,Est,Sablonneux,570.95
+Muscade,Graminée résistante à la sécheresse.,270,10,Nord,Sablonneux,600.68
+Lupin,Lentille pour les clim,11,9,Nord,Limoneux,95.32
+Muscade,Riche en vitamines,837,13,Sud,Argileux,330.49
+Tomates,Variété de maïs sucrée et tendre.,402,9,Ouest,Sablonneux,110.26
+Baies de goji,Culture aquatique à grains essentiels.,599,2,Nord,Argileux,106.63
+Pommier,Riche en vitamines,353,3,Sud,Limoneux,680.15
+Lupin,Riche en vitamines,547,19,Ouest,Limoneux,654.07
+Coton,Graminée résistante à la sécheresse.,924,18,Nord,Limoneux,354.07
+Avoine nue,,830,6,Nord,Argileux,24.94
+Fraise,Graminée résistante à la sécheresse.,702,11,Ouest,Argileux,1000.42
+Banane plantain,Légume,708,17,Sud,Sablonneux,73.88
+Bette à carde,Graminée résistante à la sécheresse.,717,20,Est,Limoneux,84.63
+Jujubier,Légume,686,13,Zone sèche,Argileux,522.43
+Seigle,Légumineuse riche en protéines.,448,11,Sud,Limoneux,202.68
+Chou-fleur,Riche en vitamines,807,18,Nord,Argileux,355.15
+Vanille,Culture céréalière riche en amidon.,640,20,Est,Limoneux,86.77
+Mizuna,Variété de maïs sucrée et tendre.,612,18,Est,Limoneux,385.02
+Rhubarbe,Céréale d'été riche en fibres.,894,4,Nord,Limoneux,427.35
+Arachide,Céréale d'été riche en fibres.,652,14,Sud,Sablonneux,252.95
+Millet,Légumineuse riche en protéines.,82,3,Ouest,Sablonneux,111.12
+Papaye,Graminée résistante à la sécheresse.,169,13,Est,Sablonneux,616.47
+Luzerne,,821,14,Zone sèche,Limoneux,446.93
+Arachide,Culture aquatique à grains essentiels.,240,19,Est,Argileux,549.65
+Soja,Céréale d'été riche en fibres.,635,17,Est,Limoneux,713.5
+Bette à carde,Fruit,675,1,Sud,Argileux,289.54
+Cacao,Légumineuse riche en protéines.,281,1,Sud,Sablonneux,379.21
+Champignon shiitake,Graminée résistante à la sécheresse.,840,16,Zone sèche,Limoneux,6.22
+Baobab,Riche en vitamines,512,18,Zone sèche,Limoneux,452.03
+Gingembre,Haricot de petite taille riche en fibres.,189,6,Nord,Sablonneux,652.44
+Lentilles,Lentille pour les clim,738,2,Ouest,Sablonneux,260.61
+Blé tendre,Culture aquatique à grains essentiels.,941,6,Nord,Argileux,170.62
+Vanille,Culture aquatique à grains essentiels.,280,15,Zone sèche,Limoneux,831.54
+Soja,Céréale d'été riche en fibres.,178,9,Zone sèche,Sablonneux,336.85
+Vanille,Variété de maïs sucrée et tendre.,677,13,Est,Limoneux,923.39
+Litchi,Graminée résistante à la sécheresse.,169,13,Ouest,Argileux,17.85
+Muscade,Culture céréalière riche en amidon.,973,8,Nord,Sablonneux,231.34
+Colza oléagineux,Haricot de petite taille riche en fibres.,506,13,Zone sèche,Limoneux,260.25
+Poirier,Céréale d'été riche en fibres.,557,1,Nord,Limoneux,625.08
+Acacia,Lentille pour les clim,527,2,Ouest,Sablonneux,52.92
+Framboise,Lentille pour les clim,201,17,Est,Limoneux,113.42
+Amandier,Riche en vitamines,525,10,Ouest,Limoneux,650.15
+Noix de cajou,Lentille pour les clim,134,4,Nord,Limoneux,315.69
+Origan,Culture céréalière riche en amidon.,568,1,Est,Sablonneux,958.6
+Ananas,Culture céréalière riche en amidon.,19,20,Sud,Limoneux,218.39
+Olives,Variété de maïs sucrée et tendre.,217,4,Sud,Argileux,15.59
+Amandier,Culture céréalière riche en amidon.,938,17,Sud,Sablonneux,658.28
+Noyer,Légume,928,18,Est,Sablonneux,82.44
+Carottes,Culture aquatique à grains essentiels.,568,20,Zone sèche,Limoneux,490.62
+Gingembre,Riche en vitamines,260,4,Sud,Sablonneux,645.04
+Artichaut,Fruit,526,7,Ouest,Argileux,734.68
+Romarin,Culture aquatique à grains essentiels.,548,12,Nord,Limoneux,302.4
+Quinoa,Haricot de petite taille riche en fibres.,761,18,Zone sèche,Sablonneux,144.08
+Pistachier,Haricot de petite taille riche en fibres.,929,17,Zone sèche,Limoneux,340.44
+Thym,Lentille pour les clim,560,6,Zone sèche,Sablonneux,221.58
+Pêcher,Culture aquatique à grains essentiels.,795,7,Ouest,Limoneux,699.18
+Chou frisé,Graminée résistante à la sécheresse.,471,7,Nord,Limoneux,80.96
+Maïs sucré,Riche en vitamines,494,6,Ouest,Limoneux,881.39
+Bambou,Culture céréalière riche en amidon.,772,17,Ouest,Sablonneux,497.75
+Ciboulette,Lentille pour les clim,508,10,Nord,Argileux,32.89
+Tamarin,Céréale d'été riche en fibres.,798,5,Sud,Sablonneux,15.94
+Melon d'eau,Graminée résistante à la sécheresse.,778,8,Ouest,Sablonneux,521.23
+Safran,Variété de maïs sucrée et tendre.,132,17,Zone sèche,Argileux,263.82
+Manguier,Graminée résistante à la sécheresse.,419,5,Ouest,Limoneux,992.75
+Laitue,Lentille pour les clim,43,9,Ouest,Argileux,782.16
+Nectarine,Culture céréalière riche en amidon.,987,4,Ouest,Limoneux,692.35
+Bambou,Culture aquatique à grains essentiels.,894,3,Est,Sablonneux,14.25
+Arachide,Haricot de petite taille riche en fibres.,380,7,Nord,Sablonneux,447.59
+Persil,Fruit,925,3,Est,Limoneux,618.78
+Fèves,Légume,364,1,Est,Sablonneux,5.22
+Safran,Lentille pour les clim,131,16,Nord,Sablonneux,977.51
+Coco,Fruit,440,13,Ouest,Limoneux,533.78
+Romarin,Culture aquatique à grains essentiels.,618,5,Est,Limoneux,37.7
+Rhubarbe,Légumineuse riche en protéines.,470,1,Est,Sablonneux,569.64
+Laitue,Variété de maïs sucrée et tendre.,694,15,Est,Argileux,723.44
+Prunier,Légumineuse riche en protéines.,896,3,Zone sèche,Limoneux,792.52
+Abricotier,Culture céréalière riche en amidon.,491,15,Nord,Argileux,791.82
+Rhubarbe,Haricot de petite taille riche en fibres.,92,12,Est,Argileux,444.73
+Safran,Variété de maïs sucrée et tendre.,395,7,Sud,Limoneux,625.71
+Baobab,Lentille pour les clim,268,19,Zone sèche,Argileux,614.51
+Camomille,Céréale d'été riche en fibres.,689,3,Zone sèche,Limoneux,615.11
+Champignon shiitake,Légume,74,7,Nord,Limoneux,352.87
+Palmier dattier,Céréale d'été riche en fibres.,973,7,Est,Sablonneux,146.51
+Canistel,Légume,333,15,Ouest,Limoneux,103.39
+Banane plantain,Culture céréalière riche en amidon.,388,9,Sud,Sablonneux,485.82
+Safran,Culture aquatique à grains essentiels.,731,2,Est,Sablonneux,96.4
+Champignon shiitake,Riche en vitamines,905,12,Zone sèche,Limoneux,743.63
+Ciboulette,Céréale d'été riche en fibres.,161,19,Sud,Argileux,572.72
+Quinoa,Céréale d'été riche en fibres.,348,17,Ouest,Limoneux,524.63
+Pois,Fruit,225,18,Sud,Sablonneux,392.07
+Papyrus,Céréale d'été riche en fibres.,33,16,Sud,Limoneux,421.68
+Ail,Céréale d'été riche en fibres.,78,13,Est,Sablonneux,740.51
+Maïs sucré,Légume,219,10,Ouest,Argileux,627.42
+Maïs sucré,Haricot de petite taille riche en fibres.,741,9,Zone sèche,Argileux,967.69
+Cacao,Céréale d'été riche en fibres.,608,9,Est,Argileux,940.92
+Pois,Lentille pour les clim,852,12,Est,Sablonneux,610.09
+Blé tendre,Culture aquatique à grains essentiels.,150,5,Est,Limoneux,399.25
+Romarin,Culture aquatique à grains essentiels.,259,13,Sud,Sablonneux,334.85
+Blé dur,Lentille pour les clim,436,11,Est,Sablonneux,391.55
+Safran,Culture aquatique à grains essentiels.,865,14,Sud,Sablonneux,365.08
+Coco,Céréale d'été riche en fibres.,120,3,Sud,Limoneux,898.95
+Acacia,Lentille pour les clim,135,15,Nord,Sablonneux,349.05
+Courgettes,,962,14,Zone sèche,Argileux,135.9
+Lentilles,Culture céréalière riche en amidon.,530,15,Sud,Limoneux,936.89
+Menthe,Culture céréalière riche en amidon.,150,7,Est,Sablonneux,919.01
+Tournesol,Culture aquatique à grains essentiels.,23,6,Sud,Sablonneux,991.07
+Rhubarbe,Culture céréalière riche en amidon.,940,15,Nord,Sablonneux,616.37
+Kiwi,,204,12,Zone sèche,Sablonneux,633.84
+Noix de cajou,Culture céréalière riche en amidon.,118,14,Sud,Argileux,240.59
+Nectarine,Fruit,943,1,Ouest,Argileux,170.56
+Bambou,Lentille pour les clim,33,19,Sud,Sablonneux,632.84
+Lavande,Légume,149,13,Nord,Sablonneux,616.19
+Poivron rouge,Culture céréalière riche en amidon.,536,13,Est,Sablonneux,277.95
+Origan,Céréale d'été riche en fibres.,719,20,Est,Sablonneux,721.77
+Luzerne,Graminée résistante à la sécheresse.,143,12,Ouest,Sablonneux,685.41
+Palmier dattier,Légumineuse riche en protéines.,736,19,Sud,Argileux,685.85
+Haricot mungo,Légumineuse riche en protéines.,486,12,Nord,Argileux,796.01
+Lin oléagineux,Légume,560,11,Ouest,Sablonneux,404.48
+Coco,Culture aquatique à grains essentiels.,52,1,Zone sèche,Limoneux,141.84
+Chou frisé,Haricot de petite taille riche en fibres.,718,8,Est,Argileux,442.04
+Tournesol,Haricot de petite taille riche en fibres.,312,19,Ouest,Limoneux,538.04
+Camomille,Graminée résistante à la sécheresse.,713,4,Zone sèche,Argileux,476.63
+Bette à carde,Culture aquatique à grains essentiels.,586,12,Est,Argileux,86.15
+Framboise,Haricot de petite taille riche en fibres.,93,8,Est,Argileux,365.56
+Chou cavalier,Culture aquatique à grains essentiels.,263,9,Est,Limoneux,454.0
+Chou cavalier,Variété de maïs sucrée et tendre.,511,6,Sud,Sablonneux,853.81
+Vigne à raisin,Graminée résistante à la sécheresse.,370,8,Est,Sablonneux,884.27
+Lin oléagineux,Légume,944,9,Zone sèche,Argileux,800.09
+Chou-fleur,Légume,789,5,Nord,Argileux,502.63
+Cacao,Graminée résistante à la sécheresse.,25,13,Zone sèche,Argileux,584.54
+Amandier,Variété de maïs sucrée et tendre.,935,16,Sud,Sablonneux,249.89
+Colza,Légumineuse riche en protéines.,107,14,Nord,Limoneux,498.2
+Kumquat,Culture céréalière riche en amidon.,86,18,Zone sèche,Argileux,768.76
+Pak choï,Graminée résistante à la sécheresse.,38,1,Est,Limoneux,828.59
+Coco,Céréale d'été riche en fibres.,419,5,Sud,Limoneux,947.95
+Ciboulette,Riche en vitamines,543,6,Sud,Argileux,399.54
+Lentilles,Variété de maïs sucrée et tendre.,305,5,Est,Sablonneux,869.58
+Lentilles,Riche en vitamines,506,13,Ouest,Sablonneux,486.14
+Radis,,146,19,Est,Argileux,269.21
+Riz paddy,Graminée résistante à la sécheresse.,698,19,Ouest,Sablonneux,663.13
+Coco,,514,6,Est,Argileux,171.54
+Pommes de terre,Culture céréalière riche en amidon.,906,19,Ouest,Sablonneux,892.15
+Avoine nue,Culture aquatique à grains essentiels.,473,20,Zone sèche,Argileux,304.49
+Mûre,Riche en vitamines,809,8,Est,Sablonneux,829.92
+Pommier,Légumineuse riche en protéines.,772,14,Ouest,Sablonneux,267.91
+Poivron rouge,Légumineuse riche en protéines.,731,11,Nord,Argileux,891.83
+Papyrus,Culture céréalière riche en amidon.,876,7,Est,Sablonneux,845.17
+Papyrus,Lentille pour les clim,185,14,Ouest,Limoneux,508.58
+Bambou,Riche en vitamines,57,18,Est,Sablonneux,249.69
+Aubergine,Lentille pour les clim,494,15,Ouest,Sablonneux,87.1
+Piment vert,Riche en vitamines,577,3,Ouest,Sablonneux,775.86
+Radis,Culture aquatique à grains essentiels.,369,19,Zone sèche,Sablonneux,328.81
+Riz paddy,Légume,322,14,Sud,Limoneux,826.03
+Théier,Fruit,825,18,Zone sèche,Argileux,493.9
+Ananas,Culture aquatique à grains essentiels.,53,12,Nord,Limoneux,672.44
+Baobab,Légumineuse riche en protéines.,888,18,Ouest,Argileux,645.11
+Carottes,,894,9,Ouest,Sablonneux,86.62
+Caféier,Graminée résistante à la sécheresse.,978,18,Zone sèche,Argileux,544.79
+Navet,Fruit,430,20,Est,Sablonneux,440.76
+Pak choï,Lentille pour les clim,205,12,Nord,Argileux,358.07
+Artichaut,Légumineuse riche en protéines.,163,19,Zone sèche,Argileux,754.27
+Basilic,Culture céréalière riche en amidon.,298,2,Sud,Argileux,424.08
+Canne à sucre,Fruit,157,9,Nord,Limoneux,217.77
+Brocoli,Céréale d'été riche en fibres.,517,2,Ouest,Sablonneux,957.04
+Mizuna,Variété de maïs sucrée et tendre.,365,3,Nord,Sablonneux,83.68
+Bette à carde,Riche en vitamines,425,16,Est,Sablonneux,656.49
+Gingembre,Graminée résistante à la sécheresse.,664,8,Nord,Limoneux,238.89
+Camomille,Légumineuse riche en protéines.,680,1,Sud,Limoneux,677.57
+Cannelle,Légume,927,13,Nord,Argileux,726.55
+Haricot mungo,Lentille pour les clim,878,5,Est,Argileux,591.1
+Kiwi,Graminée résistante à la sécheresse.,461,12,Ouest,Sablonneux,884.28
+Safran,Haricot de petite taille riche en fibres.,725,15,Nord,Argileux,268.0
+Noyer,Culture aquatique à grains essentiels.,427,7,Zone sèche,Sablonneux,249.05
+Pois chiche,Lentille pour les clim,217,5,Ouest,Limoneux,32.15
+Blé dur,Céréale d'été riche en fibres.,36,1,Nord,Argileux,57.82
+Mûre,Culture aquatique à grains essentiels.,160,20,Est,Argileux,839.21
+Figuier,Lentille pour les clim,256,6,Ouest,Limoneux,301.08
+Lentilles,Céréale d'été riche en fibres.,746,1,Sud,Limoneux,40.93
+Pêcher,Graminée résistante à la sécheresse.,337,4,Sud,Sablonneux,921.09
+Pommes de terre,Variété de maïs sucrée et tendre.,702,2,Sud,Argileux,812.55
+Chou cavalier,Variété de maïs sucrée et tendre.,469,13,Est,Limoneux,539.03
+Baies de goji,Haricot de petite taille riche en fibres.,273,11,Zone sèche,Limoneux,788.13
+Artichaut,Lentille pour les clim,649,12,Sud,Sablonneux,939.95
+Pêcher,Céréale d'été riche en fibres.,990,13,Ouest,Argileux,218.17
+Grenadier,Graminée résistante à la sécheresse.,711,11,Est,Limoneux,993.7
+Ciboulette,Riche en vitamines,492,10,Sud,Argileux,257.51
+Chou-fleur,Lentille pour les clim,135,6,Ouest,Argileux,625.7
+Noix de cajou,Légume,677,17,Sud,Limoneux,45.03
+Cacao,Légumineuse riche en protéines.,720,9,Nord,Sablonneux,425.06
+Menthe,Variété de maïs sucrée et tendre.,39,13,Nord,Argileux,632.3
+Safran,Graminée résistante à la sécheresse.,326,3,Zone sèche,Argileux,763.37
+Camomille,Céréale d'été riche en fibres.,171,15,Zone sèche,Limoneux,99.71
+Luzerne,Légumineuse riche en protéines.,834,20,Sud,Argileux,757.76
+Châtaignier,Variété de maïs sucrée et tendre.,662,3,Zone sèche,Limoneux,120.11
+Tamarin,Légume,227,13,Nord,Argileux,590.81
+Gingembre,Culture aquatique à grains essentiels.,745,13,Est,Argileux,819.1
+Luzerne,Lentille pour les clim,910,15,Zone sèche,Limoneux,436.4
+Théier,Variété de maïs sucrée et tendre.,97,15,Zone sèche,Limoneux,378.87
+Pois,Culture céréalière riche en amidon.,46,16,Sud,Argileux,268.7
+Navet,Fruit,220,4,Nord,Sablonneux,34.06
+Prunier,Culture céréalière riche en amidon.,551,17,Est,Limoneux,513.8
+Manguier,Fruit,785,13,Zone sèche,Limoneux,236.82
+Chou rouge,Riche en vitamines,418,18,Sud,Sablonneux,860.11
+Maïs sucré,Lentille pour les clim,302,20,Nord,Limoneux,76.74
+Blé dur,Légume,95,13,Zone sèche,Sablonneux,160.85
+Noix de cajou,Légumineuse riche en protéines.,466,16,Sud,Argileux,629.29
+Vesce,Culture aquatique à grains essentiels.,125,19,Ouest,Limoneux,742.9
+Papyrus,Lentille pour les clim,511,14,Ouest,Limoneux,167.93
+Arachide,Graminée résistante à la sécheresse.,729,14,Zone sèche,Sablonneux,244.0
+Jujubier,Fruit,794,1,Ouest,Limoneux,714.31
+Menthe,,612,16,Zone sèche,Sablonneux,370.71
+Poivron rouge,Légume,335,8,Ouest,Limoneux,859.05
+Avoine nue,Lentille pour les clim,464,5,Nord,Limoneux,207.66
+Banane plantain,Lentille pour les clim,316,2,Nord,Argileux,161.58
+Laitue,Fruit,959,9,Ouest,Sablonneux,84.63
+Avoine nue,Lentille pour les clim,965,6,Est,Sablonneux,920.85
+Olives,Culture céréalière riche en amidon.,134,16,Sud,Sablonneux,597.42
+Brocoli,Graminée résistante à la sécheresse.,966,18,Zone sèche,Argileux,204.72
+Maïs sucré,Riche en vitamines,854,14,Ouest,Argileux,512.26
+Arbre à pain,,17,18,Ouest,Sablonneux,865.26
+Tamarin,Céréale d'été riche en fibres.,15,8,Nord,Argileux,276.27
+Tomates,Haricot de petite taille riche en fibres.,858,10,Zone sèche,Limoneux,649.33
+Millet,Lentille pour les clim,385,18,Sud,Argileux,399.44
+Palmier dattier,Variété de maïs sucrée et tendre.,280,11,Sud,Argileux,72.95
+Radis,Légume,458,20,Ouest,Sablonneux,512.41
+Ananas,Haricot de petite taille riche en fibres.,790,4,Sud,Sablonneux,237.09
+Vesce,Riche en vitamines,500,9,Sud,Argileux,140.63
+Navet,Riche en vitamines,81,15,Zone sèche,Argileux,281.05
+Litchi,Riche en vitamines,210,11,Sud,Argileux,211.43
+Tamarin,Lentille pour les clim,633,11,Sud,Sablonneux,465.51
+Courgettes,Culture céréalière riche en amidon.,499,4,Nord,Limoneux,491.79
+Origan,Légume,834,5,Zone sèche,Limoneux,641.27
+Poivron rouge,Légume,780,9,Est,Argileux,941.08
+Gingembre,Haricot de petite taille riche en fibres.,672,19,Nord,Limoneux,563.21
+Épinard,Fruit,687,20,Nord,Limoneux,832.22
+Arachide,Légumineuse riche en protéines.,708,14,Zone sèche,Argileux,234.46
+Pêcher,Lentille pour les clim,116,4,Sud,Sablonneux,477.3
+Canistel,Haricot de petite taille riche en fibres.,14,19,Est,Sablonneux,710.86
+Pois chiche,Culture céréalière riche en amidon.,453,14,Sud,Limoneux,564.79
+Papyrus,Haricot de petite taille riche en fibres.,366,3,Zone sèche,Limoneux,690.29
+Palmier dattier,Culture aquatique à grains essentiels.,182,3,Est,Limoneux,693.87
+Noisetier,Culture aquatique à grains essentiels.,524,9,Ouest,Limoneux,401.84
+Champignon shiitake,Légumineuse riche en protéines.,155,7,Sud,Sablonneux,888.0
+Courgettes,Graminée résistante à la sécheresse.,497,5,Est,Limoneux,563.94
+Tournesol,Légume,756,20,Sud,Argileux,935.45
+Lentilles,Légume,610,9,Ouest,Argileux,14.71
+Gingembre,Graminée résistante à la sécheresse.,667,1,Nord,Limoneux,901.91
+Amandier,Céréale d'été riche en fibres.,465,2,Ouest,Limoneux,429.49
+Épinard,Culture aquatique à grains essentiels.,913,17,Ouest,Argileux,630.94
+Maïs sucré,Haricot de petite taille riche en fibres.,899,17,Est,Sablonneux,610.37
+Acacia,Haricot de petite taille riche en fibres.,489,7,Ouest,Limoneux,1.43
+Myrtille,Fruit,807,8,Sud,Argileux,129.8
+Nectarine,Variété de maïs sucrée et tendre.,192,16,Nord,Limoneux,171.37
+Muscade,Céréale d'été riche en fibres.,486,17,Ouest,Argileux,245.62
+Rhubarbe,Légumineuse riche en protéines.,523,14,Zone sèche,Limoneux,858.31
+Coton,Fruit,937,14,Nord,Sablonneux,129.44
+Litchi,Culture aquatique à grains essentiels.,514,4,Zone sèche,Sablonneux,233.47
+Betterave sucrière,Haricot de petite taille riche en fibres.,423,10,Est,Argileux,434.65
+Mizuna,Fruit,631,20,Nord,Limoneux,277.34
+Persil,Riche en vitamines,779,10,Est,Sablonneux,885.97
+Tomates,Culture céréalière riche en amidon.,462,7,Ouest,Limoneux,145.45
+Noix de cajou,Légumineuse riche en protéines.,632,16,Est,Argileux,133.53
+Champignon pleurote,Légumineuse riche en protéines.,814,3,Est,Argileux,797.01
+Coco,Culture céréalière riche en amidon.,751,12,Est,Limoneux,283.12
+Lin oléagineux,Culture céréalière riche en amidon.,851,1,Nord,Limoneux,494.32
+Nectarine,Céréale d'été riche en fibres.,794,8,Zone sèche,Argileux,429.93
+Vanille,Céréale d'été riche en fibres.,128,14,Zone sèche,Argileux,778.17
+Baies de goji,Variété de maïs sucrée et tendre.,64,13,Sud,Sablonneux,875.99
+Poirier,Fruit,110,16,Zone sèche,Limoneux,621.45
+Chou frisé,Lentille pour les clim,629,4,Nord,Sablonneux,943.62
+Amandier,,328,4,Sud,Limoneux,260.32
+Arbre à pain,Culture aquatique à grains essentiels.,305,9,Ouest,Limoneux,757.75
+Nectarine,Haricot de petite taille riche en fibres.,883,20,Zone sèche,Sablonneux,189.42
+Chou cavalier,Culture céréalière riche en amidon.,93,19,Nord,Limoneux,792.36
+Quinoa,,720,16,Zone sèche,Sablonneux,614.65
+Vigne à raisin,Graminée résistante à la sécheresse.,466,19,Ouest,Limoneux,670.55
+Coton,Légumineuse riche en protéines.,396,18,Sud,Limoneux,730.5
+Pois,Culture céréalière riche en amidon.,954,9,Ouest,Sablonneux,508.99
+Kumquat,Fruit,833,16,Est,Limoneux,8.8
+Litchi,,517,13,Est,Limoneux,654.3
+Aubergine,Culture aquatique à grains essentiels.,511,10,Ouest,Argileux,40.22
+Laitue,Légumineuse riche en protéines.,69,4,Est,Sablonneux,489.51
+Chou-fleur,,220,4,Nord,Limoneux,133.23
+Canistel,Lentille pour les clim,962,3,Zone sèche,Argileux,950.27
+Noyer,Variété de maïs sucrée et tendre.,32,10,Ouest,Argileux,323.74
+Manioc,Graminée résistante à la sécheresse.,657,1,Ouest,Limoneux,57.23
+Mizuna,Graminée résistante à la sécheresse.,306,14,Sud,Limoneux,203.92
+Betterave sucrière,,151,8,Nord,Sablonneux,176.46
+Anis étoilé,Variété de maïs sucrée et tendre.,261,16,Sud,Limoneux,477.11
+Jujubier,Variété de maïs sucrée et tendre.,988,16,Nord,Sablonneux,276.51
+Tamarin,Riche en vitamines,259,4,Sud,Limoneux,532.2
+Banane plantain,Culture aquatique à grains essentiels.,735,1,Nord,Limoneux,784.83
+Lavande,Légumineuse riche en protéines.,634,3,Ouest,Sablonneux,37.65
+Théier,Culture aquatique à grains essentiels.,232,8,Zone sèche,Argileux,418.0
+Champignon shiitake,Légume,829,4,Sud,Limoneux,545.09
+Chou frisé,,373,9,Zone sèche,Argileux,344.15
+Cannelle,Céréale d'été riche en fibres.,352,10,Est,Limoneux,238.52
+Sorgho grain,,287,4,Est,Limoneux,530.97
+Colza oléagineux,Fruit,496,15,Ouest,Limoneux,381.79
+Laitue,Riche en vitamines,930,9,Ouest,Sablonneux,165.61
+Pois chiche,Céréale d'été riche en fibres.,564,1,Est,Limoneux,318.98
+Avoine de printemps,Haricot de petite taille riche en fibres.,706,2,Ouest,Argileux,448.25
+Tournesol,Céréale d'été riche en fibres.,112,2,Est,Argileux,554.02
+Noyer,Culture aquatique à grains essentiels.,540,19,Nord,Limoneux,858.66
+Pommes de terre,Haricot de petite taille riche en fibres.,705,9,Est,Sablonneux,207.17
+Canneberge,Haricot de petite taille riche en fibres.,119,10,Nord,Sablonneux,330.98
+Manioc,,54,10,Nord,Limoneux,391.37
+Ananas,Haricot de petite taille riche en fibres.,444,16,Est,Limoneux,857.45
+Arachide,Fruit,520,6,Zone sèche,Sablonneux,449.22
+Sarrasin,Lentille pour les clim,412,8,Nord,Argileux,411.55
+Chou cavalier,Culture aquatique à grains essentiels.,540,7,Nord,Argileux,90.12
+Prunier,Graminée résistante à la sécheresse.,260,14,Ouest,Limoneux,717.4
+Manguier,Légume,194,6,Zone sèche,Limoneux,613.15
+Pommes de terre,Lentille pour les clim,269,15,Nord,Argileux,391.06
+Papyrus,Céréale d'été riche en fibres.,525,19,Sud,Limoneux,282.91
+Lavande,Haricot de petite taille riche en fibres.,147,17,Ouest,Limoneux,616.62
+Soja,Légumineuse riche en protéines.,208,8,Zone sèche,Sablonneux,842.17
+Céleri,Fruit,951,1,Ouest,Argileux,723.0
+Kiwi,Variété de maïs sucrée et tendre.,933,9,Nord,Argileux,274.57
+Acacia,Culture céréalière riche en amidon.,265,2,Nord,Sablonneux,707.58
+Tamarin,Riche en vitamines,79,11,Nord,Argileux,115.39
+Laitue,Variété de maïs sucrée et tendre.,141,8,Nord,Limoneux,381.8
+Palmier dattier,Graminée résistante à la sécheresse.,950,14,Est,Sablonneux,959.54
+Sorgho fourrager,Graminée résistante à la sécheresse.,151,4,Zone sèche,Limoneux,877.7
+Cannelle,Haricot de petite taille riche en fibres.,765,7,Sud,Sablonneux,704.82
+Thym,Légumineuse riche en protéines.,14,9,Est,Sablonneux,118.58
+Quinoa,,703,3,Zone sèche,Argileux,415.83
+Gingembre,Céréale d'été riche en fibres.,870,4,Nord,Argileux,892.99
+Lentilles,Légumineuse riche en protéines.,781,3,Nord,Argileux,792.56
+Betterave sucrière,Variété de maïs sucrée et tendre.,882,2,Ouest,Sablonneux,851.63
+Piment vert,Culture aquatique à grains essentiels.,37,14,Est,Argileux,715.55
+Champignon pleurote,Lentille pour les clim,410,9,Nord,Sablonneux,475.25
+Canneberge,Riche en vitamines,498,16,Est,Limoneux,270.9
+Myrtille,Haricot de petite taille riche en fibres.,47,17,Sud,Sablonneux,778.7
+Banane plantain,,81,10,Zone sèche,Limoneux,86.11
+Radis,Céréale d'été riche en fibres.,15,18,Ouest,Limoneux,69.48
+Manguier,Culture aquatique à grains essentiels.,530,6,Ouest,Sablonneux,304.27
+Papyrus,Culture céréalière riche en amidon.,623,9,Est,Limoneux,391.63
+Palmier dattier,Culture céréalière riche en amidon.,776,5,Est,Argileux,308.5
+Kumquat,Céréale d'été riche en fibres.,349,6,Ouest,Sablonneux,726.36
+Soja,Légumineuse riche en protéines.,136,13,Zone sèche,Limoneux,514.16
+Noyer,,192,14,Nord,Limoneux,397.89
+Pois chiche,Variété de maïs sucrée et tendre.,625,16,Sud,Sablonneux,171.32
+Canistel,Riche en vitamines,248,1,Sud,Sablonneux,22.77
+Haricot mungo,Céréale d'été riche en fibres.,614,7,Est,Argileux,266.08
+Pommes de terre,Graminée résistante à la sécheresse.,893,5,Sud,Limoneux,648.18
+Pak choï,,645,1,Est,Argileux,99.72
+Camomille,,649,6,Ouest,Argileux,36.91
+Coco,Variété de maïs sucrée et tendre.,553,7,Zone sèche,Limoneux,778.56
+Avoine de printemps,Fruit,817,2,Sud,Argileux,987.67
+Colza,Céréale d'été riche en fibres.,193,3,Sud,Limoneux,996.1
+Avoine nue,Graminée résistante à la sécheresse.,46,15,Zone sèche,Argileux,801.6
+Canneberge,Haricot de petite taille riche en fibres.,425,5,Ouest,Argileux,807.45
+Grenadier,Céréale d'été riche en fibres.,108,3,Nord,Sablonneux,1000.02
+Aubergine,Légumineuse riche en protéines.,359,15,Sud,Limoneux,691.67
+Luzerne,Culture céréalière riche en amidon.,212,6,Ouest,Sablonneux,245.47
+Châtaignier,Légume,791,10,Nord,Limoneux,103.02
+Betterave sucrière,Céréale d'été riche en fibres.,631,7,Est,Limoneux,655.02
+Noix de cajou,Fruit,664,5,Sud,Limoneux,510.42
+Sarrasin,Légumineuse riche en protéines.,982,10,Nord,Limoneux,997.46
+Lavande,Céréale d'été riche en fibres.,261,5,Ouest,Sablonneux,997.63
+Sesame,Culture aquatique à grains essentiels.,636,20,Ouest,Argileux,449.32
+Framboise,Légume,968,3,Zone sèche,Argileux,623.29
+Chou-fleur,Culture céréalière riche en amidon.,696,13,Zone sèche,Argileux,649.79
+Blé tendre,Culture aquatique à grains essentiels.,346,14,Ouest,Argileux,670.93
+Théier,,973,14,Est,Limoneux,631.13
+Seigle,Fruit,395,3,Sud,Limoneux,482.06
+Haricot mungo,Légumineuse riche en protéines.,207,8,Nord,Limoneux,586.56
+Safran,Légumineuse riche en protéines.,638,6,Ouest,Limoneux,985.99
+Baobab,Graminée résistante à la sécheresse.,76,7,Est,Limoneux,583.85
+Chou rouge,Riche en vitamines,604,1,Ouest,Sablonneux,326.9
+Colza,Fruit,91,4,Ouest,Limoneux,775.3
+Pêcher,Lentille pour les clim,55,20,Sud,Limoneux,550.84
+Brocoli,Lentille pour les clim,884,4,Sud,Sablonneux,299.79
+Pois,Haricot de petite taille riche en fibres.,644,12,Sud,Argileux,24.48
+Kumquat,Céréale d'été riche en fibres.,378,14,Est,Limoneux,933.48
+Poirier,Culture céréalière riche en amidon.,578,14,Est,Limoneux,87.62
+Tournesol,Lentille pour les clim,46,15,Ouest,Limoneux,419.53
+Amandier,Fruit,412,2,Est,Argileux,4.14
+Artichaut,Lentille pour les clim,281,16,Nord,Sablonneux,86.87
+Tournesol,Céréale d'été riche en fibres.,842,12,Sud,Argileux,77.15
+Nectarine,Variété de maïs sucrée et tendre.,696,9,Nord,Sablonneux,230.76
+Sorgho grain,Culture aquatique à grains essentiels.,487,7,Ouest,Sablonneux,974.43
+Fraise,Lentille pour les clim,283,14,Est,Sablonneux,347.8
+Ail,Riche en vitamines,913,13,Sud,Sablonneux,691.3
+Carottes,,64,7,Ouest,Argileux,67.89
+Millet,Légumineuse riche en protéines.,857,20,Est,Argileux,88.97
+Noisetier,Lentille pour les clim,293,8,Ouest,Limoneux,222.26
+Fèves,Riche en vitamines,478,11,Est,Limoneux,824.38
+Lentilles,Graminée résistante à la sécheresse.,582,3,Ouest,Limoneux,798.6
+Papaye,Culture céréalière riche en amidon.,854,15,Ouest,Limoneux,639.1
+Pommes de terre,Variété de maïs sucrée et tendre.,716,1,Nord,Sablonneux,435.95
+Curcuma,Légumineuse riche en protéines.,30,10,Ouest,Limoneux,311.24
+Champignon shiitake,Variété de maïs sucrée et tendre.,641,14,Nord,Limoneux,950.02
+Framboise,Graminée résistante à la sécheresse.,337,11,Zone sèche,Sablonneux,732.23
+Chou frisé,Culture céréalière riche en amidon.,127,8,Nord,Sablonneux,518.96
+Canne à sucre,Fruit,671,15,Sud,Sablonneux,169.95
+Ananas,Graminée résistante à la sécheresse.,156,5,Ouest,Limoneux,733.91
+Tamarin,Légumineuse riche en protéines.,172,6,Est,Limoneux,90.31
+Acacia,Haricot de petite taille riche en fibres.,682,2,Zone sèche,Limoneux,436.15
+Litchi,Légumineuse riche en protéines.,264,13,Sud,Argileux,611.58
+Anis étoilé,Lentille pour les clim,376,11,Est,Sablonneux,125.65
+Pommes de terre,Haricot de petite taille riche en fibres.,746,18,Sud,Sablonneux,362.96
+Jujubier,Riche en vitamines,925,6,Ouest,Sablonneux,647.52
+Avoine nue,Variété de maïs sucrée et tendre.,696,18,Est,Sablonneux,889.72
+Poirier,Haricot de petite taille riche en fibres.,491,12,Zone sèche,Argileux,943.56
+Céleri,Graminée résistante à la sécheresse.,59,12,Est,Sablonneux,683.44
+Concombre,Culture aquatique à grains essentiels.,750,13,Sud,Argileux,582.5
+Bambou,Lentille pour les clim,519,15,Sud,Limoneux,605.62
+Myrtille,Culture aquatique à grains essentiels.,752,5,Zone sèche,Limoneux,662.62
+Vesce,Céréale d'été riche en fibres.,1000,12,Sud,Limoneux,177.36
+Myrtille,Haricot de petite taille riche en fibres.,421,15,Zone sèche,Sablonneux,438.14
+Carottes,Culture céréalière riche en amidon.,609,19,Ouest,Limoneux,682.54
+Tomates,Culture céréalière riche en amidon.,681,3,Sud,Argileux,509.1
+Pak choï,Lentille pour les clim,549,16,Zone sèche,Sablonneux,871.91
+Kiwi,Légumineuse riche en protéines.,87,2,Sud,Argileux,841.68
+Tomates,Culture céréalière riche en amidon.,659,9,Nord,Sablonneux,495.01
+Haricot mungo,Culture aquatique à grains essentiels.,772,4,Zone sèche,Limoneux,325.84
+Chou rouge,Culture céréalière riche en amidon.,11,16,Sud,Argileux,727.92
+Millet,Légume,855,1,Zone sèche,Limoneux,857.02
+Bette à carde,Culture aquatique à grains essentiels.,683,14,Zone sèche,Limoneux,23.95
+Abricotier,Riche en vitamines,469,7,Sud,Sablonneux,165.13
+Tamarin,Céréale d'été riche en fibres.,863,1,Sud,Limoneux,266.62
+Pêcher,Lentille pour les clim,735,2,Ouest,Sablonneux,801.54
+Carottes,Légumineuse riche en protéines.,383,10,Sud,Limoneux,304.61
+Chou frisé,Lentille pour les clim,291,10,Est,Limoneux,724.65
+Laitue,Culture céréalière riche en amidon.,596,19,Zone sèche,Argileux,748.84
+Camomille,Légume,975,19,Est,Limoneux,155.32
+Tomates,Céréale d'été riche en fibres.,914,20,Ouest,Sablonneux,585.78
+Mûre,Légumineuse riche en protéines.,836,18,Zone sèche,Limoneux,298.73
+Jujubier,Haricot de petite taille riche en fibres.,937,19,Sud,Limoneux,349.31
+Banane plantain,Légume,201,15,Zone sèche,Sablonneux,803.69
+Piment vert,Fruit,515,17,Ouest,Argileux,56.23
+Caféier,Céréale d'été riche en fibres.,185,15,Sud,Limoneux,33.18
+Caféier,Variété de maïs sucrée et tendre.,596,15,Nord,Limoneux,24.85
+Poivron rouge,Céréale d'été riche en fibres.,650,4,Sud,Limoneux,231.62
+Cannelle,Céréale d'été riche en fibres.,1000,18,Est,Sablonneux,896.43
+Fèves,Graminée résistante à la sécheresse.,790,3,Zone sèche,Sablonneux,730.94
+Haricot mungo,Culture aquatique à grains essentiels.,803,6,Nord,Limoneux,756.08
+Ail,Variété de maïs sucrée et tendre.,69,16,Nord,Argileux,319.98
+Tomates,Haricot de petite taille riche en fibres.,355,5,Nord,Sablonneux,993.37
+Kumquat,Fruit,204,17,Zone sèche,Sablonneux,965.88
+Cannelle,Céréale d'été riche en fibres.,272,6,Est,Limoneux,194.74
+Piment vert,Culture aquatique à grains essentiels.,382,1,Sud,Limoneux,291.7
+Poivron rouge,Variété de maïs sucrée et tendre.,103,15,Est,Limoneux,862.3
+Grenadier,Graminée résistante à la sécheresse.,51,10,Zone sèche,Argileux,638.97
+Tomates,Céréale d'été riche en fibres.,546,8,Ouest,Argileux,489.11
+Prunier,Culture aquatique à grains essentiels.,389,17,Est,Limoneux,209.81
+Châtaignier,Fruit,991,1,Nord,Sablonneux,199.49
+Palmier dattier,Graminée résistante à la sécheresse.,866,14,Nord,Sablonneux,131.61
+Aubergine,Culture aquatique à grains essentiels.,847,5,Est,Sablonneux,870.99
+Lavande,Céréale d'été riche en fibres.,810,3,Est,Argileux,323.44
+Épinard,Légumineuse riche en protéines.,758,16,Zone sèche,Argileux,3.65
+Pistachier,Riche en vitamines,840,9,Zone sèche,Limoneux,815.55
+Champignon shiitake,Variété de maïs sucrée et tendre.,482,9,Zone sèche,Limoneux,178.81
+Artichaut,Haricot de petite taille riche en fibres.,329,6,Ouest,Sablonneux,852.3
+Canneberge,,516,14,Sud,Limoneux,615.46
+Soja,Lentille pour les clim,178,8,Est,Limoneux,255.67
+Carottes,Graminée résistante à la sécheresse.,204,5,Zone sèche,Limoneux,477.85
+Carottes,Lentille pour les clim,529,1,Sud,Limoneux,19.93
+Sorgho grain,Culture céréalière riche en amidon.,689,19,Ouest,Sablonneux,678.63
+Pêcher,Riche en vitamines,848,19,Sud,Limoneux,313.68
+Melon d'eau,Légume,977,1,Nord,Argileux,490.9
+Abricotier,Haricot de petite taille riche en fibres.,779,1,Est,Argileux,636.62
+Jujubier,Légumineuse riche en protéines.,705,16,Nord,Sablonneux,557.23
+Muscade,Haricot de petite taille riche en fibres.,26,8,Est,Sablonneux,446.74
+Carottes,Variété de maïs sucrée et tendre.,88,10,Nord,Argileux,231.11
+Colza oléagineux,Variété de maïs sucrée et tendre.,754,1,Est,Limoneux,476.73
+Piment vert,Légumineuse riche en protéines.,93,10,Nord,Sablonneux,517.6
+Chou cavalier,,632,9,Zone sèche,Sablonneux,436.08
+Soja,Graminée résistante à la sécheresse.,383,1,Sud,Sablonneux,449.76
+Amandier,Légumineuse riche en protéines.,239,17,Zone sèche,Limoneux,702.58
+Pommier,Légume,231,15,Sud,Sablonneux,139.66
+Manioc,Variété de maïs sucrée et tendre.,793,20,Sud,Sablonneux,97.27
+Avoine de printemps,,729,15,Est,Limoneux,338.48
+Noyer,Graminée résistante à la sécheresse.,381,12,Zone sèche,Sablonneux,637.79
+Manioc,Graminée résistante à la sécheresse.,388,1,Sud,Limoneux,681.37
+Quinoa,Légume,426,5,Sud,Argileux,831.93
+Millet,Fruit,535,14,Zone sèche,Sablonneux,680.98
+Laitue,Haricot de petite taille riche en fibres.,430,12,Sud,Sablonneux,209.45
+Blé tendre,Lentille pour les clim,574,5,Est,Argileux,757.72
+Pois chiche,Légumineuse riche en protéines.,839,19,Nord,Sablonneux,625.93
+Amandier,Céréale d'été riche en fibres.,882,9,Zone sèche,Argileux,919.32
+Canistel,Graminée résistante à la sécheresse.,102,4,Sud,Sablonneux,295.77
+Concombre,Fruit,589,19,Est,Argileux,580.01
+Coco,Culture céréalière riche en amidon.,262,7,Est,Argileux,749.54
+Lentilles,Graminée résistante à la sécheresse.,865,19,Est,Sablonneux,870.1
+Manguier,Culture céréalière riche en amidon.,278,15,Sud,Sablonneux,464.02
+Baobab,Culture céréalière riche en amidon.,305,4,Est,Limoneux,125.35
+Fraise,Haricot de petite taille riche en fibres.,249,1,Zone sèche,Argileux,423.57
+Fraise,,693,5,Est,Sablonneux,486.85
+Poireaux,Riche en vitamines,847,6,Zone sèche,Limoneux,795.87
+Safran,Lentille pour les clim,51,20,Zone sèche,Argileux,453.56
+Baobab,Riche en vitamines,650,18,Nord,Argileux,388.41
+Chou-fleur,Céréale d'été riche en fibres.,819,10,Nord,Sablonneux,499.17
+Ananas,Culture céréalière riche en amidon.,133,18,Nord,Sablonneux,1.32
+Bambou,Lentille pour les clim,277,1,Zone sèche,Sablonneux,88.93
+Sarrasin,Haricot de petite taille riche en fibres.,465,8,Ouest,Sablonneux,81.87
+Lentilles,Graminée résistante à la sécheresse.,314,6,Sud,Limoneux,543.82
+Aubergine,Légume,283,11,Est,Argileux,406.05
+Baobab,Haricot de petite taille riche en fibres.,845,1,Zone sèche,Sablonneux,932.26
+Olives,Légumineuse riche en protéines.,4,7,Nord,Argileux,572.19
+Canne à sucre,Culture aquatique à grains essentiels.,522,12,Sud,Argileux,332.96
+Muscade,Riche en vitamines,519,19,Zone sèche,Limoneux,757.85
+Trèfle,Légumineuse riche en protéines.,749,18,Zone sèche,Argileux,855.67
+Banane plantain,Graminée résistante à la sécheresse.,691,8,Ouest,Limoneux,230.71
+Menthe,Légumineuse riche en protéines.,899,19,Est,Limoneux,729.22
+Palmier dattier,,58,4,Nord,Argileux,255.72
+Basilic,Variété de maïs sucrée et tendre.,607,10,Sud,Sablonneux,665.45
+Seigle,Lentille pour les clim,903,10,Zone sèche,Limoneux,980.26
+Cerisier,,87,17,Zone sèche,Sablonneux,814.94
+Nectarine,Culture céréalière riche en amidon.,289,8,Est,Sablonneux,123.73
+Menthe,Riche en vitamines,782,7,Nord,Sablonneux,709.68
+Kumquat,Riche en vitamines,450,3,Ouest,Limoneux,368.12
+Arachide,,806,7,Ouest,Argileux,629.97
+Persil,Lentille pour les clim,346,13,Zone sèche,Limoneux,647.38
+Blé tendre,,696,17,Est,Sablonneux,135.49
+Basilic,Légume,222,5,Sud,Limoneux,246.3
+Manguier,Légume,526,5,Zone sèche,Limoneux,294.4
+Bette à carde,Légumineuse riche en protéines.,281,4,Nord,Argileux,497.59
+Pois chiche,,549,15,Ouest,Argileux,861.74
+Laitue,Fruit,624,16,Zone sèche,Sablonneux,590.63
+Blé tendre,Riche en vitamines,542,1,Nord,Argileux,750.01
+Blé dur,Lentille pour les clim,654,14,Sud,Sablonneux,375.33
+Sesame,Riche en vitamines,894,8,Ouest,Sablonneux,639.11
+Arachide,Riche en vitamines,735,4,Sud,Limoneux,43.5
+Épinard,Haricot de petite taille riche en fibres.,158,8,Ouest,Argileux,104.79
+Fèves,Fruit,49,14,Zone sèche,Limoneux,914.94
+Cacao,Légume,250,16,Nord,Sablonneux,614.72
+Coco,Culture céréalière riche en amidon.,876,9,Nord,Sablonneux,7.71
+Avoine de printemps,Céréale d'été riche en fibres.,707,13,Zone sèche,Argileux,858.57
+Avoine nue,Légume,22,10,Zone sèche,Argileux,38.35
+Trèfle,Culture aquatique à grains essentiels.,514,4,Zone sèche,Sablonneux,426.94
+Kumquat,,846,14,Ouest,Limoneux,411.7
+Kumquat,Légumineuse riche en protéines.,55,14,Nord,Limoneux,129.84
+Haricot mungo,Légumineuse riche en protéines.,825,11,Ouest,Argileux,379.58
+Cacao,Culture céréalière riche en amidon.,222,2,Ouest,Limoneux,265.87
+Luzerne,Céréale d'été riche en fibres.,356,3,Zone sèche,Limoneux,956.63
+Pommier,Variété de maïs sucrée et tendre.,680,4,Ouest,Argileux,884.94
+Fèves,Fruit,76,5,Zone sèche,Sablonneux,185.94
+Pommes de terre,,513,4,Sud,Limoneux,984.67
+Litchi,Graminée résistante à la sécheresse.,143,9,Zone sèche,Limoneux,907.55
+Coton,Culture aquatique à grains essentiels.,944,6,Sud,Limoneux,451.89
+Noix de cajou,Culture aquatique à grains essentiels.,235,10,Ouest,Sablonneux,822.6
+Kiwi,Culture aquatique à grains essentiels.,830,20,Sud,Argileux,584.39
+Noyer,Fruit,590,16,Est,Argileux,510.61
+Poivron rouge,Légumineuse riche en protéines.,950,9,Nord,Limoneux,690.21
+Chou-fleur,Haricot de petite taille riche en fibres.,743,16,Zone sèche,Limoneux,372.73
+Baies de goji,Haricot de petite taille riche en fibres.,543,11,Nord,Sablonneux,450.42
+Trèfle,Riche en vitamines,589,16,Est,Limoneux,644.94
+Pois,Haricot de petite taille riche en fibres.,612,15,Ouest,Sablonneux,244.27
+Thym,Graminée résistante à la sécheresse.,34,7,Zone sèche,Sablonneux,350.73
+Anis étoilé,Haricot de petite taille riche en fibres.,260,16,Zone sèche,Argileux,258.23
+Kumquat,Culture aquatique à grains essentiels.,25,14,Ouest,Argileux,605.74
+Manguier,Céréale d'été riche en fibres.,190,16,Zone sèche,Sablonneux,404.28
+Carottes,Haricot de petite taille riche en fibres.,627,19,Est,Sablonneux,281.09
+Aubergine,Haricot de petite taille riche en fibres.,361,10,Est,Limoneux,823.94
+Sorgho fourrager,Culture aquatique à grains essentiels.,431,8,Sud,Argileux,876.31
+Céleri,Lentille pour les clim,538,18,Zone sèche,Limoneux,915.05
+Ciboulette,Graminée résistante à la sécheresse.,186,19,Zone sèche,Sablonneux,178.83
+Manioc,Haricot de petite taille riche en fibres.,34,8,Est,Sablonneux,170.4
+Ail,Légume,255,3,Est,Limoneux,761.9
+Seigle,Céréale d'été riche en fibres.,625,11,Sud,Argileux,8.73
+Sesame,Culture aquatique à grains essentiels.,612,12,Est,Limoneux,430.41
+Quinoa,Riche en vitamines,255,5,Sud,Limoneux,568.16
+Manioc,Riche en vitamines,305,8,Ouest,Argileux,619.4
+Nectarine,Culture céréalière riche en amidon.,943,11,Est,Argileux,747.94
+Orge de printemps,Légume,153,15,Ouest,Sablonneux,231.26
+Blé dur,Culture aquatique à grains essentiels.,250,3,Ouest,Sablonneux,859.67
+Pommes de terre,Légume,579,9,Ouest,Limoneux,954.35
+Brocoli,,602,12,Ouest,Sablonneux,143.79
+Manguier,Culture aquatique à grains essentiels.,355,9,Nord,Argileux,742.07
+Trèfle,Culture céréalière riche en amidon.,835,5,Sud,Argileux,525.69
+Gingembre,Graminée résistante à la sécheresse.,499,20,Est,Argileux,549.92
+Persil,Culture céréalière riche en amidon.,162,16,Zone sèche,Argileux,412.89
+Sorgho fourrager,,431,2,Ouest,Sablonneux,123.29
+Abricotier,Fruit,781,1,Zone sèche,Sablonneux,929.06
+Lin oléagineux,Variété de maïs sucrée et tendre.,637,3,Est,Argileux,473.1
+Colza,Fruit,993,13,Est,Argileux,56.46
+Pistachier,Graminée résistante à la sécheresse.,490,1,Nord,Argileux,737.87
+Sorgho grain,Culture aquatique à grains essentiels.,928,5,Nord,Sablonneux,90.44
+Tamarin,Légumineuse riche en protéines.,148,3,Ouest,Argileux,877.07
+Artichaut,Lentille pour les clim,409,18,Nord,Limoneux,461.44
+Coton,,946,11,Zone sèche,Limoneux,710.21
+Artichaut,Graminée résistante à la sécheresse.,870,8,Nord,Argileux,548.25
+Coton,Culture céréalière riche en amidon.,862,3,Zone sèche,Argileux,664.2
+Bette à carde,Légume,64,11,Est,Sablonneux,751.2
+Fèves,Légume,858,18,Zone sèche,Sablonneux,929.49
+Épinard,Fruit,191,1,Sud,Argileux,105.09
+Bette à carde,Légume,668,17,Ouest,Limoneux,895.72
+Coton,Céréale d'été riche en fibres.,270,16,Ouest,Argileux,83.5
+Sarrasin,Riche en vitamines,310,7,Est,Sablonneux,441.78
+Sesame,Légumineuse riche en protéines.,118,15,Ouest,Sablonneux,299.32
+Palmier dattier,Riche en vitamines,350,2,Est,Limoneux,514.4
+Artichaut,Culture céréalière riche en amidon.,255,10,Sud,Sablonneux,359.32
+Chou rouge,,218,16,Zone sèche,Limoneux,482.55
+Origan,Lentille pour les clim,885,6,Sud,Sablonneux,378.91
+Pois,Graminée résistante à la sécheresse.,404,6,Zone sèche,Sablonneux,107.27
+Poirier,Haricot de petite taille riche en fibres.,575,4,Zone sèche,Sablonneux,546.09
+Rhubarbe,Lentille pour les clim,770,10,Nord,Sablonneux,80.47
+Mûre,,980,11,Sud,Argileux,200.88
+Melon d'eau,Culture aquatique à grains essentiels.,514,10,Ouest,Limoneux,645.41
+Caféier,Fruit,446,6,Nord,Limoneux,653.88
+Grenadier,Lentille pour les clim,123,11,Zone sèche,Sablonneux,593.37
+Radis,Graminée résistante à la sécheresse.,740,4,Est,Argileux,325.78
+Anis étoilé,Variété de maïs sucrée et tendre.,962,16,Zone sèche,Limoneux,32.77
+Gingembre,Variété de maïs sucrée et tendre.,922,14,Sud,Limoneux,242.59
+Maïs sucré,Haricot de petite taille riche en fibres.,241,16,Est,Limoneux,600.36
+Noix de cajou,Céréale d'été riche en fibres.,80,17,Ouest,Limoneux,53.17
+Muscade,,82,3,Sud,Argileux,448.76
+Colza,Lentille pour les clim,492,6,Est,Limoneux,475.46
+Baobab,Culture céréalière riche en amidon.,148,6,Sud,Limoneux,9.85
+Litchi,Haricot de petite taille riche en fibres.,621,10,Ouest,Limoneux,872.67
+Fèves,Variété de maïs sucrée et tendre.,32,2,Zone sèche,Limoneux,746.54
+Sorgho fourrager,,145,7,Est,Sablonneux,241.84
+Kumquat,Graminée résistante à la sécheresse.,930,16,Zone sèche,Limoneux,13.06
+Palmier dattier,Légumineuse riche en protéines.,2,18,Ouest,Sablonneux,352.24
+Colza,Fruit,827,17,Ouest,Argileux,500.67
+Jujubier,,583,16,Nord,Argileux,289.2
+Mûre,,953,13,Sud,Argileux,919.33
+Bambou,Légumineuse riche en protéines.,23,3,Est,Limoneux,217.93
+Caféier,Variété de maïs sucrée et tendre.,308,6,Nord,Sablonneux,241.1
+Maïs sucré,Céréale d'été riche en fibres.,15,2,Zone sèche,Argileux,700.37
+Camomille,Céréale d'été riche en fibres.,47,18,Zone sèche,Limoneux,751.04
+Laitue,Culture céréalière riche en amidon.,50,4,Est,Argileux,300.62
+Champignon pleurote,Céréale d'été riche en fibres.,241,6,Zone sèche,Sablonneux,790.82
+Brocoli,Légume,784,4,Est,Argileux,298.91
+Radis,Graminée résistante à la sécheresse.,621,6,Sud,Argileux,42.63
+Curcuma,Riche en vitamines,962,18,Ouest,Sablonneux,100.53
+Millet,Haricot de petite taille riche en fibres.,730,7,Nord,Limoneux,680.77
+Radis,Fruit,645,11,Zone sèche,Limoneux,1.31
+Seigle,Variété de maïs sucrée et tendre.,362,2,Ouest,Sablonneux,221.51
+Champignon pleurote,Légumineuse riche en protéines.,966,20,Est,Argileux,624.03
+Fèves,Culture aquatique à grains essentiels.,892,18,Sud,Argileux,328.81
+Origan,Fruit,226,11,Nord,Limoneux,251.04
+Basilic,Graminée résistante à la sécheresse.,952,17,Est,Limoneux,694.94
+Champignon shiitake,Céréale d'été riche en fibres.,172,18,Ouest,Sablonneux,735.21
+Chou frisé,Fruit,953,4,Est,Limoneux,780.6
+Betterave sucrière,Graminée résistante à la sécheresse.,193,7,Est,Argileux,358.98
+Anis étoilé,Haricot de petite taille riche en fibres.,928,16,Est,Sablonneux,598.15
+Colza,Haricot de petite taille riche en fibres.,236,4,Ouest,Argileux,232.99
+Soja,Légumineuse riche en protéines.,549,9,Ouest,Sablonneux,691.35
+Rhubarbe,Culture aquatique à grains essentiels.,886,9,Nord,Argileux,162.99
+Orge de printemps,Lentille pour les clim,945,19,Ouest,Argileux,476.21
+Banane plantain,Haricot de petite taille riche en fibres.,813,7,Nord,Argileux,242.16
+Litchi,Variété de maïs sucrée et tendre.,374,9,Nord,Argileux,84.77
+Riz paddy,Légumineuse riche en protéines.,40,20,Est,Limoneux,654.93
+Canneberge,,794,10,Est,Limoneux,637.25
+Lentilles,Variété de maïs sucrée et tendre.,845,11,Nord,Sablonneux,838.02
+Sorgho grain,Variété de maïs sucrée et tendre.,29,10,Sud,Sablonneux,497.74
+Baies de goji,Variété de maïs sucrée et tendre.,627,16,Zone sèche,Argileux,852.46
+Origan,Céréale d'été riche en fibres.,50,8,Ouest,Limoneux,562.2
+Papaye,Culture céréalière riche en amidon.,422,13,Sud,Sablonneux,68.99
+Avoine nue,Céréale d'été riche en fibres.,296,7,Sud,Limoneux,140.12
+Poirier,Culture céréalière riche en amidon.,462,6,Est,Sablonneux,430.1
+Riz paddy,Céréale d'été riche en fibres.,662,10,Sud,Limoneux,629.8
+Cacao,Lentille pour les clim,419,9,Zone sèche,Argileux,242.67
+Avoine nue,Culture céréalière riche en amidon.,960,19,Est,Sablonneux,619.99
+Melon d'eau,Graminée résistante à la sécheresse.,155,15,Ouest,Sablonneux,101.66
+Radis,Céréale d'été riche en fibres.,567,11,Nord,Argileux,867.82
+Muscade,Céréale d'été riche en fibres.,450,12,Nord,Argileux,254.61
+Colza,Légume,168,8,Est,Sablonneux,500.65
+Millet,Haricot de petite taille riche en fibres.,156,1,Nord,Limoneux,76.62
+Caféier,Légumineuse riche en protéines.,980,13,Nord,Argileux,518.04
+Anis étoilé,Fruit,115,9,Nord,Sablonneux,756.03
+Laitue,Légume,812,2,Ouest,Limoneux,857.47
+Ananas,Variété de maïs sucrée et tendre.,197,15,Zone sèche,Limoneux,768.75
+Persil,Légume,829,19,Est,Limoneux,793.39
+Gingembre,Culture aquatique à grains essentiels.,105,15,Sud,Limoneux,897.68
+Sorgho grain,Fruit,943,10,Nord,Sablonneux,1.76
+Canneberge,Culture céréalière riche en amidon.,464,12,Ouest,Limoneux,526.33
+Mizuna,Lentille pour les clim,615,14,Sud,Limoneux,196.12
+Manguier,Haricot de petite taille riche en fibres.,726,6,Sud,Sablonneux,160.05
+Sorgho fourrager,Céréale d'été riche en fibres.,323,18,Nord,Limoneux,275.83
+Luzerne,Graminée résistante à la sécheresse.,117,20,Ouest,Argileux,722.81
+Champignon pleurote,Légumineuse riche en protéines.,810,17,Sud,Sablonneux,478.71
+Ail,Riche en vitamines,582,12,Ouest,Limoneux,425.08
+Pois chiche,Lentille pour les clim,555,15,Zone sèche,Argileux,739.53
+Radis,Lentille pour les clim,681,7,Est,Limoneux,951.75
+Blé tendre,Culture céréalière riche en amidon.,956,10,Ouest,Argileux,929.14
+Poireaux,Graminée résistante à la sécheresse.,657,6,Nord,Argileux,782.27
+Radis,Légume,587,13,Est,Argileux,330.25
+Brocoli,Variété de maïs sucrée et tendre.,453,16,Zone sèche,Argileux,310.11
+Amandier,Graminée résistante à la sécheresse.,218,19,Sud,Limoneux,751.55
+Myrtille,Légumineuse riche en protéines.,388,1,Sud,Sablonneux,706.52
+Ananas,Céréale d'été riche en fibres.,23,4,Nord,Argileux,247.91
+Millet,Riche en vitamines,837,3,Zone sèche,Sablonneux,27.81
+Vanille,Lentille pour les clim,24,8,Zone sèche,Limoneux,461.57
+Baies de goji,Haricot de petite taille riche en fibres.,197,8,Zone sèche,Limoneux,147.03
+Chou-fleur,Riche en vitamines,13,5,Sud,Argileux,544.73
+Canistel,Légume,854,2,Ouest,Argileux,447.41
+Bambou,Légume,424,1,Zone sèche,Limoneux,611.34
+Vanille,Céréale d'été riche en fibres.,148,6,Nord,Limoneux,661.11
+Poivron rouge,,388,16,Nord,Sablonneux,586.92
+Safran,Culture aquatique à grains essentiels.,579,3,Ouest,Limoneux,838.46
+Chou-fleur,Céréale d'été riche en fibres.,31,17,Est,Sablonneux,692.24
+Pistachier,Légume,663,1,Ouest,Argileux,209.57
+Aubergine,Culture aquatique à grains essentiels.,623,6,Zone sèche,Argileux,525.42
+Millet,Culture céréalière riche en amidon.,94,19,Nord,Argileux,934.98
+Sesame,Graminée résistante à la sécheresse.,714,7,Ouest,Sablonneux,134.39
+Papaye,Culture aquatique à grains essentiels.,681,10,Ouest,Limoneux,618.6
+Bambou,Céréale d'été riche en fibres.,27,18,Ouest,Argileux,156.67
+Haricot mungo,Haricot de petite taille riche en fibres.,28,2,Zone sèche,Argileux,977.09
+Papyrus,Lentille pour les clim,708,3,Nord,Limoneux,950.16
+Théier,Fruit,73,3,Sud,Limoneux,12.53
+Bette à carde,Riche en vitamines,497,14,Ouest,Limoneux,134.54
+Grenadier,Légume,990,11,Est,Argileux,682.49
+Colza,Lentille pour les clim,886,16,Nord,Limoneux,383.31
+Ananas,Graminée résistante à la sécheresse.,247,4,Ouest,Limoneux,610.01
+Romarin,Fruit,689,9,Ouest,Limoneux,523.54
+Kumquat,Haricot de petite taille riche en fibres.,191,1,Nord,Sablonneux,395.98
+Poireaux,Culture céréalière riche en amidon.,65,1,Ouest,Limoneux,272.1
+Sesame,Lentille pour les clim,647,10,Est,Argileux,783.77
+Grenadier,Variété de maïs sucrée et tendre.,350,19,Zone sèche,Sablonneux,951.02
+Framboise,Culture aquatique à grains essentiels.,25,19,Ouest,Argileux,453.91
+Carottes,Graminée résistante à la sécheresse.,170,18,Nord,Argileux,107.42
+Concombre,Riche en vitamines,662,16,Nord,Argileux,215.74
+Rhubarbe,Riche en vitamines,828,17,Est,Sablonneux,482.7
+Betterave sucrière,Culture aquatique à grains essentiels.,309,18,Sud,Limoneux,998.85
+Thym,Riche en vitamines,861,1,Sud,Sablonneux,492.65
+Blé dur,Riche en vitamines,879,5,Zone sèche,Sablonneux,949.31
+Blé tendre,Haricot de petite taille riche en fibres.,348,2,Ouest,Limoneux,316.34
+Lentilles,Haricot de petite taille riche en fibres.,193,20,Nord,Sablonneux,563.98
+Vanille,Haricot de petite taille riche en fibres.,33,13,Ouest,Sablonneux,409.73
+Melon d'eau,Variété de maïs sucrée et tendre.,640,5,Est,Limoneux,832.09
+Navet,Fruit,958,10,Zone sèche,Limoneux,350.3
+Mizuna,Riche en vitamines,415,3,Ouest,Argileux,4.79
+Ail,Légumineuse riche en protéines.,214,15,Est,Sablonneux,575.64
+Nectarine,Culture céréalière riche en amidon.,383,11,Zone sèche,Limoneux,803.09
+Canneberge,Fruit,6,6,Est,Sablonneux,818.92
+Pistachier,Lentille pour les clim,75,19,Sud,Argileux,401.51
+Aubergine,Culture aquatique à grains essentiels.,734,12,Nord,Sablonneux,357.71
+Gingembre,Légume,457,4,Est,Sablonneux,788.33
+Framboise,Riche en vitamines,5,10,Zone sèche,Sablonneux,253.79
+Champignon shiitake,Céréale d'été riche en fibres.,38,12,Zone sèche,Sablonneux,29.21
+Mûre,Haricot de petite taille riche en fibres.,216,12,Est,Sablonneux,20.17
+Sarrasin,Haricot de petite taille riche en fibres.,594,19,Nord,Limoneux,52.37
+Safran,Céréale d'été riche en fibres.,903,17,Est,Sablonneux,322.53
+Grenadier,Haricot de petite taille riche en fibres.,209,11,Sud,Sablonneux,134.59
+Figuier,,285,13,Sud,Argileux,518.13
+Canneberge,Céréale d'été riche en fibres.,132,1,Est,Sablonneux,402.38
+Pommes de terre,Légume,35,18,Nord,Limoneux,412.48
+Seigle,Graminée résistante à la sécheresse.,238,11,Zone sèche,Limoneux,135.6
+Camomille,Culture céréalière riche en amidon.,646,18,Sud,Sablonneux,691.34
+Rhubarbe,Riche en vitamines,790,1,Nord,Limoneux,914.18
+Noisetier,Légume,794,17,Ouest,Limoneux,122.04
+Anis étoilé,Légumineuse riche en protéines.,687,3,Sud,Limoneux,406.36
+Camomille,Céréale d'été riche en fibres.,442,14,Ouest,Argileux,792.4
+Poireaux,Légume,194,9,Ouest,Limoneux,898.14
+Kumquat,Légumineuse riche en protéines.,516,9,Ouest,Sablonneux,17.86
+Mizuna,Culture céréalière riche en amidon.,214,8,Est,Limoneux,620.7
+Papaye,Culture aquatique à grains essentiels.,179,7,Ouest,Limoneux,986.29
+Thym,,508,7,Est,Sablonneux,536.1
+Aubergine,,115,10,Sud,Argileux,103.5
+Arbre à pain,Céréale d'été riche en fibres.,674,16,Sud,Argileux,52.34
+Cannelle,Légume,988,14,Ouest,Argileux,268.96
+Curcuma,Variété de maïs sucrée et tendre.,532,11,Sud,Sablonneux,267.73
+Gingembre,Graminée résistante à la sécheresse.,212,5,Ouest,Limoneux,661.13
+Myrtille,Fruit,505,9,Ouest,Sablonneux,746.89
+Safran,Graminée résistante à la sécheresse.,569,15,Nord,Argileux,4.32
+Amandier,Haricot de petite taille riche en fibres.,271,8,Est,Argileux,999.33
+Seigle,Légumineuse riche en protéines.,51,15,Sud,Sablonneux,564.77
+Avoine de printemps,Légumineuse riche en protéines.,527,9,Nord,Limoneux,774.34
+Abricotier,Légumineuse riche en protéines.,101,18,Nord,Argileux,153.18
+Palmier dattier,Culture aquatique à grains essentiels.,720,19,Nord,Limoneux,179.81
+Safran,Lentille pour les clim,422,5,Nord,Argileux,669.95
+Papaye,,265,20,Est,Sablonneux,160.6
+Basilic,Céréale d'été riche en fibres.,320,2,Nord,Argileux,97.18
+Lin oléagineux,Céréale d'été riche en fibres.,468,13,Nord,Argileux,423.15
+Lin oléagineux,Variété de maïs sucrée et tendre.,182,13,Nord,Argileux,365.89
+Millet,Riche en vitamines,412,17,Sud,Limoneux,358.27
+Vesce,Céréale d'été riche en fibres.,107,16,Nord,Sablonneux,583.46
+Noisetier,Haricot de petite taille riche en fibres.,713,13,Est,Argileux,478.7
+Litchi,Culture céréalière riche en amidon.,433,16,Sud,Sablonneux,11.09
+Sesame,Légume,983,14,Est,Argileux,5.94
+Colza oléagineux,Culture aquatique à grains essentiels.,729,15,Sud,Sablonneux,336.1
+Orge de printemps,Variété de maïs sucrée et tendre.,212,14,Zone sèche,Sablonneux,639.2
+Banane plantain,Riche en vitamines,72,16,Zone sèche,Argileux,344.37
+Blé tendre,Culture aquatique à grains essentiels.,829,8,Nord,Sablonneux,420.62
+Pak choï,Haricot de petite taille riche en fibres.,135,19,Nord,Argileux,265.26
+Abricotier,Culture aquatique à grains essentiels.,113,19,Sud,Argileux,840.19
+Pêcher,Haricot de petite taille riche en fibres.,210,13,Ouest,Argileux,536.6
+Pistachier,Culture aquatique à grains essentiels.,342,18,Nord,Sablonneux,128.32
+Myrtille,Haricot de petite taille riche en fibres.,420,12,Ouest,Sablonneux,475.64
+Arachide,,918,8,Nord,Sablonneux,302.66
+Baobab,Riche en vitamines,477,6,Zone sèche,Sablonneux,304.67
+Théier,Graminée résistante à la sécheresse.,973,10,Est,Limoneux,895.47
+Tournesol,Légumineuse riche en protéines.,941,20,Nord,Argileux,589.82
+Laitue,,128,10,Sud,Limoneux,784.85
+Sorgho fourrager,Haricot de petite taille riche en fibres.,408,17,Nord,Limoneux,744.85
+Framboise,Variété de maïs sucrée et tendre.,442,17,Ouest,Argileux,485.01
+Blé tendre,Légume,712,4,Sud,Sablonneux,270.07
+Safran,Riche en vitamines,310,8,Est,Limoneux,448.17
+Coco,Variété de maïs sucrée et tendre.,763,13,Zone sèche,Limoneux,201.66
+Manguier,Légume,917,6,Sud,Limoneux,739.22
+Fraise,,962,14,Zone sèche,Limoneux,377.08
+Menthe,Graminée résistante à la sécheresse.,949,8,Est,Limoneux,895.42
+Riz paddy,Culture aquatique à grains essentiels.,480,15,Est,Argileux,793.17
+Baobab,Culture aquatique à grains essentiels.,721,11,Sud,Limoneux,740.95
+Arachide,Riche en vitamines,845,20,Ouest,Argileux,341.33
+Mûre,,214,9,Est,Limoneux,422.06
+Lin oléagineux,Variété de maïs sucrée et tendre.,439,9,Ouest,Limoneux,908.17
+Olives,Culture aquatique à grains essentiels.,312,10,Est,Limoneux,805.19
+Acacia,Haricot de petite taille riche en fibres.,664,8,Nord,Argileux,702.99
+Lentilles,Variété de maïs sucrée et tendre.,333,7,Est,Sablonneux,679.16
+Concombre,Haricot de petite taille riche en fibres.,878,13,Est,Sablonneux,870.2
+Arbre à pain,Riche en vitamines,289,7,Ouest,Sablonneux,617.34
+Sorgho grain,Légume,46,20,Zone sèche,Argileux,714.27
+Nectarine,Variété de maïs sucrée et tendre.,24,11,Sud,Argileux,481.46
+Banane plantain,Fruit,857,10,Est,Sablonneux,979.8
+Artichaut,,780,18,Est,Sablonneux,987.26
+Cannelle,Variété de maïs sucrée et tendre.,943,16,Sud,Argileux,261.14
+Pak choï,Céréale d'été riche en fibres.,571,11,Sud,Limoneux,285.66
+Ail,Légume,56,19,Nord,Argileux,727.09
+Cannelle,Haricot de petite taille riche en fibres.,120,7,Nord,Limoneux,557.77
+Cerisier,Variété de maïs sucrée et tendre.,299,1,Sud,Sablonneux,951.28
+Soja,Culture céréalière riche en amidon.,126,7,Nord,Limoneux,551.58
+Camomille,Variété de maïs sucrée et tendre.,129,20,Ouest,Sablonneux,456.42
+Rhubarbe,,996,2,Ouest,Limoneux,601.83
+Épinard,Culture aquatique à grains essentiels.,629,20,Est,Limoneux,98.57
+Champignon pleurote,,266,6,Est,Sablonneux,597.29
+Châtaignier,Fruit,583,5,Nord,Sablonneux,887.61
+Poivron rouge,Culture aquatique à grains essentiels.,803,19,Nord,Sablonneux,669.46
+Noisetier,Variété de maïs sucrée et tendre.,607,3,Nord,Limoneux,454.79
+Vanille,,692,17,Nord,Argileux,321.75
+Colza oléagineux,Légume,440,7,Est,Sablonneux,701.49
+Canne à sucre,Variété de maïs sucrée et tendre.,619,4,Sud,Argileux,519.66
+Litchi,Légume,681,4,Zone sèche,Sablonneux,221.09
+Framboise,Fruit,348,14,Zone sèche,Argileux,622.04
+Sesame,Lentille pour les clim,166,6,Sud,Argileux,87.44
+Caféier,Lentille pour les clim,717,12,Est,Argileux,612.5
+Figuier,Légume,348,18,Zone sèche,Argileux,680.99
+Pommes de terre,Culture aquatique à grains essentiels.,504,8,Sud,Limoneux,433.09
+Brocoli,Riche en vitamines,441,14,Est,Limoneux,908.76
+Romarin,Fruit,384,7,Ouest,Limoneux,477.5
+Persil,Céréale d'été riche en fibres.,501,17,Nord,Argileux,825.18
+Persil,Haricot de petite taille riche en fibres.,970,14,Est,Argileux,633.16
+Persil,Haricot de petite taille riche en fibres.,895,16,Ouest,Sablonneux,429.89
+Avoine nue,Légumineuse riche en protéines.,417,17,Zone sèche,Argileux,317.87
+Jujubier,Culture céréalière riche en amidon.,470,19,Sud,Argileux,142.76
+Arbre à pain,Légumineuse riche en protéines.,270,2,Ouest,Limoneux,144.03
+Mizuna,Légumineuse riche en protéines.,427,9,Est,Argileux,941.95
+Baies de goji,Légume,74,13,Est,Limoneux,726.58
+Bambou,Variété de maïs sucrée et tendre.,657,17,Zone sèche,Sablonneux,552.89
+Muscade,Variété de maïs sucrée et tendre.,830,13,Zone sèche,Limoneux,141.76
+Lupin,Lentille pour les clim,493,15,Zone sèche,Limoneux,444.91
+Pois,Variété de maïs sucrée et tendre.,556,13,Zone sèche,Argileux,934.22
+Mûre,Haricot de petite taille riche en fibres.,515,19,Ouest,Sablonneux,591.56
+Champignon shiitake,Variété de maïs sucrée et tendre.,311,2,Est,Argileux,902.75
+Soja,,441,13,Ouest,Sablonneux,707.89
+Pommier,Céréale d'été riche en fibres.,96,7,Ouest,Sablonneux,104.31
+Origan,Légumineuse riche en protéines.,420,14,Est,Sablonneux,109.05
+Épinard,Légumineuse riche en protéines.,552,15,Nord,Argileux,544.64
+Grenadier,Variété de maïs sucrée et tendre.,533,19,Sud,Argileux,355.19
+Navet,Graminée résistante à la sécheresse.,112,12,Est,Limoneux,112.6
+Carottes,,935,16,Zone sèche,Sablonneux,913.19
+Fraise,,14,7,Est,Argileux,253.31
+Sorgho grain,Culture céréalière riche en amidon.,307,17,Zone sèche,Limoneux,269.11
+Mûre,Culture céréalière riche en amidon.,636,18,Est,Sablonneux,488.19
+Lin oléagineux,Fruit,824,4,Ouest,Argileux,688.59
+Brocoli,Graminée résistante à la sécheresse.,582,4,Sud,Sablonneux,374.07
+Nectarine,Riche en vitamines,169,13,Sud,Argileux,602.05
+Menthe,Légume,648,2,Nord,Sablonneux,805.53
+Fèves,Graminée résistante à la sécheresse.,903,6,Sud,Sablonneux,509.7
+Myrtille,Légume,692,13,Nord,Limoneux,506.08
+Châtaignier,Culture céréalière riche en amidon.,975,19,Nord,Argileux,58.91
+Navet,Culture céréalière riche en amidon.,275,9,Zone sèche,Limoneux,484.25
+Poivron rouge,Culture aquatique à grains essentiels.,759,6,Zone sèche,Argileux,706.75
+Coton,Lentille pour les clim,213,16,Sud,Limoneux,300.12
+Baies de goji,Riche en vitamines,224,17,Zone sèche,Limoneux,668.08
+Figuier,Riche en vitamines,857,14,Est,Argileux,327.0
+Acacia,Graminée résistante à la sécheresse.,964,6,Zone sèche,Argileux,147.47
+Mûre,Légumineuse riche en protéines.,636,19,Est,Argileux,675.05
+Romarin,Haricot de petite taille riche en fibres.,39,3,Sud,Limoneux,526.77
+Camomille,Légume,417,12,Zone sèche,Argileux,740.73
+Laitue,Lentille pour les clim,693,7,Zone sèche,Argileux,216.11
+Ail,Haricot de petite taille riche en fibres.,738,11,Sud,Sablonneux,289.84
+Palmier dattier,Légume,65,6,Est,Argileux,338.83
+Cacao,Lentille pour les clim,779,12,Sud,Argileux,568.3
+Pak choï,,317,5,Sud,Sablonneux,781.71
+Gingembre,Culture aquatique à grains essentiels.,750,15,Zone sèche,Limoneux,797.88
+Sorgho grain,Céréale d'été riche en fibres.,592,10,Nord,Sablonneux,559.56
+Céleri,Haricot de petite taille riche en fibres.,255,17,Ouest,Argileux,143.47
+Fraise,Fruit,604,8,Ouest,Argileux,752.36
+Poireaux,,962,19,Est,Sablonneux,278.07
+Laitue,Riche en vitamines,907,12,Ouest,Argileux,41.31
+Navet,Légumineuse riche en protéines.,121,5,Nord,Limoneux,16.43
+Ciboulette,Céréale d'été riche en fibres.,382,7,Nord,Limoneux,975.4
+Aubergine,Lentille pour les clim,580,14,Ouest,Limoneux,337.85
+Laitue,Légume,634,5,Sud,Limoneux,34.32
+Mûre,Légume,33,14,Ouest,Sablonneux,756.45
+Fèves,Graminée résistante à la sécheresse.,593,8,Est,Argileux,235.83
+Radis,Culture céréalière riche en amidon.,137,18,Ouest,Sablonneux,198.72
+Aubergine,Haricot de petite taille riche en fibres.,646,3,Sud,Sablonneux,343.74
+Théier,Lentille pour les clim,449,10,Nord,Argileux,132.49
+Noix de cajou,Fruit,726,20,Zone sèche,Argileux,206.99
+Sesame,Céréale d'été riche en fibres.,296,6,Nord,Limoneux,211.2
+Arbre à pain,Céréale d'été riche en fibres.,985,8,Sud,Limoneux,961.26
+Seigle,,894,14,Nord,Limoneux,869.9
+Théier,,541,14,Sud,Argileux,574.0
+Théier,Culture aquatique à grains essentiels.,335,13,Zone sèche,Argileux,598.82
+Navet,Haricot de petite taille riche en fibres.,665,7,Sud,Sablonneux,950.45
+Sesame,Légume,675,16,Ouest,Limoneux,644.22
+Colza oléagineux,,643,14,Nord,Argileux,674.06
+Pommes de terre,Légumineuse riche en protéines.,865,16,Nord,Argileux,386.0
+Champignon pleurote,Riche en vitamines,436,11,Sud,Limoneux,449.31
+Blé dur,Haricot de petite taille riche en fibres.,578,13,Sud,Limoneux,298.49
+Ciboulette,,848,11,Ouest,Argileux,358.52
+Radis,Céréale d'été riche en fibres.,309,8,Nord,Sablonneux,353.42
+Fraise,Haricot de petite taille riche en fibres.,398,17,Est,Limoneux,210.7
+Fraise,Fruit,585,13,Nord,Limoneux,958.84
+Rhubarbe,Lentille pour les clim,617,10,Nord,Sablonneux,300.85
+Menthe,Culture céréalière riche en amidon.,565,4,Zone sèche,Limoneux,522.26
+Bette à carde,Riche en vitamines,111,15,Zone sèche,Sablonneux,416.24
+Mûre,Riche en vitamines,928,19,Zone sèche,Sablonneux,522.3
+Papyrus,Légumineuse riche en protéines.,297,4,Ouest,Argileux,854.77
+Bambou,Culture céréalière riche en amidon.,578,12,Zone sèche,Limoneux,288.99
+Rhubarbe,Culture aquatique à grains essentiels.,263,8,Sud,Limoneux,532.99
+Bambou,,898,16,Est,Sablonneux,567.03
+Tamarin,Légume,296,7,Nord,Limoneux,229.8
+Champignon shiitake,Légumineuse riche en protéines.,229,10,Nord,Sablonneux,348.42
+Pois chiche,Graminée résistante à la sécheresse.,331,18,Zone sèche,Limoneux,902.32
+Colza,Culture céréalière riche en amidon.,981,4,Ouest,Limoneux,656.36
+Kumquat,Variété de maïs sucrée et tendre.,779,8,Ouest,Limoneux,221.85
+Noisetier,Culture céréalière riche en amidon.,833,6,Est,Argileux,875.54
+Framboise,Riche en vitamines,299,17,Est,Limoneux,405.89
+Lin oléagineux,,403,3,Nord,Sablonneux,941.81
+Fèves,Culture céréalière riche en amidon.,918,2,Sud,Sablonneux,995.46
+Vesce,Riche en vitamines,714,16,Ouest,Argileux,954.69
+Camomille,Riche en vitamines,915,5,Ouest,Limoneux,253.87
+Ciboulette,Céréale d'été riche en fibres.,767,19,Zone sèche,Argileux,641.97
+Courgettes,Lentille pour les clim,928,2,Zone sèche,Sablonneux,132.66
+Noix de cajou,Légume,586,15,Est,Limoneux,210.06
+Noix de cajou,Variété de maïs sucrée et tendre.,673,7,Zone sèche,Argileux,856.26
+Chou cavalier,Légumineuse riche en protéines.,788,17,Sud,Sablonneux,590.65
+Laitue,,850,5,Est,Sablonneux,336.31
+Nectarine,Légume,753,10,Ouest,Argileux,937.21
+Quinoa,Céréale d'été riche en fibres.,201,1,Est,Sablonneux,509.36
+Coton,Culture céréalière riche en amidon.,5,1,Sud,Limoneux,365.56
+Manguier,Lentille pour les clim,15,18,Nord,Limoneux,664.72
+Piment vert,Céréale d'été riche en fibres.,702,16,Sud,Limoneux,997.23
+Acacia,Variété de maïs sucrée et tendre.,334,8,Sud,Argileux,12.68

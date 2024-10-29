@@ -61,7 +61,15 @@ INSTALLED_APPS = [
     'apps.pesticide',
     'apps.programme',
 
-    'rest_framework',  # Assurez-vous qu'il n'apparaît qu'une seule fois
+
+    'rest_framework',
+     # !:ujshq;,  
+     # Ensure this is the correct app name and path
+
+
+    'apps.Culture',
+    'apps.Technique',
+    'apps.RecommendationTech',
 ]
 
 
