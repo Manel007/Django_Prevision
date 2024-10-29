@@ -1,0 +1,127 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <form method="GET" action="{% url 'list_agriculteurs' %}">
+                <div class="row">
+                    <div class="col-md-7 pr-md-1">
+                        <div class="form-group">
+                            <input type="text" class="form-control me-5" name="search" placeholder="Rechercher par nom, prénom ou contact" value="{{ search_query|default:'' }}">
+                        </div>
+                    </div>
+                    <div class="col-md-5 px-md-1">
+                        <div class="form-group">
+                            <button class="btn btn-outline-secondary" type="submit">Rechercher</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="card">
+                {% if messages %}
+                <div class="alert alert-success">
+                    {% for message in messages %}
+                    <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <div class="card-header">
+                    <h4 class="card-title"> TABLE D'AGRICULTEURS </h4>
+                </div>
+                
+                <div class="card-body">
+                    <div class="table-responsive">
+                        {% if page_obj %}
+                        <table class="table tablesorter">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Prénom</th>
+                                    <th>Contact</th>
+                                    <th>Adresse</th>
+                                    <th>Région</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for agriculteur in page_obj %}
+                                <tr>
+                                    <td>{{ agriculteur.nom }}</td>
+                                    <td>{{ agriculteur.prenom }}</td>
+                                    <td>{{ agriculteur.contact }}</td>
+                                    <td>{{ agriculteur.adresse }}</td>
+                                    <td>{{ agriculteur.region }}</td>
+                                    <td>
+                                        <!-- Formulaire de suppression avec icône -->
+                                        <form action="{% url 'delete_agriculteur' agriculteur.id %}" method="POST" style="display:inline;">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-danger btn-sm" title="Supprimer">
+                                                <i class="tim-icons icon-simple-remove"></i> 
+                                            </button>
+                                        </form>
+                                        <a href="{% url 'edit_agriculteur' agriculteur.id %}" class="btn btn-info btn-sm" title="Modifier">
+                                            <i class="tim-icons icon-refresh-02"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        
+
+
+                        <div class="pagination">
+                          <span class="step-links">
+                              {% if page_obj.has_previous %}
+                              <!-- Icône pour aller à la première page -->
+                              <a href="?page=1" class="btn btn-secondary">
+                                  <i class="tim-icons icon-minimal-left"></i><i class="tim-icons icon-minimal-left"></i>
+                              </a>
+                              <!-- Icône pour aller à la page précédente -->
+                              <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-secondary">
+                                  <i class="tim-icons icon-minimal-left"></i>
+                              </a>
+                              {% endif %}
+                      
+                              <span class="current">
+                                  Page {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.
+                              </span>
+                      
+                              {% if page_obj.has_next %}
+                              <!-- Icône pour aller à la page suivante -->
+                              <a href="?page={{ page_obj.next_page_number }}" class="btn btn-secondary">
+                                  <i class="tim-icons icon-minimal-right"></i>
+                              </a>
+                              <!-- Icône pour aller à la dernière page -->
+                              <a href="?page={{ page_obj.paginator.num_pages }}" class="btn btn-secondary">
+                                  <i class="tim-icons icon-minimal-right"></i><i class="tim-icons icon-minimal-right"></i>
+                              </a>
+                              {% endif %}
+                          </span>
+                      </div>
+                      
+
+
+                        {% else %}
+                        <p>Aucun agriculteur trouvé</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

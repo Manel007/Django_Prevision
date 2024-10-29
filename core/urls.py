@@ -8,7 +8,15 @@ from django.urls import path, include  # add this
 from apps.RessourceEntity import views
 urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
+    path("agriculteurs/", include('apps.agriculteur.urls')),  
+    path("generateimage/", include('apps.images.urls')),  
+    path("rocVocal/", include('apps.reconnaissancevoc.urls')), 
+    path("", include('apps.pesticide.urls')), 
+    path("programme_trait/", include('apps.programme.urls')),  
+    path("", include('apps.front.urls')),  
     path("", include("apps.authentication.urls")), # Auth routes - login / register
+    path("", include('apps.agriculture_project.agriculture_project.urls')),
+    path("", include('apps.front.urls')),  
 
     # ADD NEW Routes HERE
 
@@ -30,4 +38,5 @@ urlpatterns = [
      path('predict/', views.predict_view, name='predict'),
 
   path("", include("apps.home.urls"))
+
 ]

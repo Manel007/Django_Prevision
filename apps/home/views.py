@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
+from django.shortcuts import render
 
 
 @login_required(login_url="/login/")
@@ -42,3 +43,13 @@ def pages(request):
     except:
         html_template = loader.get_template('home/page-500.html')
         return HttpResponse(html_template.render(context, request))
+from django.shortcuts import render
+
+def home_front(request):
+    try:
+        return render(request, 'home/homeFront.html')
+    except Exception as e:
+        print("Error rendering homeFront.html:", e)
+        return render(request, 'error.html')
+
+

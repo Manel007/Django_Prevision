@@ -1,0 +1,234 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+  {% if form.instance.pk %} Edit {% else %} Add {% endif %} a Yield
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+    .custom-button {
+        display: inline-block;  /* Button behavior */
+        padding: 10px 20px;  /* Internal spacing */
+        background-color: #075018;  /* Green color */
+        color: white;  /* Text color */
+        text-align: center;  /* Center text alignment */
+        border: none;  /* No border */
+        border-radius: 5px;  /* Rounded corners */
+        cursor: pointer;  /* Hand cursor */
+        text-decoration: none;  /* Remove underline */
+    }
+
+    .custom-button:hover {
+        background-color: #1a772e;  /* Hover color */
+    }
+
+    .form-card {
+        max-width: 600px;
+        margin: 20px auto;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-card .card-header {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .form-card .card-body {
+        padding: 30px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .form-control {
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: 10px;
+        transition: border-color 0.2s ease;
+    }
+    
+    .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    .btn {
+        margin: 5px;
+        width: 100%;
+    }
+    
+    .text-center {
+        margin-top: 20px;
+    }
+    
+    .error-message {
+        color: red;
+        font-size: 0.875rem;
+        margin-top: 5px;
+    }
+    
+    .card-user {
+        margin-top: 20px;
+    }
+    
+    .card-user .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">
+                        {% if form.instance.pk %}
+                            <strong class="card-title" style="font-weight: 1000; color: #034c64;">Edit a Yield</strong>
+                        {% else %}
+                            <strong class="card-title" style="font-weight: 1000; color: #034c64;">Add a Yield</strong>
+                        {% endif %}
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <form method="post" onsubmit="return validateForm()">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label for="area">Area</label>
+                                    <input type="text" name="area" id="area" class="form-control" value="{{ form.area.value|default:'' }}" >
+                                    {% for error in form.area.errors %}
+                                        <div class="error-message">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-md-1">
+                                <div class="form-group">
+                                    <label for="item">Product</label>
+                                    <input type="text" name="item" id="item" class="form-control" value="{{ form.item.value|default:'' }}" >
+                                    {% for error in form.item.errors %}
+                                        <div class="error-message">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-4 pl-md-1">
+                                <div class="form-group">
+                                    <label for="year">Year</label>
+                                    <input type="number" name="year" id="year" class="form-control" value="{{ form.year.value|default:'' }}" >
+                                    {% for error in form.year.errors %}
+                                        <div class="error-message">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 pr-md-1">
+                                <div class="form-group">
+                                    <label for="hg_per_ha_yield">Yield (hg/ha)</label>
+                                    <input type="number" name="hg_per_ha_yield" id="hg_per_ha_yield" class="form-control" value="{{ form.hg_per_ha_yield.value|default:'' }}" >
+                                    {% for error in form.hg_per_ha_yield.errors %}
+                                        <div class="error-message">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label for="average_rain_fall">Average Rainfall (mm)</label>
+                                    <input type="number" name="average_rain_fall" id="average_rain_fall" class="form-control" value="{{ form.average_rain_fall.value|default:'' }}" >
+                                    {% for error in form.average_rain_fall.errors %}
+                                        <div class="error-message">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-md-12 pl-md-1">
+                                <div class="form-group">
+                                    <label for="pesticides_tonnes">Pesticides (tonnes)</label>
+                                    <input type="number" name="pesticides_tonnes" id="pesticides_tonnes" class="form-control" value="{{ form.pesticides_tonnes.value|default:'' }}" >
+                                    {% for error in form.pesticides_tonnes.errors %}
+                                        <div class="error-message">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 pr-md-1">
+                                <div class="form-group">
+                                    <label for="avg_temp">Average Temperature (°C)</label>
+                                    <input type="number" name="avg_temp" id="avg_temp" class="form-control" value="{{ form.avg_temp.value|default:'' }}" >
+                                    {% for error in form.avg_temp.errors %}
+                                        <div class="error-message">{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer col-md-4 pr-md-1">
+                            <button type="submit" class="custom-button">Save</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-user" style="position: relative;">
+                <img src="{{ ASSETS_ROOT }}/img/test.jpg" alt="..." style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+    <div class="card-footer col-md-2 pr-md-4 d-flex justify-content-start">
+        <a href="{% url 'yield_list' %}">
+            <i class="fas fa-arrow-left" style="color: green; font-size: 24px;"></i>  <!-- Adjust 'font-size' as needed -->
+        </a>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+<script>
+    function validateForm() {
+        const form = document.forms[0];
+        let isValid = true;
+
+        for (let field of form) {
+            if (field.type !== "submit" && field.type !== "button") {
+                if (field.required && !field.value.trim()) {
+                    alert(`${field.labels[0].innerText} is required.`);
+                    field.focus();
+                    isValid = false;
+                    break;
+                }
+
+                if (field.name === 'quantity' && isNaN(field.value)) {
+                    alert(`Please enter a valid number for ${field.labels[0].innerText}.`);
+                    field.focus();
+                    isValid = false;
+                    break;
+                }
+            }
+        }
+
+        return isValid;
+    }
+</script>
+{% endblock javascripts %}

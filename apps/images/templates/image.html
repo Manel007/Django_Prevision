@@ -1,0 +1,38 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Créer un Agriculteur{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title"> Description de L'image</h5>
+                </div>
+                <div class="card-body">
+                 <form method="POST" autocomplete="off">
+                   {% csrf_token %}
+                   <input type="text" class="form-control" name="user_input">
+                    <button type="submit" class="btn btn-primary mt-3"> 
+                        submit
+                    </button>
+                 </form>
+                 <br>
+
+                 {% if object %}
+                    <div>
+                        {{ object.phrase }}
+                        <br>
+                        <img src="{{object.ai_image.url}}" alt="{{ object.phrase}}" >
+                    </div>
+                 {% endif %}
+                
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

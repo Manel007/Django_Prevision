@@ -5,6 +5,11 @@ Copyright (c) 2019 - present AppSeed.us
 
 import os, environ
 
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
+
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, True)
@@ -25,6 +30,10 @@ DEBUG = env('DEBUG')
 
 # Assets Management
 ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets') 
+FRONT_ROOT = os.getenv('FRONT_ROOT', '/static/front') 
+
+
+
 
 # load production server from .env
 ALLOWED_HOSTS        = ['localhost', 'localhost:85', '127.0.0.1',               env('SERVER', default='127.0.0.1') ]
@@ -42,7 +51,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.home' , # Enable the inner home (home)
  'apps.RessourceEntity',
+    'apps.authentication', 
+    'apps.agriculture_project.agriculture_project',  
+    'crispy_forms',
+
+    'apps.front',
+    'apps.agriculteur',
+    'apps.images',
+    'apps.reconnaissancevoc',
+    'apps.pesticide',
+    'apps.programme',
+
+    'rest_framework',  # Assurez-vous qu'il n'apparaît qu'une seule fois
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -72,6 +94,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'apps.context_processors.cfg_assets_root',
+                'apps.context_processors.cfg_front_root',
+
             ],
         },
     },
@@ -144,7 +168,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(CORE_DIR, 'apps/static'),
 )
+# Media Files
 
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #############################################################
 #############################################################
