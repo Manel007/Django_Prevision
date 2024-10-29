@@ -68,11 +68,12 @@
             </li>
         
             <li class="{% if 'typography' in segment %} active {% endif %}">
-                <a href="/">
+                <a href="{% url 'yield_list' %}">  <!-- Use the Django URL template tag -->
                     <i class="tim-icons icon-align-center"></i>
-                    <p>create culture</p>
+                    <p>Yield List</p>
                 </a>
             </li>
+            
 
             <li>
                 <a href="/rtl.html">

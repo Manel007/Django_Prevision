@@ -16,6 +16,7 @@ urlpatterns = [
     path("", include('apps.front.urls')),  
     path("", include("apps.authentication.urls")), # Auth routes - login / register
     path("", include('apps.agriculture_project.agriculture_project.urls')),
+    path("", include('apps.front.urls')),  
 
     # ADD NEW Routes HERE
 

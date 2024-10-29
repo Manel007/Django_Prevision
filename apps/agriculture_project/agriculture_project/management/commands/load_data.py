@@ -1,6 +1,6 @@
 import pandas as pd
 from django.core.management.base import BaseCommand
-from ...models import CropYield  # Adjust the number of dots based on the directory structure
+from ...models import CropYield
 
 class Command(BaseCommand):
     help = 'Load data from CSV files'
@@ -12,18 +12,24 @@ class Command(BaseCommand):
         # Clean column names
         yield_data.columns = yield_data.columns.str.strip()  # Remove leading/trailing whitespace
 
-        # Print columns to check for correctness
-        print("DataFrame columns:", yield_data.columns)
+        # Prepare a list to hold CropYield instances
+        crop_yields = []
 
         for _, row in yield_data.iterrows():
-            CropYield.objects.create(
-                area=row['Area'],
-                item=row['Item'],
-                year=int(row['Year']),
-                hg_per_ha_yield=float(row['hg/ha_yield']),  # Update this line to access the correct column
-                average_rain_fall=0,  # To be filled in with additional data
-                pesticides_tonnes=0,   # To be filled in with additional data
-                avg_temp=0             # To be filled in with additional data
+            crop_yields.append(
+                CropYield(
+                 
+                    area=row['Area'],
+                    item=row['Item'],
+                    year=int(row['Year']),
+                    hg_per_ha_yield=float(row['hg/ha_yield']),
+                    average_rain_fall=row['average_rain_fall_mm_per_year'],  # Change as per the actual data
+                    pesticides_tonnes=row['pesticides_tonnes'],              # Change as per the actual data
+                    avg_temp=row['avg_temp']                                  # Change as per the actual data
+                )
             )
+
+        # Bulk create CropYield instances
+        CropYield.objects.bulk_create(crop_yields)
 
         self.stdout.write(self.style.SUCCESS('Data loaded successfully.'))
