@@ -13,6 +13,7 @@ from django.urls import path
 from apps.zonegéosamarapp import views as viewszone
 
 
+from apps.RessourceEntity import views as ressourceview
 urlpatterns = [
     
     path('admin/', admin.site.urls),          # Django admin route
@@ -60,7 +61,24 @@ path('dataset-anomalies/', viewszone.dataset_anomalies_view, name='dataset_anoma
 path('predict-soil/', viewszone.predict_soil, name='predict_soil'),
 path('soil-prediction-form/', viewszone.soil_prediction_form, name='soil_prediction_form'),  # Ensure this path exists
 # Leave `Home.Urls` as last the last line
-    path("", include("apps.home.urls")),
     
+   
+ 
 
+  path('ressource_list/', ressourceview.ressource_list, name='ressource_list'),
+    path('ressource/<int:pk>/', ressourceview.ressource_detail, name='ressource_detail'),
+    path('ressource/new/', ressourceview.ressource_create, name='ressource_create'),
+    path('ressource/<int:pk>/edit/', ressourceview.ressource_update, name='ressource_update'),
+    path('ressource/<int:pk>/delete/', ressourceview.ressource_delete, name='ressource_delete'),
+    path('search/', ressourceview.ressource_search, name='ressource_search'),
+
+    path('fournisseurs/', ressourceview.fournisseur_list, name='fournisseur_list'),
+    path('fournisseurs/<int:pk>/', ressourceview.fournisseur_detail, name='fournisseur_detail'),
+    path('fournisseurs/new/', ressourceview.fournisseur_create, name='fournisseur_create'),
+    path('fournisseurs/<int:pk>/edit/', ressourceview.fournisseur_update, name='fournisseur_update'),
+    path('fournisseurs/<int:pk>/delete/', ressourceview.fournisseur_delete, name='fournisseur_delete'),
+     path('predict/', ressourceview.predict_view, name='predict'),
+
+  path("", include("apps.home.urls"))
+ # Leave `Home.Urls` as last the last line
 ]
