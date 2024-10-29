@@ -21,13 +21,14 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nom</label>
-                                    <input type="text" class="form-control" name="nom" placeholder="Nom de la culture Agricole">
+                                    <input type="text" class="form-control" name="nom" placeholder="Agricultural Crop Name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Description</label>
-                                    <textarea class="form-control" name="description" placeholder="Description de la culture"></textarea>
+                                    <textarea class="form-control" name="description" placeholder="Crop Description
+"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -35,13 +36,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Cycle de croissance (jours)</label>
-                                    <input type="number" class="form-control" name="cycle_croissance_jours" placeholder="Durée de cycle de croissance en jours">
+                                    <input type="number" class="form-control" name="cycle_croissance_jours" placeholder="Growth Cycle Duration in Days">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Rendement attendu</label>
-                                    <input type="number" step="0.01" class="form-control" name="rendement_attendu" placeholder="Rendement attendu">
+                                    <input type="number" step="0.01" class="form-control" name="rendement_attendu" placeholder="Expected Yield">
                                 </div>
                             </div>
                         </div>
@@ -49,23 +50,23 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Type de sol préféré</label>
-                                    <input type="text" class="form-control" name="type_sol_prefere" placeholder="Type de sol préféré">
+                                    <input type="text" class="form-control" name="type_sol_prefere" placeholder="Preferred Soil Type">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Zone climatique recommandée</label>
-                                    <input type="text" class="form-control" name="zone_culture_recommandee" placeholder="Zone climatique recommandée">
+                                    <input type="text" class="form-control" name="zone_culture_recommandee" placeholder="Recommended Climate Zone">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Irrigation</label>
-                                    <input type="text" class="form-control" name="irrigation" placeholder="Type d'irrigation">
+                                    <input type="text" class="form-control" name="irrigation" placeholder="Required water quantity ">
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-fill btn-dark">Enregistrer</button>
+                        <button type="submit" class="btn btn-fill btn-dark">Save</button>
                     </form>
 
                     {% if form.errors %}
