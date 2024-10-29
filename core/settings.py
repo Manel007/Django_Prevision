@@ -66,6 +66,9 @@ INSTALLED_APPS = [
      # Ensure this is the correct app name and path
 
 
+    'apps.Culture',
+    'apps.Technique',
+    'apps.RecommendationTech',
 ]
 
 MIDDLEWARE = [

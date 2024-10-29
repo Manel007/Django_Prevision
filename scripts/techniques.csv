@@ -1,0 +1,1001 @@
+nom_technique,description,date_application,impact_rendement,culture_id
+Mulchage,Semis de graines directement sans travail préalable du sol.,printemps,6.1,1
+Paillage,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,20.59,2
+Culture en serre,Application de fumier pour enrichir le sol en nutriments.,automne,5.62,3
+Mulchage,Suppression des plants trop proches pour favoriser la croissance des autres.,printemps,9.81,4
+Paillage,Suppression des plants trop proches pour favoriser la croissance des autres.,été,6.15,5
+Éclaircissage,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,8.66,6
+Fertilisation foliaire,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,3.31,7
+Désherbage manuel,Ajout de compost pour améliorer la matière organique du sol.,été,4.68,8
+Traitement des semences,Semis de graines directement sans travail préalable du sol.,printemps,16.98,9
+Semis direct,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,14.09,10
+Paillage,Application de fumier pour enrichir le sol en nutriments.,hiver,1.41,11
+Fertilisation foliaire,Semis de graines directement sans travail préalable du sol.,été,3.84,12
+Désherbage manuel,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,20.76,13
+Éclaircissage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,8.22,14
+Contrôle biologique des nuisibles,Récolte manuelle pour minimiser les pertes de récolte.,été,8.1,15
+Technique D'engrais vert,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,20.75,16
+Désherbage manuel,Culture en serre pour contrôler les conditions de croissance.,automne,20.61,17
+Inoculation bactérienne,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,20.04,18
+Application de biopesticides,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,11.21,19
+Inoculation bactérienne,Application de fumier pour enrichir le sol en nutriments.,hiver,4.84,20
+Application de biopesticides,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,18.1,21
+Inoculation bactérienne,Traitement des graines par la chaleur pour les protéger des maladies.,automne,5.16,22
+Application de biopesticides,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,8.16,23
+Contrôle biologique des nuisibles,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,1.18,24
+Irrigation goutte à goutte,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,10.78,25
+Traitement des semences,Ajout de compost pour améliorer la matière organique du sol.,automne,11.11,26
+Fertilisation foliaire,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,15.58,27
+Éclaircissage des plants,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,14.56,28
+Fertilisation au compost,Récolte manuelle pour minimiser les pertes de récolte.,hiver,6.01,29
+Fertilisation foliaire,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,hiver,19.85,30
+Éclaircissage,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,1.48,31
+Semis direct,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,10.82,32
+Technique D'engrais vert,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,16.3,33
+Inoculation bactérienne,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,7.42,34
+Fertilisation foliaire,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,4.26,35
+Fertilisation au compost,Irrigation contrôlée pour optimiser l'usage de l'eau.,hiver,11.21,36
+Fertilisation foliaire,Traitement des graines par la chaleur pour les protéger des maladies.,hiver,17.52,37
+Utilisation de variétés résistantes,Application de fumier pour enrichir le sol en nutriments.,printemps,5.19,38
+Désherbage manuel,Ajout de compost pour améliorer la matière organique du sol.,automne,13.75,39
+Contrôle biologique des nuisibles,Application de fumier pour enrichir le sol en nutriments.,automne,12.71,40
+Semis direct,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,4.08,41
+Culture en serre,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,12.94,42
+Inoculation bactérienne,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,13.46,43
+Semis direct,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,18.54,44
+Application de biopesticides,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,9.21,45
+Utilisation de cultures couvre-sol,Récolte manuelle pour minimiser les pertes de récolte.,automne,12.17,46
+Application de compost,Minimisation du labour pour préserver la structure du sol.,hiver,5.45,47
+Utilisation de variétés résistantes,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,20.14,48
+Rotation des cultures,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,11.28,49
+Éclaircissage,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,12.83,50
+Mulchage,Application de fumier pour enrichir le sol en nutriments.,hiver,2.14,51
+Application de compost,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,19.15,52
+Culture en serre,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,6.3,53
+Enrichissement en mycorhizes,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,18.34,54
+Éclaircissage,Récolte manuelle pour minimiser les pertes de récolte.,automne,15.55,55
+Irrigation goutte à goutte,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,13.11,56
+Culture en serre,Ajout de compost pour améliorer la matière organique du sol.,hiver,19.08,57
+Application de compost,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,5,58
+Utilisation de cultures couvre-sol,Culture en serre pour contrôler les conditions de croissance.,été,3.05,59
+Culture en serre,Ajout de compost pour améliorer la matière organique du sol.,automne,10.21,60
+Technique D'engrais vert,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,18.53,61
+Irrigation goutte à goutte,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,20.24,62
+Traitement des semences,Récolte manuelle pour minimiser les pertes de récolte.,hiver,8.85,63
+Rotation des cultures,Minimisation du labour pour préserver la structure du sol.,été,5.67,64
+Fertilisation foliaire,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,18.4,65
+Semis direct,Culture en serre pour contrôler les conditions de croissance.,automne,12.11,66
+Irrigation goutte à goutte,Ajout de biofertilisants pour stimuler la croissance des plantes.,printemps,6.02,67
+Désherbage manuel,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,15.99,68
+Éclaircissage des plants,Traitement des graines par la chaleur pour les protéger des maladies.,été,5.32,69
+Irrigation goutte à goutte,Ajout de compost pour améliorer la matière organique du sol.,hiver,19.93,70
+Traitement des semences,Semis de graines directement sans travail préalable du sol.,printemps,7.46,71
+Paillage,Élagage des arbres pour améliorer l'exposition au soleil.,automne,10.2,72
+Enrichissement en mycorhizes,Culture en serre pour contrôler les conditions de croissance.,automne,9.43,73
+Traitement des semences,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,7.8,74
+Paillage,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,1.15,75
+Application de biopesticides,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,18.16,76
+Irrigation goutte à goutte,Minimisation du labour pour préserver la structure du sol.,été,15.49,77
+Application de compost,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,7.39,78
+Désherbage manuel,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,11.45,79
+Application de compost,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,16.77,80
+Utilisation de cultures couvre-sol,Ajout de compost pour améliorer la matière organique du sol.,automne,9.99,81
+Technique D'engrais vert,Récolte manuelle pour minimiser les pertes de récolte.,automne,2.38,82
+Utilisation de variétés résistantes,Semis de graines directement sans travail préalable du sol.,hiver,8.72,83
+Utilisation de variétés résistantes,Minimisation du labour pour préserver la structure du sol.,hiver,2.18,84
+Utilisation de cultures couvre-sol,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,8.72,85
+Éclaircissage,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,12.34,86
+Fertilisation foliaire,Ajout de compost pour améliorer la matière organique du sol.,printemps,9.12,87
+Utilisation de cultures couvre-sol,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,11.92,88
+Technique D'engrais vert,Ajout de compost pour améliorer la matière organique du sol.,printemps,10.25,89
+Technique D'engrais vert,Utilisation de cultures de couverture pour améliorer la santé du sol.,automne,10.72,90
+Désherbage manuel,Ajout de compost pour améliorer la matière organique du sol.,automne,11.33,91
+Technique D'engrais vert,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,8.26,92
+Application de compost,Culture en serre pour contrôler les conditions de croissance.,hiver,17.62,93
+Application de biopesticides,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,5.93,94
+Culture en serre,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,2.17,95
+Rotation des cultures,Élagage des arbres pour améliorer l'exposition au soleil.,automne,12.35,96
+Mulchage,Élagage des arbres pour améliorer l'exposition au soleil.,automne,19.47,97
+Éclaircissage des plants,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,12.6,98
+Irrigation goutte à goutte,Traitement des graines par la chaleur pour les protéger des maladies.,automne,14.83,99
+Application de compost,Rotation des cultures pour réduire les parasites et maladies du sol.,été,3.49,100
+Utilisation de cultures couvre-sol,Semis de graines directement sans travail préalable du sol.,hiver,11.97,101
+Culture en serre,Récolte manuelle pour minimiser les pertes de récolte.,printemps,8.07,102
+Utilisation de variétés résistantes,Utilisation de pesticides biologiques pour protéger les cultures.,automne,11.97,103
+Mulchage,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,13.66,104
+Mulchage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,11.67,105
+Technique D'engrais vert,Élagage des arbres pour améliorer l'exposition au soleil.,été,10.47,106
+Contrôle biologique des nuisibles,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,20.22,107
+Utilisation de variétés résistantes,Ajout de compost pour améliorer la matière organique du sol.,automne,18.23,108
+Traitement des semences,Rotation avec des légumineuses pour enrichir le sol en azote.,été,3.89,109
+Désherbage manuel,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,2.6,110
+Fertilisation foliaire,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,16.94,111
+Utilisation de cultures couvre-sol,Récolte manuelle pour minimiser les pertes de récolte.,automne,15.08,112
+Désherbage manuel,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,printemps,3.63,113
+Désherbage manuel,Traitement des graines par la chaleur pour les protéger des maladies.,été,16.64,114
+Culture en serre,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,4.37,115
+Irrigation goutte à goutte,Culture en serre pour contrôler les conditions de croissance.,printemps,20.44,116
+Traitement des semences,Culture en serre pour contrôler les conditions de croissance.,automne,15.19,117
+Contrôle biologique des nuisibles,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,7.47,118
+Inoculation bactérienne,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,14.13,119
+Éclaircissage des plants,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,3.1,120
+Irrigation goutte à goutte,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,hiver,14.48,121
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,été,9.13,122
+Traitement des semences,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,18.97,123
+Irrigation goutte à goutte,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,10.33,124
+Désherbage manuel,Ajout de biofertilisants pour stimuler la croissance des plantes.,printemps,11.18,125
+Enrichissement en mycorhizes,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,9.59,126
+Application de compost,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,hiver,18.17,127
+Rotation des cultures,Semis de graines directement sans travail préalable du sol.,printemps,9.53,128
+Application de biopesticides,Application de fumier pour enrichir le sol en nutriments.,printemps,7.25,129
+Fertilisation au compost,Rotation des cultures pour réduire les parasites et maladies du sol.,été,18.59,130
+Fertilisation foliaire,Rotation avec des légumineuses pour enrichir le sol en azote.,été,4.4,131
+Semis direct,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,15.36,132
+Éclaircissage,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,3.98,133
+Désherbage manuel,Minimisation du labour pour préserver la structure du sol.,hiver,2.96,134
+Semis direct,Traitement des graines par la chaleur pour les protéger des maladies.,automne,14.17,135
+Utilisation de variétés résistantes,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,6.61,136
+Désherbage manuel,Rotation des cultures pour réduire les parasites et maladies du sol.,été,14.05,137
+Contrôle biologique des nuisibles,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,20.58,138
+Éclaircissage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,19.48,139
+Désherbage manuel,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,9.01,140
+Application de compost,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,18.48,141
+Éclaircissage des plants,Récolte manuelle pour minimiser les pertes de récolte.,printemps,13.66,142
+Rotation des cultures,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,3.41,143
+Rotation des cultures,Ajout de compost pour améliorer la matière organique du sol.,printemps,1.42,144
+Paillage,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,15.97,145
+Semis direct,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,17.57,146
+Éclaircissage des plants,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,8.52,147
+Culture en serre,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,4.23,148
+Désherbage manuel,Récolte manuelle pour minimiser les pertes de récolte.,hiver,15.25,149
+Mulchage,Utilisation de pesticides biologiques pour protéger les cultures.,été,15.96,150
+Technique D'engrais vert,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,12.85,151
+Fertilisation foliaire,Traitement des graines par la chaleur pour les protéger des maladies.,hiver,10.23,152
+Paillage,Ajout de compost pour améliorer la matière organique du sol.,été,12.96,153
+Éclaircissage des plants,Suppression des plants trop proches pour favoriser la croissance des autres.,été,4.86,154
+Éclaircissage des plants,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,8.75,155
+Application de compost,Utilisation de pesticides biologiques pour protéger les cultures.,été,6.94,156
+Mulchage,Élagage des arbres pour améliorer l'exposition au soleil.,été,10.58,157
+Désherbage manuel,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,18.96,158
+Éclaircissage,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,16.36,159
+Éclaircissage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,6.8,160
+Utilisation de cultures couvre-sol,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,8.87,161
+Utilisation de variétés résistantes,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,20.29,162
+Éclaircissage,Culture en serre pour contrôler les conditions de croissance.,été,8.52,163
+Irrigation goutte à goutte,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,3.11,164
+Éclaircissage des plants,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,10.96,165
+Éclaircissage,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,20.8,166
+Éclaircissage,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,14.86,167
+Contrôle biologique des nuisibles,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,15.42,168
+Mulchage,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,7.43,169
+Paillage,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,20.32,170
+Inoculation bactérienne,Traitement des graines par la chaleur pour les protéger des maladies.,hiver,9.09,171
+Paillage,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,hiver,20.96,172
+Traitement des semences,Application de fumier pour enrichir le sol en nutriments.,hiver,12.09,173
+Semis direct,Culture en serre pour contrôler les conditions de croissance.,été,1.71,174
+Rotation des cultures,Semis de graines directement sans travail préalable du sol.,été,2.58,175
+Mulchage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,18.9,176
+Technique D'engrais vert,Culture en serre pour contrôler les conditions de croissance.,hiver,17.63,177
+Paillage,Culture en serre pour contrôler les conditions de croissance.,automne,14.63,178
+Enrichissement en mycorhizes,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,4.14,179
+Utilisation de cultures couvre-sol,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,7.95,180
+Contrôle biologique des nuisibles,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,20.75,181
+Irrigation goutte à goutte,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,6.55,182
+Application de biopesticides,Ajout de compost pour améliorer la matière organique du sol.,automne,19.59,183
+Désherbage manuel,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,printemps,11.8,184
+Fertilisation au compost,Rotation avec des légumineuses pour enrichir le sol en azote.,été,2.02,185
+Semis direct,Irrigation contrôlée pour optimiser l'usage de l'eau.,automne,14.79,186
+Rotation des cultures,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,6.21,187
+Application de compost,Ajout de biofertilisants pour stimuler la croissance des plantes.,printemps,11.4,188
+Contrôle biologique des nuisibles,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,12.18,189
+Traitement des semences,Récolte manuelle pour minimiser les pertes de récolte.,automne,3.05,190
+Enrichissement en mycorhizes,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,16.09,191
+Semis direct,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,7.76,192
+Contrôle biologique des nuisibles,Récolte manuelle pour minimiser les pertes de récolte.,printemps,7.78,193
+Rotation des cultures,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,10.19,194
+Fertilisation au compost,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,3.68,195
+Éclaircissage des plants,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,17.2,196
+Technique D'engrais vert,Culture en serre pour contrôler les conditions de croissance.,automne,10.37,197
+Désherbage manuel,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,5.76,198
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,3.84,199
+Fertilisation au compost,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,2.29,200
+Utilisation de cultures couvre-sol,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,3.23,201
+Application de biopesticides,Application de fumier pour enrichir le sol en nutriments.,automne,7.67,202
+Utilisation de variétés résistantes,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,3.46,203
+Application de compost,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,8.24,204
+Fertilisation foliaire,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,17.82,205
+Culture en serre,Récolte manuelle pour minimiser les pertes de récolte.,printemps,4.97,206
+Irrigation goutte à goutte,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,7.53,207
+Culture en serre,Minimisation du labour pour préserver la structure du sol.,printemps,19.98,208
+Utilisation de variétés résistantes,Minimisation du labour pour préserver la structure du sol.,hiver,1.66,209
+Culture en serre,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,16.55,210
+Utilisation de variétés résistantes,Semis de graines directement sans travail préalable du sol.,hiver,17.74,211
+Traitement des semences,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,11.02,212
+Application de biopesticides,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,1.84,213
+Fertilisation au compost,Culture en serre pour contrôler les conditions de croissance.,été,15.84,214
+Paillage,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,8.82,215
+Rotation des cultures,Traitement des graines par la chaleur pour les protéger des maladies.,été,10.38,216
+Fertilisation foliaire,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,2.96,217
+Éclaircissage,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,11.37,218
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,10.76,219
+Rotation des cultures,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,4.98,220
+Application de compost,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,19.79,221
+Éclaircissage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,11.66,222
+Technique D'engrais vert,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,15.04,223
+Mulchage,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,11.07,224
+Mulchage,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,6.16,225
+Traitement des semences,Culture en serre pour contrôler les conditions de croissance.,hiver,14.11,226
+Irrigation goutte à goutte,Traitement des graines par la chaleur pour les protéger des maladies.,été,6.75,227
+Enrichissement en mycorhizes,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,11.61,228
+Fertilisation au compost,Élagage des arbres pour améliorer l'exposition au soleil.,été,7.28,229
+Enrichissement en mycorhizes,Application de fumier pour enrichir le sol en nutriments.,printemps,1.29,230
+Irrigation goutte à goutte,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,15.45,231
+Irrigation goutte à goutte,Traitement des graines par la chaleur pour les protéger des maladies.,automne,8.1,232
+Utilisation de variétés résistantes,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,19.57,233
+Fertilisation au compost,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,12.45,234
+Application de compost,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,19.03,235
+Utilisation de cultures couvre-sol,Minimisation du labour pour préserver la structure du sol.,été,12.14,236
+Mulchage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,hiver,5.01,237
+Éclaircissage,Minimisation du labour pour préserver la structure du sol.,été,8.4,238
+Paillage,Rotation des cultures pour réduire les parasites et maladies du sol.,été,10.92,239
+Inoculation bactérienne,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,9.57,240
+Éclaircissage,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,6.4,241
+Irrigation goutte à goutte,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,1.13,242
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,7.37,243
+Désherbage manuel,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,1.8,244
+Désherbage manuel,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,13.12,245
+Utilisation de variétés résistantes,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,1.25,246
+Désherbage manuel,Minimisation du labour pour préserver la structure du sol.,printemps,1.44,247
+Contrôle biologique des nuisibles,Utilisation de pesticides biologiques pour protéger les cultures.,automne,15.08,248
+Désherbage manuel,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,20.92,249
+Mulchage,Traitement des graines par la chaleur pour les protéger des maladies.,été,19.49,250
+Culture en serre,Minimisation du labour pour préserver la structure du sol.,été,5.33,251
+Désherbage manuel,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,7.66,252
+Application de biopesticides,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,19.73,253
+Fertilisation foliaire,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,hiver,15.72,254
+Traitement des semences,Semis de graines directement sans travail préalable du sol.,automne,6.84,255
+Semis direct,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,19.91,256
+Mulchage,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,4.87,257
+Utilisation de cultures couvre-sol,Suppression des plants trop proches pour favoriser la croissance des autres.,été,20.94,258
+Fertilisation au compost,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,12.15,259
+Utilisation de cultures couvre-sol,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,18.49,260
+Éclaircissage,Application de fumier pour enrichir le sol en nutriments.,été,12.46,261
+Culture en serre,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,19.85,262
+Technique D'engrais vert,Récolte manuelle pour minimiser les pertes de récolte.,automne,15,263
+Contrôle biologique des nuisibles,Culture en serre pour contrôler les conditions de croissance.,hiver,5.67,264
+Technique D'engrais vert,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,5.74,265
+Culture en serre,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,3.67,266
+Application de biopesticides,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,1.57,267
+Désherbage manuel,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,18.1,268
+Rotation des cultures,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,1.48,269
+Éclaircissage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,20.87,270
+Utilisation de variétés résistantes,Utilisation de pesticides biologiques pour protéger les cultures.,été,3.25,271
+Utilisation de variétés résistantes,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,15.51,272
+Inoculation bactérienne,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,1.83,273
+Utilisation de variétés résistantes,Minimisation du labour pour préserver la structure du sol.,printemps,11.05,274
+Fertilisation foliaire,Minimisation du labour pour préserver la structure du sol.,automne,5.6,275
+Éclaircissage,Culture en serre pour contrôler les conditions de croissance.,été,9.84,276
+Désherbage manuel,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,17.22,277
+Paillage,Élagage des arbres pour améliorer l'exposition au soleil.,automne,17.09,278
+Enrichissement en mycorhizes,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,13.51,279
+Irrigation goutte à goutte,Utilisation de pesticides biologiques pour protéger les cultures.,été,13.43,280
+Culture en serre,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,8.32,281
+Contrôle biologique des nuisibles,Ajout de compost pour améliorer la matière organique du sol.,été,4.72,282
+Inoculation bactérienne,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,2.78,283
+Fertilisation au compost,Récolte manuelle pour minimiser les pertes de récolte.,printemps,6.07,284
+Application de compost,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,7.03,285
+Éclaircissage,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,2.58,286
+Technique D'engrais vert,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,1.88,287
+Éclaircissage,Suppression des plants trop proches pour favoriser la croissance des autres.,été,5.15,288
+Éclaircissage,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,7.7,289
+Utilisation de variétés résistantes,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,18.57,290
+Semis direct,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,6.65,291
+Mulchage,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,19.17,292
+Fertilisation foliaire,Traitement des graines par la chaleur pour les protéger des maladies.,été,12.27,293
+Application de biopesticides,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,12.21,294
+Irrigation goutte à goutte,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,7,295
+Rotation des cultures,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,4.45,296
+Éclaircissage des plants,Récolte manuelle pour minimiser les pertes de récolte.,hiver,1.16,297
+Technique D'engrais vert,Ajout de compost pour améliorer la matière organique du sol.,printemps,6.82,298
+Enrichissement en mycorhizes,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,13.73,299
+Technique D'engrais vert,Élagage des arbres pour améliorer l'exposition au soleil.,automne,2.15,300
+Éclaircissage,Ajout de compost pour améliorer la matière organique du sol.,automne,1.53,301
+Inoculation bactérienne,Suppression des plants trop proches pour favoriser la croissance des autres.,hiver,13.3,302
+Culture en serre,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,8.97,303
+Inoculation bactérienne,Minimisation du labour pour préserver la structure du sol.,printemps,8.18,304
+Paillage,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,11.18,305
+Culture en serre,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,11.4,306
+Éclaircissage des plants,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,11.35,307
+Traitement des semences,Rotation avec des légumineuses pour enrichir le sol en azote.,été,15.06,308
+Mulchage,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,11.43,309
+Enrichissement en mycorhizes,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,17.7,310
+Éclaircissage des plants,Traitement des graines par la chaleur pour les protéger des maladies.,été,8.97,311
+Inoculation bactérienne,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,15.09,312
+Éclaircissage des plants,Culture en serre pour contrôler les conditions de croissance.,printemps,14.47,313
+Utilisation de cultures couvre-sol,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,automne,5.05,314
+Utilisation de cultures couvre-sol,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,5.46,315
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,4.69,316
+Utilisation de variétés résistantes,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,18.87,317
+Désherbage manuel,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,12.81,318
+Paillage,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,9.6,319
+Enrichissement en mycorhizes,Application de fumier pour enrichir le sol en nutriments.,été,14.7,320
+Traitement des semences,Ajout de compost pour améliorer la matière organique du sol.,hiver,10.26,321
+Fertilisation foliaire,Suppression des plants trop proches pour favoriser la croissance des autres.,printemps,3.3,322
+Contrôle biologique des nuisibles,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,13.65,323
+Fertilisation au compost,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,3.97,324
+Application de biopesticides,Utilisation de cultures de couverture pour améliorer la santé du sol.,automne,11.24,325
+Désherbage manuel,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,12.26,326
+Irrigation goutte à goutte,Récolte manuelle pour minimiser les pertes de récolte.,printemps,11.64,327
+Utilisation de cultures couvre-sol,Traitement des graines par la chaleur pour les protéger des maladies.,été,10.66,328
+Contrôle biologique des nuisibles,Rotation avec des légumineuses pour enrichir le sol en azote.,été,8.81,329
+Irrigation goutte à goutte,Semis de graines directement sans travail préalable du sol.,été,15.96,330
+Inoculation bactérienne,Irrigation contrôlée pour optimiser l'usage de l'eau.,automne,15.21,331
+Enrichissement en mycorhizes,Récolte manuelle pour minimiser les pertes de récolte.,automne,20.22,332
+Éclaircissage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,6.79,333
+Utilisation de variétés résistantes,Minimisation du labour pour préserver la structure du sol.,été,19.75,334
+Utilisation de variétés résistantes,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,3.4,335
+Fertilisation au compost,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,1.48,336
+Inoculation bactérienne,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,16.56,337
+Technique D'engrais vert,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,printemps,6.49,338
+Éclaircissage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,4.16,339
+Mulchage,Traitement des graines par la chaleur pour les protéger des maladies.,hiver,4.77,340
+Paillage,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,13.11,341
+Utilisation de variétés résistantes,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,13.49,342
+Éclaircissage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,2.73,343
+Éclaircissage des plants,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,15.83,344
+Culture en serre,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,printemps,5.83,345
+Culture en serre,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,4.88,346
+Éclaircissage,Minimisation du labour pour préserver la structure du sol.,été,14.45,347
+Mulchage,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,19.5,348
+Culture en serre,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,15.03,349
+Mulchage,Ajout de biofertilisants pour stimuler la croissance des plantes.,printemps,20.61,350
+Semis direct,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,13.35,351
+Application de biopesticides,Traitement des graines par la chaleur pour les protéger des maladies.,été,5.64,352
+Semis direct,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,3.78,353
+Fertilisation au compost,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,20.38,354
+Utilisation de cultures couvre-sol,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,15.58,355
+Enrichissement en mycorhizes,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,18.79,356
+Rotation des cultures,Rotation avec des légumineuses pour enrichir le sol en azote.,été,20.35,357
+Utilisation de variétés résistantes,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,13.78,358
+Fertilisation au compost,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,printemps,17.36,359
+Éclaircissage des plants,Rotation avec des légumineuses pour enrichir le sol en azote.,été,15.15,360
+Paillage,Minimisation du labour pour préserver la structure du sol.,été,4.13,361
+Désherbage manuel,Ajout de compost pour améliorer la matière organique du sol.,automne,19.38,362
+Application de compost,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,15.7,363
+Application de compost,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,11.19,364
+Application de biopesticides,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,1.17,365
+Mulchage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,18.54,366
+Contrôle biologique des nuisibles,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,16.71,367
+Éclaircissage,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,13.54,368
+Éclaircissage,Ajout de compost pour améliorer la matière organique du sol.,été,16.69,369
+Traitement des semences,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,15.13,370
+Rotation des cultures,Application de fumier pour enrichir le sol en nutriments.,automne,1.94,371
+Utilisation de variétés résistantes,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,3.77,372
+Culture en serre,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,14.75,373
+Fertilisation au compost,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,12,374
+Paillage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,10.5,375
+Enrichissement en mycorhizes,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,19.26,376
+Semis direct,Application de fumier pour enrichir le sol en nutriments.,automne,9.7,377
+Mulchage,Semis de graines directement sans travail préalable du sol.,automne,16.82,378
+Utilisation de variétés résistantes,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,4.82,379
+Désherbage manuel,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,19.41,380
+Fertilisation foliaire,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,12.39,381
+Technique D'engrais vert,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,17.15,382
+Application de compost,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,18.42,383
+Paillage,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,19.97,384
+Irrigation goutte à goutte,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,10.81,385
+Fertilisation foliaire,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,20.08,386
+Mulchage,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,12.45,387
+Utilisation de cultures couvre-sol,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,18.97,388
+Technique D'engrais vert,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,3.66,389
+Application de compost,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,9.27,390
+Utilisation de variétés résistantes,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,11.13,391
+Semis direct,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,17.8,392
+Inoculation bactérienne,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,16.75,393
+Utilisation de cultures couvre-sol,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,18.57,394
+Utilisation de cultures couvre-sol,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,15.58,395
+Éclaircissage des plants,Minimisation du labour pour préserver la structure du sol.,été,19.51,396
+Traitement des semences,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,2.85,397
+Fertilisation foliaire,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,20.38,398
+Inoculation bactérienne,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,12.43,399
+Paillage,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,11.02,400
+Fertilisation au compost,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,11.12,401
+Enrichissement en mycorhizes,Minimisation du labour pour préserver la structure du sol.,été,1.22,402
+Semis direct,Application de fumier pour enrichir le sol en nutriments.,automne,6.14,403
+Fertilisation au compost,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,3.46,404
+Inoculation bactérienne,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,13.03,405
+Éclaircissage,Semis de graines directement sans travail préalable du sol.,été,2.11,406
+Fertilisation au compost,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,3.26,407
+Application de compost,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,18.97,408
+Contrôle biologique des nuisibles,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,10.49,409
+Enrichissement en mycorhizes,Semis de graines directement sans travail préalable du sol.,automne,17.81,410
+Inoculation bactérienne,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,17.04,411
+Enrichissement en mycorhizes,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,5.44,412
+Inoculation bactérienne,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,15.08,413
+Éclaircissage des plants,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,5.38,414
+Inoculation bactérienne,Suppression des plants trop proches pour favoriser la croissance des autres.,printemps,17.75,415
+Contrôle biologique des nuisibles,Application de fumier pour enrichir le sol en nutriments.,été,16.3,416
+Désherbage manuel,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,12.52,417
+Utilisation de cultures couvre-sol,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,14.05,418
+Fertilisation au compost,Suppression des plants trop proches pour favoriser la croissance des autres.,hiver,17.42,419
+Culture en serre,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,18.81,420
+Utilisation de cultures couvre-sol,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,13.47,421
+Application de compost,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,7.61,422
+Fertilisation foliaire,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,15.42,423
+Application de biopesticides,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,5.35,424
+Utilisation de variétés résistantes,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,15.08,425
+Culture en serre,Suppression des plants trop proches pour favoriser la croissance des autres.,été,12.2,426
+Application de compost,Semis de graines directement sans travail préalable du sol.,hiver,1.62,427
+Inoculation bactérienne,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,21,428
+Semis direct,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,16.44,429
+Désherbage manuel,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,3.2,430
+Culture en serre,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,4.85,431
+Désherbage manuel,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,3.99,432
+Mulchage,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,12.98,433
+Éclaircissage,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,15.26,434
+Fertilisation au compost,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,17.81,435
+Application de compost,Récolte manuelle pour minimiser les pertes de récolte.,hiver,20.31,436
+Fertilisation au compost,Utilisation de pesticides biologiques pour protéger les cultures.,automne,9.5,437
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,6.41,438
+Traitement des semences,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,16.02,439
+Mulchage,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,19.58,440
+Éclaircissage des plants,Irrigation contrôlée pour optimiser l'usage de l'eau.,automne,6.3,441
+Semis direct,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,10.95,442
+Utilisation de variétés résistantes,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,5.4,443
+Paillage,Irrigation contrôlée pour optimiser l'usage de l'eau.,automne,13.57,444
+Inoculation bactérienne,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,9.48,445
+Éclaircissage des plants,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,20.14,446
+Application de biopesticides,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,3.12,447
+Application de compost,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,19.39,448
+Désherbage manuel,Récolte manuelle pour minimiser les pertes de récolte.,automne,3.64,449
+Inoculation bactérienne,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,3.49,450
+Application de biopesticides,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,hiver,16.93,451
+Rotation des cultures,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,2.07,452
+Inoculation bactérienne,Traitement des graines par la chaleur pour les protéger des maladies.,automne,16.09,453
+Application de biopesticides,Traitement des graines par la chaleur pour les protéger des maladies.,hiver,9.3,454
+Éclaircissage,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,8.85,455
+Éclaircissage,Application de fumier pour enrichir le sol en nutriments.,été,14.07,456
+Culture en serre,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,7.94,457
+Éclaircissage des plants,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,10.97,458
+Paillage,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,19.01,459
+Inoculation bactérienne,Récolte manuelle pour minimiser les pertes de récolte.,hiver,13.53,460
+Irrigation goutte à goutte,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,17.28,461
+Désherbage manuel,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,8.93,462
+Éclaircissage des plants,Récolte manuelle pour minimiser les pertes de récolte.,automne,1.81,463
+Utilisation de variétés résistantes,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,17.99,464
+Désherbage manuel,Minimisation du labour pour préserver la structure du sol.,hiver,1.61,465
+Fertilisation au compost,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,10.71,466
+Application de biopesticides,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,1.61,467
+Semis direct,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,15.56,468
+Irrigation goutte à goutte,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,17.89,469
+Traitement des semences,Suppression des plants trop proches pour favoriser la croissance des autres.,printemps,4.14,470
+Fertilisation foliaire,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,16.41,471
+Enrichissement en mycorhizes,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,18.5,472
+Technique D'engrais vert,Rotation avec des légumineuses pour enrichir le sol en azote.,été,7.01,473
+Application de compost,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,13.3,474
+Éclaircissage des plants,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,14.84,475
+Technique D'engrais vert,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,3.63,476
+Désherbage manuel,Minimisation du labour pour préserver la structure du sol.,automne,4.91,477
+Inoculation bactérienne,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,5.3,478
+Désherbage manuel,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,5.68,479
+Désherbage manuel,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,19.33,480
+Culture en serre,Suppression des plants trop proches pour favoriser la croissance des autres.,hiver,7.83,481
+Paillage,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,12.26,482
+Application de biopesticides,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,7.15,483
+Utilisation de variétés résistantes,Élagage des arbres pour améliorer l'exposition au soleil.,été,17.87,484
+Fertilisation au compost,Culture en serre pour contrôler les conditions de croissance.,été,7.79,485
+Enrichissement en mycorhizes,Rotation avec des légumineuses pour enrichir le sol en azote.,été,17.32,486
+Paillage,Irrigation contrôlée pour optimiser l'usage de l'eau.,automne,8.76,487
+Semis direct,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,17.85,488
+Paillage,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,5.82,489
+Application de biopesticides,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,13.39,490
+Application de compost,Ajout de compost pour améliorer la matière organique du sol.,été,20.35,491
+Traitement des semences,Ajout de compost pour améliorer la matière organique du sol.,été,16.49,492
+Enrichissement en mycorhizes,Application de fumier pour enrichir le sol en nutriments.,printemps,7.97,493
+Utilisation de cultures couvre-sol,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,2.13,494
+Contrôle biologique des nuisibles,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,automne,2.56,495
+Désherbage manuel,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,2.71,496
+Culture en serre,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,12.85,497
+Rotation des cultures,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,20.16,498
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,10.82,499
+Semis direct,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,13.2,500
+Irrigation goutte à goutte,Application de fumier pour enrichir le sol en nutriments.,été,4.77,501
+Paillage,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,14.92,502
+Mulchage,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,19.07,503
+Fertilisation au compost,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,4.02,504
+Fertilisation foliaire,Rotation avec des légumineuses pour enrichir le sol en azote.,été,16.75,505
+Application de biopesticides,Suppression des plants trop proches pour favoriser la croissance des autres.,été,17.37,506
+Contrôle biologique des nuisibles,Culture en serre pour contrôler les conditions de croissance.,automne,9.23,507
+Fertilisation foliaire,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,13.09,508
+Fertilisation au compost,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,6.81,509
+Éclaircissage des plants,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,2.66,510
+Désherbage manuel,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,16.74,511
+Contrôle biologique des nuisibles,Minimisation du labour pour préserver la structure du sol.,été,16.33,512
+Désherbage manuel,Culture en serre pour contrôler les conditions de croissance.,été,3.03,513
+Désherbage manuel,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,automne,9.55,514
+Fertilisation au compost,Minimisation du labour pour préserver la structure du sol.,été,18.55,515
+Utilisation de variétés résistantes,Ajout de compost pour améliorer la matière organique du sol.,printemps,17.71,516
+Enrichissement en mycorhizes,Rotation avec des légumineuses pour enrichir le sol en azote.,été,12.12,517
+Mulchage,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,18.55,518
+Rotation des cultures,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,6.72,519
+Application de biopesticides,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,8.31,520
+Fertilisation foliaire,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,8.82,521
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,hiver,4.43,522
+Culture en serre,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,12.54,523
+Inoculation bactérienne,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,15.4,524
+Culture en serre,Minimisation du labour pour préserver la structure du sol.,printemps,13.43,525
+Fertilisation foliaire,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,18.96,526
+Application de compost,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,12.14,527
+Utilisation de cultures couvre-sol,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,9.14,528
+Technique D'engrais vert,Culture en serre pour contrôler les conditions de croissance.,hiver,19.88,529
+Éclaircissage,Utilisation de pesticides biologiques pour protéger les cultures.,été,6.84,530
+Désherbage manuel,Semis de graines directement sans travail préalable du sol.,été,15.76,531
+Semis direct,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,8.79,532
+Paillage,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,10.01,533
+Application de compost,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,2.95,534
+Mulchage,Culture en serre pour contrôler les conditions de croissance.,été,16.5,535
+Enrichissement en mycorhizes,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,9.61,536
+Fertilisation au compost,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,20.61,537
+Désherbage manuel,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,10.41,538
+Irrigation goutte à goutte,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,11.1,539
+Inoculation bactérienne,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,16.04,540
+Inoculation bactérienne,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,5.44,541
+Traitement des semences,Culture en serre pour contrôler les conditions de croissance.,hiver,9.51,542
+Culture en serre,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,14.07,543
+Semis direct,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,5.6,544
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,8.51,545
+Fertilisation au compost,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,1.55,546
+Désherbage manuel,Semis de graines directement sans travail préalable du sol.,hiver,9.71,547
+Désherbage manuel,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,8.97,548
+Mulchage,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,19.27,549
+Utilisation de variétés résistantes,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,20.04,550
+Inoculation bactérienne,Semis de graines directement sans travail préalable du sol.,hiver,18.12,551
+Contrôle biologique des nuisibles,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,automne,19.97,552
+Fertilisation au compost,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,18.2,553
+Application de compost,Rotation des cultures pour réduire les parasites et maladies du sol.,été,4.56,554
+Fertilisation au compost,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,6.41,555
+Culture en serre,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,7.83,556
+Désherbage manuel,Utilisation de pesticides biologiques pour protéger les cultures.,été,4.99,557
+Utilisation de variétés résistantes,Minimisation du labour pour préserver la structure du sol.,printemps,3.48,558
+Mulchage,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,19.25,559
+Paillage,Application de fumier pour enrichir le sol en nutriments.,hiver,1.35,560
+Utilisation de cultures couvre-sol,Ajout de biofertilisants pour stimuler la croissance des plantes.,printemps,16.75,561
+Application de biopesticides,Traitement des graines par la chaleur pour les protéger des maladies.,été,12.33,562
+Inoculation bactérienne,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,4.29,563
+Désherbage manuel,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,2.72,564
+Rotation des cultures,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,8.67,565
+Utilisation de cultures couvre-sol,Utilisation de pesticides biologiques pour protéger les cultures.,automne,2.07,566
+Fertilisation au compost,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,13.8,567
+Rotation des cultures,Utilisation de pesticides biologiques pour protéger les cultures.,été,7.55,568
+Mulchage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,1.89,569
+Fertilisation foliaire,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,2.77,570
+Éclaircissage,Ajout de compost pour améliorer la matière organique du sol.,hiver,7.63,571
+Éclaircissage des plants,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,10.86,572
+Éclaircissage des plants,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,7.07,573
+Rotation des cultures,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,10.98,574
+Enrichissement en mycorhizes,Culture en serre pour contrôler les conditions de croissance.,printemps,2.2,575
+Traitement des semences,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,2.52,576
+Désherbage manuel,Semis de graines directement sans travail préalable du sol.,été,14.8,577
+Éclaircissage,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,7.51,578
+Fertilisation au compost,Culture en serre pour contrôler les conditions de croissance.,printemps,16.69,579
+Mulchage,Culture en serre pour contrôler les conditions de croissance.,été,17.81,580
+Contrôle biologique des nuisibles,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,19.48,581
+Paillage,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,17.58,582
+Technique D'engrais vert,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,13.99,583
+Désherbage manuel,Traitement des graines par la chaleur pour les protéger des maladies.,automne,2.84,584
+Technique D'engrais vert,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,14.5,585
+Éclaircissage,Culture en serre pour contrôler les conditions de croissance.,hiver,3.91,586
+Éclaircissage,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,8.07,587
+Semis direct,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,20.22,588
+Technique D'engrais vert,Traitement des graines par la chaleur pour les protéger des maladies.,été,14.28,589
+Inoculation bactérienne,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,8.15,590
+Éclaircissage,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,7.21,591
+Paillage,Minimisation du labour pour préserver la structure du sol.,hiver,6.73,592
+Irrigation goutte à goutte,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,6.35,593
+Éclaircissage,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,6.08,594
+Utilisation de cultures couvre-sol,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,16.55,595
+Désherbage manuel,Semis de graines directement sans travail préalable du sol.,printemps,9.33,596
+Désherbage manuel,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,1.8,597
+Semis direct,Application de fumier pour enrichir le sol en nutriments.,été,9.15,598
+Utilisation de variétés résistantes,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,20.82,599
+Application de biopesticides,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,5.48,600
+Contrôle biologique des nuisibles,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,15.18,601
+Application de compost,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,19.44,602
+Utilisation de variétés résistantes,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,5.29,603
+Fertilisation foliaire,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,14.71,604
+Désherbage manuel,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,15.08,605
+Culture en serre,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,16.97,606
+Culture en serre,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,10.05,607
+Semis direct,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,5.59,608
+Application de biopesticides,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,13.64,609
+Semis direct,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,2.63,610
+Culture en serre,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,3.03,611
+Éclaircissage,Application de fumier pour enrichir le sol en nutriments.,printemps,4.08,612
+Semis direct,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,10.41,613
+Irrigation goutte à goutte,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,15.5,614
+Utilisation de variétés résistantes,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,19.73,615
+Traitement des semences,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,12.54,616
+Éclaircissage,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,13.18,617
+Technique D'engrais vert,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,12.28,618
+Inoculation bactérienne,Récolte manuelle pour minimiser les pertes de récolte.,été,4.55,619
+Application de biopesticides,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,5.22,620
+Éclaircissage,Ajout de compost pour améliorer la matière organique du sol.,hiver,5.8,621
+Culture en serre,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,5.92,622
+Technique D'engrais vert,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,7.13,623
+Enrichissement en mycorhizes,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,8.58,624
+Semis direct,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,4.88,625
+Culture en serre,Rotation des cultures pour réduire les parasites et maladies du sol.,été,7.34,626
+Utilisation de variétés résistantes,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,4.77,627
+Paillage,Semis de graines directement sans travail préalable du sol.,automne,5.14,628
+Inoculation bactérienne,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,13.55,629
+Éclaircissage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,14.35,630
+Culture en serre,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,2.49,631
+Mulchage,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,19.38,632
+Rotation des cultures,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,4.47,633
+Culture en serre,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,4.88,634
+Application de compost,Utilisation de cultures de couverture pour améliorer la santé du sol.,hiver,18.54,635
+Culture en serre,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,5.66,636
+Semis direct,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,16.58,637
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,5.99,638
+Irrigation goutte à goutte,Élagage des arbres pour améliorer l'exposition au soleil.,été,7.73,639
+Culture en serre,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,13.67,640
+Contrôle biologique des nuisibles,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,5.72,641
+Éclaircissage des plants,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,13,642
+Fertilisation foliaire,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,20.21,643
+Inoculation bactérienne,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,4.68,644
+Paillage,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,14.11,645
+Contrôle biologique des nuisibles,Utilisation de pesticides biologiques pour protéger les cultures.,été,20.67,646
+Utilisation de cultures couvre-sol,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,15.87,647
+Contrôle biologique des nuisibles,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,9.13,648
+Application de biopesticides,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,4.12,649
+Culture en serre,Semis de graines directement sans travail préalable du sol.,printemps,5.16,650
+Fertilisation foliaire,Rotation des cultures pour réduire les parasites et maladies du sol.,été,12.1,651
+Éclaircissage,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,7.25,652
+Irrigation goutte à goutte,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,automne,2.96,653
+Application de biopesticides,Culture en serre pour contrôler les conditions de croissance.,printemps,13.43,654
+Fertilisation foliaire,Ajout de compost pour améliorer la matière organique du sol.,printemps,8.96,655
+Technique D'engrais vert,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,7.99,656
+Éclaircissage des plants,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,2.08,657
+Utilisation de cultures couvre-sol,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,7.68,658
+Irrigation goutte à goutte,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,13.62,659
+Utilisation de cultures couvre-sol,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,8.56,660
+Fertilisation foliaire,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,11.28,661
+Application de biopesticides,Rotation des cultures pour réduire les parasites et maladies du sol.,été,2.88,662
+Enrichissement en mycorhizes,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,12.45,663
+Fertilisation foliaire,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,20.55,664
+Fertilisation foliaire,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,9.87,665
+Contrôle biologique des nuisibles,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,20.29,666
+Semis direct,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,11.58,667
+Fertilisation foliaire,Semis de graines directement sans travail préalable du sol.,printemps,3.96,668
+Application de compost,Récolte manuelle pour minimiser les pertes de récolte.,hiver,5.1,669
+Fertilisation foliaire,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,18.62,670
+Désherbage manuel,Récolte manuelle pour minimiser les pertes de récolte.,printemps,12.05,671
+Désherbage manuel,Ajout de compost pour améliorer la matière organique du sol.,printemps,20.97,672
+Fertilisation au compost,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,12.05,673
+Application de biopesticides,Élagage des arbres pour améliorer l'exposition au soleil.,été,2,674
+Rotation des cultures,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,4.21,675
+Inoculation bactérienne,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,4.93,676
+Traitement des semences,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,17.91,677
+Semis direct,Semis de graines directement sans travail préalable du sol.,printemps,12.63,678
+Application de biopesticides,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,10.91,679
+Rotation des cultures,Utilisation de pesticides biologiques pour protéger les cultures.,été,10.09,680
+Fertilisation au compost,Minimisation du labour pour préserver la structure du sol.,hiver,6.77,681
+Irrigation goutte à goutte,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,19.28,682
+Contrôle biologique des nuisibles,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,8.88,683
+Paillage,Traitement des graines par la chaleur pour les protéger des maladies.,automne,16.13,684
+Technique D'engrais vert,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,15.53,685
+Irrigation goutte à goutte,Ajout de compost pour améliorer la matière organique du sol.,été,4.4,686
+Culture en serre,Minimisation du labour pour préserver la structure du sol.,hiver,13.57,687
+Traitement des semences,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,19.94,688
+Rotation des cultures,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,13.42,689
+Désherbage manuel,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,2.28,690
+Technique D'engrais vert,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,1.43,691
+Enrichissement en mycorhizes,Ajout de compost pour améliorer la matière organique du sol.,automne,1.89,692
+Paillage,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,19.03,693
+Traitement des semences,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,18.1,694
+Fertilisation foliaire,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,hiver,18.57,695
+Traitement des semences,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,18.45,696
+Désherbage manuel,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,4.97,697
+Technique D'engrais vert,Irrigation contrôlée pour optimiser l'usage de l'eau.,hiver,1.09,698
+Contrôle biologique des nuisibles,Élagage des arbres pour améliorer l'exposition au soleil.,été,1.37,699
+Fertilisation au compost,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,6.64,700
+Éclaircissage,Utilisation de pesticides biologiques pour protéger les cultures.,automne,16.24,701
+Technique D'engrais vert,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,10.66,702
+Rotation des cultures,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,20,703
+Mulchage,Culture en serre pour contrôler les conditions de croissance.,été,13.85,704
+Rotation des cultures,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,1.04,705
+Application de compost,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,10.9,706
+Fertilisation au compost,Application de fumier pour enrichir le sol en nutriments.,printemps,3.28,707
+Application de compost,Traitement des graines par la chaleur pour les protéger des maladies.,été,7.74,708
+Enrichissement en mycorhizes,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,12.02,709
+Mulchage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,6.19,710
+Rotation des cultures,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,17.21,711
+Application de compost,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,7.37,712
+Traitement des semences,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,4.65,713
+Application de compost,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,12.39,714
+Application de compost,Semis de graines directement sans travail préalable du sol.,automne,2.98,715
+Enrichissement en mycorhizes,Récolte manuelle pour minimiser les pertes de récolte.,automne,7.77,716
+Application de biopesticides,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,2.74,717
+Technique D'engrais vert,Suppression des plants trop proches pour favoriser la croissance des autres.,printemps,5.84,718
+Désherbage manuel,Élagage des arbres pour améliorer l'exposition au soleil.,été,13.21,719
+Traitement des semences,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,hiver,12.63,720
+Inoculation bactérienne,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,4.81,721
+Technique D'engrais vert,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,19.98,722
+Fertilisation au compost,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,17.25,723
+Fertilisation foliaire,Minimisation du labour pour préserver la structure du sol.,été,11.12,724
+Traitement des semences,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,7.52,725
+Utilisation de variétés résistantes,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,18.18,726
+Traitement des semences,Traitement des graines par la chaleur pour les protéger des maladies.,été,11.42,727
+Désherbage manuel,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,printemps,14.69,728
+Traitement des semences,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,2.37,729
+Application de compost,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,12.54,730
+Fertilisation foliaire,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,16.11,731
+Fertilisation foliaire,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,15.03,732
+Irrigation goutte à goutte,Application de fumier pour enrichir le sol en nutriments.,automne,20.06,733
+Fertilisation au compost,Irrigation contrôlée pour optimiser l'usage de l'eau.,hiver,7.72,734
+Technique D'engrais vert,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,4.44,735
+Enrichissement en mycorhizes,Récolte manuelle pour minimiser les pertes de récolte.,été,1.72,736
+Semis direct,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,3.62,737
+Semis direct,Traitement des graines par la chaleur pour les protéger des maladies.,été,19.65,738
+Éclaircissage,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,10.98,739
+Rotation des cultures,Semis de graines directement sans travail préalable du sol.,automne,12.6,740
+Technique D'engrais vert,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,1.49,741
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,14.7,742
+Technique D'engrais vert,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,14.06,743
+Semis direct,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,13.04,744
+Culture en serre,Utilisation de cultures de couverture pour améliorer la santé du sol.,automne,17.31,745
+Contrôle biologique des nuisibles,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,19.12,746
+Rotation des cultures,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,15.3,747
+Utilisation de variétés résistantes,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,17.69,748
+Traitement des semences,Culture en serre pour contrôler les conditions de croissance.,hiver,15.78,749
+Technique D'engrais vert,Semis de graines directement sans travail préalable du sol.,hiver,11.36,750
+Utilisation de cultures couvre-sol,Minimisation du labour pour préserver la structure du sol.,été,14.83,751
+Application de biopesticides,Suppression des plants trop proches pour favoriser la croissance des autres.,été,15.49,752
+Éclaircissage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,5.99,753
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,hiver,17.28,754
+Paillage,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,4.11,755
+Semis direct,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,7.27,756
+Inoculation bactérienne,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,19.51,757
+Éclaircissage des plants,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,11.64,758
+Enrichissement en mycorhizes,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,9.83,759
+Éclaircissage des plants,Minimisation du labour pour préserver la structure du sol.,hiver,18.05,760
+Paillage,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,15.46,761
+Application de biopesticides,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,15.24,762
+Éclaircissage des plants,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,13.64,763
+Contrôle biologique des nuisibles,Application de fumier pour enrichir le sol en nutriments.,été,5.68,764
+Semis direct,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,13.34,765
+Fertilisation foliaire,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,hiver,6.83,766
+Mulchage,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,3.11,767
+Semis direct,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,6.93,768
+Traitement des semences,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,18.37,769
+Inoculation bactérienne,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,3.07,770
+Technique D'engrais vert,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,13.28,771
+Irrigation goutte à goutte,Application de fumier pour enrichir le sol en nutriments.,hiver,1.46,772
+Enrichissement en mycorhizes,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,1.26,773
+Paillage,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,3.53,774
+Application de compost,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,été,4.59,775
+Irrigation goutte à goutte,Utilisation de pesticides biologiques pour protéger les cultures.,été,8.72,776
+Contrôle biologique des nuisibles,Culture en serre pour contrôler les conditions de croissance.,hiver,19.46,777
+Désherbage manuel,Élagage des arbres pour améliorer l'exposition au soleil.,printemps,3.48,778
+Utilisation de variétés résistantes,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,6.82,779
+Enrichissement en mycorhizes,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,15.65,780
+Éclaircissage,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,7.34,781
+Application de biopesticides,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,hiver,1.6,782
+Fertilisation foliaire,Irrigation contrôlée pour optimiser l'usage de l'eau.,hiver,10.6,783
+Irrigation goutte à goutte,Application de fumier pour enrichir le sol en nutriments.,hiver,16.33,784
+Mulchage,Rotation avec des légumineuses pour enrichir le sol en azote.,été,13.76,785
+Utilisation de variétés résistantes,Application de fumier pour enrichir le sol en nutriments.,hiver,19.69,786
+Utilisation de cultures couvre-sol,Semis de graines directement sans travail préalable du sol.,printemps,1.07,787
+Mulchage,Application de fumier pour enrichir le sol en nutriments.,été,11.53,788
+Désherbage manuel,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,17.65,789
+Inoculation bactérienne,Rotation des cultures pour réduire les parasites et maladies du sol.,été,8.48,790
+Éclaircissage,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,3.53,791
+Paillage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,18.51,792
+Irrigation goutte à goutte,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,12.19,793
+Application de biopesticides,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,automne,4.33,794
+Éclaircissage des plants,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,13.97,795
+Application de compost,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,15.87,796
+Contrôle biologique des nuisibles,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,10.01,797
+Application de compost,Culture en serre pour contrôler les conditions de croissance.,hiver,4.12,798
+Inoculation bactérienne,Traitement des graines par la chaleur pour les protéger des maladies.,été,4.72,799
+Technique D'engrais vert,Minimisation du labour pour préserver la structure du sol.,printemps,5.21,800
+Fertilisation foliaire,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,7.25,801
+Utilisation de cultures couvre-sol,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,14.85,802
+Désherbage manuel,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,1.45,803
+Inoculation bactérienne,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,11.14,804
+Fertilisation foliaire,Ajout de compost pour améliorer la matière organique du sol.,printemps,10.08,805
+Désherbage manuel,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,14.6,806
+Fertilisation au compost,Application de fumier pour enrichir le sol en nutriments.,printemps,20.38,807
+Culture en serre,Utilisation de pesticides biologiques pour protéger les cultures.,été,5.73,808
+Utilisation de cultures couvre-sol,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,printemps,15.7,809
+Éclaircissage des plants,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,6.68,810
+Rotation des cultures,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,6.17,811
+Application de biopesticides,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,8.26,812
+Fertilisation foliaire,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,7.77,813
+Fertilisation au compost,Rotation des cultures pour réduire les parasites et maladies du sol.,été,1.43,814
+Application de biopesticides,Suppression des plants trop proches pour favoriser la croissance des autres.,hiver,4.67,815
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,20.43,816
+Désherbage manuel,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,8.74,817
+Application de biopesticides,Semis de graines directement sans travail préalable du sol.,hiver,11.41,818
+Utilisation de variétés résistantes,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,12.57,819
+Désherbage manuel,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,6.82,820
+Fertilisation foliaire,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,3.87,821
+Technique D'engrais vert,Culture en serre pour contrôler les conditions de croissance.,automne,18.5,822
+Enrichissement en mycorhizes,Élagage des arbres pour améliorer l'exposition au soleil.,automne,12.26,823
+Utilisation de variétés résistantes,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,été,20.96,824
+Inoculation bactérienne,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,1.06,825
+Contrôle biologique des nuisibles,Application de fumier pour enrichir le sol en nutriments.,été,5.88,826
+Rotation des cultures,Élagage des arbres pour améliorer l'exposition au soleil.,été,1.02,827
+Irrigation goutte à goutte,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,16.33,828
+Contrôle biologique des nuisibles,Élagage des arbres pour améliorer l'exposition au soleil.,été,19.43,829
+Utilisation de variétés résistantes,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,12.07,830
+Désherbage manuel,Irrigation contrôlée pour optimiser l'usage de l'eau.,hiver,5.64,831
+Inoculation bactérienne,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,12.14,832
+Irrigation goutte à goutte,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,5.08,833
+Fertilisation au compost,Récolte manuelle pour minimiser les pertes de récolte.,été,1.94,834
+Fertilisation au compost,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,16.22,835
+Utilisation de variétés résistantes,Application de fumier pour enrichir le sol en nutriments.,hiver,15.61,836
+Utilisation de variétés résistantes,Suppression des plants trop proches pour favoriser la croissance des autres.,été,3.7,837
+Fertilisation au compost,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,10.96,838
+Éclaircissage,Rotation des cultures pour réduire les parasites et maladies du sol.,été,11.68,839
+Traitement des semences,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,14.73,840
+Désherbage manuel,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,15.13,841
+Application de compost,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,11.2,842
+Mulchage,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,hiver,9.53,843
+Fertilisation au compost,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,5.73,844
+Utilisation de variétés résistantes,Suppression des plants trop proches pour favoriser la croissance des autres.,hiver,20.77,845
+Éclaircissage,Élagage des arbres pour améliorer l'exposition au soleil.,automne,11.22,846
+Paillage,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,automne,17.35,847
+Utilisation de variétés résistantes,Élagage des arbres pour améliorer l'exposition au soleil.,été,9.41,848
+Enrichissement en mycorhizes,Rotation des cultures pour réduire les parasites et maladies du sol.,été,4.86,849
+Irrigation goutte à goutte,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,12.89,850
+Fertilisation foliaire,Utilisation de pesticides biologiques pour protéger les cultures.,été,19.21,851
+Fertilisation foliaire,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,6.19,852
+Éclaircissage des plants,Récolte manuelle pour minimiser les pertes de récolte.,printemps,16.08,853
+Semis direct,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,13.96,854
+Enrichissement en mycorhizes,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,15.98,855
+Fertilisation foliaire,Élagage des arbres pour améliorer l'exposition au soleil.,été,9.88,856
+Contrôle biologique des nuisibles,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,hiver,4.66,857
+Mulchage,Récolte manuelle pour minimiser les pertes de récolte.,printemps,2.37,858
+Traitement des semences,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,14.77,859
+Culture en serre,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,16.37,860
+Désherbage manuel,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,16.53,861
+Utilisation de variétés résistantes,Minimisation du labour pour préserver la structure du sol.,automne,11.66,862
+Contrôle biologique des nuisibles,Élagage des arbres pour améliorer l'exposition au soleil.,automne,14.39,863
+Utilisation de cultures couvre-sol,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,automne,14.37,864
+Éclaircissage,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,8.99,865
+Paillage,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,printemps,6.43,866
+Utilisation de variétés résistantes,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,13.69,867
+Éclaircissage,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,15.88,868
+Fertilisation foliaire,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,13.99,869
+Irrigation goutte à goutte,Récolte manuelle pour minimiser les pertes de récolte.,hiver,11.36,870
+Semis direct,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,printemps,7.59,871
+Application de compost,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,hiver,20.25,872
+Utilisation de cultures couvre-sol,Traitement des graines par la chaleur pour les protéger des maladies.,été,13.41,873
+Fertilisation au compost,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,13.19,874
+Utilisation de variétés résistantes,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,printemps,12.96,875
+Semis direct,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,hiver,2.71,876
+Enrichissement en mycorhizes,Plantation de deux cultures différentes sur la même parcelle pour maximiser l’espace.,automne,15.51,877
+Contrôle biologique des nuisibles,Minimisation du labour pour préserver la structure du sol.,été,10.06,878
+Rotation des cultures,Élagage des arbres pour améliorer l'exposition au soleil.,automne,3.23,879
+Désherbage manuel,Ajout de biofertilisants pour stimuler la croissance des plantes.,printemps,9.55,880
+Contrôle biologique des nuisibles,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,printemps,20.71,881
+Éclaircissage,Traitement des graines par la chaleur pour les protéger des maladies.,été,5.47,882
+Culture en serre,Irrigation contrôlée pour optimiser l'usage de l'eau.,automne,19.87,883
+Application de biopesticides,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,1.1,884
+Application de biopesticides,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,20.73,885
+Semis direct,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,printemps,17.42,886
+Rotation des cultures,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,printemps,11.92,887
+Paillage,Culture en serre pour contrôler les conditions de croissance.,printemps,19.43,888
+Désherbage manuel,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,automne,15.95,889
+Fertilisation au compost,Minimisation du labour pour préserver la structure du sol.,printemps,5.87,890
+Fertilisation foliaire,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,11.53,891
+Paillage,Application de fumier pour enrichir le sol en nutriments.,hiver,17.01,892
+Inoculation bactérienne,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,18.54,893
+Application de compost,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,13.9,894
+Application de biopesticides,Minimisation du labour pour préserver la structure du sol.,printemps,20.3,895
+Fertilisation foliaire,Ajout de compost pour améliorer la matière organique du sol.,automne,12.17,896
+Rotation des cultures,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,automne,12.36,897
+Éclaircissage,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,13.49,898
+Irrigation goutte à goutte,Ajout de biofertilisants pour stimuler la croissance des plantes.,printemps,17.35,899
+Rotation des cultures,Semis de graines directement sans travail préalable du sol.,hiver,9.42,900
+Enrichissement en mycorhizes,Culture en serre pour contrôler les conditions de croissance.,hiver,9.26,901
+Fertilisation foliaire,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,18.88,902
+Mulchage,Culture en serre pour contrôler les conditions de croissance.,été,15.84,903
+Désherbage manuel,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,10.37,904
+Désherbage manuel,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,4.59,905
+Utilisation de cultures couvre-sol,Utilisation de pesticides biologiques pour protéger les cultures.,été,3.4,906
+Culture en serre,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,11.35,907
+Irrigation goutte à goutte,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,6.73,908
+Contrôle biologique des nuisibles,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,automne,7.65,909
+Application de biopesticides,Culture en serre pour contrôler les conditions de croissance.,hiver,1.66,910
+Culture en serre,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,13.15,911
+Traitement des semences,Irrigation contrôlée pour optimiser l'usage de l'eau.,hiver,7.89,912
+Fertilisation au compost,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,11.56,913
+Désherbage manuel,Suppression des plants trop proches pour favoriser la croissance des autres.,automne,2.66,914
+Culture en serre,Application de fumier pour enrichir le sol en nutriments.,automne,4.41,915
+Utilisation de variétés résistantes,Utilisation de cultures de couverture pour améliorer la santé du sol.,printemps,6.76,916
+Éclaircissage des plants,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,3.76,917
+Éclaircissage,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,17.38,918
+Culture en serre,Irrigation contrôlée pour optimiser l'usage de l'eau.,printemps,9.62,919
+Éclaircissage des plants,Culture en serre pour contrôler les conditions de croissance.,printemps,12.92,920
+Culture en serre,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,4.94,921
+Fertilisation au compost,Traitement des graines par la chaleur pour les protéger des maladies.,printemps,18.02,922
+Traitement des semences,Utilisation de pesticides biologiques pour protéger les cultures.,automne,9.38,923
+Désherbage manuel,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,17.45,924
+Technique D'engrais vert,Suppression des plants trop proches pour favoriser la croissance des autres.,été,14.28,925
+Semis direct,Irrigation contrôlée pour optimiser l'usage de l'eau.,automne,1.68,926
+Rotation des cultures,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,9.01,927
+Semis direct,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,5.89,928
+Paillage,Minimisation du labour pour préserver la structure du sol.,automne,10.07,929
+Application de compost,Élagage des arbres pour améliorer l'exposition au soleil.,automne,17.32,930
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,automne,18.83,931
+Application de biopesticides,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,11.49,932
+Désherbage manuel,Ajout de compost pour améliorer la matière organique du sol.,automne,2.27,933
+Fertilisation foliaire,Ajout de biofertilisants pour stimuler la croissance des plantes.,automne,11.65,934
+Enrichissement en mycorhizes,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,15.53,935
+Fertilisation foliaire,Minimisation du labour pour préserver la structure du sol.,printemps,14.74,936
+Application de compost,Élagage des arbres pour améliorer l'exposition au soleil.,hiver,14.46,937
+Irrigation goutte à goutte,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,hiver,17.87,938
+Fertilisation au compost,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,été,4.35,939
+Rotation des cultures,Rotation des cultures pour réduire les parasites et maladies du sol.,automne,13.12,940
+Inoculation bactérienne,Ajout de compost pour améliorer la matière organique du sol.,automne,10.77,941
+Désherbage manuel,Irrigation contrôlée pour optimiser l'usage de l'eau.,été,20.32,942
+Application de biopesticides,Récolte manuelle pour minimiser les pertes de récolte.,hiver,1.13,943
+Irrigation goutte à goutte,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,4.01,944
+Contrôle biologique des nuisibles,Ajout de champignons bénéfiques pour stimuler l’absorption des nutriments.,printemps,6.47,945
+Utilisation de cultures couvre-sol,Utilisation de pesticides biologiques pour protéger les cultures.,automne,18.37,946
+Inoculation bactérienne,Culture en serre pour contrôler les conditions de croissance.,printemps,14.96,947
+Rotation des cultures,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,8.17,948
+Mulchage,Ajout de biofertilisants pour stimuler la croissance des plantes.,hiver,15.32,949
+Culture en serre,Rotation avec des légumineuses pour enrichir le sol en azote.,automne,13.54,950
+Enrichissement en mycorhizes,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,14.33,951
+Application de biopesticides,Traitement des graines par la chaleur pour les protéger des maladies.,été,10.55,952
+Désherbage manuel,Ajout de compost pour améliorer la matière organique du sol.,hiver,3.29,953
+Utilisation de cultures couvre-sol,Rotation avec des légumineuses pour enrichir le sol en azote.,printemps,4,954
+Désherbage manuel,Culture en serre pour contrôler les conditions de croissance.,printemps,3.89,955
+Semis direct,Minimisation du labour pour préserver la structure du sol.,hiver,9.96,956
+Application de compost,Application de fumier pour enrichir le sol en nutriments.,printemps,4.59,957
+Fertilisation foliaire,Rotation des cultures pour réduire les parasites et maladies du sol.,hiver,17.42,958
+Application de biopesticides,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,2.19,959
+Utilisation de cultures couvre-sol,Application de fumier pour enrichir le sol en nutriments.,été,13.65,960
+Mulchage,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,été,3.3,961
+Application de biopesticides,Rotation avec des légumineuses pour enrichir le sol en azote.,hiver,15.02,962
+Traitement des semences,Semis de graines directement sans travail préalable du sol.,hiver,8.41,963
+Application de biopesticides,Culture hydroponique pour une utilisation efficace de l’eau et des nutriments.,automne,7.07,964
+Paillage,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,6.21,965
+Semis direct,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,hiver,14.9,966
+Rotation des cultures,Semis de graines directement sans travail préalable du sol.,printemps,8.97,967
+Utilisation de variétés résistantes,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,17.64,968
+Désherbage manuel,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,6.63,969
+Contrôle biologique des nuisibles,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,18.38,970
+Rotation des cultures,Utilisation de capteurs pour optimiser l'irrigation en fonction des besoins réels des plantes.,été,1.11,971
+Rotation des cultures,Récolte manuelle pour minimiser les pertes de récolte.,hiver,17,972
+Culture en serre,Élagage des arbres pour améliorer l'exposition au soleil.,automne,4.71,973
+Culture en serre,Semis de graines directement sans travail préalable du sol.,été,12.96,974
+Utilisation de cultures couvre-sol,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,10.44,975
+Utilisation de variétés résistantes,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,13.64,976
+Fertilisation foliaire,Paillage pour conserver l'humidité et réduire les mauvaises herbes.,été,12,977
+Utilisation de variétés résistantes,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,11.58,978
+Rotation des cultures,Ajout de biofertilisants pour stimuler la croissance des plantes.,été,6.46,979
+Fertilisation au compost,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,été,3.6,980
+Enrichissement en mycorhizes,Récolte manuelle pour minimiser les pertes de récolte.,été,2.47,981
+Application de compost,Rotation des cultures pour réduire les parasites et maladies du sol.,printemps,14.65,982
+Éclaircissage des plants,Ajout de bactéries spécifiques pour améliorer la fixation de l’azote dans le sol.,printemps,17.84,983
+Rotation des cultures,Minimisation du labour pour préserver la structure du sol.,automne,20.98,984
+Rotation des cultures,Irrigation contrôlée pour optimiser l'usage de l'eau.,hiver,20.73,985
+Enrichissement en mycorhizes,Application de fumier pour enrichir le sol en nutriments.,hiver,13.58,986
+Utilisation de cultures couvre-sol,Utilisation de cultures de couverture pour améliorer la santé du sol.,été,20.37,987
+Fertilisation foliaire,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,hiver,10.17,988
+Culture en serre,Utilisation de l'irrigation goutte-à-goutte pour économiser l’eau.,été,7.78,989
+Éclaircissage,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,été,2.82,990
+Utilisation de variétés résistantes,Ajout de compost pour améliorer la matière organique du sol.,été,14.31,991
+Rotation des cultures,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,hiver,19.87,992
+Irrigation goutte à goutte,Ajout de matières organiques au sol pour améliorer la rétention d’eau.,été,13.84,993
+Paillage,Culture en serre pour contrôler les conditions de croissance.,été,15.73,994
+Éclaircissage,Utilisation de phéromones pour attirer et capturer les insectes nuisibles.,automne,14.49,995
+Utilisation de variétés résistantes,Utilisation de pesticides biologiques pour protéger les cultures.,hiver,12.73,996
+Technique D'engrais vert,Traitement des graines par la chaleur pour les protéger des maladies.,hiver,11.72,997
+Application de compost,Utilisation de pesticides biologiques pour protéger les cultures.,printemps,1.01,998
+Traitement des semences,Plantation en bandes pour maximiser l’espace et réduire l’érosion.,printemps,13.03,999
+Application de compost,Utilisation de pesticides biologiques pour protéger les cultures.,été,2.87,1000
