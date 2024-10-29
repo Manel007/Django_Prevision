@@ -219,46 +219,19 @@ def review_list(request, yield_id):
     crop_yield = get_object_or_404(CropYield, pk=yield_id)
     reviews = crop_yield.reviews.all()
     return render(request, 'front/review_list.html', {'crop_yield': crop_yield, 'reviews': reviews})
-
-# Create Review
-from django.shortcuts import get_object_or_404, redirect, render
-from .models import CropYield, Review
-from .forms import ReviewForm
-
 def create_review(request, yield_id):
     crop_yield = get_object_or_404(CropYield, pk=yield_id)
 
-    print("Request Method:", request.method)  # Debugging
     if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
-            print("Form is valid")  # Debugging
-            review = form.save(commit=False)
-            review.crop_yield = crop_yield
-            review.save()
-            return redirect('review_list', yield_id=crop_yield.id)
-        else:
-            print("Form Errors:", form.errors)  # Debugging
-    else:
-        form = ReviewForm()
-
-    return render(request, 'front/review_form.html', {'form': form, 'crop_yield': crop_yield})
-    # Get the CropYield object or return a 404 if it doesn't exist
-    crop_yield = get_object_or_404(CropYield, pk=yield_id)
-    
-    if request.method == "POST":
-        # Bind the form with POST data
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            # Create a Review instance but don't save to the database yet
-            review = form.save(commit=False)
-            review.crop_yield = crop_yield
-            review.save()  # Now save to the database
+            review = form.save(commit=False)  # Create a Review instance but don't save it yet
+            review.crop_yield = crop_yield  # Associate it with the CropYield
+            review.save()  # Save to the database
             return redirect('review_list', yield_id=crop_yield.id)
     else:
         form = ReviewForm()  # Provide an empty form if the request is GET
-    
-    # Render the form template with the form and crop_yield context
+
     return render(request, 'front/review_form.html', {'form': form, 'crop_yield': crop_yield})
 
 def review_update(request, pk):
@@ -266,13 +239,12 @@ def review_update(request, pk):
     crop_yield = review.crop_yield  # Get associated crop yield
 
     if request.method == "POST":
-        form = ReviewForm(request.POST, instance=review)
+        form = ReviewForm(request.POST, instance=review)  # Bind the form to the existing review
         if form.is_valid():
-            form.save()
-            # Redirect to review list for the associated crop yield
+            form.save()  # Update the existing review in the database
             return redirect('review_list', yield_id=crop_yield.id)
     else:
-        form = ReviewForm(instance=review)
+        form = ReviewForm(instance=review)  # Populate the form with the existing review data
 
     return render(request, 'front/review_form.html', {'form': form, 'crop_yield': crop_yield})
 
