@@ -2,14 +2,15 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import CropYield
 from .forms import YieldForm
 import pandas as pd 
+from django.http import HttpResponse
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from django.core.paginator import Paginator
 from django.shortcuts import render
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from keras.models import Sequential
-from keras.layers import Dense
+from keras.models import Sequential # type: ignore
+from keras.layers import Dense # type: ignore
 from django.shortcuts import render
 from .forms import YieldPredictionForm
 import seaborn as sns
@@ -89,8 +90,17 @@ def yield_delete(request, pk):
     return render(request, 'agriculture/yield_confirm_delete.html', {'yield': yield_item})
 
 
+
+#Regr Linéaire 
+def yield_prediction_view(request):
+   
+  
+    # Load and preprocess the data
+
     # Load and preprocess data
-    yield_data = pd.read_csv('C:/Users/user/Desktop/black-dashboard-django-master/black-dashboard-django-master/yield_df.csv')
+         #yield_data = pd.read_csv('C:/Users/oumai/Desktop/Django_Prevision/yield_df.csv')
+
+    yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
     yield_data.dropna(inplace=True)
     
     # Prepare data for model training
@@ -130,7 +140,9 @@ def yield_delete(request, pk):
 
 def yield_classification_view(request):
     # Load the data
-    yield_data = pd.read_csv('C:/Users/user/Desktop/black-dashboard-django-master/black-dashboard-django-master/yield_df.csv')
+
+    yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
 
     # Define the threshold
     threshold = 500
@@ -179,7 +191,9 @@ def yield_prediction_view(request):
             avg_temp = form.cleaned_data['avg_temp']
 
             # Charger les données pour entraîner le modèle
-            yield_data = pd.read_csv('C:/Users/user/Desktop/black-dashboard-django-master/black-dashboard-django-master/yield_df.csv')
+
+            yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
             yield_data.dropna(inplace=True)
 
             # Préparation des données
@@ -287,7 +301,9 @@ def yield_summary(request):
 
 def yield_classification_view(request):
     # Load the data
-    yield_data = pd.read_csv('C:/Users/user/Desktop/black-dashboard-django-master/black-dashboard-django-master/yield_df.csv')
+
+    yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
 
     # Define thresholds and create a class column
     high_threshold = 60000
@@ -346,7 +362,9 @@ from sklearn.metrics import classification_report
 def crop_classification_view(request):
     # Load the crop data
     try:
-        crop_data = pd.read_csv('C:/Users/user/Desktop/black-dashboard-django-master/black-dashboard-django-master/yield_df.csv')
+
+        crop_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
 
         # Check the columns to ensure they're correct
         print(crop_data.columns)  # Debugging line to print column names

@@ -1,0 +1,93 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Agricultural Techniques {% endblock %}
+
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <a href="{% url 'create_technique' %}" class="btn mt-3">Add a Technique</a>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> Agricultural Techniques </h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table tablesorter" id="">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Associated Crop</th>
+                                    <th>Impact on Yield</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for technique in techniques %}
+                                <tr>
+                                    <td>{{ technique.nom_technique }}</td>
+                                    <td>{{ technique.description }}</td>
+                                    <td>
+                                        {% for culture in technique.cultures_associees.all %}
+                                            {{ culture.nom }}
+                                            {% if not forloop.last %}, {% endif %}
+                                        {% endfor %}
+                                    </td>
+                                    
+                                    <td>{{ technique.impact_rendement }}</td>
+                                    <td>
+                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+                                        <a href="{% url 'update_technique' technique.pk %}" class="btn btn-dark">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </a>
+
+                                        <button class="btn btn-dark delete-btn" data-url="{% url 'delete_technique' technique.pk %}">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="6" class="text-center">No agricultural techniques to display.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.delete-btn').on('click', function() {
+            var url = $(this).data('url');
+
+            $.ajax({
+                url: url,
+                method: 'POST',
+                data: {
+                    csrfmiddlewaretoken: '{{ csrf_token }}',
+                },
+                success: function(response) {
+                    // Redirect to the list of techniques after deletion
+                    window.location.reload();
+                },
+                error: function(xhr, errmsg, err) {
+                    // Handle errors here
+                    console.log(err);
+                }
+            });
+        });
+    });
+</script>
+{% endblock javascripts %}

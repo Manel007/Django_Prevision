@@ -1,0 +1,65 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Modifier un Programme{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">Modifier un Programme</h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Nom</label>
+                                    <input type="text" name="nom" class="form-control" placeholder="Nom" value="{{ programme.nom }}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <input type="text" name="description" class="form-control" placeholder="Description" value="{{ programme.description }}" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Pesticide</label>
+                                    <select name="pesticide" class="form-control" required>
+                                        <option value="" disabled>Choisissez un pesticide</option>
+                                        {% for pesticide in pesticides %}
+                                            <option value="{{ pesticide.id }}" {% if pesticide.id == programme.pesticide.id %}selected{% endif %}>{{ pesticide.area }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Fréquence d'Application</label>
+                                    <select name="frequence_application" class="form-control" required>
+                                        <option value="" disabled>Choisissez une fréquence</option>
+                                        <option value="hebdomadaire" {% if programme.frequence_application == "hebdomadaire" %}selected{% endif %}>Hebdomadaire</option>
+                                        <option value="mensuel" {% if programme.frequence_application == "mensuel" %}selected{% endif %}>Mensuel</option>
+                                        <option value="annuel" {% if programme.frequence_application == "annuel" %}selected{% endif %}>Annuel</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-fill btn-primary">Modifier</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

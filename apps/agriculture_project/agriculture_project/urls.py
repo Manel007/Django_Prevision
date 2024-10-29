@@ -7,6 +7,7 @@ from .views import review_list  # Import the view
 from .views import yield_summary  # Import the view
 from .views import crop_classification_view
 
+
 urlpatterns = [
     path('list/', views.yield_list, name='yield_list'),  # URL with no arguments
     path('summary/', views.yield_summary, name='yield_summary'),  # Summary page

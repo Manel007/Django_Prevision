@@ -1,0 +1,72 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Tables {% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Prédictions pour tous les pesticides</h1>
+            <p><strong>Erreur quadratique moyenne (MSE) :</strong> {{ mse }}</p>
+            
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table tablesorter">
+                        <thead class="text-primary">
+                            <tr>
+                                <th>Domain</th>
+                                <th>Area</th>
+                                <th>Element</th>
+                                <th>Item</th>
+                                <th>Year</th>
+                                <th>Unit</th>
+                                <th>Prédiction</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for pesticide in all_predictions %}
+                            <tr>
+                                <td>{{ pesticide.Domain }}</td>
+                                <td>{{ pesticide.Area }}</td>
+                                <td>{{ pesticide.Element }}</td>
+                                <td>{{ pesticide.Item }}</td>
+                                <td>{{ pesticide.Year }}</td>
+                                <td>{{ pesticide.Unit }}</td>
+                                <td>{{ pesticide.Prediction }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="pagination">
+                    <span class="step-links">
+                        {% if all_predictions.has_previous %}
+                        <a href="?page=1" class="btn btn-secondary">
+                            <i class="tim-icons icon-minimal-left"></i><i class="tim-icons icon-minimal-left"></i>
+                        </a>
+                        <a href="?page={{ all_predictions.previous_page_number }}" class="btn btn-secondary">
+                            <i class="tim-icons icon-minimal-left"></i>
+                        </a>
+                        {% endif %}
+                        
+                        <span class="current">
+                            Page {{ all_predictions.number }} de {{ all_predictions.paginator.num_pages }}.
+                        </span>
+                        
+                        {% if all_predictions.has_next %}
+                        <a href="?page={{ all_predictions.next_page_number }}" class="btn btn-secondary">
+                            <i class="tim-icons icon-minimal-right"></i>
+                        </a>
+                        <a href="?page={{ all_predictions.paginator.num_pages }}" class="btn btn-secondary">
+                            <i class="tim-icons icon-minimal-right"></i><i class="tim-icons icon-minimal-right"></i>
+                        </a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

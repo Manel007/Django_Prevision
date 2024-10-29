@@ -1,0 +1,6 @@
+cycle_croissance_jours,rendement_attendu,impact_rendement,type_sol_prefere,irrigation
+30,5,1,Argileux,Modérée
+45,7,2,Limoneux,Élevée
+60,8,3,Sableux,Faible
+50,6,4,Argileux,Modérée
+70,10,5,Limoneux,Élevée

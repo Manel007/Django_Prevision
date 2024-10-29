@@ -1,0 +1,76 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Créer un Agriculteur{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">Créer un Agriculteur</h5>
+                </div>
+                <div class="card-body">
+                    
+                    
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Nom</label>
+                                    <input type="text" name="nom" class="form-control" placeholder="Nom de l'Agriculteur" required value="{{ nom|default:'' }}">
+                                    {% if errors.nom %}
+                                        <p class="text-danger">{{ errors.nom }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Prénom</label>
+                                    <input type="text" name="prenom" class="form-control" placeholder="Prénom de l'Agriculteur" required value="{{ prenom|default:'' }}">
+                                    {% if errors.prenom %}
+                                        <p class="text-danger">{{ errors.prenom }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label>Contact</label>
+                                    <input type="text" name="contact" class="form-control" placeholder="Téléphone" required value="{{ contact|default:'' }}">
+                                    {% if errors.contact %}
+                                        <p class="text-danger">{{ errors.contact }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-md-1">
+                                <div class="form-group">
+                                    <label>Région</label>
+                                    <input type="text" name="region" class="form-control" placeholder="Région" required value="{{ region|default:'' }}">
+                                    {% if errors.region %}
+                                        <p class="text-danger">{{ errors.region }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9 pr-md-1">
+                                <div class="form-group">
+                                    <label>Adresse</label>
+                                    <input type="text" name="adresse" class="form-control" placeholder="Donner votre adresse" required value="{{ adresse|default:'' }}">
+                                    {% if errors.adresse %}
+                                        <p class="text-danger">{{ errors.adresse }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-fill btn-primary">Ajouter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

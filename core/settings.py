@@ -5,6 +5,11 @@ Copyright (c) 2019 - present AppSeed.us
 
 import os, environ
 
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
+
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, True)
@@ -26,32 +31,54 @@ DEBUG = env('DEBUG')
 # Assets Management
 ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets') 
 FRONT_ROOT = os.getenv('FRONT_ROOT', '/static/front') 
+
+
+
+
 # load production server from .env
 ALLOWED_HOSTS        = ['localhost', 'localhost:85', '127.0.0.1',               env('SERVER', default='127.0.0.1') ]
 CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + env('SERVER', default='127.0.0.1') ]
 
-# Application definition
+
+ #   Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-
-    'apps.authentication', 
-    'apps.agriculture_project.agriculture_project',  # Assurez-vous que votre app est ici
-
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'apps.front',
+    'apps.home' , # Enable the inner home (home)
+ 'apps.RessourceEntity',
+    'apps.authentication', 
+    'apps.agriculture_project.agriculture_project',  
     'crispy_forms',
 
+    'apps.front',
+
+    'apps.agriculteur',
+    'apps.images',
+    'apps.reconnaissancevoc',
+    'apps.pesticide',
+    'apps.programme',
+
+
+    'rest_framework',
+     # !:ujshq;,  
      # Ensure this is the correct app name and path
 
-    'apps.home'  # Enable the inner home (home)
 
+    'apps.Culture',
+    'apps.Technique',
+    'apps.RecommendationTech',
+    'apps.zonegéosamarapp',
+    
+    'django_extensions'
+     # Enable the inner home (home)
+   
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

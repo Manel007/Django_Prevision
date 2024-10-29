@@ -1,0 +1,87 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Liste des Fournisseurs{% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Liste des Fournisseurs</h4>
+                </div>
+                <div class="card-body">
+                    <a href="{% url 'fournisseur_create' %}" class="btn btn-primary">Ajouter un Fournisseur</a>
+
+                
+
+                    <div class="table-responsive mt-4">
+                        <table class="table tablesorter">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Nom du Fournisseur</th>
+                                    <th>Type de Fournisseur</th>
+                                    <th>Adresse</th>
+                                    <th>Numéro de Téléphone</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for fournisseur in fournisseurs %}
+                                <tr>
+                                    <td>{{ fournisseur.nom }}</td>
+                                    <td>{{ fournisseur.get_type_fournisseur_display }}</td>
+                                    <td>{{ fournisseur.adresse }}</td>
+                                    <td>{{ fournisseur.numero_telephone }}</td>
+                                    <td>
+                                        <a href="{% url 'fournisseur_detail' fournisseur.id %}" class="btn btn-info">Détails</a>
+                                        <a href="{% url 'fournisseur_update' fournisseur.id %}" class="btn btn-warning">Modifier</a>
+                                        <button class="btn btn-danger delete-btn" data-url="{% url 'fournisseur_delete' fournisseur.id %}">
+                                            Supprimer
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="5" class="text-center">Aucun fournisseur à afficher.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.delete-btn').on('click', function() {
+            var url = $(this).data('url');
+            if (confirm("Êtes-vous sûr de vouloir supprimer ce fournisseur ?")) {
+                $.ajax({
+                    url: url,
+                    method: 'POST',
+                    data: {
+                        csrfmiddlewaretoken: '{{ csrf_token }}',
+                    },
+                    success: function(response) {
+                        // Recharger la page après suppression
+                        window.location.reload();
+                    },
+                    error: function(xhr, errmsg, err) {
+                        console.log("Erreur :", errmsg);
+                    }
+                });
+            }
+        });
+    });
+</script>
+{% endblock %}
+{% endblock content %}
