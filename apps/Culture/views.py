@@ -40,6 +40,7 @@ def create_culture(request):
         form = CultureAgricoleForm()
     return render(request, 'Culture/culture_form.html', {'form': form})
 
+
 def update_culture(request, pk):
     culture = get_object_or_404(CultureAgricole, pk=pk)
     form = CultureAgricoleForm(instance=culture)
