@@ -138,6 +138,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about" class="page-scroll">About</a></li>
                 <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+                <li><a href="{% url 'culture_list' %}" class="page-scroll">Crops</a></li>
+                <li><a href="{% url 'nouvelle_liste_techniques' %}" class="page-scroll">Techniques</a></li>
                 <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
                 <li><a href="#team" class="page-scroll">Review</a></li>
                 <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
@@ -154,7 +156,7 @@
                     <div class="intro-text">
                         <h1>AgriPredict</h1>
                         <p>Yield / Culture / Pesticides</p>
-                        <a href="{% url 'yield_summary' %}" class="btn btn-custom btn-lg page-scroll">Show Techniques</a>
+                        <a href="{% url 'nouvelle_liste_techniques' %}" class="btn btn-custom btn-lg page-scroll">Show Techniques</a>
                     </div>
                 </div>
             </div>
@@ -210,8 +212,7 @@
         {% if technique_details %}
             <div class="recommendation-card">
                 <h3>Recommended Technique: <span class="highlight">{{ technique_details.nom_technique }}</span></h3>
-                <p><strong>Impact on Yield:</strong> {{ technique_details.impact_rendement }}</p>
-                <p><strong>Application Date:</strong> {{ technique_details.date_application }}</p>
+                <p><strong>The impact of this technique on yield improvement:</strong> {{ technique_details.impact_rendement }}</p>
             </div>
         {% endif %}
     </div>

@@ -2,8 +2,24 @@
 
 {% block title %} Culture Agricole {% endblock %}
 
-<!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+    .custom-button {
+        display: inline-block;  
+        padding: 10px 20px;  
+        background-color: #075018;  
+        color: white;  
+        text-align: center;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        text-decoration: none;  
+    }
+    .custom-button:hover {
+        background-color: #1a772e;  
+    }
+  </style>
+{% endblock stylesheets %}
 
 {% block content %}
 
@@ -20,13 +36,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Nom</label>
+                                    <label>Agricultural Crop Name</label>
                                     <input type="text" class="form-control" name="nom" placeholder="Agricultural Crop Name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Description</label>
+                                    <label>Crop Description</label>
                                     <textarea class="form-control" name="description" placeholder="Crop Description
 "></textarea>
                                 </div>
@@ -35,13 +51,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Cycle de croissance (jours)</label>
+                                    <label>Growth Cycle Duration (in Days)</label>
                                     <input type="number" class="form-control" name="cycle_croissance_jours" placeholder="Growth Cycle Duration in Days">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Rendement attendu</label>
+                                    <label>Expected Yield</label>
                                     <input type="number" step="0.01" class="form-control" name="rendement_attendu" placeholder="Expected Yield">
                                 </div>
                             </div>
@@ -49,13 +65,13 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Type de sol préféré</label>
+                                    <label>Preferred Soil Type</label>
                                     <input type="text" class="form-control" name="type_sol_prefere" placeholder="Preferred Soil Type">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Zone climatique recommandée</label>
+                                    <label>Recommended Climate Zone</label>
                                     <input type="text" class="form-control" name="zone_culture_recommandee" placeholder="Recommended Climate Zone">
                                 </div>
                             </div>
@@ -66,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-fill btn-dark">Save</button>
+                        <button type="submit" class="custom-button">Save</button>
                     </form>
 
                     {% if form.errors %}
@@ -91,5 +107,4 @@
 
 {% endblock content %}
 
-<!-- Specific Page JS goes HERE  -->
 {% block javascripts %}{% endblock javascripts %}

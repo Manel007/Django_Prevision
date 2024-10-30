@@ -1,0 +1,134 @@
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container"> 
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a> 
+      </div>
+      
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+          <li><a href="{% url 'culture_list' %}" class="page-scroll">Crops</a></li>
+          <li><a href="{% url 'nouvelle_liste_techniques' %}" class="page-scroll">Techniques</a></li>
+          <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
+          <li><a href="#team" class="page-scroll">Review</a></li>
+          <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+  
+<header id="header">
+    <div class="intro">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="intro-text">
+                        <h1>AgriPredict</h1>
+                        <p>Yield / Culture / Pesticides</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  
+{% block stylesheets %}
+<style>
+    .btnback {
+        background-color: #247924; 
+        color: #000;
+        padding: 8px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin: 50px ; 
+    }
+
+    .btnback:hover {
+        background-color: #449d44; 
+    }
+
+    .yield-list-card {
+        margin: 50px auto;
+        padding: 30px; 
+        border: 1px solid #ccc; 
+        border-radius: 8px; 
+        max-width: 800px; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    }
+
+    .yield-list-card h1 {
+        font-size: 3rem; 
+    }
+
+    .yield-list-card p {
+        font-size: 2rem;
+        margin:30px 
+    }
+
+    .yield-list-card-header {
+        text-align: center; 
+    }
+
+</style>
+{% endblock stylesheets %}
+
+<!-- Favicons ================================================== -->
+<link rel="shortcut icon" href="{{ FRONT_ROOT }}/img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="{{ FRONT_ROOT }}/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ FRONT_ROOT }}/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ FRONT_ROOT }}/img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet ================================================== -->
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/style.css">
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/bootstrap.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/contact_me.js"></script> 
+<script type="text/javascript" src="{{ FRONT_ROOT }}/js/main.js"></script>
+
+{% block content %}
+<div class="yield-list-content">
+    <div class="yield-list-row">
+        <div class="yield-list-col">
+            <div class="yield-list-card">
+                <div class="yield-list-card-header">
+                    <div>
+                        <h4 class="menu-section-title">Crop Details</h4>
+                        <hr>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2>{{ culture.nom }}</h2>
+                    <p><strong>Description:</strong> {{ culture.description }}</p>
+                    <p><strong>Growth Cycle (Days):</strong> {{ culture.cycle_croissance_jours }}</p>
+                    <p><strong>Recommended Soil Type:</strong> {{ culture.type_sol_prefere }}</p>
+                    <p><strong>Recommended Irrigation:</strong> {{ culture.irrigation }}</p>
+                    <a href="{% url 'culture_list' %} " class="btnback">Back to Cultures</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+{% include 'front/footer.html' %}

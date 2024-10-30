@@ -13,7 +13,6 @@ class RecommendationForm(forms.Form):
         cleaned_data = super().clean()
         choix_culture = cleaned_data.get("choix_culture")
 
-        # Validation pour s'assurer que les champs sont remplis selon le choix
         if choix_culture == 'existing' and not cleaned_data.get("culture_existante"):
             self.add_error("culture_existante", "Please select an existing crop.")
         elif choix_culture == 'custom' and not (cleaned_data.get("cycle_croissance_jours") and cleaned_data.get("type_sol_prefere") and cleaned_data.get("zone_culture_recommandee")):

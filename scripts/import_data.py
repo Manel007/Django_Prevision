@@ -1,9 +1,7 @@
-# scripts/import_data.py
 
 import os
 import sys
 
-# Chemin vers le projet Django
 sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../')  
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
@@ -20,10 +18,9 @@ def import_cultures(culture_data):
     """Importe les cultures à partir des données."""
     for row in culture_data:
         try:
-            # Ajout d'une vérification pour s'assurer que les valeurs nécessaires sont présentes
             if not row['cycle_croissance_jours']:
                 print(f"Cycle de croissance manquant pour la culture: {row['nom']}. Culture non ajoutée.")
-                continue  # Passe à la culture suivante si la valeur est manquante
+                continue  
             
             culture, created = CultureAgricole.objects.get_or_create(
                 nom=row['nom'],
@@ -53,7 +50,6 @@ def import_techniques(technique_data):
                 date_application=parse_date(row['date_application']),
                 impact_rendement=float(row['impact_rendement'])
             )
-            # Associer la technique à la culture correspondante
             culture_name = row['culture_id']
             print(f"Tentative de trouver la culture: {culture_name}")
             try:
@@ -62,15 +58,14 @@ def import_techniques(technique_data):
                 print(f"Technique ajoutée: {technique.nom_technique} associée à {culture.nom}")
             except CultureAgricole.DoesNotExist:
                 print(f"Culture '{culture_name}' n'existe pas, ajout de la culture...")
-                # Ajouter la culture manquante avec des valeurs par défaut
                 culture = CultureAgricole.objects.create(
                     nom=culture_name,
-                    description='',  # Valeur par défaut si non fournie
-                    cycle_croissance_jours=0,  # Valeur par défaut
-                    rendement_attendu=0.0,  # Valeur par défaut
-                    zone_culture_recommandee='',  # Valeur par défaut
-                    type_sol_prefere='',  # Valeur par défaut
-                    irrigation=''  # Valeur par défaut
+                    description='',  
+                    cycle_croissance_jours=0, 
+                    rendement_attendu=0.0,  
+                    zone_culture_recommandee='',  
+                    type_sol_prefere='',  
+                    irrigation='' 
                 )
                 technique.cultures_associees.add(culture)
                 print(f"Cultures ajoutée: {culture.nom}")

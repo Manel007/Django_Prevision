@@ -3,10 +3,25 @@
 {% block title %} Agricultural Techniques {% endblock %}
 
 {% block content %}
-
+<style>
+    .custom-button {
+        display: inline-block;  
+        padding: 10px 20px;  
+        background-color: #075018;  
+        color: white;  
+        text-align: center;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        text-decoration: none;  
+    }
+    .custom-button:hover {
+        background-color: #1a772e;  
+    }
+  </style>
 <div class="content">
     <div class="row">
-        <a href="{% url 'create_technique' %}" class="btn mt-3">Add a Technique</a>
+        <a href="{% url 'create_technique' %}" class="custom-button m-3">Add a Technique</a>
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -39,13 +54,15 @@
                                     <td>{{ technique.impact_rendement }}</td>
                                     <td>
                                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-                                        <a href="{% url 'update_technique' technique.pk %}" class="btn btn-dark">
-                                            <i class="fas fa-pencil-alt"></i>
+                                        <a href="{% url 'technique_details' technique.id %}" title="Details">
+                                            <i class="fas fa-info-circle" style="color: #0d6614; font-size: 20px;"></i>
+                                        </a>
+                                        <a href="{% url 'update_technique' technique.id %}">
+                                            <i class="fas fa-edit" style="color: #0b1050; font-size: 20px;"></i>
                                         </a>
 
-                                        <button class="btn btn-dark delete-btn" data-url="{% url 'delete_technique' technique.pk %}">
-                                            <i class="fas fa-trash-alt"></i>
+                                        <button class=" delete-btn" data-url="{% url 'delete_technique' technique.pk %}" style="background: none; border: none; color: #065317; cursor: pointer;">
+                                            <i class="fas fa-trash-alt" style="font-size: 20px;"></i> 
                                         </button>
                                     </td>
                                 </tr>

@@ -5,11 +5,25 @@
 {% block stylesheets %}{% endblock %}
 
 {% block content %}
-
+<style>
+    .custom-button {
+        display: inline-block;  
+        padding: 10px 20px;  
+        background-color: #075018;  
+        color: white;  
+        text-align: center;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        text-decoration: none;  
+    }
+    .custom-button:hover {
+        background-color: #1a772e;  
+    }
+  </style>
 <div class="content">
     <div class="row">
-        <a href="{% url 'create_culture' %}" class="btn mt-3">Add a Crop</a>
-        <a href="{% url 'recommend_view' %}" class="btn btn-primary mt-3">Make a Recommendation</a>
+        <a href="{% url 'create_culture' %}" class="custom-button m-3">Add a Crop</a>
         <div class="col-md-12">
             <div class="card ">
                 <div class="card-header">
@@ -42,13 +56,16 @@
                                     <td>{{ culture.rendement_attendu }}</td>
                                     <td>
                                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-                                        <a href="{% url 'update_culture' culture.id %}" class="btn btn-dark">
-                                            <i class="tim-icons icon-pencil"></i>
+                                        <a href="{% url 'culture_details' culture.id %}" title="Details">
+                                            <i class="fas fa-info-circle" style="color: #0d6614; font-size: 20px;"></i>
                                         </a>
-                                        <button class="btn btn-dark delete-btn" data-url="{% url 'delete_culture' culture.id %}">
-                                            <i class="fas fa-trash-alt"></i> 
+                                        <a href="{% url 'update_culture' culture.id %}" >
+                                            <i class="fas fa-edit" style="color: #0b1050; font-size: 20px;"></i>
+                                        </a>
+                                        <button class="delete-btn " data-url="{% url 'delete_culture' culture.id %}"style="background: none; border: none; color: #065317; cursor: pointer;" >
+                                            <i class="fas fa-trash-alt" style="font-size: 20px;"></i> 
                                         </button>
+
                                     </td>
                                 </tr>
                                 {% empty %}
@@ -67,7 +84,6 @@
 
 {% endblock content %}
 
-<!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -82,11 +98,11 @@
                     csrfmiddlewaretoken: '{{ csrf_token }}',
                 },
                 success: function(response) {
-                    // Redirect to the crops list after deletion
+                    
                     window.location.reload();
                 },
                 error: function(xhr, errmsg, err) {
-                    // Handle errors here
+                    
                     console.log(err);
                 }
             });
