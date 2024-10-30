@@ -13,7 +13,7 @@ class Command(BaseCommand):
         selected_ids = kwargs['selected_ids']
 
         try:
-            pesticide_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv')
+            pesticide_data = pd.read_csv('C:/Users/rebhi/OneDrive/Bureau/Django_Prevision/pesticides.csv')
         except FileNotFoundError:
             pesticide_data = pd.DataFrame(columns=['Domain', 'Area', 'Element', 'Item', 'Year', 'Unit', 'Value'])
 
@@ -39,7 +39,10 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.WARNING(f'Pesticide with ID {pesticide_id} does not exist.'))
 
         if not pesticide_data.empty:
+
             pesticide_data.to_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv', index=False)
+
+          
             self.stdout.write(self.style.SUCCESS('Selected pesticide data added to the CSV successfully.'))
         else:
             self.stdout.write(self.style.WARNING('Aucune donnée à ajouter au fichier CSV.'))

@@ -1,0 +1,1001 @@
+id,nom_ressource,type_ressource,quantite,unite_mesure,Usage Frequency,Saison
+200,,carburant,905.52,Kilogramme,monthly,winter
+201,Compost à base de déchets verts,engrais,808.45,Millilitre,daily,summer
+202,Sable pour drainage,eau,491.47,Acre,weekly,fall
+203,Équipement de protection individuelle,pesticide,901.21,Mètre cube,weekly,summer
+204,Semences de sésame,engrais,303.18,Litre,monthly,fall
+205,Écorces pour paillis,pesticide,636.43,Acre,monthly,spring
+206,Biopesticide à base de saponines,carburant,931.15,Acre,weekly,summer
+207,Biogaz pour chauffage,pesticide,255.99,Hectare,weekly,spring
+208,Pesticide à base de formaldéhyde,pesticide,268.42,Acre,monthly,fall
+209,Éthanol à base de maïs,engrais,509.55,Kilogramme,monthly,spring
+210,Engrais enrichi en fer,semences,251.27,Acre,weekly,fall
+211,Engrais pour arbres fruitiers,engrais,377.44,Litre,weekly,fall
+212,,carburant,842.4,Kilogramme,daily,summer
+213,Engrais à base de lactosérum,engrais,209.53,Kilogramme,weekly,summer
+214,Biocarburant à base de colza,pesticide,231.98,Gramme,daily,fall
+215,Débroussailleuse à essence,semences,524.81,Litre,daily,fall
+216,Engrais à base de fumier de cheval,carburant,900.52,Mètre cube,weekly,fall
+217,Semences de concombre,pesticide,286.78,Mètre cube,monthly,spring
+218,Herbicide à base de metolachlore,eau,268.56,Kilogramme,monthly,fall
+219,Fongicide à base de propiconazole,semences,360.17,Gramme,daily,spring
+220,Kit de micro-irrigation automatisée,pesticide,995.73,Millilitre,weekly,winter
+221,Biocarburant à base de colza,engrais,839.85,Hectare,monthly,winter
+222,Carburant à base de biomasse,engrais,824.58,Millilitre,monthly,fall
+223,Insecticide biologique à base de pyréthre,semences,540.65,Litre,weekly,summer
+224,,eau,884.14,Hectare,monthly,fall
+225,Semences de soja,eau,540.85,Hectare,weekly,summer
+226,Filet de protection anti-insectes,carburant,690.26,Hectare,daily,fall
+227,Outils de jardinage manuels,pesticide,558.8,Acre,weekly,winter
+228,Semences de brocoli,semences,901.43,Acre,daily,spring
+229,Essence pour tondeuse à gazon,pesticide,754.27,Hectare,daily,spring
+230,Pompe d’irrigation solaire,carburant,797.82,Acre,daily,spring
+231,Substrat pour culture hydroponique,semences,396.69,Mètre cube,monthly,fall
+232,Graines de céleri,pesticide,554.38,Mètre cube,daily,summer
+233,Insecticide à base de abamectine,eau,950.7,Acre,daily,summer
+234,,carburant,727.12,Litre,monthly,spring
+235,Réservoir d'eau enterré,semences,707.64,Gramme,daily,winter
+236,Graines de betterave sucrière,semences,618.35,Kilogramme,monthly,fall
+237,Engrais phosphoré pour tubercules,engrais,871.89,Hectare,weekly,spring
+238,,engrais,846.53,Mètre cube,weekly,summer
+239,Remorque agricole,semences,311.11,Litre,weekly,summer
+240,Graines de pois chiche,pesticide,253.68,Mètre cube,weekly,summer
+241,Système d’irrigation en goutte à goutte,pesticide,836.45,Gramme,daily,fall
+242,Pétrole pour tracteurs,pesticide,906.24,Millilitre,weekly,summer
+243,Semences de millet,carburant,977.55,Acre,weekly,spring
+244,Engrais foliaire liquide,engrais,218.4,Mètre cube,weekly,summer
+245,Semences de framboise,semences,956.74,Millilitre,daily,summer
+246,Graines de pastèque,engrais,742.4,Hectare,daily,summer
+247,Graines de céleri,eau,982.07,Acre,weekly,summer
+248,Semences de fenouil,semences,383.43,Mètre cube,daily,summer
+249,Engrais organique à base de trèfle,engrais,837.55,Kilogramme,daily,summer
+250,Semences d'amande,eau,882.02,Hectare,weekly,winter
+251,Carburant biodiesel,semences,901.11,Hectare,daily,summer
+252,Tracteur électrique,semences,372.8,Acre,weekly,summer
+253,Système de filtrage d'eau,pesticide,779.51,Hectare,monthly,spring
+254,Engrais organique à base de compost,carburant,493.7,Millilitre,monthly,fall
+255,Engrais naturel à base de farine d’os,carburant,767.82,Mètre cube,daily,summer
+256,Fongicide au soufre micronisé,engrais,264.38,Mètre cube,monthly,winter
+257,Pulvérisateur électrique 15L,engrais,556.85,Kilogramme,weekly,spring
+258,,pesticide,956.27,Millilitre,monthly,summer
+259,Fertilisant biologique à base d’algues,engrais,415.53,Millilitre,weekly,spring
+260,Insecticide à base de abamectine,engrais,654.61,Gramme,daily,summer
+261,Semences de brocoli,pesticide,373.95,Millilitre,weekly,spring
+262,Insecticide à base de pyréthrines,carburant,884.07,Mètre cube,weekly,winter
+263,Réducteur de pression pour irrigation,semences,380.29,Millilitre,daily,fall
+264,Kit de goutte à goutte portable,eau,852.63,Hectare,weekly,summer
+265,Énergie éolienne pour ferme,eau,377.81,Kilogramme,weekly,summer
+266,Système d’irrigation en goutte à goutte,carburant,759.25,Millilitre,monthly,summer
+267,Réservoir d'eau enterré,engrais,348.84,Acre,monthly,summer
+268,Gazole pour engins de chantier,carburant,591.82,Millilitre,monthly,winter
+269,Engrais à base de vinaigre,eau,861.68,Litre,monthly,fall
+270,Kit de goutte à goutte portable,engrais,423.64,Gramme,weekly,summer
+271,Hydrogène pour stockage d'énergie,eau,533.48,Acre,daily,summer
+272,Engrais pour orchidées,eau,249.74,Mètre cube,weekly,fall
+273,Semences de sésame,eau,343.64,Litre,weekly,winter
+274,Énergie éolienne pour ferme,engrais,358.86,Kilogramme,daily,fall
+275,Biocarburant à base de colza,semences,547.84,Millilitre,weekly,summer
+276,Remorque agricole,engrais,515.51,Litre,monthly,winter
+277,Engrais de couverture pour sols,eau,201.53,Millilitre,monthly,summer
+278,Fongicide à base de propiconazole,semences,543.56,Litre,daily,spring
+279,Graines de pastèque,eau,767.16,Millilitre,weekly,fall
+280,Semences de chou-fleur,eau,682.75,Litre,weekly,summer
+281,Engrais phosphoré pour tubercules,carburant,885.03,Mètre cube,weekly,summer
+282,Biopesticide à base de saponines,engrais,250.02,Mètre cube,weekly,summer
+283,Semences de concombre,engrais,970.42,Kilogramme,daily,fall
+284,Engrais pour plantes d'intérieur,engrais,673.08,Litre,daily,spring
+285,Insecticide à base de méthomyl,eau,530.54,Millilitre,weekly,fall
+286,Compost à base de déchets verts,carburant,339.38,Kilogramme,weekly,fall
+287,Semences de melon,pesticide,853.32,Gramme,daily,summer
+288,Charrue à verser,semences,307.43,Litre,weekly,summer
+289,Gazole pour engins de chantier,pesticide,689.23,Acre,monthly,winter
+290,Pesticide à base de thiaméthoxame,engrais,988.81,Litre,monthly,spring
+291,Pesticide à base de formaldéhyde,pesticide,689.51,Mètre cube,monthly,spring
+292,Engrais bio pour plantes d'intérieur,semences,836.56,Mètre cube,weekly,spring
+293,Paillis organique pour jardin,semences,764.22,Acre,weekly,winter
+294,Semences de piment,pesticide,251.73,Gramme,monthly,summer
+295,,eau,787.53,Gramme,daily,fall
+296,,carburant,704,Litre,weekly,winter
+297,Énergie solaire pour pompes,pesticide,910.03,Gramme,weekly,summer
+298,Semences de maïs hybride,carburant,754.95,Acre,monthly,summer
+299,Treuil pour jardinage,semences,276.77,Millilitre,daily,winter
+300,Tuyaux d'irrigation en PVC,eau,825.14,Millilitre,weekly,spring
+301,Insecticide à base de lambda-cyhalothrine,eau,809.71,Litre,daily,summer
+302,Engrais à base de compost de vers,engrais,543.88,Gramme,monthly,spring
+303,Semences de brocoli,carburant,556.34,Hectare,monthly,spring
+304,Semences d’aubergine,pesticide,511.34,Mètre cube,weekly,spring
+305,Système de compostage domestique,pesticide,754.47,Gramme,monthly,summer
+306,Système de compostage domestique,semences,486.33,Millilitre,monthly,summer
+307,Fongicide à base de fludioxonil,pesticide,321.1,Gramme,daily,winter
+308,Herbicide à base de pelargonium,eau,857.26,Litre,monthly,spring
+309,Engrais riche en calcium,pesticide,419.73,Kilogramme,monthly,summer
+310,Herbicide sélectif pour maïs,eau,354.94,Gramme,weekly,summer
+311,Phosphate de calcium granulaire,eau,344.65,Millilitre,monthly,fall
+312,,semences,241.81,Gramme,daily,winter
+313,,engrais,824.99,Kilogramme,weekly,fall
+314,Semences de haricot vert,pesticide,604.77,Kilogramme,daily,winter
+315,Pesticide à base de fongus entomopathogène,engrais,516.33,Mètre cube,daily,winter
+316,Semences de groseille,eau,911.4,Kilogramme,weekly,fall
+317,Pesticide à base d'huile de citronnelle,eau,883.99,Kilogramme,weekly,winter
+318,Biocarburant à base de déchets,engrais,527.4,Millilitre,daily,fall
+319,Graines de pois chiche,eau,462.38,Kilogramme,monthly,winter
+320,Terre noire pour plantation,carburant,454.3,Litre,daily,fall
+321,Engrais organique à base de trèfle,engrais,390.43,Kilogramme,monthly,fall
+322,Semences de concombre,eau,297.92,Acre,weekly,spring
+323,,semences,372.37,Mètre cube,daily,spring
+324,Solution nutritive hydroponique,semences,523.92,Mètre cube,monthly,winter
+325,Gravier pour drainage,engrais,978.27,Hectare,monthly,winter
+326,Graines de pois chiche,semences,933.04,Millilitre,monthly,winter
+327,Engrais organique à base de compost,eau,727.57,Gramme,monthly,fall
+328,Engrais phosphoré pour tubercules,carburant,391.65,Kilogramme,weekly,spring
+329,Engrais pour fruits et légumes,engrais,631.82,Acre,daily,winter
+330,,pesticide,948.04,Millilitre,daily,fall
+331,,eau,494.25,Litre,weekly,summer
+332,Souffleur à feuilles à batterie,carburant,284.53,Mètre cube,monthly,summer
+333,Réducteur de pression pour irrigation,pesticide,358.46,Mètre cube,weekly,spring
+334,Graines de poivron,carburant,432.89,Mètre cube,daily,spring
+335,Remorque agricole,pesticide,247.28,Hectare,weekly,summer
+336,,semences,318.24,Kilogramme,monthly,winter
+337,Biopesticide à base de neem,engrais,921.63,Acre,monthly,spring
+338,Insecticide à base de pyréthrines,semences,421.27,Hectare,daily,spring
+339,Filet de protection anti-insectes,pesticide,657.2,Millilitre,daily,winter
+340,,semences,243.84,Acre,weekly,winter
+341,Semoir automatique de précision,engrais,202.48,Gramme,weekly,winter
+342,Engrais à libération rapide,eau,534.57,Litre,monthly,spring
+343,Fongicide à base de cuivre,eau,537.09,Gramme,monthly,winter
+344,Graines de tomate cerise,carburant,341.62,Acre,weekly,summer
+345,Engrais enrichi en oligo-éléments,engrais,296.32,Acre,monthly,summer
+346,Engrais pour fruits et légumes,eau,429.58,Acre,weekly,summer
+347,Insecticide à base de chlorpyrifos,carburant,253.47,Litre,daily,fall
+348,Substrat pour culture hydroponique,eau,756.61,Hectare,weekly,spring
+349,Engrais NPK 10-20-20,pesticide,720.48,Gramme,daily,summer
+350,Kit de micro-irrigation automatisée,semences,883.54,Kilogramme,monthly,fall
+351,Système d’irrigation en goutte à goutte,carburant,212.84,Mètre cube,weekly,winter
+352,Graines de cerise,semences,693.56,Millilitre,daily,winter
+353,Engrais à base de sulfate de potassium,pesticide,262.02,Gramme,daily,summer
+354,Semences de piment,pesticide,763.9,Millilitre,weekly,winter
+355,Fongicide à base de benomyl,carburant,248.85,Litre,weekly,winter
+356,,carburant,849.1,Mètre cube,daily,spring
+357,Herbicide à base d'acide acétique,carburant,983.42,Kilogramme,monthly,fall
+358,Kit de goutte à goutte portable,semences,918,Litre,monthly,spring
+359,Électricité solaire pour pompe,engrais,966.64,Millilitre,weekly,fall
+360,Réducteur de pression pour irrigation,engrais,243.69,Gramme,weekly,summer
+361,Énergie éolienne pour ferme,semences,677.79,Litre,monthly,summer
+362,,engrais,941.47,Mètre cube,weekly,summer
+363,Gazole pour engins de chantier,carburant,555.11,Litre,daily,fall
+364,Réservoir d'eau potable,engrais,318.47,Mètre cube,daily,winter
+365,Bois de chauffage,semences,323.35,Mètre cube,daily,fall
+366,Herbicide à base de pelargonium,eau,704.25,Millilitre,weekly,winter
+367,Électricité solaire pour pompe,semences,519.21,Acre,weekly,winter
+368,Insecticide à base de lambda-cyhalothrine,semences,645.2,Hectare,monthly,spring
+369,Engrais NPK 10-20-20,eau,495,Mètre cube,weekly,summer
+370,Engrais phosphoré pour tubercules,eau,609.67,Gramme,weekly,spring
+371,Système de compostage domestique,semences,462.63,Mètre cube,monthly,winter
+372,Treuil pour jardinage,carburant,978.54,Acre,weekly,winter
+373,Moissonneuse-batteuse pour blé,pesticide,443.98,Litre,weekly,spring
+374,Engrais à base de lactosérum,engrais,854.38,Litre,daily,summer
+375,Engrais à base de fumier de cheval,carburant,877,Hectare,daily,summer
+376,Biocarburant à base de colza,pesticide,567.53,Millilitre,weekly,spring
+377,Herbicide sélectif pour maïs,pesticide,899.17,Hectare,weekly,fall
+378,Engrais à base de lactosérum,carburant,434.11,Millilitre,weekly,winter
+379,Cactus comme plante d'intérieur,carburant,625.44,Gramme,weekly,summer
+380,,engrais,499.85,Gramme,daily,winter
+381,Remorque agricole,eau,684.1,Millilitre,monthly,spring
+382,Semoir automatique de précision,engrais,719.98,Mètre cube,daily,summer
+383,Réservoir d’eau de pluie 1000L,semences,423.89,Millilitre,monthly,winter
+384,Fongicide biologique pour fraisiers,engrais,246.51,Gramme,monthly,fall
+385,Système d'irrigation goutte à goutte,semences,540.66,Acre,weekly,spring
+386,Charrue à verser,pesticide,533.11,Mètre cube,monthly,summer
+387,Propane pour réchaud,semences,224.42,Mètre cube,weekly,winter
+388,Graines de pois chiche,semences,789.89,Hectare,daily,fall
+389,Engrais riche en calcium,pesticide,235.29,Litre,weekly,fall
+390,Faucheuse à barre de coupe,carburant,479.57,Millilitre,daily,spring
+391,Équipement de désherbage manuel,eau,518.47,Acre,weekly,spring
+392,Système de filtration pour irrigation,eau,461.7,Gramme,weekly,summer
+393,Pesticide à base de pyriproxyfène,pesticide,903.31,Hectare,weekly,fall
+394,Insecticide à base de spinosad,pesticide,293.23,Hectare,weekly,summer
+395,Fongicide biologique pour fraisiers,semences,283.36,Millilitre,weekly,spring
+396,Système de filtrage d'eau,pesticide,637.76,Acre,monthly,spring
+397,Solution nutritive hydroponique,engrais,558.59,Millilitre,monthly,fall
+398,Semences de groseille,eau,586.62,Kilogramme,weekly,fall
+399,Engrais à base de fumier de cheval,pesticide,452.84,Hectare,daily,winter
+400,Gaz naturel pour tracteurs,eau,806.55,Acre,daily,fall
+401,Kit d'irrigation pour potager,eau,581.01,Kilogramme,daily,summer
+402,Engrais potassique soluble,eau,883.38,Kilogramme,weekly,spring
+403,Engrais liquide à base de poisson,eau,917.74,Kilogramme,monthly,summer
+404,Engrais à base de sang séché,eau,803.91,Millilitre,monthly,fall
+405,,eau,517.07,Acre,monthly,summer
+406,Engrais azoté NPK 20-20-20,semences,889.24,Mètre cube,daily,fall
+407,Pesticide à base de formaldéhyde,engrais,953.45,Litre,daily,winter
+408,Semoir automatique de précision,eau,611.97,Acre,monthly,fall
+409,Filet de protection anti-insectes,pesticide,780.83,Gramme,monthly,summer
+410,Réducteur de pression pour irrigation,engrais,775.01,Hectare,monthly,fall
+411,Semoir automatique de précision,semences,377.72,Gramme,daily,fall
+412,Engrais universel pour toutes cultures,pesticide,232.37,Millilitre,weekly,summer
+413,Pesticide à base de bicarbonate de soude,pesticide,795.37,Litre,monthly,fall
+414,Insecticide à base de spinosad,engrais,376.13,Millilitre,daily,winter
+415,Eau de source pour agriculture,pesticide,996.3,Mètre cube,daily,winter
+416,Engrais à base de lactosérum,engrais,225.04,Litre,weekly,summer
+417,Bassin de stockage d'eau,pesticide,633.58,Millilitre,monthly,summer
+418,Semences de millet,eau,473.66,Millilitre,daily,winter
+419,Réducteur de pression pour irrigation,pesticide,453.88,Acre,daily,fall
+420,Engrais organique à base de compost,pesticide,676.57,Litre,monthly,winter
+421,Système de filtration pour irrigation,eau,549.09,Gramme,weekly,summer
+422,Tuyaux d'irrigation en PVC,engrais,748.61,Acre,daily,spring
+423,Biogaz pour chauffage,engrais,698.27,Mètre cube,monthly,winter
+424,Semences de fenouil,semences,571.58,Acre,daily,winter
+425,Semences de groseille,carburant,362.28,Mètre cube,monthly,winter
+426,Insecticide à base de abamectine,carburant,317.88,Hectare,daily,fall
+427,Insecticide à base de méthomyl,semences,996.78,Mètre cube,daily,fall
+428,Engrais pour fleurs annuelles,pesticide,983.55,Gramme,monthly,spring
+429,Engrais en granulés,pesticide,557.6,Kilogramme,weekly,summer
+430,Faucheuse à barre de coupe,eau,923.3,Millilitre,monthly,summer
+431,Engrais naturel à base de farine d’os,pesticide,301.99,Mètre cube,monthly,fall
+432,Engrais à base de sulfate de potassium,pesticide,915.32,Millilitre,weekly,fall
+433,Système d’irrigation en goutte à goutte,engrais,290.54,Mètre cube,weekly,fall
+434,Souffleur à feuilles à batterie,carburant,999.86,Litre,daily,spring
+435,,pesticide,988.98,Litre,weekly,winter
+436,,pesticide,611.69,Hectare,weekly,spring
+437,Fongicide à base de tébuconazole,pesticide,421.23,Kilogramme,daily,spring
+438,Engrais organique à base de trèfle,eau,785.71,Litre,weekly,spring
+439,Tracteur électrique,pesticide,991.29,Hectare,daily,fall
+440,Treuil pour jardinage,pesticide,409.98,Millilitre,daily,fall
+441,Semences de millet,eau,627.89,Litre,monthly,winter
+442,Bois pour construction de serres,engrais,360.63,Acre,daily,summer
+443,Insecticide à base de imidaclopride,pesticide,555.28,Acre,monthly,spring
+444,Semences de soja,pesticide,788.79,Kilogramme,daily,winter
+445,Semences d’aubergine,pesticide,422.35,Millilitre,daily,spring
+446,,pesticide,592.61,Litre,monthly,winter
+447,Engrais organique à base de compost,semences,363.63,Kilogramme,daily,spring
+448,Graines de menthe,carburant,553.17,Acre,monthly,fall
+449,Système de filtrage d'eau,pesticide,587.63,Acre,daily,fall
+450,Gaz naturel pour tracteurs,carburant,686.76,Gramme,monthly,summer
+451,Système de filtrage d'eau,carburant,379.35,Acre,daily,summer
+452,Remorque agricole,carburant,662.86,Gramme,monthly,summer
+453,Graines de kiwi,semences,847.1,Kilogramme,monthly,winter
+454,Semences de sauge,eau,742.32,Kilogramme,monthly,winter
+455,Engrais à base de lactosérum,engrais,754.08,Mètre cube,monthly,winter
+456,Biocarburant à base de déchets,eau,394.6,Gramme,monthly,fall
+457,Semences d'amande,engrais,610.08,Kilogramme,daily,summer
+458,Engrais pour orchidées,carburant,686.02,Litre,monthly,spring
+459,Terreau de qualité supérieure,engrais,504.78,Mètre cube,monthly,fall
+460,Fongicide biologique pour fraisiers,eau,230.79,Millilitre,daily,summer
+461,Paille de blé pour paillage,semences,361.7,Mètre cube,weekly,summer
+462,Semences de sauge,carburant,249.56,Litre,daily,fall
+463,Engrais naturel à base de farine d’os,eau,876.86,Litre,weekly,spring
+464,Gaz de ville pour équipements,carburant,598.22,Acre,weekly,winter
+465,Pesticide à base de azadirachtine,semences,594.35,Kilogramme,weekly,summer
+466,Filet de protection anti-insectes,eau,730.17,Acre,daily,summer
+467,Engrais enrichi en fer,semences,407.44,Litre,weekly,winter
+468,Kit de micro-irrigation automatisée,engrais,914.79,Millilitre,monthly,summer
+469,Engrais enrichi en oligo-éléments,engrais,940.75,Millilitre,monthly,fall
+470,Semences de haricot vert,pesticide,790.3,Gramme,weekly,summer
+471,Engrais pour orchidées,engrais,706.04,Mètre cube,weekly,summer
+472,Carburant à base d'huile usagée,pesticide,386.74,Kilogramme,monthly,winter
+473,Charbon pour chaudière,engrais,418.52,Millilitre,daily,summer
+474,Tracteur électrique,pesticide,483.43,Mètre cube,weekly,spring
+475,Engrais foliaire au magnésium,engrais,269.01,Mètre cube,monthly,spring
+476,Gaz de ville pour équipements,pesticide,442.55,Gramme,monthly,spring
+477,Insecticide à base de spinosad,engrais,747.83,Gramme,weekly,winter
+478,Graines de betterave sucrière,eau,969.11,Millilitre,weekly,fall
+479,Système d'irrigation par aspersion,carburant,484.11,Litre,monthly,spring
+480,Semences de fenouil,eau,878.81,Litre,weekly,winter
+481,Semences de soja,eau,983.57,Kilogramme,monthly,fall
+482,Biocarburant à base de colza,carburant,833.19,Litre,daily,summer
+483,Insecticide biologique à base de pyréthre,engrais,856.82,Gramme,weekly,summer
+484,Gaz propane pour chauffages,carburant,721.07,Litre,daily,spring
+485,Pesticide à base de bicarbonate de soude,pesticide,433.06,Litre,weekly,spring
+486,Engrais NPK 10-20-20,pesticide,420.85,Millilitre,daily,winter
+487,Semences de sauge,carburant,912.94,Gramme,monthly,winter
+488,Semences de blé tendre,eau,229.3,Kilogramme,daily,winter
+489,Phosphate de calcium granulaire,engrais,726.01,Mètre cube,daily,fall
+490,Insecticide à base de méthomyl,eau,589.04,Gramme,daily,spring
+491,Insecticide à base de pyréthrines,pesticide,743.77,Kilogramme,monthly,winter
+492,Semences de fenouil,eau,966.82,Litre,monthly,winter
+493,Équipement de désherbage manuel,eau,325.48,Mètre cube,weekly,fall
+494,Engrais NPK 10-20-20,eau,680.28,Gramme,weekly,winter
+495,Tuyaux d'irrigation en PVC,engrais,849.57,Acre,monthly,fall
+496,Semences de concombre,engrais,871.75,Litre,weekly,spring
+497,Engrais foliaire liquide,engrais,443.4,Acre,weekly,spring
+498,Charbon pour chaudière,carburant,558.5,Kilogramme,monthly,fall
+499,Engrais à base de cendre de bois,engrais,357.9,Kilogramme,monthly,spring
+500,Semences de coriandre,carburant,635.92,Gramme,weekly,spring
+501,Insecticide à base de diatomée,carburant,546.57,Millilitre,weekly,fall
+502,Charrue à deux socs,carburant,500.7,Mètre cube,monthly,spring
+503,Semences de courgette,engrais,284.83,Litre,monthly,fall
+504,Engrais granulé à libération contrôlée,semences,780.09,Mètre cube,daily,winter
+505,Semences de riz basmati,semences,380.1,Gramme,weekly,fall
+506,Engrais à base de sulfate de potassium,semences,370.73,Litre,monthly,summer
+507,Pesticide à base d'extraits de plantes,engrais,955.04,Acre,daily,fall
+508,Système d’irrigation par aspersion,pesticide,999.57,Millilitre,monthly,fall
+509,Pesticide à base de formaldéhyde,semences,989.33,Acre,daily,summer
+510,Eau de source pour agriculture,pesticide,991.08,Acre,monthly,winter
+511,Engrais à base de compost de vers,eau,288.33,Gramme,weekly,summer
+512,Équipement de protection individuelle,pesticide,203.7,Millilitre,monthly,spring
+513,Insecticide à base de spinosad,pesticide,619.94,Kilogramme,daily,summer
+514,Semences de romarin,pesticide,717.52,Gramme,weekly,summer
+515,Engrais organique à base de compost,semences,748.87,Gramme,monthly,spring
+516,Substrat pour culture hydroponique,eau,422.86,Acre,daily,summer
+517,Système d’irrigation par aspersion,semences,498.82,Gramme,weekly,summer
+518,Insecticide biologique à base de pyréthre,carburant,978.94,Litre,weekly,fall
+519,Fongicide à base de fludioxonil,carburant,666.15,Litre,monthly,summer
+520,Graines de tournesol bio,carburant,997.8,Hectare,weekly,fall
+521,Graines de poivron,eau,921.93,Mètre cube,monthly,summer
+522,,carburant,229.12,Litre,monthly,spring
+523,Semoir automatique de précision,carburant,868.08,Litre,daily,spring
+524,Charrue à verser,carburant,841.54,Millilitre,monthly,fall
+525,Semences de fenouil,eau,460.25,Acre,weekly,fall
+526,Réducteur de pression pour irrigation,pesticide,673,Gramme,monthly,summer
+527,Bois pour construction de serres,engrais,773.78,Litre,weekly,fall
+528,Engrais phosphoré pour tubercules,engrais,817.15,Litre,weekly,spring
+529,Eau de pluie pour cultures,eau,394.31,Gramme,monthly,summer
+530,Graines de betterave sucrière,carburant,586.58,Millilitre,weekly,fall
+531,Eau de pluie pour cultures,pesticide,843.57,Acre,monthly,winter
+532,Fongicide à base de mancozèbe,pesticide,530.57,Millilitre,weekly,fall
+533,Fertilisant biologique à base d’algues,semences,335.3,Hectare,monthly,spring
+534,Engrais phosphoré pour tubercules,semences,876.34,Millilitre,monthly,spring
+535,Tracteur compact polyvalent,carburant,423.89,Gramme,weekly,fall
+536,Écorces pour paillis,carburant,315.25,Gramme,daily,summer
+537,Ensileuse pour récoltes fourragères,eau,268.25,Kilogramme,weekly,winter
+538,Semences de courgette,carburant,755.33,Litre,weekly,summer
+539,Fongicide à base de benomyl,eau,543.48,Kilogramme,daily,winter
+540,Pétrole pour tracteurs,engrais,330.7,Litre,monthly,spring
+541,Engrais azoté NPK 20-20-20,carburant,855.5,Mètre cube,monthly,spring
+542,Fongicide à base de mancozèbe,pesticide,620.97,Kilogramme,weekly,winter
+543,Engrais pour plantes d'intérieur,engrais,449.14,Mètre cube,monthly,winter
+544,Kit d'irrigation pour potager,eau,669.78,Litre,daily,summer
+545,Engrais à base de vinaigre,semences,950.49,Mètre cube,daily,winter
+546,Semences de sésame,pesticide,464.31,Acre,weekly,fall
+547,Souffleur à feuilles à batterie,carburant,448.7,Litre,weekly,summer
+548,Système de compostage domestique,semences,453.41,Gramme,monthly,fall
+549,Engrais à base de cendre de bois,eau,371.37,Millilitre,daily,spring
+550,Moissonneuse-batteuse pour blé,semences,806.8,Millilitre,daily,winter
+551,,carburant,853.75,Mètre cube,weekly,fall
+552,Engrais phosphoré pour tubercules,semences,296.5,Kilogramme,daily,spring
+553,Engrais naturel à base de farine d’os,semences,727.28,Gramme,weekly,fall
+554,Engrais foliaire liquide,carburant,559.91,Mètre cube,daily,spring
+555,Engrais à base de sang séché,semences,436.14,Millilitre,daily,winter
+556,Semences de sésame,pesticide,576.39,Kilogramme,monthly,winter
+557,Semences de melon,engrais,638.84,Kilogramme,daily,winter
+558,,pesticide,887.17,Litre,daily,spring
+559,Carburant à base de biomasse,engrais,873.23,Acre,daily,fall
+560,Pesticide à base de baccillus thuringiensis,pesticide,237.47,Millilitre,monthly,summer
+561,,pesticide,967.34,Mètre cube,monthly,spring
+562,Semences de riz basmati,engrais,325.11,Hectare,weekly,spring
+563,,semences,509.27,Mètre cube,daily,fall
+564,Graines de pastèque,carburant,445.61,Litre,weekly,fall
+565,Engrais à libération lente,engrais,883.83,Acre,monthly,summer
+566,Terreau de qualité supérieure,carburant,488.32,Hectare,daily,spring
+567,Compost à base de déchets verts,semences,609.48,Litre,weekly,spring
+568,Graines de colza,engrais,325.33,Mètre cube,daily,summer
+569,Épices pour agriculture bio,eau,240.61,Gramme,weekly,spring
+570,Engrais universel pour toutes cultures,semences,349.68,Hectare,weekly,spring
+571,Semences de maïs hybride,carburant,461.97,Hectare,weekly,fall
+572,Semences de carvi,carburant,851.12,Mètre cube,monthly,spring
+573,Réservoir d’eau de pluie 1000L,pesticide,782.03,Millilitre,daily,summer
+574,Graines de colza,semences,306.5,Litre,monthly,fall
+575,Fongicide à base de benomyl,eau,884.61,Mètre cube,weekly,spring
+576,Engrais foliaire au magnésium,eau,537.63,Acre,weekly,winter
+577,Semences de courgette,semences,790.89,Kilogramme,daily,spring
+578,Insecticide à base de imidaclopride,carburant,750.82,Kilogramme,daily,summer
+579,Pesticide à base de baccillus thuringiensis,carburant,467.19,Mètre cube,daily,summer
+580,Gaz de ville pour équipements,engrais,423.86,Kilogramme,monthly,spring
+581,,carburant,831.35,Litre,monthly,fall
+582,,pesticide,249.91,Litre,monthly,winter
+583,Semences de coriandre,eau,975.79,Mètre cube,daily,spring
+584,Semences de carvi,carburant,619.23,Kilogramme,weekly,fall
+585,Graines de menthe,carburant,615.94,Mètre cube,weekly,fall
+586,Phosphate de calcium granulaire,carburant,714.69,Gramme,monthly,winter
+587,Faucheuse à barre de coupe,carburant,277.69,Mètre cube,monthly,summer
+588,Culture d’algues pour compost,carburant,989.41,Kilogramme,weekly,winter
+589,Semences de groseille,semences,296.82,Hectare,daily,fall
+590,Cactus comme plante d'intérieur,pesticide,579.29,Litre,daily,spring
+591,,engrais,725.03,Kilogramme,daily,summer
+592,Propane pour réchaud,eau,674.07,Litre,monthly,winter
+593,Gravier pour drainage,eau,980.11,Acre,weekly,summer
+594,Eau purifiée pour irrigation goutte-à-goutte,pesticide,968.33,Acre,monthly,summer
+595,Hydrogène pour stockage d'énergie,engrais,615.62,Mètre cube,daily,summer
+596,Charrue à deux socs,carburant,937.29,Millilitre,daily,summer
+597,Semences d’aubergine,engrais,700.41,Kilogramme,weekly,summer
+598,Engrais à base de lactosérum,pesticide,596.24,Acre,monthly,summer
+599,Graines de tournesol bio,semences,212.87,Hectare,daily,summer
+600,Désherbant systémique non toxique,semences,572.05,Millilitre,weekly,spring
+601,Pesticide à base de linalol,pesticide,431.88,Gramme,weekly,winter
+602,Eau de pluie filtrée,semences,951.26,Litre,weekly,fall
+603,,eau,654.49,Hectare,weekly,fall
+604,Biocarburant à base de colza,pesticide,621.3,Acre,weekly,spring
+605,Gravier pour drainage,eau,214.96,Mètre cube,weekly,summer
+606,Essence pour tondeuse à gazon,eau,324.36,Litre,weekly,summer
+607,Hydrogène pour stockage d'énergie,carburant,880.64,Hectare,monthly,summer
+608,Semences de laitue romaine,pesticide,793.41,Kilogramme,daily,fall
+609,Semences de millet,pesticide,224.2,Mètre cube,weekly,summer
+610,Désherbant systémique non toxique,semences,986.41,Gramme,weekly,spring
+611,Ensileuse pour récoltes fourragères,semences,271.29,Hectare,weekly,spring
+612,Engrais de couverture pour sols,semences,551.66,Acre,daily,fall
+613,Kit de goutte à goutte portable,carburant,429.06,Litre,monthly,winter
+614,Graines de fruits exotiques,pesticide,726.92,Litre,weekly,fall
+615,Pulvérisateur électrique 15L,engrais,726.64,Litre,monthly,winter
+616,Pesticide à base d'extraits de plantes,engrais,842.57,Acre,monthly,summer
+617,Pesticide à base de bicarbonate de soude,semences,402.46,Hectare,weekly,fall
+618,Semences de courgette,carburant,484.75,Gramme,weekly,summer
+619,Insecticide à base de abamectine,engrais,710.9,Millilitre,daily,spring
+620,Système d’irrigation en goutte à goutte,pesticide,846.9,Acre,weekly,spring
+621,Semences de radis,engrais,433.92,Millilitre,daily,fall
+622,,carburant,897.52,Millilitre,daily,spring
+623,Écorces pour paillis,pesticide,864.68,Litre,daily,spring
+624,Engrais phosphoré pour tubercules,eau,328.34,Acre,daily,winter
+625,Culture d’algues pour compost,carburant,386.53,Mètre cube,daily,fall
+626,Système de récolte à la main,semences,833.36,Mètre cube,monthly,spring
+627,Pesticide à base de pyriproxyfène,eau,489.74,Gramme,monthly,summer
+628,Fertilisant biologique à base d’algues,eau,802.17,Millilitre,weekly,winter
+629,Électricité solaire pour pompe,semences,847.79,Hectare,weekly,fall
+630,Système d'irrigation goutte à goutte,semences,555.55,Gramme,weekly,summer
+631,,engrais,946.53,Gramme,weekly,fall
+632,Kit de micro-irrigation automatisée,engrais,987.53,Hectare,monthly,spring
+633,Pesticide à base d'huile de citronnelle,eau,832.45,Mètre cube,weekly,summer
+634,Électricité solaire pour pompe,carburant,436.75,Mètre cube,daily,spring
+635,Engrais bio pour plantes d'intérieur,pesticide,579.79,Hectare,daily,winter
+636,Système de récolte à la main,engrais,393.41,Litre,monthly,winter
+637,Semences de gingembre,engrais,745.58,Millilitre,daily,spring
+638,Pesticide à base de thiaclopride,carburant,313.11,Acre,daily,summer
+639,Semences d’aubergine,eau,990.49,Kilogramme,monthly,summer
+640,Éthanol à base de maïs,pesticide,580.04,Gramme,monthly,winter
+641,,carburant,623.43,Litre,weekly,fall
+642,,engrais,966.78,Litre,weekly,winter
+643,Pétrole pour tracteurs,eau,220.13,Millilitre,weekly,fall
+644,Engrais à base de fumier de cheval,engrais,856.5,Acre,monthly,fall
+645,Engrais à base de cendre de bois,pesticide,554.57,Millilitre,weekly,summer
+646,Insecticide naturel à base de savon,eau,854.39,Gramme,weekly,spring
+647,Herbicide à base de flumioxazine,semences,252.29,Litre,daily,fall
+648,Biogaz pour chauffage,pesticide,208.84,Kilogramme,monthly,winter
+649,Graines de pastèque,carburant,940.9,Acre,weekly,fall
+650,Engrais enrichi en oligo-éléments,eau,946.11,Mètre cube,monthly,winter
+651,Gazole pour engins de chantier,pesticide,806.21,Hectare,daily,fall
+652,Graines de cerise,semences,918.09,Hectare,weekly,fall
+653,Semences de millet,semences,707.53,Mètre cube,weekly,fall
+654,Outils de jardinage manuels,pesticide,410.97,Litre,weekly,spring
+655,Semences de coriandre,engrais,620.16,Litre,daily,summer
+656,Propane pour réchaud,pesticide,471.41,Millilitre,weekly,winter
+657,Énergie éolienne pour ferme,semences,585.35,Mètre cube,weekly,winter
+658,Biopesticide à base de saponines,engrais,940.07,Gramme,daily,summer
+659,Semences de chou-fleur,eau,963.75,Acre,monthly,fall
+660,Fil de fer pour clôtures,carburant,474.41,Gramme,monthly,fall
+661,Engrais naturel à base de farine d’os,carburant,307.34,Millilitre,weekly,summer
+662,Semences de concombre,engrais,590.19,Acre,weekly,winter
+663,Sable pour drainage,engrais,979.48,Kilogramme,weekly,winter
+664,Biocarburant à base de déchets,carburant,987.64,Hectare,daily,spring
+665,Semences de sauge,eau,302.95,Kilogramme,monthly,spring
+666,Pesticide à base d'extraits de plantes,pesticide,369.08,Acre,monthly,winter
+667,Graines de colza,eau,457,Kilogramme,daily,winter
+668,Engrais organique à base de compost,carburant,561.48,Mètre cube,daily,fall
+669,Semences de quinoa,semences,411.94,Kilogramme,monthly,spring
+670,Pesticide à base de linalol,semences,806.72,Kilogramme,monthly,winter
+671,Énergie éolienne pour ferme,semences,710.37,Millilitre,weekly,winter
+672,Système de serre modulable,engrais,275.86,Gramme,monthly,winter
+673,Gaz propane pour chauffages,eau,968.43,Kilogramme,weekly,winter
+674,Pesticide à base d'huile de citronnelle,engrais,632.23,Hectare,daily,spring
+675,Gaz propane pour chauffages,eau,661.28,Acre,daily,winter
+676,,eau,366.98,Acre,weekly,fall
+677,Cactus comme plante d'intérieur,pesticide,842.29,Hectare,monthly,spring
+678,Système d’irrigation par aspersion,engrais,889.39,Mètre cube,monthly,winter
+679,Équipement de désherbage manuel,eau,986.13,Millilitre,daily,winter
+680,,eau,922.19,Gramme,weekly,spring
+681,Semoir automatique de précision,semences,552.12,Kilogramme,monthly,summer
+682,Énergie éolienne pour ferme,eau,732.37,Mètre cube,monthly,fall
+683,Engrais à libération lente,semences,676.7,Acre,monthly,spring
+684,Graines de céleri,pesticide,981.29,Mètre cube,daily,summer
+685,Graines de basilic,semences,624.58,Hectare,weekly,summer
+686,Substrat pour culture hydroponique,carburant,777.95,Hectare,weekly,winter
+687,Système d’irrigation par aspersion,pesticide,472.47,Hectare,weekly,winter
+688,Terre noire pour plantation,eau,374.98,Millilitre,daily,fall
+689,Insecticide naturel à base de savon,semences,670.26,Kilogramme,daily,winter
+690,Semences de haricot vert,pesticide,549.75,Acre,daily,summer
+691,Engrais NPK 10-20-20,eau,485.13,Gramme,monthly,winter
+692,Insecticide à base de imidaclopride,carburant,921.81,Millilitre,daily,spring
+693,Carburant à base d'huile usagée,engrais,400.81,Mètre cube,daily,spring
+694,Engrais pour plantes d'intérieur,semences,966.54,Litre,weekly,spring
+695,Herbicide sélectif pour maïs,pesticide,604.36,Litre,daily,winter
+696,Engrais à base de sang séché,pesticide,217.33,Millilitre,monthly,fall
+697,Fongicide à base de benomyl,semences,965.76,Hectare,weekly,spring
+698,Remorque agricole,semences,784.73,Millilitre,daily,fall
+699,Pesticide à base de bicarbonate de soude,carburant,745.33,Acre,weekly,fall
+700,Semences de riz basmati,semences,382.49,Mètre cube,weekly,summer
+701,Engrais organique à base de compost,semences,992.97,Hectare,weekly,fall
+702,Souffleur à feuilles à batterie,carburant,930.45,Acre,weekly,spring
+703,Eau de pluie filtrée,carburant,340.52,Kilogramme,weekly,spring
+704,Terre noire pour plantation,semences,965.91,Gramme,weekly,fall
+705,Carburant à base d'huile usagée,pesticide,313.12,Mètre cube,daily,fall
+706,Semences de melon,pesticide,803.97,Acre,weekly,winter
+707,Engrais liquide pour légumes,semences,693.18,Hectare,weekly,spring
+708,,engrais,921.5,Litre,monthly,spring
+709,Engrais pour arbres fruitiers,engrais,656.03,Acre,daily,summer
+710,Graines de céleri,engrais,630.83,Gramme,monthly,fall
+711,Carburant biodiesel,pesticide,417.44,Acre,daily,winter
+712,Fertilisant biologique à base d’algues,pesticide,720.99,Litre,weekly,spring
+713,Herbicide à base de glyphosate,pesticide,653.74,Litre,daily,winter
+714,Engrais organique à base de compost,eau,454.2,Kilogramme,daily,fall
+715,Insecticide à base de pyréthrines,carburant,851.18,Millilitre,monthly,fall
+716,Biopesticide à base de saponines,engrais,577.31,Hectare,daily,spring
+717,Écorces pour paillis,carburant,734.07,Acre,daily,fall
+718,Eau de pluie filtrée,carburant,360.48,Mètre cube,weekly,fall
+719,Insecticide à base de abamectine,carburant,529.96,Kilogramme,weekly,spring
+720,Carburant biodiesel,engrais,706.45,Mètre cube,monthly,fall
+721,Fongicide au soufre micronisé,pesticide,840,Mètre cube,daily,fall
+722,Semences de concombre,semences,769.65,Hectare,daily,spring
+723,Herbicide à base de metolachlore,carburant,782.74,Acre,daily,summer
+724,Semences de sauge,pesticide,302.95,Hectare,monthly,spring
+725,Insecticide à base de méthomyl,pesticide,215.54,Hectare,daily,winter
+726,Réservoir d'eau potable,eau,718.03,Acre,weekly,winter
+727,Engrais granulé à libération contrôlée,semences,689.23,Kilogramme,monthly,summer
+728,Fongicide à base de fludioxonil,engrais,703.32,Mètre cube,daily,spring
+729,Graines de kiwi,engrais,457.53,Litre,weekly,summer
+730,Système d’irrigation par aspersion,pesticide,262.48,Hectare,daily,spring
+731,Système d’irrigation par aspersion,pesticide,547.37,Acre,monthly,fall
+732,Gaz propane pour chauffages,semences,210.39,Hectare,daily,winter
+733,Insecticide à base de imidaclopride,pesticide,425.37,Hectare,weekly,summer
+734,Semences de courgette,carburant,859.5,Litre,weekly,fall
+735,Semences de laitue romaine,carburant,968.46,Acre,daily,summer
+736,Matériel de jardinage à main,pesticide,860.46,Hectare,monthly,summer
+737,,eau,260.9,Gramme,weekly,summer
+738,Semences de melon,carburant,237.13,Litre,daily,fall
+739,,engrais,933.78,Kilogramme,monthly,winter
+740,Semences de romarin,carburant,454.15,Millilitre,daily,winter
+741,Graines de pois chiche,eau,305.36,Kilogramme,daily,fall
+742,Charbon pour chaudière,engrais,603.05,Acre,monthly,summer
+743,Éthanol à base de maïs,semences,782.06,Gramme,weekly,fall
+744,Système de serre modulable,eau,686.11,Gramme,weekly,spring
+745,Graines de colza,engrais,576.06,Acre,monthly,fall
+746,Charrue à deux socs,pesticide,234.96,Kilogramme,daily,summer
+747,Énergie solaire pour pompes,carburant,220.75,Acre,daily,winter
+748,Graines de tomate cerise,engrais,548.06,Millilitre,monthly,spring
+749,Pesticide à base de thiaclopride,semences,321.11,Hectare,monthly,spring
+750,Gaz propane pour chauffages,engrais,799.47,Gramme,weekly,summer
+751,Herbicide à base de glyphosate,engrais,220.43,Litre,daily,winter
+752,Éthanol à base de maïs,engrais,247.02,Litre,weekly,fall
+753,Fongicide au soufre micronisé,engrais,920.64,Hectare,daily,summer
+754,Moissonneuse-batteuse pour blé,eau,694.46,Kilogramme,daily,winter
+755,Solution nutritive hydroponique,semences,377.03,Millilitre,daily,winter
+756,Semoir automatique de précision,pesticide,966.64,Gramme,monthly,winter
+757,Pesticide à base d'extraits de plantes,eau,401.13,Kilogramme,daily,fall
+758,Engrais potassique soluble,pesticide,477.12,Kilogramme,monthly,spring
+759,Tuyaux d'irrigation en PVC,carburant,633.49,Hectare,weekly,fall
+760,Compost à base de déchets verts,pesticide,717.48,Kilogramme,weekly,winter
+761,Semences de romarin,engrais,604.39,Acre,monthly,spring
+762,Engrais à base de sang séché,carburant,715.9,Kilogramme,monthly,winter
+763,Fongicide à base de captane,semences,273.87,Gramme,weekly,fall
+764,Pulvérisateur électrique 15L,semences,549.3,Hectare,monthly,winter
+765,Insecticide à base de lambda-cyhalothrine,eau,557.67,Kilogramme,weekly,spring
+766,Engrais minéral à base de soufre,carburant,593.51,Millilitre,weekly,summer
+767,Insecticide à base de spinosad,semences,263.6,Hectare,monthly,fall
+768,Pesticide à base de bicarbonate de soude,semences,780.77,Litre,daily,spring
+769,Remorque agricole,carburant,246.87,Gramme,daily,winter
+770,Engrais à base de vinaigre,engrais,455.01,Litre,weekly,spring
+771,Souffleur à feuilles à batterie,carburant,786.57,Litre,daily,summer
+772,Engrais à base de vinaigre,semences,534.71,Kilogramme,weekly,summer
+773,Engrais à base de fumier de cheval,engrais,316.73,Millilitre,monthly,winter
+774,Moissonneuse-batteuse pour blé,engrais,329.76,Kilogramme,daily,winter
+775,Système de filtration pour irrigation,engrais,846.49,Litre,daily,winter
+776,Eau purifiée pour irrigation goutte-à-goutte,eau,202.47,Mètre cube,weekly,spring
+777,Fongicide à base de tébuconazole,engrais,902.68,Kilogramme,monthly,summer
+778,Engrais granulé à libération contrôlée,semences,406.46,Acre,daily,winter
+779,Éthanol à base de maïs,carburant,444.78,Hectare,monthly,summer
+780,Insecticide à base de imidaclopride,engrais,928.55,Litre,weekly,spring
+781,,pesticide,233.9,Litre,daily,summer
+782,Engrais à base de cendre de bois,eau,726.94,Hectare,monthly,summer
+783,Engrais potassique soluble,carburant,890.7,Gramme,daily,winter
+784,Engrais pour fleurs annuelles,eau,984.16,Gramme,monthly,spring
+785,Pesticide à base de baccillus thuringiensis,eau,252.27,Gramme,weekly,spring
+786,Désherbant systémique non toxique,semences,205.1,Gramme,daily,spring
+787,Eau de source pour agriculture,carburant,807.45,Hectare,monthly,summer
+788,Fongicide à base de fludioxonil,engrais,380.5,Hectare,daily,fall
+789,Eau de source pour agriculture,pesticide,279.29,Kilogramme,weekly,fall
+790,Engrais riche en calcium,carburant,979.66,Millilitre,monthly,fall
+791,Engrais potassique soluble,carburant,838.19,Millilitre,weekly,spring
+792,Fongicide à base de fludioxonil,semences,346.33,Mètre cube,weekly,winter
+793,Pesticide à base de bicarbonate de soude,semences,972.78,Kilogramme,monthly,summer
+794,Bois pour construction de serres,engrais,808.31,Hectare,daily,fall
+795,Semences de soja,carburant,293.53,Litre,weekly,fall
+796,Semences de soja,carburant,622.74,Mètre cube,monthly,summer
+797,Carburant à base de biomasse,carburant,741.78,Acre,daily,fall
+798,Débroussailleuse à essence,semences,791.61,Mètre cube,daily,fall
+799,Système d’irrigation en goutte à goutte,pesticide,447.61,Hectare,daily,winter
+800,,pesticide,514.84,Millilitre,daily,fall
+801,Engrais pour arbres fruitiers,engrais,849.27,Kilogramme,weekly,winter
+802,,engrais,735.6,Acre,monthly,winter
+803,,carburant,632.29,Acre,daily,fall
+804,Pesticide à base de baccillus thuringiensis,carburant,690.23,Millilitre,monthly,fall
+805,Engrais enrichi en fer,eau,882.06,Kilogramme,weekly,fall
+806,Semences de framboise,engrais,507.51,Acre,weekly,winter
+807,Fongicide à base de tébuconazole,semences,512.29,Litre,weekly,spring
+808,Insecticide systémique pour rosier,carburant,600.48,Acre,monthly,spring
+809,Semences d'amande,semences,831.88,Kilogramme,weekly,winter
+810,Filet de protection anti-insectes,carburant,200.06,Millilitre,weekly,fall
+811,Fongicide à base de captane,engrais,629.1,Gramme,daily,winter
+812,Charrue à verser,engrais,517.97,Hectare,weekly,summer
+813,Éthanol à base de maïs,pesticide,418.82,Millilitre,monthly,summer
+814,,eau,668.96,Hectare,weekly,spring
+815,Semences de laitue romaine,pesticide,884.45,Hectare,monthly,fall
+816,Système d'irrigation goutte à goutte,engrais,829.33,Mètre cube,weekly,fall
+817,Insecticide naturel à base de savon,engrais,698.72,Kilogramme,weekly,winter
+818,Insecticide naturel à base de savon,carburant,866.34,Acre,daily,spring
+819,Cendres de bois comme amendement,engrais,742.17,Kilogramme,weekly,winter
+820,Engrais à base de lactosérum,pesticide,679.57,Gramme,monthly,winter
+821,Pesticide à base de bicarbonate de soude,carburant,431.55,Millilitre,weekly,winter
+822,Gazole pour engins de chantier,carburant,810.69,Gramme,monthly,winter
+823,Engrais liquide à base de poisson,engrais,816.27,Millilitre,weekly,summer
+824,Insecticide à base de pyréthrines,semences,977.28,Millilitre,weekly,winter
+825,Herbicide à base de pelargonium,pesticide,607.36,Hectare,daily,fall
+826,Engrais pour pelouse et jardins,eau,340.68,Litre,daily,fall
+827,Charrue à verser,semences,794.52,Hectare,weekly,spring
+828,Engrais pour fleurs annuelles,engrais,822.27,Kilogramme,monthly,summer
+829,Terre noire pour plantation,semences,929.28,Mètre cube,monthly,winter
+830,Graines de pastèque,semences,968.6,Kilogramme,monthly,summer
+831,Fongicide à base de tébuconazole,carburant,597.63,Kilogramme,monthly,spring
+832,Moissonneuse-batteuse pour blé,engrais,284.27,Hectare,monthly,spring
+833,Cendres de bois comme amendement,pesticide,799.03,Mètre cube,daily,winter
+834,Engrais bio pour plantes d'intérieur,semences,385.52,Hectare,monthly,summer
+835,Graines de betterave sucrière,semences,228.88,Millilitre,monthly,spring
+836,Biopesticide à base de neem,carburant,616.13,Gramme,daily,spring
+837,Semences de maïs hybride,engrais,960.43,Litre,monthly,winter
+838,Engrais pour orchidées,semences,267.44,Mètre cube,weekly,summer
+839,Herbicide à base de glyphosate,semences,624.18,Hectare,monthly,fall
+840,,engrais,526.28,Mètre cube,daily,winter
+841,Semences de brocoli,eau,283.54,Litre,daily,winter
+842,Gaz naturel pour tracteurs,eau,669.78,Kilogramme,daily,spring
+843,Herbicide à base de glyphosate,semences,378.65,Mètre cube,monthly,winter
+844,Engrais à base de guano,engrais,315.55,Litre,monthly,winter
+845,Insecticide à base de spinosad,semences,205.46,Mètre cube,monthly,spring
+846,Graines de cerise,carburant,825.98,Kilogramme,daily,summer
+847,Réservoir d'eau enterré,engrais,752.61,Hectare,weekly,spring
+848,Système de filtrage d'eau,pesticide,367.56,Kilogramme,weekly,spring
+849,Carburant biodiesel,semences,700.37,Acre,daily,fall
+850,Semences de carotte,carburant,851.05,Kilogramme,weekly,summer
+851,Engrais foliaire au magnésium,semences,481.69,Kilogramme,weekly,winter
+852,Fil de fer pour clôtures,eau,565.64,Litre,monthly,spring
+853,,eau,473.94,Hectare,daily,spring
+854,Herbicide sélectif pour maïs,pesticide,651.01,Millilitre,daily,spring
+855,Pesticide à base d'extraits de plantes,pesticide,779.22,Hectare,weekly,fall
+856,Gaz naturel pour tracteurs,carburant,491.81,Millilitre,daily,spring
+857,Eau de pluie filtrée,carburant,480.14,Acre,monthly,spring
+858,Engrais à base de guano,engrais,671.86,Litre,monthly,summer
+859,Engrais à base de cendre de bois,pesticide,549.02,Mètre cube,monthly,fall
+860,Treuil pour jardinage,semences,517.18,Hectare,weekly,winter
+861,Eau de pluie pour cultures,carburant,866.53,Kilogramme,monthly,fall
+862,Engrais foliaire au magnésium,semences,304.15,Acre,daily,winter
+863,Graines de basilic,pesticide,833.17,Litre,monthly,fall
+864,Insecticide à base de abamectine,engrais,463.09,Mètre cube,weekly,spring
+865,Essence pour tondeuse à gazon,pesticide,985.57,Kilogramme,weekly,winter
+866,Semences de framboise,semences,945.87,Litre,monthly,spring
+867,Phosphate de calcium granulaire,engrais,877.51,Mètre cube,daily,winter
+868,Outils de jardinage manuels,eau,853.35,Litre,monthly,spring
+869,,engrais,443.44,Acre,daily,spring
+870,Biogaz pour chauffage,pesticide,958.26,Gramme,weekly,fall
+871,Pesticide à base de formaldéhyde,engrais,239.27,Acre,weekly,fall
+872,Semoir automatique de précision,eau,543.74,Hectare,weekly,spring
+873,Insecticide à base de abamectine,engrais,442.73,Kilogramme,weekly,winter
+874,Graines de pastèque,pesticide,818.34,Gramme,monthly,winter
+875,,pesticide,667.62,Hectare,monthly,fall
+876,Tracteur compact polyvalent,pesticide,296.31,Mètre cube,monthly,summer
+877,Insecticide à base de spinosad,pesticide,627.62,Kilogramme,monthly,winter
+878,Filet de protection anti-insectes,eau,702.88,Millilitre,weekly,summer
+879,,carburant,798.72,Acre,weekly,winter
+880,,pesticide,757.27,Gramme,monthly,summer
+881,Équipement de désherbage manuel,pesticide,211.24,Gramme,daily,spring
+882,Engrais pour fleurs annuelles,semences,761.31,Mètre cube,daily,spring
+883,Graines de kiwi,engrais,433.23,Hectare,monthly,spring
+884,Engrais bio pour plantes d'intérieur,semences,707.82,Gramme,weekly,spring
+885,Engrais pour plantes d'intérieur,engrais,712.73,Mètre cube,weekly,winter
+886,Semences de sésame,pesticide,562.22,Millilitre,monthly,winter
+887,Semences de concombre,carburant,767.79,Hectare,weekly,spring
+888,Insecticide à base de méthomyl,semences,443.16,Acre,daily,spring
+889,Engrais pour plantes d'intérieur,carburant,715.35,Hectare,weekly,spring
+890,Pesticide à base de linalol,semences,701.8,Gramme,daily,fall
+891,Substrat pour culture hydroponique,eau,575.13,Kilogramme,daily,summer
+892,Système de filtration pour irrigation,eau,746.22,Litre,weekly,fall
+893,Remorque agricole,pesticide,333.53,Hectare,daily,summer
+894,Hydrogène pour stockage d'énergie,pesticide,482.33,Litre,weekly,fall
+895,Carburant à base de biomasse,pesticide,1000.88,Acre,daily,spring
+896,Engrais enrichi en fer,semences,290.97,Litre,weekly,fall
+897,Système d'irrigation goutte à goutte,carburant,502.73,Mètre cube,weekly,fall
+898,Semences de laitue romaine,eau,440.2,Acre,daily,winter
+899,Pesticide à base de thiaméthoxame,engrais,837.81,Kilogramme,weekly,summer
+900,Herbicide sélectif pour maïs,carburant,444.55,Acre,daily,summer
+901,Solution nutritive hydroponique,engrais,521.09,Millilitre,monthly,fall
+902,Fongicide à base de fludioxonil,semences,422.07,Hectare,weekly,winter
+903,Système d'irrigation par aspersion,engrais,417.81,Litre,weekly,spring
+904,Eau purifiée pour irrigation goutte-à-goutte,eau,464.53,Hectare,weekly,spring
+905,,eau,419.04,Millilitre,monthly,summer
+906,Kit de goutte à goutte portable,semences,694.13,Acre,daily,spring
+907,Fongicide à base de cuivre,pesticide,779.89,Acre,monthly,fall
+908,Fongicide à base de benomyl,pesticide,772.02,Kilogramme,monthly,winter
+909,Graines de pastèque,semences,655.28,Millilitre,weekly,winter
+910,Semences de framboise,semences,777.1,Mètre cube,weekly,fall
+911,Engrais à base de compost de vers,semences,896.8,Acre,weekly,summer
+912,Engrais liquide pour légumes,pesticide,257.82,Litre,weekly,summer
+913,,engrais,850.94,Gramme,daily,summer
+914,Biocarburant à base de déchets,carburant,345.48,Litre,monthly,spring
+915,Fongicide à base de tébuconazole,pesticide,385.16,Acre,weekly,fall
+916,Treuil pour jardinage,eau,291.19,Litre,daily,summer
+917,Système de filtrage d'eau,carburant,637.34,Hectare,monthly,winter
+918,Engrais minéral complexe,eau,400.88,Kilogramme,monthly,winter
+919,Graines de pastèque,pesticide,873.33,Kilogramme,daily,fall
+920,Phosphate de calcium granulaire,engrais,210.32,Kilogramme,weekly,spring
+921,Engrais à base de sang séché,semences,549.51,Millilitre,weekly,winter
+922,Énergie éolienne pour ferme,carburant,398.46,Gramme,weekly,winter
+923,Hydrogène pour stockage d'énergie,engrais,627.84,Hectare,weekly,winter
+924,Engrais à base de fumier de cheval,engrais,218.19,Litre,weekly,fall
+925,Charbon pour chaudière,semences,504.02,Hectare,daily,fall
+926,Semences de radis,carburant,776.78,Acre,weekly,summer
+927,Système d’irrigation par aspersion,engrais,493.59,Litre,daily,summer
+928,Charrue à verser,carburant,376.97,Acre,monthly,winter
+929,Pesticide à base de baccillus thuringiensis,eau,925.99,Millilitre,monthly,winter
+930,Semences d'amande,pesticide,263.59,Mètre cube,daily,fall
+931,Semences de groseille,engrais,979.53,Acre,weekly,fall
+932,Compost à base de déchets verts,semences,778,Acre,monthly,spring
+933,Semences d’aubergine,semences,496.57,Mètre cube,monthly,spring
+934,Engrais azoté NPK 20-20-20,engrais,522.55,Kilogramme,daily,summer
+935,Engrais liquide à base de poisson,carburant,339.34,Millilitre,daily,spring
+936,Graines de pastèque,pesticide,365.91,Millilitre,weekly,fall
+937,Engrais enrichi en fer,semences,417.07,Kilogramme,monthly,summer
+938,Kit d'irrigation pour potager,semences,671.45,Hectare,monthly,spring
+939,Paille de blé pour paillage,semences,566.72,Acre,weekly,summer
+940,Compost à base de déchets verts,semences,265.39,Hectare,daily,fall
+941,Bois pour construction de serres,semences,513.11,Millilitre,daily,spring
+942,Fongicide à base de captane,pesticide,250.41,Millilitre,weekly,winter
+943,Paillis organique pour jardin,eau,246.63,Gramme,weekly,fall
+944,Engrais bio pour plantes d'intérieur,engrais,445.89,Mètre cube,weekly,winter
+945,Graines de fruits exotiques,pesticide,551.63,Kilogramme,daily,summer
+946,Remorque agricole,pesticide,273.95,Gramme,daily,fall
+947,Système de serre modulable,semences,242.65,Gramme,daily,fall
+948,Pulvérisateur électrique 15L,pesticide,652.01,Litre,monthly,summer
+949,Engrais azoté NPK 20-20-20,pesticide,717.98,Hectare,monthly,fall
+950,Semences de fenouil,semences,204.89,Kilogramme,daily,summer
+951,Semoir automatique de précision,pesticide,582.02,Millilitre,weekly,summer
+952,Engrais à libération lente,semences,584.76,Litre,weekly,fall
+953,Engrais à libération lente,eau,554.46,Acre,daily,spring
+954,Engrais à base de sulfate de potassium,pesticide,973.81,Hectare,weekly,spring
+955,Herbicide sélectif pour maïs,carburant,471.78,Gramme,weekly,summer
+956,Pesticide à base de baccillus thuringiensis,engrais,621.9,Gramme,monthly,winter
+957,Engrais pour pelouse et jardins,eau,745.52,Acre,weekly,winter
+958,Engrais minéral à base de soufre,semences,685.43,Kilogramme,monthly,winter
+959,Insecticide à base de pyréthrines,pesticide,683.44,Gramme,weekly,fall
+960,Semences d'amande,engrais,269.96,Acre,monthly,winter
+961,Eau de pluie filtrée,carburant,454.33,Millilitre,weekly,summer
+962,Biopesticide à base de neem,pesticide,456.95,Litre,monthly,summer
+963,Charbon pour chaudière,eau,911.91,Hectare,monthly,summer
+964,Outils de jardinage manuels,eau,933.29,Mètre cube,weekly,winter
+965,Faucheuse à barre de coupe,eau,755.26,Millilitre,daily,winter
+966,Carburant à base d'huile usagée,pesticide,417.44,Kilogramme,daily,spring
+967,Herbicide à base d'acide acétique,pesticide,519.18,Hectare,weekly,spring
+968,Graines de fruits exotiques,eau,533.04,Gramme,weekly,spring
+969,Semences de sésame,pesticide,547.42,Acre,monthly,spring
+970,Bois pour construction de serres,eau,950.74,Hectare,monthly,winter
+971,Solution nutritive hydroponique,semences,255.73,Hectare,daily,fall
+972,Engrais foliaire liquide,carburant,376.13,Hectare,weekly,spring
+973,Insecticide à base de pyréthrines,eau,978.74,Hectare,monthly,fall
+974,Engrais pour fleurs annuelles,pesticide,585.95,Acre,daily,fall
+975,Pesticide à base de thiaclopride,pesticide,697.94,Hectare,weekly,spring
+976,Eau purifiée pour irrigation goutte-à-goutte,semences,228.72,Litre,daily,spring
+977,,engrais,664.32,Millilitre,weekly,spring
+978,Engrais organique à base de compost,pesticide,294.49,Mètre cube,weekly,spring
+979,Souffleur à feuilles à batterie,semences,760.64,Hectare,daily,summer
+980,Fongicide à base de tébuconazole,pesticide,647.29,Kilogramme,weekly,summer
+981,Bois de chauffage,engrais,479.55,Mètre cube,daily,winter
+982,Système de filtration pour irrigation,pesticide,396.98,Gramme,daily,winter
+983,Bois pour construction de serres,semences,444.55,Kilogramme,monthly,summer
+984,,carburant,970.99,Mètre cube,weekly,summer
+985,Fongicide à base de fludioxonil,eau,679.15,Litre,weekly,summer
+986,,pesticide,940.32,Litre,monthly,summer
+987,Insecticide à base de spinosad,semences,441.1,Litre,monthly,summer
+988,Semences de laitue romaine,pesticide,569.74,Litre,daily,spring
+989,Kit d'irrigation pour potager,pesticide,741.05,Kilogramme,weekly,spring
+990,Bassin de stockage d'eau,pesticide,853.13,Millilitre,monthly,winter
+991,Terreau de qualité supérieure,pesticide,994.05,Acre,daily,summer
+992,Fongicide à base de tébuconazole,eau,302.02,Litre,monthly,summer
+993,Ensileuse pour récoltes fourragères,engrais,920.67,Millilitre,daily,winter
+994,Biocarburant à base de déchets,pesticide,573.95,Acre,monthly,fall
+995,Souffleur à feuilles à batterie,semences,690.87,Kilogramme,monthly,winter
+996,Épices pour agriculture bio,engrais,676.98,Millilitre,monthly,fall
+997,Herbicide sélectif pour maïs,carburant,375.24,Millilitre,daily,spring
+998,Engrais foliaire liquide,engrais,998.68,Kilogramme,daily,spring
+999,Fongicide à base de propiconazole,engrais,202.05,Kilogramme,daily,summer
+1000,Système d'irrigation goutte à goutte,engrais,951.13,Mètre cube,daily,summer
+1001,Herbicide à base de pelargonium,engrais,808.26,Gramme,daily,winter
+1002,Semences de fenouil,eau,386.81,Litre,daily,fall
+1003,Essence pour tondeuse à gazon,carburant,576.52,Litre,weekly,summer
+1004,Semences de gingembre,eau,391.33,Gramme,daily,fall
+1005,Insecticide à base de lambda-cyhalothrine,carburant,206.9,Millilitre,monthly,spring
+1006,Semences de sésame,pesticide,923.86,Hectare,daily,summer
+1007,Kit de micro-irrigation automatisée,carburant,902.72,Gramme,monthly,spring
+1008,Gravier pour drainage,engrais,707.64,Kilogramme,weekly,spring
+1009,Fongicide à base de tébuconazole,semences,801.87,Gramme,monthly,summer
+1010,Engrais liquide à base de poisson,pesticide,374.87,Hectare,daily,spring
+1011,Système de serre modulable,semences,972.06,Gramme,monthly,fall
+1012,Semences de riz basmati,carburant,509.86,Millilitre,weekly,spring
+1013,Désherbant systémique non toxique,eau,462.01,Acre,daily,spring
+1014,Eau de pluie filtrée,pesticide,381.27,Gramme,daily,spring
+1015,Insecticide à base de abamectine,pesticide,220.44,Kilogramme,daily,summer
+1016,Pesticide à base de fongus entomopathogène,pesticide,208.75,Kilogramme,weekly,summer
+1017,,carburant,702.85,Mètre cube,daily,summer
+1018,Graines de colza,engrais,261.54,Acre,monthly,winter
+1019,Graines de pois chiche,carburant,884.44,Litre,monthly,summer
+1020,Herbicide sélectif pour maïs,engrais,281.88,Gramme,monthly,winter
+1021,Sable pour drainage,semences,578.54,Gramme,daily,summer
+1022,Engrais à base de vinaigre,eau,390.91,Acre,daily,spring
+1023,Engrais organique à base de trèfle,carburant,303.47,Litre,monthly,fall
+1024,Graines de céleri,carburant,883.38,Millilitre,weekly,winter
+1025,Semences de chou-fleur,engrais,302.65,Mètre cube,weekly,fall
+1026,,carburant,375.93,Mètre cube,monthly,fall
+1027,Kit de goutte à goutte portable,engrais,842.85,Kilogramme,monthly,summer
+1028,Graines de tomate cerise,carburant,301.37,Litre,weekly,summer
+1029,Désherbant systémique non toxique,semences,549.77,Kilogramme,monthly,winter
+1030,Engrais de couverture pour sols,semences,216.69,Gramme,monthly,fall
+1031,Herbicide à base de flumioxazine,pesticide,572.57,Litre,monthly,winter
+1032,Engrais à base de cendre de bois,pesticide,447.77,Hectare,monthly,winter
+1033,Eau de pluie filtrée,pesticide,344.19,Acre,daily,winter
+1034,Pesticide à base de baccillus thuringiensis,engrais,914.68,Litre,weekly,fall
+1035,Engrais azoté NPK 20-20-20,pesticide,792.41,Mètre cube,monthly,winter
+1036,,pesticide,245.24,Litre,monthly,winter
+1037,Phosphate de calcium granulaire,engrais,604.94,Kilogramme,monthly,fall
+1038,Graines de menthe,engrais,979.93,Mètre cube,daily,summer
+1039,Engrais universel pour toutes cultures,semences,238.79,Millilitre,daily,spring
+1040,Graines de basilic,eau,239.05,Mètre cube,monthly,fall
+1041,Fongicide à base de fludioxonil,engrais,745.72,Millilitre,daily,summer
+1042,Engrais liquide pour légumes,eau,229.98,Acre,daily,summer
+1043,Solution nutritive hydroponique,pesticide,775.15,Acre,daily,winter
+1044,Graines de cerise,semences,307.52,Gramme,weekly,winter
+1045,Électricité solaire pour pompe,pesticide,813.78,Mètre cube,monthly,summer
+1046,Carburant diesel pour machines agricoles,engrais,977.36,Litre,weekly,fall
+1047,Système de serre modulable,carburant,878.2,Hectare,weekly,summer
+1048,Solution nutritive hydroponique,carburant,296.46,Acre,daily,summer
+1049,Paillis organique pour jardin,eau,722.72,Millilitre,weekly,spring
+1050,Essence pour tondeuse à gazon,carburant,477.86,Millilitre,weekly,summer
+1051,Gravier pour drainage,eau,635.49,Hectare,weekly,fall
+1052,Réservoir d'eau potable,pesticide,710.01,Hectare,daily,spring
+1053,Propane pour réchaud,pesticide,986.58,Litre,daily,winter
+1054,Engrais pour arbres fruitiers,eau,367.66,Acre,daily,spring
+1055,,engrais,839.68,Acre,daily,winter
+1056,Biopesticide à base de saponines,engrais,491.08,Kilogramme,monthly,spring
+1057,Graines de kiwi,engrais,686.13,Acre,monthly,spring
+1058,Semences de maïs hybride,eau,738.16,Mètre cube,weekly,winter
+1059,Fongicide à base de propiconazole,eau,844.89,Litre,weekly,fall
+1060,Engrais en granulés,eau,596.65,Gramme,monthly,winter
+1061,Gravier pour drainage,semences,929.93,Gramme,daily,fall
+1062,Gaz de ville pour équipements,engrais,216.8,Hectare,daily,fall
+1063,Charrue à deux socs,eau,853.98,Litre,weekly,winter
+1064,Graines de kiwi,engrais,620.13,Kilogramme,monthly,summer
+1065,Système de récolte à la main,engrais,434.17,Kilogramme,monthly,spring
+1066,Biogaz pour chauffage,engrais,460.79,Litre,daily,winter
+1067,Engrais à base de vinaigre,engrais,624.55,Litre,monthly,spring
+1068,Engrais à base de farine de sang,carburant,512.45,Millilitre,daily,winter
+1069,Pesticide à base de thiaméthoxame,pesticide,806.39,Kilogramme,weekly,winter
+1070,Système d’irrigation par aspersion,semences,388.21,Acre,monthly,spring
+1071,Herbicide à base de flumioxazine,engrais,917.18,Hectare,monthly,winter
+1072,Fil de fer pour clôtures,pesticide,325.02,Litre,daily,winter
+1073,Semoir automatique de précision,pesticide,466.22,Kilogramme,daily,spring
+1074,Bassin de stockage d'eau,pesticide,294.28,Acre,daily,winter
+1075,Souffleur à feuilles à batterie,engrais,828.93,Hectare,weekly,spring
+1076,Kit d'irrigation pour potager,semences,709.55,Hectare,monthly,spring
+1077,Système de serre modulable,engrais,317.42,Hectare,weekly,spring
+1078,Semences de courgette,pesticide,322.45,Hectare,monthly,spring
+1079,Paille de blé pour paillage,semences,890.34,Acre,daily,summer
+1080,Carburant biodiesel,pesticide,203.48,Gramme,daily,spring
+1081,Semences de courgette,eau,242.35,Kilogramme,monthly,winter
+1082,Insecticide à base de spinosad,pesticide,424.26,Hectare,daily,summer
+1083,Engrais enrichi en oligo-éléments,pesticide,255.34,Hectare,daily,spring
+1084,Semences de radis,engrais,229.93,Millilitre,weekly,spring
+1085,Engrais à base de compost de vers,pesticide,726.42,Millilitre,daily,fall
+1086,Engrais à base de farine de sang,engrais,749.37,Acre,weekly,fall
+1087,Engrais à base de cendre de bois,engrais,413.62,Millilitre,daily,summer
+1088,Engrais pour pelouse et jardins,engrais,200.75,Millilitre,daily,winter
+1089,Engrais phosphoré pour tubercules,engrais,575.38,Kilogramme,weekly,winter
+1090,,engrais,671.51,Acre,daily,fall
+1091,Écorces pour paillis,semences,806.02,Acre,weekly,spring
+1092,Eau de source pour agriculture,eau,598.42,Litre,weekly,winter
+1093,,engrais,714.35,Kilogramme,weekly,spring
+1094,Essence pour tondeuse à gazon,carburant,736.22,Hectare,monthly,winter
+1095,Insecticide biologique à base de pyréthre,eau,844.78,Kilogramme,monthly,fall
+1096,Fongicide à base de benomyl,engrais,468.77,Acre,daily,fall
+1097,Kit d'irrigation pour potager,pesticide,229.04,Hectare,weekly,spring
+1098,Semences de millet,engrais,910.59,Mètre cube,weekly,fall
+1099,Cactus comme plante d'intérieur,engrais,959.81,Gramme,weekly,summer
+1100,Bois pour construction de serres,engrais,484.3,Mètre cube,monthly,winter
+1101,Insecticide systémique pour rosier,eau,520.73,Gramme,daily,spring
+1102,Pesticide à base d'extraits de plantes,semences,435.1,Gramme,monthly,summer
+1103,Engrais naturel à base de farine d’os,pesticide,675.54,Mètre cube,daily,spring
+1104,,pesticide,481.38,Hectare,monthly,winter
+1105,Fongicide à base de propiconazole,engrais,552.92,Millilitre,weekly,summer
+1106,Pesticide à base de bicarbonate de soude,pesticide,593.91,Acre,weekly,spring
+1107,Système de compostage domestique,pesticide,642.88,Millilitre,weekly,fall
+1108,Engrais pour orchidées,carburant,782.56,Acre,daily,fall
+1109,Semences de millet,pesticide,806.37,Mètre cube,daily,winter
+1110,,semences,748.2,Millilitre,daily,summer
+1111,Insecticide naturel à base de savon,carburant,260.51,Kilogramme,weekly,summer
+1112,,pesticide,871.84,Acre,weekly,fall
+1113,Bois pour construction de serres,pesticide,578.6,Millilitre,monthly,winter
+1114,,carburant,948.09,Kilogramme,weekly,fall
+1115,Tuyaux d'irrigation en PVC,pesticide,344.64,Acre,monthly,fall
+1116,Système de compostage domestique,carburant,695.52,Hectare,daily,summer
+1117,Eau de source pour agriculture,engrais,917.3,Millilitre,monthly,spring
+1118,Système de récolte à la main,pesticide,662.11,Mètre cube,monthly,spring
+1119,Insecticide à base de abamectine,eau,856.48,Millilitre,monthly,summer
+1120,Énergie éolienne pour ferme,pesticide,441.21,Hectare,weekly,summer
+1121,Tracteur électrique,eau,243.8,Kilogramme,monthly,summer
+1122,,eau,608.67,Acre,daily,spring
+1123,Paillis organique pour jardin,pesticide,514.37,Kilogramme,monthly,fall
+1124,Engrais à base de fumier de cheval,pesticide,635.54,Kilogramme,daily,fall
+1125,Système de serre modulable,pesticide,427.97,Kilogramme,weekly,fall
+1126,Semences d’aubergine,eau,494.62,Millilitre,weekly,fall
+1127,Gazole pour engins de chantier,carburant,396.6,Gramme,daily,fall
+1128,Semences de radis,semences,477.78,Acre,monthly,spring
+1129,Débroussailleuse à essence,carburant,227.53,Kilogramme,monthly,winter
+1130,Pétrole pour tracteurs,pesticide,665.93,Litre,daily,winter
+1131,Engrais naturel à base de farine d’os,pesticide,586.31,Acre,daily,spring
+1132,,carburant,818.18,Kilogramme,monthly,spring
+1133,Engrais NPK 10-20-20,eau,724.33,Hectare,monthly,fall
+1134,Engrais granulé à libération contrôlée,pesticide,949.97,Millilitre,monthly,winter
+1135,Engrais à libération rapide,engrais,882.16,Millilitre,daily,winter
+1136,Graines de tournesol bio,semences,763.7,Kilogramme,weekly,fall
+1137,Ensileuse pour récoltes fourragères,eau,798.19,Mètre cube,weekly,summer
+1138,Engrais liquide pour légumes,engrais,875.11,Millilitre,monthly,summer
+1139,Semences de haricot vert,carburant,645.31,Mètre cube,monthly,spring
+1140,Système de filtrage d'eau,semences,788.58,Mètre cube,daily,winter
+1141,,eau,716.47,Millilitre,weekly,fall
+1142,Eau purifiée pour irrigation goutte-à-goutte,eau,257.31,Litre,daily,winter
+1143,Solution nutritive hydroponique,eau,701.21,Hectare,weekly,summer
+1144,Pesticide à base de thiaméthoxame,carburant,879.62,Kilogramme,daily,winter
+1145,Biopesticide à base de neem,engrais,793.15,Hectare,daily,fall
+1146,Semences de blé tendre,engrais,302.92,Gramme,monthly,summer
+1147,Biogaz pour chauffage,engrais,424.43,Hectare,weekly,winter
+1148,Eau de source pour agriculture,eau,713.68,Acre,daily,summer
+1149,Engrais minéral à base de soufre,eau,937.87,Mètre cube,daily,summer
+1150,Écorces pour paillis,semences,214.76,Hectare,monthly,spring
+1151,Compost à base de déchets verts,semences,584.65,Gramme,weekly,spring
+1152,Système de filtration pour irrigation,pesticide,344.79,Gramme,weekly,winter
+1153,Gaz naturel pour tracteurs,carburant,220.57,Mètre cube,weekly,spring
+1154,Désherbant systémique non toxique,engrais,806.38,Millilitre,monthly,winter
+1155,Graines de betterave sucrière,carburant,215.8,Acre,monthly,fall
+1156,Pesticide à base de formaldéhyde,carburant,658.81,Gramme,daily,spring
+1157,Semences de gingembre,semences,286.94,Millilitre,monthly,winter
+1158,Engrais phosphoré pour tubercules,semences,328.56,Mètre cube,daily,winter
+1159,Pesticide à base d'extraits de plantes,engrais,604.12,Mètre cube,monthly,summer
+1160,Charrue à verser,carburant,787.59,Litre,weekly,fall
+1161,Insecticide à base de pyréthrines,engrais,364.6,Kilogramme,weekly,spring
+1162,Terreau de qualité supérieure,engrais,296.38,Gramme,daily,winter
+1163,Engrais pour orchidées,engrais,598.96,Gramme,monthly,winter
+1164,Insecticide à base de méthomyl,semences,916.09,Kilogramme,daily,spring
+1165,Système d’irrigation en goutte à goutte,carburant,576.72,Mètre cube,daily,summer
+1166,Engrais à base de lactosérum,eau,922.09,Litre,daily,summer
+1167,Tracteur compact polyvalent,eau,504.22,Kilogramme,daily,spring
+1168,Système de filtration pour irrigation,engrais,803.73,Millilitre,monthly,fall
+1169,Système d'irrigation goutte à goutte,semences,807.08,Acre,weekly,spring
+1170,Désherbant systémique non toxique,semences,713.88,Acre,monthly,winter
+1171,,pesticide,329.72,Kilogramme,monthly,fall
+1172,,eau,858.16,Hectare,weekly,summer
+1173,Engrais à base de vinaigre,engrais,838.17,Kilogramme,monthly,fall
+1174,Outils de jardinage manuels,semences,255.44,Millilitre,monthly,winter
+1175,Engrais pour orchidées,semences,848.76,Litre,weekly,summer
+1176,Engrais enrichi en fer,semences,453.2,Millilitre,daily,fall
+1177,Graines de colza,eau,523.89,Kilogramme,daily,fall
+1178,Propane pour réchaud,semences,433.22,Litre,weekly,fall
+1179,Fongicide à base de fludioxonil,pesticide,940.72,Hectare,weekly,spring
+1180,Insecticide à base de diatomée,pesticide,828.11,Mètre cube,daily,winter
+1181,Semences d’aubergine,carburant,558.86,Mètre cube,weekly,fall
+1182,Treuil pour jardinage,carburant,810.56,Kilogramme,monthly,summer
+1183,Fongicide à base de captane,pesticide,570.12,Gramme,daily,winter
+1184,Énergie éolienne pour ferme,eau,743.29,Litre,weekly,winter
+1185,Semences de gingembre,pesticide,350.12,Kilogramme,daily,spring
+1186,Semences de gingembre,pesticide,906.64,Millilitre,monthly,winter
+1187,Filet de protection anti-insectes,engrais,424.89,Gramme,monthly,fall
+1188,Semences de melon,eau,841.07,Litre,daily,summer
+1189,Semences de thym,engrais,1000.63,Mètre cube,monthly,spring
+1190,Hydrogène pour stockage d'énergie,carburant,410.52,Mètre cube,monthly,summer
+1191,Semences de brocoli,eau,298.59,Kilogramme,monthly,spring
+1192,Engrais liquide à base de poisson,semences,261.81,Litre,daily,winter
+1193,Engrais en poudre,engrais,948.77,Acre,weekly,winter
+1194,Engrais riche en calcium,eau,352.47,Litre,weekly,summer
+1195,Système de compostage domestique,engrais,683.32,Millilitre,weekly,winter
+1196,Semences de haricot vert,carburant,753.95,Gramme,monthly,fall
+1197,Cendres de bois comme amendement,carburant,747.27,Mètre cube,daily,spring
+1198,Graines de fruits exotiques,eau,709.59,Mètre cube,monthly,spring
+1199,Fongicide à base de propiconazole,eau,705.77,Millilitre,daily,summer

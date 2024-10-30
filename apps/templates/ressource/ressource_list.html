@@ -1,0 +1,97 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Liste des Ressources{% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Liste des Ressources</h4>
+                </div>
+                <div class="card-body">
+                    <a href="{% url 'ressource_create' %}" class="btn btn-primary">Ajouter une Ressource</a>
+
+                    <!-- Formulaire de recherche -->
+                    <form method="GET" action="{% url 'ressource_search' %}" class="form-inline mt-3">
+                        <select name="attribute" class="form-control mr-2">
+                            <option value="type_ressource">Type de Ressource</option>
+                            <option value="zone">Zone d'Application</option>
+                            <option value="unite_mesure">Unité de Mesure</option>
+                        </select>
+                        <input type="text" name="q" placeholder="Rechercher..." value="{{ query }}" class="form-control mr-2">
+                        <button type="submit" class="btn btn-primary">Chercher</button>
+                    </form>
+
+                    <div class="table-responsive mt-4">
+                        <table class="table tablesorter">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th>Nom de la Ressource</th> <!-- Nouvelle colonne -->
+                                    <th>Type de Ressource</th>
+                                    <th>Quantité</th>
+                                    <th>Unité de Mesure</th>
+                                    <th>Zone d'Application</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for ressource in ressources %}
+                                <tr>
+                                    <td>{{ ressource.nom_ressource }}</td> <!-- Afficher le nom de la ressource -->
+                                    <td>{{ ressource.get_type_ressource_display }}</td>
+                                    <td>{{ ressource.quantite }}</td>
+                                    <td>{{ ressource.unite_mesure }}</td>
+                                    <td>{{ ressource.zone }}</td>
+                                    <td>
+                                        <a href="{% url 'ressource_update' ressource.id %}" class="btn btn-warning">Modifier</a>
+                                        <button class="btn btn-danger delete-btn" data-url="{% url 'ressource_delete' ressource.id %}">
+                                            Supprimer
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="6" class="text-center">Aucune ressource à afficher.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.delete-btn').on('click', function() {
+            var url = $(this).data('url');
+            if (confirm("Êtes-vous sûr de vouloir supprimer cette ressource ?")) {
+                $.ajax({
+                    url: url,
+                    method: 'POST',
+                    data: {
+                        csrfmiddlewaretoken: '{{ csrf_token }}',
+                    },
+                    success: function(response) {
+                        // Recharger la page après suppression
+                        window.location.reload();
+                    },
+                    error: function(xhr, errmsg, err) {
+                        console.log("Erreur :", errmsg);
+                    }
+                });
+            }
+        });
+    });
+</script>
+{% endblock %}
+{% endblock content %}

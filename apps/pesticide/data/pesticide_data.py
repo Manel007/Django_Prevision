@@ -6,7 +6,9 @@ class Command(BaseCommand):
     help = 'Load pesticide data from CSV file'
 
     def handle(self, *args, **kwargs):
+
         pesticide_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/pesticides.csv')
+
 
         pesticide_data.columns = pesticide_data.columns.str.strip()  
 

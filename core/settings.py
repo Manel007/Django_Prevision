@@ -39,7 +39,8 @@ FRONT_ROOT = os.getenv('FRONT_ROOT', '/static/front')
 ALLOWED_HOSTS        = ['localhost', 'localhost:85', '127.0.0.1',               env('SERVER', default='127.0.0.1') ]
 CSRF_TRUSTED_ORIGINS = ['http://localhost:85', 'http://127.0.0.1', 'https://' + env('SERVER', default='127.0.0.1') ]
 
-# Application definition
+
+ #   Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -48,20 +49,37 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'apps.home' , # Enable the inner home (home)
+ 'apps.RessourceEntity',
     'apps.authentication', 
     'apps.agriculture_project.agriculture_project',  
     'crispy_forms',
 
     'apps.front',
-    'apps.home',
+
     'apps.agriculteur',
     'apps.images',
     'apps.reconnaissancevoc',
     'apps.pesticide',
     'apps.programme',
 
+
     'rest_framework',  
+
+
+  
+     # !:ujshq;,  
+     # Ensure this is the correct app name and path
+
+
+    'apps.Culture',
+    'apps.Technique',
+    'apps.RecommendationTech',
+    'apps.zonegéosamarapp',
+    
+    'django_extensions'
+     # Enable the inner home (home)
+   
 ]
 
 

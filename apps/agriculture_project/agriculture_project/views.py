@@ -2,14 +2,15 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import CropYield
 from .forms import YieldForm
 import pandas as pd 
+from django.http import HttpResponse
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from django.core.paginator import Paginator
 from django.shortcuts import render
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from keras.models import Sequential
-from keras.layers import Dense
+from keras.models import Sequential # type: ignore
+from keras.layers import Dense # type: ignore
 from django.shortcuts import render
 from .forms import YieldPredictionForm
 import seaborn as sns
@@ -93,8 +94,13 @@ def yield_delete(request, pk):
 #Regr Linéaire 
 def yield_prediction_view(request):
    
+  
+    # Load and preprocess the data
+
     # Load and preprocess data
-    yield_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/yield_df.csv')
+         #yield_data = pd.read_csv('C:/Users/oumai/Desktop/Django_Prevision/yield_df.csv')
+
+    yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
     yield_data.dropna(inplace=True)
     
     # Prepare data for model training
@@ -134,7 +140,9 @@ def yield_prediction_view(request):
 
 def yield_classification_view(request):
     # Load the data
-    yield_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/yield_df.csv')
+
+    yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
 
     # Define the threshold
     threshold = 500
@@ -183,7 +191,9 @@ def yield_prediction_view(request):
             avg_temp = form.cleaned_data['avg_temp']
 
             # Charger les données pour entraîner le modèle
-            yield_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/yield_df.csv')
+
+            yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
             yield_data.dropna(inplace=True)
 
             # Préparation des données
@@ -223,46 +233,19 @@ def review_list(request, yield_id):
     crop_yield = get_object_or_404(CropYield, pk=yield_id)
     reviews = crop_yield.reviews.all()
     return render(request, 'front/review_list.html', {'crop_yield': crop_yield, 'reviews': reviews})
-
-# Create Review
-from django.shortcuts import get_object_or_404, redirect, render
-from .models import CropYield, Review
-from .forms import ReviewForm
-
 def create_review(request, yield_id):
     crop_yield = get_object_or_404(CropYield, pk=yield_id)
 
-    print("Request Method:", request.method)  # Debugging
     if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
-            print("Form is valid")  # Debugging
-            review = form.save(commit=False)
-            review.crop_yield = crop_yield
-            review.save()
-            return redirect('review_list', yield_id=crop_yield.id)
-        else:
-            print("Form Errors:", form.errors)  # Debugging
-    else:
-        form = ReviewForm()
-
-    return render(request, 'front/review_form.html', {'form': form, 'crop_yield': crop_yield})
-    # Get the CropYield object or return a 404 if it doesn't exist
-    crop_yield = get_object_or_404(CropYield, pk=yield_id)
-    
-    if request.method == "POST":
-        # Bind the form with POST data
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            # Create a Review instance but don't save to the database yet
-            review = form.save(commit=False)
-            review.crop_yield = crop_yield
-            review.save()  # Now save to the database
+            review = form.save(commit=False)  # Create a Review instance but don't save it yet
+            review.crop_yield = crop_yield  # Associate it with the CropYield
+            review.save()  # Save to the database
             return redirect('review_list', yield_id=crop_yield.id)
     else:
         form = ReviewForm()  # Provide an empty form if the request is GET
-    
-    # Render the form template with the form and crop_yield context
+
     return render(request, 'front/review_form.html', {'form': form, 'crop_yield': crop_yield})
 
 def review_update(request, pk):
@@ -270,13 +253,12 @@ def review_update(request, pk):
     crop_yield = review.crop_yield  # Get associated crop yield
 
     if request.method == "POST":
-        form = ReviewForm(request.POST, instance=review)
+        form = ReviewForm(request.POST, instance=review)  # Bind the form to the existing review
         if form.is_valid():
-            form.save()
-            # Redirect to review list for the associated crop yield
+            form.save()  # Update the existing review in the database
             return redirect('review_list', yield_id=crop_yield.id)
     else:
-        form = ReviewForm(instance=review)
+        form = ReviewForm(instance=review)  # Populate the form with the existing review data
 
     return render(request, 'front/review_form.html', {'form': form, 'crop_yield': crop_yield})
 
@@ -319,7 +301,9 @@ def yield_summary(request):
 
 def yield_classification_view(request):
     # Load the data
-    yield_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/yield_df.csv')
+
+    yield_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
 
     # Define thresholds and create a class column
     high_threshold = 60000
@@ -378,7 +362,9 @@ from sklearn.metrics import classification_report
 def crop_classification_view(request):
     # Load the crop data
     try:
-        crop_data = pd.read_csv('C:/Users/ASUS/Desktop/django/Django_Prevision/yield_df.csv')
+
+        crop_data = pd.read_csv('C:/Users/sana/Django_Prevision/yield_df.csv')
+
 
         # Check the columns to ensure they're correct
         print(crop_data.columns)  # Debugging line to print column names
