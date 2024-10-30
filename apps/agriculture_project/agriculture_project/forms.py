@@ -38,7 +38,6 @@ class YieldForm(forms.ModelForm):
         if avg_temp < 0:
             raise forms.ValidationError('Temperature cannot be negative.')
         return avg_temp
-  # Corrected field name
 class YieldPredictionForm(forms.Form):
     year = forms.IntegerField(label='Année', min_value=2000, max_value=2100)
     average_rain_fall = forms.FloatField(label='Précipitations moyennes (mm/an)')
@@ -93,14 +92,13 @@ class ReviewForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # Add Bootstrap class and required attribute to each field
         for field in self.fields.values():
             field.widget.attrs.update({
-                'class': 'form-control',  # Add Bootstrap class
-                'placeholder': field.label,  # Set placeholder
+                'class': 'form-control',  
+                'placeholder': field.label,  
             })
-            field.required = True  # Makes all fields required
-            field.widget.attrs['required'] = 'required'  # Adds HTML5 required attribute for client-side validation    class Meta:
+            field.required = True  
+            field.widget.attrs['required'] = 'required' 
         model = Review
         fields = ['rating', 'comment', 'title', 'status']
         widgets = {
@@ -141,7 +139,6 @@ class ReviewForm(forms.ModelForm):
         if comment and len(comment) < 10:
             raise forms.ValidationError('Your comment must be at least 10 characters long.')
     
-    ##
         return comment
 
     class Meta:
@@ -150,12 +147,11 @@ class ReviewForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # Add Bootstrap class to each field
         for field in self.fields.values():
             field.widget.attrs.update({
-                'class': 'form-control',  # Add Bootstrap class
-                'placeholder': field.label,  # Set placeholder
+                'class': 'form-control',  
+                'placeholder': field.label,  
               
             })
-            field.required = True  # Makes all fields required in Django
+            field.required = True 
             field.widget.attrs.setdefault('required', 'required')

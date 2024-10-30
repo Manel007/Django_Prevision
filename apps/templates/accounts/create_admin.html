@@ -1,0 +1,41 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Create Admin Account {% endblock %} 
+
+{% block content %}
+    <div class="content">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-6 mt-5 offset-md-3 pt-5 mt-5">
+                    <div class="card">
+                        <div class="card-header text-center py-4">
+                            <h4 class="title">Create Admin Account</h4>
+                            <h6 class="card-category">
+                                {% if msg %}
+                                    <span class="text-danger">{{ msg | safe }}</span>
+                                {% else %}
+                                    <span>Add the credentials for the new admin account</span>
+                                {% endif %}  
+                            </h6>
+                        </div>
+
+                        <form role="form" method="post" action="">
+                            {% csrf_token %}
+                            <div class="card-body px-5 py-3">
+                                {{ form.as_p }} <!-- Afficher le formulaire ici -->
+                            </div>
+                            
+                            <div class="card-footer text-center">
+                                <button type="submit" name="create_admin" class="btn btn-fill btn-primary">Create Admin</button>
+                                <br /><br />
+                                <p>
+                                    Back to <a href="{% url 'home' %}" class="text-primary">Home</a>                            
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

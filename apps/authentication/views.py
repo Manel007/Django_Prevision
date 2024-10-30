@@ -1,4 +1,3 @@
-# apps/authentication/views.py
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
@@ -46,7 +45,6 @@ def register_user(request):
             msg = 'User created successfully.'
             success = True
 
-            # Uncomment the following line if you want to redirect to the login page after registration
             # return redirect("/login/")
         else:
             msg = 'Form is not valid'

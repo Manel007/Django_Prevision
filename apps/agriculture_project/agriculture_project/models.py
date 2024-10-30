@@ -15,7 +15,7 @@ class CropYield(models.Model):
 
 class Review(models.Model):
     crop_yield = models.ForeignKey(CropYield, on_delete=models.CASCADE, related_name='reviews')
-    rating = models.IntegerField()  # For example, from 1 to 5
+    rating = models.IntegerField()  
     comment = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=255, blank=True, null=True)

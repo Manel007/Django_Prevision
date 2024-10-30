@@ -5,14 +5,12 @@ from .views import yield_classification_view  # Importez la vue
 from .views import create_review
 from .views import review_list  # Import the view
 from .views import yield_summary  # Import the view
-from .views import crop_classification_view
 
 
 urlpatterns = [
     path('list/', views.yield_list, name='yield_list'),  # URL with no arguments
     path('summary/', views.yield_summary, name='yield_summary'),  # Summary page
     path('review/create/<int:yield_id>/', views.create_review, name='create_review'),
-    path('previous/', views.crop_classification_view, name='crop_classification_view'),
 
     path('yield/<int:pk>/', views.yield_detail, name='yield_detail'),
     path('yield/new/', views.yield_create, name='yield_create'),

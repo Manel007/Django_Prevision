@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{{ FRONT_ROOT }}/img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ FRONT_ROOT }}/img/apple-touch-icon-114x114.png">
     
-    <!-- Bootstrap and FontAwesome -->
     <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/style.css">
@@ -30,10 +29,10 @@
     {% block stylesheets %}
     <style>
         .custom-form {
-    margin-bottom: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px; 
 }
 .custom-margin {
-        margin-bottom: 50px; /* Adjust the value as needed */
+        margin-bottom: 50px; 
     }
 
         .title-large {
@@ -44,76 +43,74 @@
 
         .custom-button {
     display: inline-flex;
-    align-items: center; /* Center icon and text vertically */
+    align-items: center; 
     padding: 10px 15px;
-    background-color: #28a745; /* Green background */
+    background-color: #28a745; 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-right: 10px; /* Space between buttons */
+    margin-right: 10px; 
 }
 
 .custom-button:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #218838; 
 }
 
 .icon {
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 5px;
 }
 
 
         .card {
             margin-top: 20px;
-            border: 1px solid #ddd; /* Light border */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
         }
 
         .list-group-item {
             display: flex;
-            justify-content: space-between; /* Space out content */
-            align-items: center; /* Center content vertically */
+            justify-content: space-between; 
+            align-items: center; 
         }
 
         .float-end {
             display: flex;
-            gap: 10px; /* Space between icons and buttons */
+            gap: 10px; 
         }
 
         .icon {
             font-size: 20px;
-            color: #0b1050; /* Icon color */
+            color: #0b1050;
         }
 
         .icon:hover {
-            color: #28a745; /* Change color on hover */
+            color: #28a745;
         }
 
-        /* Add green button styles for forms */
         .form-control {
-            border: 1px solid #28a745; /* Green border for input fields */
+            border: 1px solid #28a745; 
         }
 
         .form-control:focus {
-            border-color: #218838; /* Darker green when focused */
-            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Green shadow on focus */
+            border-color: #218838; 
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); 
         }
 
-        /* Green button for submit */
         .btn-submit {
-            background-color: #28a745; /* Green */
-            color: white; /* White text */
-            border: none; /* No border */
-            border-radius: 5px; /* Rounded corners */
-            padding: 10px 20px; /* Padding */
-            cursor: pointer; /* Pointer cursor */
-            transition: background-color 0.3s ease; /* Transition for hover effect */
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
         }
 
         .btn-submit:hover {
-            background-color: #218838; /* Darker green on hover */
+            background-color: #218838; 
         }
     </style>
     {% endblock stylesheets %}

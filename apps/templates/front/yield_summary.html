@@ -1,6 +1,5 @@
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
   <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
         <span class="sr-only">Toggle navigation</span> 
@@ -11,7 +10,6 @@
       <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a> 
     </div>
     
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about" class="page-scroll">About</a></li>
@@ -21,7 +19,6 @@
         <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
       </ul>
     </div>
-    <!-- /.navbar-collapse --> 
   </div>
 </nav>
 
@@ -42,15 +39,15 @@
 
 {% block stylesheets %}
 <style>
-  /* New CSS Styles */
+ 
   .yield-list-content {
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #f9f9f9; 
     padding: 20px;
     border-radius: 8px;
 }
 
 .yield-list-card {
-    background-color: #ffffff; /* White card background */
+    background-color: #ffffff; 
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -66,7 +63,7 @@
 }
 
 .button-predict-yield {
-    background-color: #247924; /* Secondary color */
+    background-color: #247924;
     color: #000;
     padding: 8px 12px;
     border: none;
@@ -76,7 +73,7 @@
 }
 
 .button-predict-yield:hover {
-    background-color: #449d44; /* Darker on hover */
+    background-color: #449d44; 
 }
 
 .search-container {
@@ -86,7 +83,7 @@
 .search-input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #449d44; /* Border color */
+    border: 1px solid #449d44;
     border-radius: 4px;
 }
 
@@ -97,7 +94,7 @@
 }
 
 .table-header {
-    background-color: #f1f1f1; /* Header background */
+    background-color: #f1f1f1;
 }
 
 .yield-table th, .yield-table td {
@@ -107,7 +104,7 @@
 }
 
 .yield-table tr:hover {
-    background-color: #f2f2f2; /* Row hover effect */
+    background-color: #f2f2f2;
 }
 
 .pagination-container {
@@ -118,7 +115,7 @@
 }
 
 .pagination-button {
-    background-color: #247924; /* Primary color */
+    background-color: #247924;
     color: #ffffff;
     padding: 10px;
     border: none;
@@ -129,7 +126,7 @@
 }
 
 .pagination-button:hover {
-    background-color: #449d44; /* Darker on hover */
+    background-color: #449d44; 
 }
 
 .current-page {
@@ -139,17 +136,14 @@
 </style>
 {% endblock stylesheets %}
 
-<!-- Favicons ================================================== -->
 <link rel="shortcut icon" href="{{ FRONT_ROOT }}/img/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="{{ FRONT_ROOT }}/img/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="{{ FRONT_ROOT }}/img/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="{{ FRONT_ROOT }}/img/apple-touch-icon-114x114.png">
 
-<!-- Bootstrap -->
 <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/fonts/font-awesome/css/font-awesome.css">
 
-<!-- Stylesheet ================================================== -->
 <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/style.css">
 <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/nivo-lightbox.css">
 <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/default.css">
@@ -251,14 +245,14 @@
         tr = table.getElementsByTagName("tr");
 
         for (i = 1; i < tr.length; i++) {
-            tr[i].style.display = "none"; // Hide all rows initially
+            tr[i].style.display = "none"; 
             td = tr[i].getElementsByTagName("td");
             for (var j = 0; j < td.length; j++) {
                 if (td[j]) {
                     txtValue = td[j].textContent || td[j].innerText;
                     if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                        tr[i].style.display = ""; // Show row if it matches
-                        break; // Stop checking after first match
+                        tr[i].style.display = ""; 
+                        break; 
                     }
                 }
             }
