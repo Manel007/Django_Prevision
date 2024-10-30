@@ -42,21 +42,22 @@ urlpatterns = [
 path('zones/', viewszone.ZoneList, name='zone_list'), 
 path('zones/create', viewszone.ZoneCreate, name='zone_form'),  
 path('zones/update/<int:pk>/', viewszone.ZoneUpdate, name='zone_update'),
+path('zones/update/<int:pk>/', viewszone.ZoneUpdate, name='zone_update'), 
 path('zones/delete/<int:pk>/', viewszone.ZoneDelete, name='zone_delete'),
 
 path('typesol/', viewszone.TypeSolList ,name='typesol_list'),
 path('typesol/create/', viewszone.TypeSolCreate, name='typesol_form'),
 path('typesol/update/<int:pk>/', viewszone.TypeSolUpdate, name='type_sol_update'),
 path('typesol/delete/<int:pk>/', viewszone.TypeSolDelete, name='type_sol_delete'),
-
-
-
-
 path('dataset-anomalies/', viewszone.dataset_anomalies_view, name='dataset_anomalies'),
 
 path('predict-soil/', viewszone.predict_soil, name='predict_soil'),
 path('soil-prediction-form/', viewszone.soil_prediction_form, name='soil_prediction_form'),
-    
+  
+
+#front paths
+path('display-zones/', viewszone.ZoneDisplayFront, name='display_zones'),
+path('display-typesol/', viewszone.TypesolDisplayFront, name='display_typesol'),   
    
  
 

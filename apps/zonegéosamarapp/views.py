@@ -12,6 +12,36 @@ from django.http import JsonResponse
 
 from .anomaly_detection import detect_anomalies
 
+def TypesolDisplayFront(request):
+    query = request.GET.get('search', '')
+    types_sol = TypeDeSol.objects.filter(nomTypeSol__icontains=query)
+    paginator = Paginator(types_sol, 6)  
+
+    page_number = request.GET.get('page')
+    types_sol = paginator.get_page(page_number)
+
+    context = {
+        'types_sol': types_sol,
+        'search_query': query,  
+    }
+    return render(request, 'front/zones+typesol/display-typesol.html', context)
+
+def ZoneDisplayFront(request):
+    zones = ZoneGeographique.objects.all()
+
+    query = request.GET.get('search', '')
+    zones = ZoneGeographique.objects.filter(nomZone__icontains=query)  
+    paginator = Paginator(zones, 6) 
+    page_number = request.GET.get('page')
+    zones = paginator.get_page(page_number)
+
+    context = {
+        'zones': zones,
+        'search_query': query,
+    }
+
+    return render(request, 'front/zones+typesol/display-zones.html', context)
+
 def ZoneList(request):
     zones = ZoneGeographique.objects.all()
 
@@ -103,17 +133,26 @@ def TypeSolDelete(request, pk):
         return redirect('typesol_list')  
     return render(request, 'typesol/type_sol_confirm_delete.html', {'type_sol': type_sol})  
 
+from django.http import JsonResponse
+from django.shortcuts import render
 
-#partie AI
+from django.http import JsonResponse
+from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+
+# Partie AI
+@csrf_exempt
 def dataset_anomalies_view(request):
-    anomalies_data = detect_anomalies()  # Assuming this returns the anomalies and their count
-    anomalies = anomalies_data['anomalies']  # List of anomalies
-    anomaly_count = anomalies_data['count']  # Count of anomalies
+    if request.method == 'POST':
+   
+        anomalies_data = detect_anomalies() 
+        return JsonResponse({
+            'anomalies': anomalies_data['anomalies'],
+            'count': anomalies_data['count']
+        })
 
-    return render(request, 'typesol/dataset_anomalies.html', {
-        'anomalies': anomalies,
-        'count': anomaly_count,
-    })
+    return render(request, 'typesol/dataset_anomalies.html')
+
 
     
 
@@ -122,23 +161,22 @@ predict_soil_type = predict_soil_module.predict_soil_type
 def predict_soil(request):
     if request.method == 'POST':
         try:
-            # Get parameters from request
+            
             pH_level = float(request.POST.get('pH_level'))
             organic_matter = float(request.POST.get('organic_matter'))
             nitrogen_content = float(request.POST.get('nitrogen_content'))
             phosphorus_content = float(request.POST.get('phosphorus_content'))
             potassium_content = float(request.POST.get('potassium_content'))
 
-            # Predict soil type
+           
             soil_type = predict_soil_type(pH_level, organic_matter, nitrogen_content, phosphorus_content, potassium_content)
 
-            # Return the prediction as a JSON response
+            
             return JsonResponse({'predicted_soil_type': soil_type})
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=400)
 
-    # Render the form if GET request
-    return render(request, 'typesol/predict_soil.html')
+    return render(request, 'front/zones+typesol/predict-soil.html')
 
 def soil_prediction_form(request):
-    return render(request, 'typesol/predict_soil.html')   
+    return render(request, 'front/zones+typesol/predict-soil.html')   

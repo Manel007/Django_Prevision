@@ -12,15 +12,15 @@
                 <div class="card-body">
                     <div class="table-responsive">
                         <div class="row mb-3 align-items-center">
-                            <!-- Button to Trigger Anomaly Detection -->
+                          
                             <div class="col-md-2">
-                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detectAnomaliesModal">
+                                <button type="button" class="btn btn-succes btn-sm" data-toggle="modal" data-target="#detectAnomaliesModal">
                                     Detect Anomalies
                                 </button>
                             </div>
                         </div>
 
-                        <!-- Loading Modal -->
+                       
                         <div class="modal fade" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content text-center">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
 
-                        <!-- Confirmation Modal -->
+                      
                         <div class="modal fade" id="detectAnomaliesModal" tabindex="-1" aria-labelledby="detectAnomaliesModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -45,56 +45,31 @@
                                         Are you sure you want to detect anomalies in the dataset?
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                        <form id="detectForm" action="{% url 'dataset_anomalies' %}" method="post" style="display:inline;">
-                                            {% csrf_token %}
-                                            <button type="button" class="btn btn-primary" id="confirmDetect">Yes, Detect</button>
-                                        </form>
+                                        <button type="button" class="btn btn-succes" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-danger" id="confirmDetect">Yes, Detect</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {% if anomalies is not None %}
-    <div class="alert alert-info" role="alert">
-        {% if anomalies.count > 0 %}
-            <strong>{{ anomalies.count }} anomalies detected!</strong>
-        {% else %}
-            <strong>No anomalies detected.</strong>
-        {% endif %}
-    </div>
-
-    <table class="table tablesorter">
-        <thead class="text-primary">
-            <tr>
-                <th>Anomaly</th>
-                <th>Texture</th>
-                <th>Depth</th>
-                <th>pH</th>
-                <th>Water Retention Capacity</th>
-                <th>Available Nutrients</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% if anomalies %}
-                {% for anomaly in anomalies %}
-                    <tr>
-                        <td>{{ anomaly.name }}</td>
-                        <td>{{ anomaly.texture }}</td>
-                        <td>{{ anomaly.profondeur }}</td>
-                        <td>{{ anomaly.pH }}</td>
-                        <td>{{ anomaly.capacite_retenue_eau }}</td>
-                        <td>{{ anomaly.nutriments_disponibles }}</td>
-                    </tr>
-                {% endfor %}
-            {% else %}
-                <tr>
-                    <td colspan="6" class="text-center">No anomalies detected.</td>
-                </tr>
-            {% endif %}
-        </tbody>
-    </table>
-{% endif %}
+                        <div id="anomaliesResult" style="display: none;">
+                            <div class="alert alert-info" role="alert" id="anomaliesAlert"></div>
+                            <table class="table tablesorter">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th>Anomaly</th>
+                                        <th>Texture</th>
+                                        <th>Depth</th>
+                                        <th>pH</th>
+                                        <th>Water Retention Capacity</th>
+                                        <th>Available Nutrients</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="anomaliesTableBody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
 
                     </div>
                 </div>
@@ -105,16 +80,50 @@
 
 <script>
     document.getElementById('confirmDetect').addEventListener('click', function() {
-        // Hide the confirmation modal
         $('#detectAnomaliesModal').modal('hide');
-
-        // Show loading modal
+        
         $('#loadingModal').modal('show');
 
-        // Wait for 3 seconds, then submit the form
-        setTimeout(function() {
-            document.getElementById('detectForm').submit();
-        }, 3000); // Adjust the time (3000 ms = 3 seconds) as needed
+        fetch("{% url 'dataset_anomalies' %}", {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}',
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Hide loading modal
+            $('#loadingModal').modal('hide');
+
+            // Display results in the anomalies section
+            let anomaliesResult = document.getElementById('anomaliesResult');
+            let anomaliesAlert = document.getElementById('anomaliesAlert');
+            let anomaliesTableBody = document.getElementById('anomaliesTableBody');
+
+            anomaliesAlert.innerText = data.count > 0 
+                ? `${data.count} anomalies detected!` 
+                : 'No anomalies detected.';
+            
+            anomaliesTableBody.innerHTML = '';
+            data.anomalies.forEach(anomaly => {
+                let row = `<tr>
+                    <td>${anomaly.name}</td>
+                    <td>${anomaly.texture}</td>
+                    <td>${anomaly.profondeur}</td>
+                    <td>${anomaly.pH}</td>
+                    <td>${anomaly.capacite_retenue_eau}</td>
+                    <td>${anomaly.nutriments_disponibles}</td>
+                </tr>`;
+                anomaliesTableBody.innerHTML += row;
+            });
+
+            // Show the anomalies result section
+            anomaliesResult.style.display = 'block';
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     });
 </script>
 {% endblock content %}
