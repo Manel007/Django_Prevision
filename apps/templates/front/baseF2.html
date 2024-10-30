@@ -27,34 +27,26 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
  
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-        <div class="container"> 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Agricole</a> </div>
-          
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about" class="page-scroll">About</a></li>
-              <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
-              <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
-              <li><a href="#team" class="page-scroll">Chefs</a></li>
-              <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container"> 
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a> </div>
+      
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+          <li><a href="{% url 'front_prog' %}" class="page-scroll">Pesticide Management</a></li>
+          <li><a href="#team" class="page-scroll">Review</a></li>
 
+          <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <div id="portfolio">
-        <div class="section-title text-center center">
-          <div class="overlay">
-            <h2>Programmes</h2>
-            <hr>
-            <p>Découvrez le programme des pesticides, conçu pour soutenir l’agriculture durable et optimiser vos cultures.</p>
-          </div>
-        </div>
-
+      
 
     {% block content %}{% endblock content %}
 </div>

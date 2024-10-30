@@ -1,6 +1,29 @@
 {% extends "layouts/base.html" %}
 
-{% block title %}Créer un Programme{% endblock %}
+{% block title %}Create a Program{% endblock %}
+
+{% block stylesheets %}
+<style>
+
+.classnew {
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px;
+        font-size: 16px; 
+        transition: background-color 0.3s, transform 0.3s, color 0.3s; 
+        cursor: pointer; 
+    }
+
+    .classnew:hover {
+        background-color: #45a049; 
+        color: black; 
+        transform: scale(1.05); 
+    }
+
+</style>
+{% endblock stylesheets %}
 
 {% block content %}
 <div class="content">
@@ -8,7 +31,7 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="title">Créer un Programme</h5>
+                    <h5 class="title">Create a Program</h5>
                 </div>
                 <div class="card-body">
                     <form method="POST">
@@ -16,7 +39,7 @@
                         <div class="row">
                             <div class="col-md-5 pr-md-1">
                                 <div class="form-group">
-                                    <label>Nom</label>
+                                    <label>Name</label>
                                     <input type="text" name="nom" class="form-control" placeholder="Nom" required>
                                 </div>
                             </div>
@@ -44,9 +67,9 @@
                         <div class="row">
                             <div class="col-md-5 pr-md-1">
                                 <div class="form-group">
-                                    <label>Fréquence d'Application</label>
+                                    <label>Application Frequency</label>
                                     <select name="frequence_application" class="form-control" required>
-                                        <option value="" disabled selected>Choisissez une fréquence</option>
+                                        <option value="" disabled selected>Choose a frequency</option>
                                         <option value="hebdomadaire">Hebdomadaire</option>
                                         <option value="mensuel">Mensuel</option>
                                         <option value="annuel">Annuel</option>
@@ -55,7 +78,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-fill btn-primary">Ajouter</button>
+                        <button type="submit" class="classnew">Done</button>
                     </form>
                 </div>
             </div>

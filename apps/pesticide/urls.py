@@ -12,6 +12,10 @@ urlpatterns = [
     path('store_selected_pesticides/', views.store_selected_pesticides, name='store_selected_pesticides'),
 
 
+    path('homepesticide/all/', views.all_pesticideFront, {'predict_allF': True},name='all_pesticideFront'),
+    
+
+
 ]
 
 

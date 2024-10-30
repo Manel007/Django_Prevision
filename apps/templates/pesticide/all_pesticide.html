@@ -3,7 +3,81 @@
 {% block title %} Tables {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+    /* Custom styles for buttons */
+    .classnew {
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px; 
+        font-size: 16px; 
+        transition: background-color 0.3s, transform 0.3s, color 0.3s; 
+        cursor: pointer; 
+    }
+
+    .classnew:hover {
+        background-color: #45a049; 
+        color: black; 
+        transform: scale(1.05); 
+    }
+
+    .customOutline {
+        background-color: transparent; 
+        color: black; 
+        border: 2px solid black; 
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        font-size: 16px; 
+        transition: background-color 0.3s, transform 0.3s; 
+        cursor: pointer; 
+    }
+
+    .customOutline:hover {
+        background-color: rgba(0, 0, 0, 0.1); 
+        transform: scale(1.05); 
+        color: rgb(2, 14, 0);
+    }
+
+    .btn-custom-pagination {
+        background-color: transparent;
+        color: black; 
+        border: 2px solid black; 
+        padding: 10px 15px; 
+        border-radius: 5px; 
+        font-size: 14px; 
+        transition: background-color 0.3s, transform 0.3s; 
+        cursor: pointer; 
+    }
+
+    .btn-custom-pagination:hover {
+        background-color: rgba(0, 0, 0, 0.1); 
+        transform: scale(1.05); 
+    }
+
+    .btn-custom-green {
+        background-color: #28a745; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px; 
+        font-size: 16px; 
+        transition: background-color 0.3s, transform 0.3s; 
+        cursor: pointer; 
+    }
+
+    .btn-custom-green:hover {
+        background-color: #218838; 
+        transform: scale(1.05); 
+    }
+
+    .margin-left {
+        margin-left: 20px; 
+    }
+</style>
+{% endblock stylesheets %}
+
 
 {% block content %}
 
@@ -14,26 +88,25 @@
                 <div class="row">
                     <div class="col-md-7 pr-md-1">
                         <div class="form-group">
-                            <input type="text" class="form-control me-5" name="search" placeholder="Rechercher..." value="{{ search_query|default:'' }}">
+                            <input type="text" class="form-control me-5" name="search" placeholder="Search..." value="{{ search_query|default:'' }}">
                         </div>
                     </div>
                     <div class="col-md-5 px-md-1">
                         <div class="form-group">
-                            <button class="btn btn-outline-secondary" type="submit">Rechercher</button>
+                            <button class="btn btn-custom-outline" type="submit">Search</button>
                         </div>
                     </div>
                 </div>
             </form>
-
             <div class="text-right mb-3">
-                <a href="{% url 'pesticide_create' %}" class="btn btn-primary">
-                    Ajouter un pesticide
+                <a href="{% url 'pesticide_create' %}" class="classnew">
+                    Add a Pesticide
                 </a>
-                <a href="{% url 'predict_all_pesticides' %}" class="btn btn-warning">
-                    Voir toutes les prédictions
-                </a>
+                <a href="{% url 'predict_all_pesticides' %}" class="customOutline margin-left">
+                    See all predictions
+                                </a>
             </div>
-
+            
             <div class="card">
                 {% if messages %}
                 <div class="alert alert-success">
@@ -44,7 +117,7 @@
                 {% endif %}
                 
                 <div class="card-header">
-                    <h4 class="card-title"> TABLE DES PESTICIDES </h4>
+                    <h4 class="card-title"> TABLE OF PESTICIDES </h4>
                 </div>
                 
                 <div class="card-body">
@@ -55,7 +128,7 @@
                             <table class="table tablesorter">
                                 <thead class="text-primary">
                                     <tr>
-                                        <th>Sélectionner</th>
+                                        <th>Select</th>
                                         <th>Domain</th>
                                         <th>Area</th>
                                         <th>Element</th>
@@ -63,6 +136,8 @@
                                         <th>Year</th>
                                         <th>Unit</th>
                                         <th>Actions</th>
+                                        <th>Prediction</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -79,7 +154,7 @@
                                         <td>{{ pesticide.unit }}</td>
                                         <td>
                                             <a href="{% url 'edit_pesticide' pesticide.id %}" class="btn btn-info btn-sm" title="Modifier">
-                                                <i class="tim-icons icon-refresh-02"></i>
+                                                <i class="tim-icons icon-pencil"></i>
                                             </a>
                                             <form action="{% url 'delete_pesticide' pesticide.id %}" method="POST" style="display:inline;">
                                                 {% csrf_token %}
@@ -87,8 +162,10 @@
                                                     <i class="tim-icons icon-simple-remove"></i>
                                                 </button>
                                             </form>
-                                            <a href="{% url 'pesticide_prediction_view' pesticide.id %}" class="btn btn-warning btn-sm" title="Prédire">
-                                                Prédire
+                                        </td>
+                                            <td>
+                                            <a href="{% url 'pesticide_prediction_view' pesticide.id %}" class="classnew " title="Prédire">
+                                                Predict
                                             </a>
                                         </td>
                                     </tr>
@@ -99,10 +176,10 @@
                             <div class="pagination">
                                 <span class="step-links">
                                     {% if page_obj.has_previous %}
-                                    <a href="?page=1&search={{ search_query }}" class="btn btn-secondary">
+                                    <a href="?page=1&search={{ search_query }}" class="btn btn-custom-pagination">
                                         <i class="tim-icons icon-minimal-left"></i><i class="tim-icons icon-minimal-left"></i>
                                     </a>
-                                    <a href="?page={{ page_obj.previous_page_number }}&search={{ search_query }}" class="btn btn-secondary">
+                                    <a href="?page={{ page_obj.previous_page_number }}&search={{ search_query }}" class="btn btn-custom-pagination">
                                         <i class="tim-icons icon-minimal-left"></i>
                                     </a>
                                     {% endif %}
@@ -112,10 +189,10 @@
                                     </span>
                                     
                                     {% if page_obj.has_next %}
-                                    <a href="?page={{ page_obj.next_page_number }}&search={{ search_query }}" class="btn btn-secondary">
+                                    <a href="?page={{ page_obj.next_page_number }}&search={{ search_query }}" class="btn btn-custom-pagination">
                                         <i class="tim-icons icon-minimal-right"></i>
                                     </a>
-                                    <a href="?page={{ page_obj.paginator.num_pages }}&search={{ search_query }}" class="btn btn-secondary">
+                                    <a href="?page={{ page_obj.paginator.num_pages }}&search={{ search_query }}" class="btn btn-custom-pagination">
                                         <i class="tim-icons icon-minimal-right"></i><i class="tim-icons icon-minimal-right"></i>
                                     </a>
                                     {% endif %}
@@ -123,10 +200,10 @@
                             </div>                        
 
                             {% else %}
-                            <p>Aucun pesticide trouvé</p>
+                            <p>No pesticides found</p>
                             {% endif %}
                         </div>
-                        <button type="submit" class="btn btn-primary" id="store-button" disabled>Ajouter au dataset</button>
+                        <button type="submit" class="btn btn-custom-green" id="store-button" disabled>Add to dataset</button>
                     </form>
                 </div>
             </div>
@@ -138,7 +215,7 @@
     function toggleButton() {
         const checkboxes = document.querySelectorAll('input[name="selected_pesticides"]:checked');
         const storeButton = document.getElementById('store-button');
-        storeButton.disabled = checkboxes.length === 0; // Active le bouton si au moins une case est cochée
+        storeButton.disabled = checkboxes.length === 0; 
     }
 </script>
 
@@ -146,4 +223,3 @@
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}{% endblock javascripts %}
-

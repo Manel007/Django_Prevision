@@ -2,13 +2,37 @@
 
 {% block title %}Créer un Pesticide{% endblock %}
 
+{% block stylesheets %}
+<style>
+
+    .classnew {
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px;
+        font-size: 16px; 
+        transition: background-color 0.3s, transform 0.3s, color 0.3s; 
+        cursor: pointer; 
+    }
+
+    .classnew:hover {
+        background-color: #45a049; 
+        color: black; 
+        transform: scale(1.05); 
+    }
+
+</style>
+{% endblock stylesheets %}
+
+
 {% block content %}
 <div class="content">
     <div class="row">
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="title">Créer un Pesticide</h5>
+                    <h5 class="title">Create a Pesticide</h5>
                 </div>
                 <div class="card-body">
                     
@@ -78,7 +102,7 @@
                            
                         </div>
                         
-                        <button type="submit" class="btn btn-fill btn-primary">Ajouter</button>
+                        <button type="submit" class="classnew">Done</button>
                     </form>
                 </div>
             </div>

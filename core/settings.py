@@ -56,6 +56,10 @@ INSTALLED_APPS = [
     'rest_framework',
 
 
+
+ 
+
+
     'apps.Culture',
     'apps.Technique',
     'apps.RecommendationTech',

@@ -15,9 +15,8 @@ def all_prog(request):
             Q(pesticide__area__icontains=search_query)  
         )
 
-    # Pagination
     from django.core.paginator import Paginator
-    paginator = Paginator(programmes, 10)  # 10 programmes par page
+    paginator = Paginator(programmes, 10) 
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
@@ -27,7 +26,6 @@ def all_prog(request):
     })
 
 def add_prog(request):
-    # Charger tous les pesticides par défaut ou les filtrer selon la zone si besoin
     pesticides = Pesticide.objects.all()
 
     if request.method == 'POST':
@@ -60,12 +58,10 @@ def delete_prog(request, pk):
 
 
 def edit_prog(request, pk):
-    # Récupérer le programme à modifier
     programme = get_object_or_404(ProgrammeDeTraitement, pk=pk)
     pesticides = Pesticide.objects.all()
 
     if request.method == 'POST':
-        # Mettre à jour le programme avec les données du formulaire
         programme.nom = request.POST.get('nom')
         programme.description = request.POST.get('description')
         pesticide_id = request.POST.get('pesticide')
