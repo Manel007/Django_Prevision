@@ -1,7 +1,66 @@
-<h1>{% if form.instance.pk %}Modifier{% else %}Créer{% endif %} un Fournisseur</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Enregistrer</button>
-</form>
-<a href="{% url 'fournisseur_list' %}">Retour à la liste</a>
+{% extends "layouts/base.html" %}
+
+{% block title %}Créer un Fournisseur{% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="content">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">{% if form.instance.pk %}Modifier{% else %}Ajouter{% endif %} un Fournisseur</h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="id_nom">Nom du Fournisseur :</label>
+                                    {{ form.nom }}
+                                </div>
+                            </div>
+                            <div class="col-md-6 pr-md-1">
+                                <div class="form-group">
+                                    <label for="id_type_fournisseur">Type de Fournisseur :</label>
+                                    {{ form.type_fournisseur }}
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-1">
+                                <div class="form-group">
+                                    <label for="id_adresse">Adresse :</label>
+                                    {{ form.adresse }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 pr-md-1">
+                                <div class="form-group">
+                                    <label for="id_numero_telephone">Numéro de Téléphone :</label>
+                                    {{ form.numero_telephone }}
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-1">
+                                <div class="form-group">
+                                    <label for="ressources_fournies">Ressources fournies :</label>
+                                    <textarea name="ressources_fournies" class="form-control" placeholder="Nom des ressources fournies, séparées par des virgules"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-fill btn-primary">Enregistrer</button>
+                                <a href="{% url 'fournisseur_list' %}" class="btn btn-danger">Annuler</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}
