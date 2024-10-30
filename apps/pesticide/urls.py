@@ -11,7 +11,7 @@ urlpatterns = [
     path('pesticide/predict_all/', views.pesticide_prediction_view, {'predict_all': True}, name='predict_all_pesticides'),
     path('store_selected_pesticides/', views.store_selected_pesticides, name='store_selected_pesticides'),
 
-
+#
     path('homepesticide/all/', views.all_pesticideFront, {'predict_allF': True},name='all_pesticideFront'),
     
 
