@@ -4,6 +4,8 @@ import pandas as pd
 from .RecommendationForm import RecommendationForm
 from apps.Culture.models import CultureAgricole
 ##
+from django.contrib.auth.decorators import login_required
+@login_required(login_url="/login/")
 def recommend_technique(type_sol, periode_croissance, zone_culture):
     model = joblib.load('trained_model.pkl')
     new_data = pd.DataFrame({
@@ -13,7 +15,7 @@ def recommend_technique(type_sol, periode_croissance, zone_culture):
     })
     predicted_technique = model.predict(new_data)
     return predicted_technique[0]
-
+@login_required(login_url="/login/")
 def recommend_view(request):
     recommendation = None
     technique_details = None  
