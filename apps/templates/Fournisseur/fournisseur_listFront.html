@@ -1,0 +1,162 @@
+{% extends "front/baseF2.html" %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #f8f9fa; /* Couleur de fond douce */
+    }
+
+    .search-button {
+        background-color: #28a745; /* Couleur verte */
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        border-radius: 25px; /* Bord arrondi */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre */
+    }
+
+    .search-button:hover {
+        background-color: #218838; /* Couleur verte plus foncée */
+        transform: scale(1.05); /* Effet de zoom */
+    }
+
+    #portfolio {
+        padding: 40px 20px; /* Padding vertical */
+    }
+
+    .section-title {
+        margin-bottom: 30px; /* Espacement du titre */
+        font-size: 2em; /* Taille de police plus grande */
+        color: #333; /* Couleur du titre */
+    }
+
+    .form-control {
+        border-radius: 25px; /* Bord arrondi pour les champs de saisie */
+        border: 1px solid #28a745; /* Bordure verte */
+        transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #218838; /* Bordure verte plus foncée au focus */
+        box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Ombre au focus */
+    }
+
+    table {
+        width: 100%; /* Prendre toute la largeur disponible */
+        margin-top: 20px; /* Espacement supérieur pour le tableau */
+        border-collapse: collapse; /* Pour éviter les bordures doubles */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour le tableau */
+    }
+
+    th, td {
+        padding: 15px; /* Augmentation du padding dans les cellules */
+        text-align: center; /* Centrer le texte */
+        border: 1px solid #dddddd; /* Bordure autour des cellules */
+    }
+
+    th {
+        background-color: #6d8612; /* Couleur de fond des en-têtes */
+        color: #ffffff; /* Couleur du texte des en-têtes */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9; /* Couleur de fond pour les lignes paires */
+    }
+
+    tr:hover {
+        background-color: #e0e0e0; /* Couleur de fond pour survol */
+    }
+
+    .pagination {
+        margin-top: 20px; /* Espacement supérieur pour la pagination */
+        display: flex; /* Flexbox pour centrer les éléments */
+        justify-content: center; /* Centrer les éléments horizontalement */
+    }
+
+    .btn-outline-success {
+        border-radius: 5px; /* Bord arrondi pour les boutons */
+        transition: background-color 0.3s, color 0.3s; /* Transition douce */
+    }
+
+    .btn-outline-success:hover {
+        background-color: #28a745; /* Fond vert au survol */
+        color: #ffffff; /* Texte blanc au survol */
+    }
+
+    .btn-success {
+        background-color: #6d8612; /* Couleur de fond pour le bouton actif */
+        border: none; /* Suppression de la bordure */
+    }
+
+    .no-results {
+        font-style: italic; /* Italique pour le texte sans résultat */
+        color: #999; /* Couleur plus douce */
+    }
+</style>
+
+<div id="portfolio">
+    <div class="section-title text-center center">
+        <div class="overlay">
+            <h2>Fournisseurs</h2>
+            <hr>
+        </div>
+    </div>
+
+  
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Type</th>
+                        <th>Adresse</th>
+                        <th>Numéro de Téléphone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for fournisseur in all_fournisseurs %}
+                    <tr>
+                        <td>{{ fournisseur.nom }}</td>
+                        <td>{{ fournisseur.get_type_fournisseur_display }}</td>
+                        <td>{{ fournisseur.adresse }}</td>
+                        <td>{{ fournisseur.numero_telephone }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4" class="no-results">Aucun fournisseur trouvé.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <span class="step-links">
+                {% for num in all_fournisseurs.paginator.page_range %}
+                    {% if num == all_fournisseurs.number %}
+                        <span class="btn btn-success btn-sm mx-1 font-weight-bold">{{ num }}</span>
+                    {% elif num >= all_fournisseurs.number|add:-3 and num <= all_fournisseurs.number|add:3 %}
+                        <a href="?page={{ num }}&search={{ search_query }}" class="btn btn-outline-success btn-sm mx-1">{{ num }}</a>
+                    {% elif num == 1 or num == all_fournisseurs.paginator.num_pages %}
+                        <a href="?page={{ num }}&search={{ search_query }}" class="btn btn-outline-success btn-sm mx-1">{{ num }}</a>
+                    {% elif num == all_fournisseurs.number|add:-4 or num == all_fournisseurs.number|add:4 %}
+                        <span class="btn btn-sm mx-1">...</span>
+                    {% endif %}
+                {% endfor %}
+            </span>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+        document.getElementById('searchForm').submit();
+    });
+</script>
+
+{% endblock content %}

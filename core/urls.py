@@ -1,13 +1,17 @@
 
 
 from django.contrib import admin
+
 from django.urls import path, include 
 from apps.Culture import views
 from apps.Technique import views as technique_views
 from apps.RecommendationTech import views as recommend_views
-from django.urls import path, include 
-from django.urls import path
+
+
 from apps.zonegéosamarapp import views as viewszone
+
+
+
 
 
 from apps.RessourceEntity import views as ressourceview
@@ -45,6 +49,14 @@ urlpatterns = [
 
 
  
+  path('ressource_listFront/', ressourceview.ressource_listFront, name='ressource_listFront'),
+  path('ressource_list/', ressourceview.ressource_list, name='ressource_list'),
+    path('ressource/<int:pk>/', ressourceview.ressource_detail, name='ressource_detail'),
+    path('ressource/new/', ressourceview.ressource_create, name='ressource_create'),
+    path('ressource/<int:pk>/edit/', ressourceview.ressource_update, name='ressource_update'),
+    path('ressource/<int:pk>/delete/', ressourceview.ressource_delete, name='ressource_delete'),
+    path('search/', ressourceview.ressource_search, name='ressource_search'),
+
 
 path('zones/', viewszone.ZoneList, name='zone_list'), 
 path('zones/create', viewszone.ZoneCreate, name='zone_form'),  
@@ -74,6 +86,10 @@ path('display-typesol/', viewszone.TypesolDisplayFront, name='display_typesol'),
     path('ressource/<int:pk>/edit/', ressourceview.ressource_update, name='ressource_update'),
     path('ressource/<int:pk>/delete/', ressourceview.ressource_delete, name='ressource_delete'),
     path('search/', ressourceview.ressource_search, name='ressource_search'),
+
+
+
+  path('fournisseur_listFront/', ressourceview.fournisseur_listFront, name='fournisseur_listFront'),
 
     path('fournisseurs/', ressourceview.fournisseur_list, name='fournisseur_list'),
     path('fournisseurs/<int:pk>/', ressourceview.fournisseur_detail, name='fournisseur_detail'),

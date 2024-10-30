@@ -1,5 +1,6 @@
 
     <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+
       <div class="container"> 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -39,7 +40,46 @@
                 <p>Yield / Culture / pesticides</p>
                 <a href="{% url 'yield_summary' %}" class="btn btn-custom btn-lg page-scroll">Show Yield</a>
               </div>
+       <div class="container"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Agricole</a> </div>
+            <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a> </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about" class="page-scroll">About</a></li>
+              <li><a href="{% url 'ressource_listFront' %}" class="page-scroll">Resources</a></li>
+              <li><a href="{% url 'fournisseur_listFront' %}" class="page-scroll">Suppliers</a></li>
+              <li><a href="#team" class="page-scroll">Chefs</a></li>
+              <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
+              <li><a href="#team" class="page-scroll">Review</a></li>
+
+              <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+      </nav>
+      <!-- Header -->
+      <header id="header">
+        <div class="intro">
+          <div class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="intro-text">
+
+                  <h1>AgriPredict</h1>
+                  <p>Yield / Cuture / pesticides</p>
+                  <a href="{% url 'yield_summary' %}" class="btn btn-custom btn-lg page-scroll">Show Yield</a>
+
+                
+                </div>
+
+            </div>
+
           </div>
         </div>
-      </div>
-    </header>
+      </header>

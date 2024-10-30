@@ -1,14 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prédiction de Quantité</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+{% extends "front/baseF2.html" %}
+
+{% block content %}
+<style>
+    body {
+        font-family: 'Arial', sans-serif; /* Use a modern font */
+        background-color: #f9f9f9; /* Light background color for the body */
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+        font-weight: bold; /* Bold title */
+        color: #333; /* Darker color for text */
+    }
+
+    .btn-success {
+        background-color: #6d8612;
+        border: none;
+    }
+
+    .btn-success:hover {
+        background-color: #4d6410; /* Darker color on hover */
+    }
+</style>
+
+<div id="portfolio">
+    <div class="section-title text-center center">
+        <div class="overlay">
+            <h2>Resource Demand Prediction</h2>
+            <hr>
+        </div>
+    </div>
+
     <div class="container mt-5">
-        <h2>Prédiction de la Demande en Ressources</h2>
         <form method="POST">
             {% csrf_token %}
             <div class="form-group">
@@ -16,17 +39,20 @@
                 {{ form.nom_ressource }}
             </div>
             <div class="form-group">
-                {{ form.saison.label_tag }}
-                {{ form.saison }}
+                {{ form.Saison.label_tag }}
+                {{ form.Saison }}
             </div>
-            <button type="submit" class="btn btn-primary">Prédire</button>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success btn-lg">Predict</button>
+            </div>
         </form>
 
         {% if predicted_quantity is not None %}
-            <div class="alert alert-success mt-4">
-                <strong>Quantité Prédite :</strong> {{ predicted_quantity }}
+            <div class="alert alert-success mt-4 text-center">
+                <strong>Predicted Quantity:</strong> {{ predicted_quantity }}
             </div>
         {% endif %}
     </div>
-</body>
-</html>
+</div>
+
+{% endblock content %}
