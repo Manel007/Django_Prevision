@@ -11,7 +11,7 @@ import logging
 # Configurer le logger
 logger = logging.getLogger(__name__)
 from django.core.paginator import Paginator
-
+from django.contrib.auth.decorators import login_required
 # Charger et préparer les données une seule fois
 data = pd.read_csv('apps/RessourceEntity/Ressourcee.csv')  # Vérifiez le chemin
 X = pd.get_dummies(data[['nom_ressource', 'Saison']], drop_first=True)
@@ -23,6 +23,7 @@ model.fit(X, y)
 
 # Stocker les colonnes utilisées pour l'entraînement
 training_columns = X.columns
+@login_required(login_url="/login/")
 
 def predict_view(request):
     predicted_quantity = None  # Initialisation par défaut
@@ -66,6 +67,7 @@ def predict_view(request):
         'form': form, 'predicted_quantity': predicted_quantity
     })
 
+@login_required(login_url="/login/")
 
 
 
@@ -73,6 +75,7 @@ def predict_view(request):
 def ressource_list(request):
     ressources = Ressource.objects.all()
     return render(request, 'ressource/ressource_list.html', {'ressources': ressources})
+@login_required(login_url="/login/")
 
 
 def ressource_listFront(request):
@@ -84,12 +87,14 @@ def ressource_listFront(request):
     all_ressources = paginator.get_page(page_number)
 
     return render(request, 'ressource/ressource_listFront.html', {'all_ressources': all_ressources})
+@login_required(login_url="/login/")
 
 
 # Détail d'une ressource
 def ressource_detail(request, pk):
     ressource = get_object_or_404(Ressource, pk=pk)
     return render(request, 'ressource/detail_ressource.html', {'ressource': ressource})
+@login_required(login_url="/login/")
 
 def ressource_create(request):
     if request.method == "POST":
@@ -101,6 +106,8 @@ def ressource_create(request):
         form = RessourceForm()
 
     return render(request, 'ressource/ressource_form.html', {'form': form})
+@login_required(login_url="/login/")
+
 # Modification d'une ressource
 def ressource_update(request, pk):
     ressource = get_object_or_404(Ressource, pk=pk)
@@ -112,6 +119,7 @@ def ressource_update(request, pk):
     else:
         form = RessourceForm(instance=ressource)
     return render(request, 'ressource/ressource_form.html', {'form': form})
+@login_required(login_url="/login/")
 
 # Suppression d'une ressource
 def ressource_delete(request, pk):
@@ -120,6 +128,7 @@ def ressource_delete(request, pk):
         ressource.delete()
         return redirect('ressource_list')  # Redirige vers la liste après suppression
     return render(request, 'ressource/ressource_confirm_delete.html', {'ressource': ressource})
+@login_required(login_url="/login/")
 
 # Recherche de ressource par attribut
 def ressource_search(request):
@@ -143,6 +152,7 @@ def ressource_search(request):
 
 
 
+@login_required(login_url="/login/")
 
 
 
@@ -152,6 +162,7 @@ def ressource_search(request):
 def fournisseur_list(request):
     fournisseurs = Fournisseur.objects.all()
     return render(request, 'fournisseur/fournisseur_list.html', {'fournisseurs': fournisseurs})
+@login_required(login_url="/login/")
 
 
 def fournisseur_listFront(request):
@@ -171,10 +182,13 @@ def fournisseur_listFront(request):
         'all_fournisseurs': all_fournisseurs,
         'search_query': search_query,
     })
+@login_required(login_url="/login/")
+
 # Détail d'un fournisseur
 def fournisseur_detail(request, pk):
     fournisseur = get_object_or_404(Fournisseur, pk=pk)
     return render(request, 'fournisseur/detail_fournisseur.html', {'fournisseur': fournisseur})
+@login_required(login_url="/login/")
 
 
 def fournisseur_create(request):
@@ -183,9 +197,7 @@ def fournisseur_create(request):
         if form.is_valid():
             fournisseur = form.save(commit=False)
             # Traiter les ressources fournies
-            ressources = form.cleaned_data['ressources_fournies']
             # Vous pouvez les stocker comme une chaîne ou les traiter selon vos besoins.
-            fournisseur.ressources_fournies = ressources  # En supposant que vous avez un champ TextField dans le modèle
             fournisseur.save()
             return redirect('fournisseur_list')  # Redirige vers la liste des fournisseurs
     else:
@@ -193,6 +205,8 @@ def fournisseur_create(request):
 
     return render(request, 'Fournisseur/fournisseur_form.html', {'form': form})
 # Modification d'un fournisseur
+@login_required(login_url="/login/")
+
 def fournisseur_update(request, pk):
     fournisseur = get_object_or_404(Fournisseur, pk=pk)
     if request.method == "POST":
@@ -203,6 +217,7 @@ def fournisseur_update(request, pk):
     else:
         form = FournisseurForm(instance=fournisseur)
     return render(request, 'Fournisseur/fournisseur_form.html', {'form': form})
+@login_required(login_url="/login/")
 
 # Suppression d'un fournisseur
 def fournisseur_delete(request, pk):

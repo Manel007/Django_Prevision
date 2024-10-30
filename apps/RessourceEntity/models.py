@@ -19,7 +19,6 @@ class Fournisseur(models.Model):
     )
     adresse = models.TextField(verbose_name="Adresse du fournisseur")
     numero_telephone = models.CharField(max_length=15, verbose_name="Numéro de téléphone")
-    ressources_fournies = models.TextField(verbose_name="Ressources fournies")
 
     quantite_disponible = models.FloatField(verbose_name="Quantité disponible", default=0)
 
