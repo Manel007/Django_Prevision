@@ -5,12 +5,14 @@ from .forms import *
 from django.views import View
 from django.shortcuts import get_object_or_404, redirect, render
 from django.core.paginator import Paginator
+from django.contrib.auth.decorators import login_required
 
 from django.template.loader import render_to_string
 import importlib
 from django.http import JsonResponse
 
 from .anomaly_detection import detect_anomalies
+@login_required(login_url="/login/")
 
 def TypesolDisplayFront(request):
     query = request.GET.get('search', '')
@@ -25,6 +27,7 @@ def TypesolDisplayFront(request):
         'search_query': query,  
     }
     return render(request, 'front/zones+typesol/display-typesol.html', context)
+@login_required(login_url="/login/")
 
 def ZoneDisplayFront(request):
     zones = ZoneGeographique.objects.all()
@@ -41,6 +44,7 @@ def ZoneDisplayFront(request):
     }
 
     return render(request, 'front/zones+typesol/display-zones.html', context)
+@login_required(login_url="/login/")
 
 def ZoneList(request):
     zones = ZoneGeographique.objects.all()
@@ -60,6 +64,7 @@ def ZoneList(request):
 
 
     return render(request, 'zones/zone_list.html', context)
+@login_required(login_url="/login/")
 
 def ZoneCreate(request):
     if request.method == 'POST':
@@ -70,6 +75,7 @@ def ZoneCreate(request):
     else:
         form = ZoneGeographiqueForm()
     return render(request, 'zones/zone_form.html', {'form': form})
+@login_required(login_url="/login/")
 
 def ZoneUpdate(request, pk):
     zone = get_object_or_404(ZoneGeographique, pk=pk)
@@ -81,6 +87,7 @@ def ZoneUpdate(request, pk):
     else:
         form = ZoneGeographiqueForm(instance=zone)
     return render(request, 'zones/zone_form.html', {'form': form})
+@login_required(login_url="/login/")
 
 def ZoneDelete(request, pk):
     zone = get_object_or_404(ZoneGeographique, pk=pk)
@@ -90,6 +97,7 @@ def ZoneDelete(request, pk):
 
 
 
+@login_required(login_url="/login/")
 
 def TypeSolList(request):
     query = request.GET.get('search', '')
@@ -104,6 +112,7 @@ def TypeSolList(request):
         'search_query': query,  
     }
     return render(request, 'typesol/typesol_list.html', context)
+@login_required(login_url="/login/")
 
 def TypeSolCreate(request):
     if request.method == 'POST':
@@ -114,6 +123,7 @@ def TypeSolCreate(request):
     else:
         form = TypeDeSolForm()
     return render(request, 'typesol/typesol_form.html', {'form': form})
+@login_required(login_url="/login/")
 
 def TypeSolUpdate(request, pk):
     type_sol = get_object_or_404(TypeDeSol, pk=pk)
@@ -125,6 +135,7 @@ def TypeSolUpdate(request, pk):
     else:
         form = TypeDeSolForm(instance=type_sol)
     return render(request, 'typesol/typesol_form.html', {'form': form})
+@login_required(login_url="/login/")
 
 def TypeSolDelete(request, pk):
     type_sol = get_object_or_404(TypeDeSol, pk=pk)
@@ -139,6 +150,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
+@login_required(login_url="/login/")
 
 # Partie AI
 @csrf_exempt
@@ -158,6 +170,8 @@ def dataset_anomalies_view(request):
 
 predict_soil_module = importlib.import_module('apps.zonegéosamarapp.AI soil type prediction.predict_soil')
 predict_soil_type = predict_soil_module.predict_soil_type
+@login_required(login_url="/login/")
+
 def predict_soil(request):
     if request.method == 'POST':
         try:
@@ -177,6 +191,7 @@ def predict_soil(request):
             return JsonResponse({'error': str(e)}, status=400)
 
     return render(request, 'front/zones+typesol/predict-soil.html')
+@login_required(login_url="/login/")
 
 def soil_prediction_form(request):
     return render(request, 'front/zones+typesol/predict-soil.html')   
