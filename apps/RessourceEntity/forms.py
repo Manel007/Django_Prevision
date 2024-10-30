@@ -19,13 +19,13 @@ class FournisseurForm(forms.ModelForm):
         model = Fournisseur
         fields = ['nom', 'type_fournisseur', 'adresse', 'numero_telephone', 'ressources_fournies']
         widgets = {
-            'nom': forms.TextInput(attrs={'placeholder': 'Nom du fournisseur'}),
+            'nom': forms.TextInput(attrs={'placeholder': 'Name of the supplier'}),
             'adresse': forms.TextInput(attrs={'placeholder': 'Adresse'}),
             'numero_telephone': forms.TextInput(attrs={'placeholder': 'Numéro de téléphone'}),
             'ressources_fournies': forms.Textarea(attrs={'placeholder': 'Nom des ressources fournies, séparées par des virgules'}),
         }
         labels = {
-            'nom': 'Nom du fournisseur',
+            'nom': 'Name of the supplier',
             'type_fournisseur': 'Type de fournisseur',
             'adresse': 'Adresse',
             'numero_telephone': 'Numéro de téléphone',

@@ -1,0 +1,164 @@
+{% extends "front/baseF2.html" %}
+
+{% block content %}
+<style>
+    body {
+        font-family: 'Arial', sans-serif; /* Use a modern font */
+        background-color: #f9f9f9; /* Light background color for the body */
+    }
+
+    .search-button {
+        background-color: #0c0f02;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s; /* Add a transition for hover effect */
+        border-radius: 5px;
+    }
+
+    .search-button:hover {
+        background-color: #6d8612;
+        transform: scale(1.05); /* Slightly increase size on hover */
+    }
+
+    #portfolio {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+        font-weight: bold; /* Bold title */
+        color: #333; /* Darker color for text */
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the table */
+        background-color: #ffffff; /* White background for the table */
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #dddddd;
+    }
+
+    th {
+        background-color: #6d8612;
+        color: #ffffff;
+        text-transform: uppercase; /* Uppercase headers */
+        letter-spacing: 1px; /* Letter spacing */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0e0e0;
+        transition: background-color 0.3s; /* Smooth transition for hover */
+    }
+
+    .pagination {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .btn-outline-success {
+        border-radius: 5px;
+    }
+
+    .btn-success {
+        background-color: #6d8612;
+        border: none;
+    }
+
+    .btn-outline-success:hover {
+        background-color: #6d8612; /* Background on hover for pagination buttons */
+        color: #ffffff; /* Text color */
+    }
+
+    .btn-success:hover {
+        background-color: #4d6410; /* Darker color on hover */
+    }
+
+    .table-responsive {
+        overflow-x: auto; /* Allow horizontal scrolling if the table overflows */
+    }
+</style>
+
+<div id="portfolio">
+    <div class="section-title text-center center">
+        <div class="overlay">
+            <h2>Resources</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="card-body">
+         <!-- Add the Predict button here -->
+         <div class="text-center mb-4">
+            <a href="{% url 'predict' %}" class="btn btn-success btn-lg">
+                <i class="fas fa-chart-line"></i> <!-- Icon for the button -->
+                Predict Resource Quantity Consumption in the Future
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Quantity</th>
+                        <th>Unit</th>
+                        <th>Application Area</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for ressource in all_ressources %}
+                    <tr>
+                        <td>{{ ressource.nom_ressource }}</td>
+                        <td>{{ ressource.type_ressource }}</td>
+                        <td>{{ ressource.quantite }}</td>
+                        <td>{{ ressource.unite_mesure }}</td>
+                        <td>{{ ressource.zone }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5">No resources found.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination d-flex justify-content-center">
+            <span class="step-links">
+                {% for num in all_ressources.paginator.page_range %}
+                    {% if num == all_ressources.number %}
+                        <span class="btn btn-success btn-sm mx-1 font-weight-bold">{{ num }}</span>
+                    {% elif num >= all_ressources.number|add:-3 and num <= all_ressources.number|add:3 %}
+                        <a href="?page={{ num }}&search={{ search_query }}" class="btn btn-outline-success btn-sm mx-1">{{ num }}</a>
+                    {% elif num == 1 or num == all_ressources.paginator.num_pages %}
+                        <a href="?page={{ num }}&search={{ search_query }}" class="btn btn-outline-success btn-sm mx-1">{{ num }}</a>
+                    {% elif num == all_ressources.number|add:-4 or num == all_ressources.number|add:4 %}
+                        <span class="btn btn-sm mx-1">...</span>
+                    {% endif %}
+                {% endfor %}
+            </span>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+        document.getElementById('searchForm').submit();
+    });
+    
+</script>
+
+{% endblock content %}

@@ -10,6 +10,7 @@ from .forms import PredictForm
 import logging
 # Configurer le logger
 logger = logging.getLogger(__name__)
+from django.core.paginator import Paginator
 
 # Charger et préparer les données une seule fois
 data = pd.read_csv('apps/RessourceEntity/Ressourcee.csv')  # Vérifiez le chemin
@@ -72,6 +73,18 @@ def predict_view(request):
 def ressource_list(request):
     ressources = Ressource.objects.all()
     return render(request, 'ressource/ressource_list.html', {'ressources': ressources})
+
+
+def ressource_listFront(request):
+    # Fetch all ressources and order them (e.g., by name)
+    ressources = Ressource.objects.all().order_by('nom_ressource')  # Change 'nom_ressource' to the desired field for ordering
+
+    paginator = Paginator(ressources, 10)  # Paginate the ordered resources
+    page_number = request.GET.get('page')
+    all_ressources = paginator.get_page(page_number)
+
+    return render(request, 'ressource/ressource_listFront.html', {'all_ressources': all_ressources})
+
 
 # Détail d'une ressource
 def ressource_detail(request, pk):
@@ -140,6 +153,24 @@ def fournisseur_list(request):
     fournisseurs = Fournisseur.objects.all()
     return render(request, 'fournisseur/fournisseur_list.html', {'fournisseurs': fournisseurs})
 
+
+def fournisseur_listFront(request):
+    # Récupérer tous les fournisseurs et les ordonner (par exemple par nom)
+    fournisseurs = Fournisseur.objects.all().order_by('nom')  # Change 'nom' to the desired field for ordering
+
+    # Implémenter la recherche
+    search_query = request.GET.get('search', '')
+    if search_query:
+        fournisseurs = fournisseurs.filter(nom__icontains=search_query)
+
+    paginator = Paginator(fournisseurs, 10)  # Pagination des fournisseurs ordonnés
+    page_number = request.GET.get('page')
+    all_fournisseurs = paginator.get_page(page_number)
+
+    return render(request, 'Fournisseur/fournisseur_listFront.html', {
+        'all_fournisseurs': all_fournisseurs,
+        'search_query': search_query,
+    })
 # Détail d'un fournisseur
 def fournisseur_detail(request, pk):
     fournisseur = get_object_or_404(Fournisseur, pk=pk)
