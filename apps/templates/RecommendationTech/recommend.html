@@ -1,66 +1,235 @@
-{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPredict</title>
+    <link rel="shortcut icon" href="{{ FRONT_ROOT }}/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ FRONT_ROOT }}/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ FRONT_ROOT }}/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ FRONT_ROOT }}/img/apple-touch-icon-114x114.png">
 
-{% block title %}Recommandation de Technique de Culture{% endblock %}
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/fonts/font-awesome/css/font-awesome.css">
 
-{% block content %}
-<div class="content">
-    <div class="row">
-        <div class="col-md-8 mx-auto">
-            <div class="card form-container">
-                <div class="card-header">
-                    <h2 class="title">Crop Technique Recommendation</h2>
-                </div>
-                <div class="card-body">
-                    <p>Use this interface to obtain a technique recommendation for a given crop. Choose an existing crop or enter custom data.</p>
-                    <form method="POST" action="{% url 'recommend_view' %}" class="mt-5">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            <label>Choose the Recommendation Option :</label><br>
-                            {{ form.choix_culture }}
-                        </div>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 
-                        <div id="existing-culture" style="display:none;">
-                            <div class="form-group">
-                                <label for="culture_existante" >Existing Agricultural Crop :</label>
-                                {{ form.culture_existante }}
-                            </div>
-                        </div>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/contact_me.js"></script>
+    <script type="text/javascript" src="{{ FRONT_ROOT }}/js/main.js"></script>
 
-                        <div id="custom-inputs" style="display:none;">
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <label for="cycle_croissance_jours">Growth Cycle (days) :</label>
-                                    <input type="number" class="form-control" name="cycle_croissance_jours" placeholder="Duration of growth cycle in days">
-                                </div>
-                                <div class="form-group">
-                                    <label for="type_sol_prefere">Preferred Soil Type :</label>
-                                    <input type="text" class="form-control" name="type_sol_prefere" placeholder="Example: Clayey, loamy...">
-                                </div>
-                                <div class="form-group">
-                                    <label for="zone_culture_recommandee">Recommended Climatic Zone
-                                        :</label>
-                                    <input type="text" class="form-control" name="zone_culture_recommandee" placeholder="Example: North, South...">
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-recommend"> Recommend a Crop Technique</button>
-                    </form>
+    <style>
+        /* Correction pour le footer */
+        body, html {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: #f9f9f9;
+            max-width: 90%;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            margin: 0 auto;
+        }
+    
+        .form-container {
+            max-width: 700px;
+            width: 100%;
+            padding: 25px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        .recommendation-card h3, .form-container h2 {
+            font-size: 1.5em;
+        }
+    
+        p, .form-group label {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    
+        .recommend-button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 1.1em; 
+            background-color: #075018;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 20px; /* Ajustement de l'espacement au-dessus du bouton */
+        }
+        .recommend-button:hover {
+            background-color: #1a772e;
+        }
+
+        h2 {
+            color: #075018;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .recommendation-card {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            max-width: 500px;
+            width: 100%;
+            text-align: center; /* Centrer le texte dans la carte */
+        }
+
+        /* Afficher les boutons radio en colonne */
+        .radio-options.column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about" class="page-scroll">About</a></li>
+                <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+                <li><a href="{% url 'culture_list' %}" class="page-scroll">Crops</a></li>
+                <li><a href="{% url 'nouvelle_liste_techniques' %}" class="page-scroll">Techniques</a></li>
+                <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
+                <li><a href="#team" class="page-scroll">Review</a></li>
+                <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="header">
+    <div class="intro">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="intro-text">
+                        <h1>AgriPredict</h1>
+                        <p>Yield / Culture / Pesticides</p>
+                        <a href="{% url 'nouvelle_liste_techniques' %}" class="btn btn-custom btn-lg page-scroll">Show Techniques</a>
+                    </div>
                 </div>
             </div>
-
-            {% if technique_details %}
-                <div class="card p-5">
-                    <h4> Recommended Technique : <span class="highlight">{{ technique_details.nom_technique }}</span></h4>
-                    <p><strong> Impact on Yield :</strong> {{ technique_details.impact_rendement }}</p>
-                    <p><strong>Application Date :</strong> {{ technique_details.date_application }}</p>
-                </div>
-            {% endif %}
         </div>
+    </div>
+</header>
+
+<div class="content-container">
+    <div class="form-container">
+        <h2 class="title">Crop Technique Recommendation</h2>
+        <p>Use this interface to obtain a technique recommendation for a given crop. Choose an existing crop or enter custom data.</p>
+        
+        <form id="recommendationForm" method="POST" action="{% url 'recommend_view' %}">
+            {% csrf_token %}
+            
+            <!-- Choix de l'option de recommandation -->
+            <div class="form-group">
+                <label>Choose the Recommendation Option:</label>
+                <div class="radio-options column">
+                    {{ form.choix_culture }}
+                </div>
+            </div>
+            
+            <div id="existing-culture" style="display: none;">
+                <div class="form-group">
+                    <label for="culture_existante">Existing Agricultural Crop:</label>
+                    {{ form.culture_existante }}
+                </div>
+            </div>
+            
+            <div id="custom-inputs" style="display: none;">
+                <div class="form-group">
+                    <label for="cycle_croissance_jours">Growth Cycle (days):</label>
+                    <input type="number" class="form-control" name="cycle_croissance_jours" placeholder="Duration of growth cycle in days">
+                </div>
+                <div class="form-group">
+                    <label for="type_sol_prefere">Preferred Soil Type:</label>
+                    <input type="text" class="form-control" name="type_sol_prefere" placeholder="Example: Clayey, loamy...">
+                </div>
+                <div class="form-group">
+                    <label for="zone_culture_recommandee">Recommended Climatic Zone:</label>
+                    <input type="text" class="form-control" name="zone_culture_recommandee" placeholder="Example: North, South...">
+                </div>
+            </div>
+            
+            <!-- Bouton centré -->
+            <div style="text-align: center;">
+                <button type="button" class="recommend-button" onclick="submitForm()">Recommend a Crop Technique</button>
+            </div>
+        </form>
+        
+        <!-- Carte de la technique recommandée centrée -->
+        {% if technique_details %}
+            <div class="recommendation-card">
+                <h3>Recommended Technique: <span class="highlight">{{ technique_details.nom_technique }}</span></h3>
+                <p><strong>The impact of this technique on yield improvement:</strong> {{ technique_details.impact_rendement }}</p>
+            </div>
+        {% endif %}
     </div>
 </div>
 
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>&copy; AgriPredict 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script>
-    // JavaScript pour afficher/masquer les champs en fonction du choix
+    // Script pour afficher les champs appropriés
     document.addEventListener("DOMContentLoaded", function() {
         const choixCulture = document.querySelectorAll("input[name='choix_culture']");
         const existingCulture = document.getElementById("existing-culture");
@@ -78,5 +247,14 @@
             });
         });
     });
+
+    // Fonction JavaScript pour soumettre le formulaire
+    function submitForm() {
+        document.getElementById("recommendationForm").submit();
+    }
 </script>
-{% endblock %}
+
+
+{% include 'front/footer.html' %}
+</body>
+</html>

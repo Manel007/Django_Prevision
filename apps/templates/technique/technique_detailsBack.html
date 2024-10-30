@@ -1,0 +1,83 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Technique Details {% endblock %}
+
+{% block stylesheets %}
+  <style>
+    .details-card .card-header {
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+    .details-card .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #627d86;
+      margin: 0;
+    }
+    .details-card {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .details-card .card-body p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .details-card .card-footer {
+      text-align: center;
+    }
+    .icon-button {
+      color: #fff !important;
+      padding: 10px;
+      border-radius: 50%;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .icon-button:hover {
+      transform: scale(1.1);
+    }
+    .btn-modifier {
+      background-color: #2e8b57;
+    }
+    .btn-supprimer {
+      background-color: #228b22;
+    }
+    .btn-retour {
+      background-color: #006400;
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content">
+    <div class="row mt-5">
+      <div class="col-md-12 mt-10">
+        <div class="card details-card mt-10">
+          <div class="card-header">
+            <strong class="card-title" style="font-weight: 900; color: #034c64;">Details of {{ technique.nom_technique }}</strong>
+          </div>
+          <div class="card-body">
+            <p><strong style="font-weight: 600; color: #034c64;">Technique name:</strong> {{ technique.nom_technique }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Description:</strong> {{ technique.description }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Impact on yield:</strong> {{ technique.impact_rendement }}</p>
+          </div>
+          
+          <div class="card-footer">
+            <a href="{% url 'update_technique' technique.pk %}" class="icon-button btn-modifier">
+              <i class="fas fa-edit"></i>
+            </a>
+
+            <a href="{% url 'liste_techniques' %}" class="icon-button btn-retour">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  <!-- Add your specific JS scripts here -->
+{% endblock javascripts %}

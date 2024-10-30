@@ -1,0 +1,94 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Culture Details {% endblock %}
+
+{% block stylesheets %}
+  <style>
+      .details-card .card-header {
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+    .details-card .card-title {
+      font-size: 24px; /* Larger size */
+      font-weight: bold; /* Bold text */
+      color: #627d86; /* Light blue */
+      margin: 0; /* Reduce margins */
+    }
+    .details-card {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    
+    .details-card .card-title {
+      font-size: 24px; /* Larger size */
+      font-weight: bold; /* Bold text */
+      margin: 0; /* Reduce margins */
+    }
+    .details-card .card-body p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .details-card .card-footer {
+      text-align: center;
+    }
+    /* Styles for icons */
+    .icon-button {
+      color: #fff !important;
+      padding: 10px;
+      border-radius: 50%;
+      margin: 0 10px;
+      font-size: 24px; /* Icon size */
+      transition: background-color 0.3s, transform 0.3s; /* Animation */
+    }
+    .icon-button:hover {
+      transform: scale(1.1); /* Slight increase on hover */
+    }
+    .btn-modifier {
+      background-color: #2e8b57; /* Dark green */
+    }
+    .btn-supprimer {
+      background-color: #228b22; /* ForestGreen */
+    }
+    .btn-retour {
+      background-color: #006400; /* DarkGreen */
+    }
+  </style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="content">
+    <div class="row mt-5">
+      <div class="col-md-12 mt-10">
+        <div class="card details-card mt-10">
+          <div class="card-header">
+            <strong class="card-title" style="font-weight: 900; color: #034c64;">Details of {{ culture.nom }}</strong>
+          </div>
+          <div class="card-body">
+            <p><strong style="font-weight: 600; color: #034c64;">Name:</strong> {{ culture.nom }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Description:</strong> {{ culture.description }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Growth cycle (days):</strong> {{ culture.cycle_croissance_jours }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Expected yield:</strong> {{ culture.rendement_attendu }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Recommended cultivation area:</strong> {{ culture.zone_culture_recommandee }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Preferred soil type:</strong> {{ culture.type_sol_prefere }}</p>
+            <p><strong style="font-weight: 600; color: #034c64;">Irrigation:</strong> {{ culture.irrigation }}</p>
+          </div>
+          
+          <div class="card-footer">
+            <a href="{% url 'update_culture' culture.pk %}" class="icon-button btn-modifier">
+              <i class="fas fa-edit"></i>
+            </a>
+
+            <a href="{% url 'liste_cultures' %}" class="icon-button btn-retour">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  <!-- Add your specific JS scripts here -->
+{% endblock javascripts %}

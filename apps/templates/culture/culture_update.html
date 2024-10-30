@@ -2,8 +2,24 @@
 
 {% block title %} Mettre à Jour Culture Agricole {% endblock %}
 
-<!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+    .custom-button {
+        display: inline-block;  
+        padding: 10px 20px;  
+        background-color: #075018;  
+        color: white;  
+        text-align: center;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        text-decoration: none;  
+    }
+    .custom-button:hover {
+        background-color: #1a772e;  
+    }
+  </style>
+{% endblock stylesheets %}
 
 {% block content %}
 
@@ -65,7 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-fill btn-dark">Save</button>
+                        <button type="submit" class="custom-button">Save</button>
                     </form>
 
                     {% if form.errors %}
@@ -90,5 +106,4 @@
 
 {% endblock content %}
 
-<!-- Specific Page JS goes HERE  -->
 {% block javascripts %}{% endblock javascripts %}

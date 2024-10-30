@@ -1,0 +1,258 @@
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container"> 
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">AgriPredict</a> 
+      </div>
+      
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+          <li><a href="{% url 'culture_list' %}" class="page-scroll">Crops</a></li>
+          <li><a href="{% url 'nouvelle_liste_techniques' %}" class="page-scroll">Techniques</a></li>
+          <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
+          <li><a href="#team" class="page-scroll">Review</a></li>
+          <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header id="header">
+    <div class="intro">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="intro-text">
+              <h1>AgriPredict</h1>
+              <p>Yield / Culture / Pesticides</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  {% block stylesheets %}
+  <style>
+    /* New CSS Styles */
+    .yield-list-content {
+      background-color: #f9f9f9; /* Light background color */
+      padding: 20px;
+      border-radius: 8px;
+  }
+  
+  .yield-list-card {
+      background-color: #ffffff; /* White card background */
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+  }
+  
+  .yield-list-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      color: #ffffff;
+      border-radius: 8px 8px 0 0;
+  }
+  
+  .button-recommend {
+      background-color: #247924; 
+      color: #000;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+  }
+  
+  .button-recommend:hover {
+      background-color: #449d44; /* Darker on hover */
+  }
+  
+  .search-container {
+      margin: 15px;
+  }
+  
+  .search-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #449d44; /* Border color */
+      border-radius: 4px;
+  }
+  
+  .yield-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+  }
+  
+  .table-header {
+      background-color: #f1f1f1; /* Header background */
+  }
+  
+  .yield-table th, .yield-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #dddddd;
+  }
+  
+  .yield-table tr:hover {
+      background-color: #f2f2f2; /* Row hover effect */
+  }
+  
+  .pagination-container {
+      margin: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .pagination-button {
+      background-color: #247924; /* Primary color */
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      margin: 0 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+  }
+  
+  .pagination-button:hover {
+      background-color: #449d44; /* Darker on hover */
+  }
+  
+  .current-page {
+      font-weight: bold;
+  }
+  
+  </style>
+  {% endblock stylesheets %}
+  
+  <!-- Favicons ================================================== -->
+  <link rel="shortcut icon" href="{{ FRONT_ROOT }}/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ FRONT_ROOT }}/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ FRONT_ROOT }}/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ FRONT_ROOT }}/img/apple-touch-icon-114x114.png">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/fonts/font-awesome/css/font-awesome.css">
+  
+  <!-- Stylesheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="{{ FRONT_ROOT }}/css/nivo-lightbox/default.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+  
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.1.11.1.js"></script> 
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/bootstrap.js"></script> 
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/SmoothScroll.js"></script> 
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/nivo-lightbox.js"></script> 
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jquery.isotope.js"></script> 
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/jqBootstrapValidation.js"></script> 
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/contact_me.js"></script> 
+  <script type="text/javascript" src="{{ FRONT_ROOT }}/js/main.js"></script>
+  {% block content %}
+<div class="yield-list-content">
+    <div class="yield-list-row">
+        <div class="yield-list-col">
+            <div class="yield-list-card">
+                <div class="yield-list-card-header">
+                                    <div>
+                                        <h4 class="menu-section-title">List of Crops</h4>
+                                        <hr>
+                                    </div>
+                                    <a href="{% url 'recommend_view' %}" class="button-recommend">Recommend technique for a crop</a>
+                                </div>
+                                <div class="yield-list-card-body">
+                                    <div class="search-container">
+                                        <form method="GET" action="{% url 'liste_cultures' %}" onsubmit="return false;">
+                                            <input type="text" id="searchInput" name="search" class="search-input" placeholder="Search by name..." value="{{ search_query }}" oninput="searchFunction()">
+                                        </form>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="yield-table" id="yieldTable">
+                                            <thead class="table-header">
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Description</th>
+                                                    <th>Growth Cycle (days)</th>
+                                                    <th>Preferred Soil Type</th>
+                                                    <th class="text-center">Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for culture in page_obj %}
+    <tr>
+        <td>{{ culture.nom }}</td>
+        <td>{{ culture.description }}</td>
+        <td>{{ culture.cycle_croissance_jours }}</td>
+        <td>{{ culture.rendement_attendu }}</td>
+        <td class="text-center">
+            <a href="{% url 'culture_detail' culture.pk %}" class="button-view-detail">
+                View Details
+            </a>
+        </td>
+    </tr>
+                                                {% empty %}
+                                                    <tr>
+                                                        <td colspan="5" class="text-center">No cultures found.</td>
+                                                    </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="pagination-container">
+                                        <div>
+                                            {% if page_obj.has_previous %}
+                                                <a href="?page={{ page_obj.previous_page_number }}" class="pagination-button">Previous</a>
+                                            {% endif %}
+                                            <span class="current-page">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+                                            {% if page_obj.has_next %}
+                                                <a href="?page={{ page_obj.next_page_number }}" class="pagination-button">Next</a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    function searchFunction() {
+                        var input, filter, table, tr, td, i, txtValue;
+                        input = document.getElementById("searchInput");
+                        filter = input.value.toLowerCase();
+                        table = document.getElementById("yieldTable");
+                        tr = table.getElementsByTagName("tr");
+                
+                        for (i = 1; i < tr.length; i++) {
+                            tr[i].style.display = "none";
+                            td = tr[i].getElementsByTagName("td");
+                            for (var j = 0; j < td.length; j++) {
+                                if (td[j]) {
+                                    txtValue = td[j].textContent || td[j].innerText;
+                                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                                        tr[i].style.display = "";
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                </script>
+                {% endblock content %}
+{% include 'front/footer.html' %}

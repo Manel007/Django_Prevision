@@ -37,11 +37,10 @@ def generate_techniques(n, culture_ids):
         })
     return pd.DataFrame(techniques)
 
-# Générer les cultures et techniques
-cultures_df = generate_cultures(100)  # 50 cultures
-cultures_df.to_csv('cultures.csv', index=False)  # Enregistrer dans un fichier CSV
+cultures_df = generate_cultures(100)  
+cultures_df.to_csv('cultures.csv', index=False)  
 
-techniques_df = generate_techniques(200, cultures_df.index.tolist())  # 100 techniques associées
-techniques_df.to_csv('techniques.csv', index=False)  # Enregistrer dans un fichier CSV
+techniques_df = generate_techniques(200, cultures_df.index.tolist())  
+techniques_df.to_csv('techniques.csv', index=False)  
 
 print("Données générées et enregistrées dans 'cultures.csv' et 'techniques.csv'")

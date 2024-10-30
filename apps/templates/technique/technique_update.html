@@ -3,7 +3,22 @@
 {% block title %} Update Crop Technique {% endblock %}
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock %}
+{% block stylesheets %}<style>
+    .custom-button {
+        display: inline-block;  
+        padding: 10px 20px;  
+        background-color: #075018;  
+        color: white;  
+        text-align: center;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        text-decoration: none;  
+    }
+    .custom-button:hover {
+        background-color: #1a772e;  
+    }
+  </style>{% endblock %}
 
 {% block content %}
 
@@ -70,7 +85,7 @@
                         </div>
                         {% endif %}
 
-                        <button type="submit" class="btn btn-fill btn-primary">Save</button>
+                        <button type="submit" class="custom-button">Save</button>
                     </form>
                 </div>
             </div>

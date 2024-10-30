@@ -29,10 +29,17 @@ urlpatterns = [
     path('updateCulture/<int:pk>/', views.update_culture, name='update_culture'),
     path('deleteCulture/<int:pk>/', views.delete_culture, name='delete_culture'),
    path('techniques/', technique_views.liste_techniques, name='liste_techniques'),
+    path('techniquesList/', technique_views.nouvelle_liste_techniques, name='nouvelle_liste_techniques'), 
+    path('techniques/<int:technique_id>/', technique_views.detail_technique, name='detail_technique'),  # Detail view 
     path('createTechnique/', technique_views.create_technique, name='create_technique'),
     path('updateTechnique<int:technique_id>/', technique_views.update_technique, name='update_technique'),
     path('deleteTechnique/<int:pk>/', technique_views.delete_technique, name='delete_technique'),
     path('recommander/', recommend_views.recommend_view, name='recommend_view'),
+    path('cultures/<int:pk>/', views.culture_detail, name='culture_detail'),
+    path('culturesList/', views.culture_list, name='culture_list'),
+    path('culturedetails/<int:pk>/', views.culture_details, name='culture_details'),
+    path('techniquedetails/<int:pk>/', technique_views.technique_details, name='technique_details'),
+
    
 
 
