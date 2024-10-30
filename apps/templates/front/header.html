@@ -15,7 +15,8 @@
             <li><a href="#portfolio" class="page-scroll">Pesticides</a></li>
             <li><a href="#team" class="page-scroll">Review</a></li>
 
-            <li><a href="#call-reservation" class="page-scroll">Contact</a></li>
+            <li><a href="{% url 'display_zones' %}" class="page-scroll">Geographic Zones</a></li>
+            <li><a href="{% url 'display_typesol' %}"  class="page-scroll">Soil Types</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse --> 
@@ -29,7 +30,7 @@
             <div class="row">
               <div class="intro-text">
                 <h1>AgriPredict</h1>
-                <p>Yield / Cuture / pesticides</p>
+                <p>Yield / Culture / pesticides</p>
                 <a href="{% url 'yield_summary' %}" class="btn btn-custom btn-lg page-scroll">Show Yield</a>
               </div>
           </div>

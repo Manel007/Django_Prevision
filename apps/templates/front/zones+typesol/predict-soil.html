@@ -1,0 +1,144 @@
+{% extends "front/baseF.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4" style="font-weight: bold; font-size: 1.5rem; color: #2c3e50;"></h2>
+    <p class="text-center mb-4" style="font-size: 2.5rem; color: #34495e;">
+        🌱 Welcome to the <span style="color: green;">Soil Type Prediction</span> tool! Enter values like 🌡️ <span style="color: green;">pH</span>, 🌿 <span style="color: green;">organic matter</span>, and 🌾 <span style="color: green;">nutrients</span> to get a soil prediction, helping with <span style="color: green;">agricultural planning</span>. Whether you're a farmer, gardener, or just curious, this tool is here to provide quick, reliable insights!
+    </p>
+
+   
+    <form id="soilPredictionForm" onsubmit="submitForm(event)" method="POST" novalidate style="background-color: #f9f9f9; padding: 8rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        {% csrf_token %}
+        <div class="col mb-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="number" name="pH_level" class="form-control form-control-lg" placeholder="🌡️ pH Level" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="number" name="organic_matter" class="form-control form-control-lg" placeholder="🌿 Organic Matter (%)" required>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="number" name="nitrogen_content" class="form-control form-control-lg" placeholder="💧 Nitrogen Content (kg/ha)" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="number" name="phosphorus_content" class="form-control form-control-lg" placeholder="🪴 Phosphorus Content (kg/ha)" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="number" name="potassium_content" class="form-control form-control-lg" placeholder="🌾 Potassium Content (kg/ha)" required>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-custom btn-lg" style="padding: 0.75rem 2rem; font-size: 1.25rem;">Predict Soil Type</button>
+        </div>
+    </form>
+
+
+
+<!-- Modal for displaying prediction results -->
+<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Prediction result will be displayed here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<h2 class="text-center mb-4" style="font-weight: bold; font-size: 2.5rem; color: #2c3e50;">
+      
+</h2>
+<script>
+    document.getElementById('soilPredictionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+       
+        const formData = new FormData(this);
+
+        fetch(this.action, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}',
+                'Accept': 'application/json',
+            },
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data); 
+
+            const soilType = data.predicted_soil_type || "Unknown";
+            const descriptions = {
+                "Nitrogenous":"Nitrogenous soils are rich in nitrogen, an essential nutrient for plant growth. These soils support vigorous vegetative growth and are crucial for crop production.",
+    "Chalky (Calcareous)": "This soil type has a higher pH and can be challenging for certain plants. Consider adding organic matter to improve nutrient retention.",
+    "Sandy": "Sandy soil drains quickly but may require more frequent watering. It's ideal for plants that thrive in well-draining conditions.",
+    "Clay": "Clay soil is dense and holds nutrients well but can be prone to waterlogging. Adding compost can help with aeration.",
+    "Loamy": "Loamy soil is a balanced mix of sand, silt, and clay, making it ideal for most plants. It retains moisture and provides good drainage.",
+    "Peaty": "Peaty soil is rich in organic matter and moisture, making it excellent for acid-loving plants. It can benefit from lime to reduce acidity.",
+    "Saline": "Saline soil contains high levels of salts, which can be detrimental to most plants. Improving drainage and leaching salts with water can help.",
+    "Silty": "Silty soil retains moisture and nutrients well, making it suitable for many crops. However, it can become compacted, so regular aeration is beneficial.",
+    "Organic": "Organic soil is rich in decomposed plant and animal matter. It's highly fertile and excellent for gardening but can be prone to drainage issues.",
+    "Rocky": "Rocky soil contains a significant amount of stones and boulders, making it challenging for root growth. Improving soil quality with organic matter can help.",
+    "Brown": "Brown soil is usually rich in minerals and good for agriculture. It retains moisture well, but overuse can lead to depletion of nutrients.",
+    "Black": "Black soil is rich in organic material and ideal for growing crops. It's known for its moisture retention and fertility.",
+    "Red": "Red soil is rich in iron and typically found in tropical regions. It may require fertilization to enhance its nutrient content for optimal plant growth.",
+    "Gray": "Gray soil often indicates poor drainage or high clay content. Amending it with organic material can improve its structure and nutrient availability.",
+    "White": "White soil, often containing high calcium carbonate, may have drainage issues. Adding organic matter can help improve its structure.",
+    "Loess": "Loess soil is a fertile, wind-blown silt that holds moisture well. It is great for crops but can erode easily if not managed properly.",
+    "Muck": "Muck soil is very rich in organic material and retains water effectively. It is highly productive for farming but can become compacted.",
+    "Gypsum": "Gypsum soil contains high levels of calcium sulfate and is often found in arid regions. It can improve soil structure and drainage when mixed with clay.",
+    "Podzol": "Podzol soil is acidic and typically found in forested regions. It may require amendments to improve its fertility for agricultural use.",
+    "Regosol": "Regosol is a young soil found in recently disturbed areas. It may lack nutrients but can be enriched with organic matter for better productivity.",
+    "Terra Rossa": "Terra Rossa is a red soil rich in iron and often found in Mediterranean climates. It is well-drained and suitable for vine cultivation.",
+    "Vertisol": "Vertisol is clay-rich soil known for its swelling and shrinking properties. It is highly fertile but can be difficult to manage due to its texture.",
+    "Histosol": "Histosol is a soil type made up of organic materials and is typically found in wetlands. It is very fertile but can have drainage issues.",
+    "Aridisol": "Aridisols are dry soils found in arid regions. They require careful management to support plant growth due to their low nutrient content.",
+    "Andisol": "Andisol is a volcanic soil that is highly fertile and retains moisture well. It's ideal for a variety of crops but can be prone to erosion.",
+    "Chernozem": "Chernozem is a rich, black soil known for its high organic matter content. It is found in grassland regions and is highly fertile for agriculture.",
+    "Gelisol": "Gelisols are cold soils typically found in polar regions or high altitudes. They have a layer of permafrost and can be challenging for agriculture.",
+    "Alfisols": "Alfisols are moderately fertile soils found in temperate regions. They have a clay-rich horizon and are good for agriculture with proper management.",
+    "Ultisols": "Ultisols are weathered soils found in humid subtropical regions. They tend to be low in nutrients and require amendments for effective crop production.",
+    "Spodosol": "Spodosols are acidic, sandy soils often found in coniferous forests. They can be nutrient-poor but may support certain types of vegetation.",
+    "Inceptisol": "Inceptisols are young soils with some development but not yet fully matured. They can be found in diverse environments and may support various crops.",
+    "Aquolls": "Aquolls are soils that have a significant amount of moisture and are typically found in wetland areas. They are very productive for certain crops.",
+    "Oxisol": "Oxisols are highly weathered tropical soils known for their low nutrient content but can be very productive with proper management practices.",
+    "Histosol": "Histosols are organic soils rich in decomposed plant material. They are very fertile but can have drainage issues and are usually found in wetland areas."
+};
+            document.getElementById('modalTitle').innerText = "Soil Type Prediction Result"; 
+            document.getElementById('modalBody').innerHTML = `
+                <h4 style="color: green;">Soil Type: ${soilType}</h4>
+                <p>${descriptions[soilType] || "This soil type is unique and may require specialized care."}</p>
+            `;
+            
+          
+            $('#resultModal').modal('show');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+</script>
+
+
+{% endblock content %}

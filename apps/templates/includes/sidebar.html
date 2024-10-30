@@ -19,6 +19,27 @@
                 </a>
             </li>
             <li class="{% if 'tables' in segment %} active {% endif %}">
+                <a href="{% url 'zone_list' %}">
+                    <i class="tim-icons icon-square-pin"></i> <!-- Icon for geographic zones -->
+                    <p>Geographic Zones</p>
+                </a>
+            </li>
+            
+            <li class="{% if 'tables' in segment %} active {% endif %}">
+                <a href="{% url 'typesol_list' %}">
+                    <i class="tim-icons icon-map-big"></i> <!-- Icon for soil types -->
+                    <p>Soil Types</p>
+                </a>
+            </li>
+            
+            <li class="{% if 'tables' in segment %} active {% endif %}">
+                <a href="{% url 'dataset_anomalies' %}">
+                    <i class="tim-icons icon-alert-circle-exc"></i> <!-- Icon for anomaly detection -->
+                    <p>Detect Soil Type Anomalies</p>
+                </a>
+            </li>
+            
+            <li class="{% if 'tables' in segment %} active {% endif %}">
                 <a href="{% url 'list_agriculteurs' %}">
                     <i class="tim-icons icon-paper"></i>
                     <p>Table Agriculteur</p>

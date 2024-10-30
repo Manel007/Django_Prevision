@@ -12,15 +12,15 @@
                 <div class="card-body">
                     <div class="table-responsive">
                         <div class="row mb-3 align-items-center">
-                            <!-- Button to Trigger Anomaly Detection -->
+                          
                             <div class="col-md-2">
-                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detectAnomaliesModal">
+                                <button type="button" class="btn btn-succes btn-sm" data-toggle="modal" data-target="#detectAnomaliesModal">
                                     Detect Anomalies
                                 </button>
                             </div>
                         </div>
 
-                        <!-- Loading Modal -->
+                       
                         <div class="modal fade" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content text-center">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
 
-                        <!-- Confirmation Modal -->
+                      
                         <div class="modal fade" id="detectAnomaliesModal" tabindex="-1" aria-labelledby="detectAnomaliesModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -45,14 +45,13 @@
                                         Are you sure you want to detect anomalies in the dataset?
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-primary" id="confirmDetect">Yes, Detect</button>
+                                        <button type="button" class="btn btn-succes" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-danger" id="confirmDetect">Yes, Detect</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Anomalies Result Area -->
                         <div id="anomaliesResult" style="display: none;">
                             <div class="alert alert-info" role="alert" id="anomaliesAlert"></div>
                             <table class="table tablesorter">
@@ -67,7 +66,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="anomaliesTableBody">
-                                    <!-- Anomalies data will be inserted here -->
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -81,13 +80,10 @@
 
 <script>
     document.getElementById('confirmDetect').addEventListener('click', function() {
-        // Hide the confirmation modal
         $('#detectAnomaliesModal').modal('hide');
         
-        // Show loading modal
         $('#loadingModal').modal('show');
 
-        // AJAX request to call anomaly detection
         fetch("{% url 'dataset_anomalies' %}", {
             method: 'POST',
             headers: {

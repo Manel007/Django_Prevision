@@ -1,0 +1,82 @@
+{% extends "front/baseF.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+       
+        <h2 class="text-center mb-4" style="font-weight: bold; font-size: 2.5rem; color: #2c3e50;">
+          
+        </h2>
+        <div class="container">
+            <p class="text-center mb-4" style="font-size: 3rem; color: #34495e;">
+                Understanding your land's <span style="color: #7ca923;">soil type</span> 🌱🌿 is crucial for successful agriculture. 
+                Explore the various soil types below to make informed decisions for your crops.
+            </p>
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="{% url 'predict_soil' %}" class="btn btn-custom btn-lg">Predict your soil type</a>
+                </div>
+            </div>
+    
+        </div>
+       
+        
+      
+
+        <div class="row mb-8 align-items-center">
+            <div class="col-6 d-flex justify-content-start">
+                <div class="pagination" id="pagination-controls" style="display: inline-block;">
+                    {% if types_sol.has_previous %}
+                        <a class="page-link" href="?page=1&search={{ search_query }}" aria-label="First">First</a>
+                        <a class="page-link" href="?page={{ types_sol.previous_page_number }}&search={{ search_query }}" aria-label="Previous">&laquo; Previous</a>
+                    {% endif %}
+        
+                    <span class="mx-2">Page {{ types_sol.number }} of {{ types_sol.paginator.num_pages }}</span>
+        
+                    {% if types_sol.has_next %}
+                        <a class="page-link" href="?page={{ types_sol.next_page_number }}&search={{ search_query }}" aria-label="Next">Next &raquo;</a>
+                        <a class="page-link" href="?page={{ types_sol.paginator.num_pages }}&search={{ search_query }}" aria-label="Last">Last</a>
+                    {% endif %}
+                </div>
+            </div>
+        
+           
+        </div>
+        
+        
+        
+        
+
+        <!-- Container for the cards -->
+        <div class="row mt-4 justify-content-center"> <!-- Centering the cards -->
+            {% if types_sol %}
+                {% for type_sol in types_sol %}
+                    <div class="col-12 col-sm-6 col-md-4 mb-4"> <!-- Responsive columns -->
+                        <div class="card" style="border: 2px solid green; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);"> <!-- Added box shadow for depth -->
+                            <div class="card-body text-center"> <!-- Centered text -->
+                                <h5 class="card-title" style="font-size: 1.5rem; margin-bottom: 1rem;">{{ type_sol.nomTypeSol }}</h5>
+
+                                <div class="my-2"> <!-- Separate div for spacing -->
+                                    <p class="card-text" style="margin-bottom: 1rem;"><strong>Texture:</strong> {{ type_sol.texture }}</p>
+                                </div>
+
+                                <p class="card-text" style="margin-bottom: 1rem;"><strong>Depth:</strong> {{ type_sol.profondeur }}</p>
+                                <p class="card-text" style="margin-bottom: 1rem;"><strong>pH:</strong> {{ type_sol.pH }}</p>
+                                <p class="card-text" style="margin-bottom: 1rem;"><strong>Water Retention Capacity:</strong> {{ type_sol.capacite_retenue_eau }}</p>
+                                <p class="card-text" style="margin-bottom: 1rem;"><strong>Available Nutrients:</strong> {{ type_sol.nutriments_disponibles }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-12">
+                    <p class="text-center">No soil types found.</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <h2 class="text-center mb-4" style="font-weight: bold; font-size: 2.5rem; color: #2c3e50;">
+          
+    </h2>
+
+{% endblock content %}
